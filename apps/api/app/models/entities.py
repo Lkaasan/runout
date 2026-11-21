@@ -206,3 +206,5 @@ class Link(Base):
     claim_id: Mapped[int | None] = mapped_column(ForeignKey("claim.id"))
     target_apple_music_id: Mapped[str | None] = mapped_column(String(64))
     target_title: Mapped[str | None] = mapped_column(String(255))
+
+    claim: Mapped[Claim | None] = relationship()
