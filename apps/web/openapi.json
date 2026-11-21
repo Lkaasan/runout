@@ -1,0 +1,1434 @@
+{
+  "components": {
+    "schemas": {
+      "AdminClaimOut": {
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "body": {
+            "title": "Body",
+            "type": "string"
+          },
+          "body_long": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Body Long"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "depth": {
+            "$ref": "#/components/schemas/Depth"
+          },
+          "flagged": {
+            "title": "Flagged",
+            "type": "boolean"
+          },
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "key": {
+            "title": "Key",
+            "type": "string"
+          },
+          "phase": {
+            "$ref": "#/components/schemas/Phase"
+          },
+          "problems": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Problems",
+            "type": "array"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimSourceOut"
+            },
+            "title": "Sources",
+            "type": "array"
+          },
+          "status": {
+            "$ref": "#/components/schemas/Status"
+          },
+          "subject_id": {
+            "title": "Subject Id",
+            "type": "integer"
+          },
+          "subject_type": {
+            "$ref": "#/components/schemas/EntityType"
+          },
+          "type": {
+            "$ref": "#/components/schemas/ClaimType"
+          }
+        },
+        "required": [
+          "id",
+          "subject_type",
+          "subject_id",
+          "type",
+          "body",
+          "body_long",
+          "phase",
+          "depth",
+          "author",
+          "confidence",
+          "sources",
+          "key",
+          "status",
+          "flagged",
+          "problems"
+        ],
+        "title": "AdminClaimOut",
+        "type": "object"
+      },
+      "AlbumDetail": {
+        "properties": {
+          "after": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimOut"
+            },
+            "title": "After",
+            "type": "array"
+          },
+          "apple_music_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Apple Music Id"
+          },
+          "artist": {
+            "title": "Artist",
+            "type": "string"
+          },
+          "artwork_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artwork Url"
+          },
+          "before": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimOut"
+            },
+            "title": "Before",
+            "type": "array"
+          },
+          "credits": {
+            "items": {
+              "$ref": "#/components/schemas/CreditOut"
+            },
+            "title": "Credits",
+            "type": "array"
+          },
+          "release_date": {
+            "anyOf": [
+              {
+                "format": "date",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Release Date"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "tracks": {
+            "items": {
+              "$ref": "#/components/schemas/TrackSummary"
+            },
+            "title": "Tracks",
+            "type": "array"
+          }
+        },
+        "required": [
+          "slug",
+          "title",
+          "artist",
+          "release_date",
+          "artwork_url",
+          "apple_music_id",
+          "tracks",
+          "credits",
+          "before",
+          "after"
+        ],
+        "title": "AlbumDetail",
+        "type": "object"
+      },
+      "AlbumSummary": {
+        "properties": {
+          "artist": {
+            "title": "Artist",
+            "type": "string"
+          },
+          "artwork_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artwork Url"
+          },
+          "release_date": {
+            "anyOf": [
+              {
+                "format": "date",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Release Date"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "title",
+          "artist",
+          "release_date",
+          "artwork_url"
+        ],
+        "title": "AlbumSummary",
+        "type": "object"
+      },
+      "AnnotationOut": {
+        "properties": {
+          "claim": {
+            "$ref": "#/components/schemas/ClaimOut"
+          },
+          "line_end": {
+            "title": "Line End",
+            "type": "integer"
+          },
+          "line_start": {
+            "title": "Line Start",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "line_start",
+          "line_end",
+          "claim"
+        ],
+        "title": "AnnotationOut",
+        "type": "object"
+      },
+      "ClaimOut": {
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "body": {
+            "title": "Body",
+            "type": "string"
+          },
+          "body_long": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Body Long"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "depth": {
+            "$ref": "#/components/schemas/Depth"
+          },
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "phase": {
+            "$ref": "#/components/schemas/Phase"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimSourceOut"
+            },
+            "title": "Sources",
+            "type": "array"
+          },
+          "subject_id": {
+            "title": "Subject Id",
+            "type": "integer"
+          },
+          "subject_type": {
+            "$ref": "#/components/schemas/EntityType"
+          },
+          "type": {
+            "$ref": "#/components/schemas/ClaimType"
+          }
+        },
+        "required": [
+          "id",
+          "subject_type",
+          "subject_id",
+          "type",
+          "body",
+          "body_long",
+          "phase",
+          "depth",
+          "author",
+          "confidence",
+          "sources"
+        ],
+        "title": "ClaimOut",
+        "type": "object"
+      },
+      "ClaimPatch": {
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "body": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Body"
+          },
+          "body_long": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Body Long"
+          },
+          "depth": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Depth"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Status"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "title": "ClaimPatch",
+        "type": "object"
+      },
+      "ClaimSourceOut": {
+        "properties": {
+          "excerpt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Excerpt"
+          },
+          "locator": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Locator"
+          },
+          "source": {
+            "$ref": "#/components/schemas/SourceOut"
+          },
+          "stance": {
+            "$ref": "#/components/schemas/Stance"
+          }
+        },
+        "required": [
+          "source",
+          "stance",
+          "excerpt",
+          "locator"
+        ],
+        "title": "ClaimSourceOut",
+        "type": "object"
+      },
+      "ClaimType": {
+        "enum": [
+          "fact",
+          "artist_intent",
+          "interpretation",
+          "trivia"
+        ],
+        "title": "ClaimType",
+        "type": "string"
+      },
+      "CreditOut": {
+        "properties": {
+          "person": {
+            "title": "Person",
+            "type": "string"
+          },
+          "role": {
+            "title": "Role",
+            "type": "string"
+          }
+        },
+        "required": [
+          "person",
+          "role"
+        ],
+        "title": "CreditOut",
+        "type": "object"
+      },
+      "Depth": {
+        "enum": [
+          "listen",
+          "study"
+        ],
+        "title": "Depth",
+        "type": "string"
+      },
+      "EntityDetail": {
+        "properties": {
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimOut"
+            },
+            "title": "Claims",
+            "type": "array"
+          },
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "links_in": {
+            "items": {
+              "$ref": "#/components/schemas/LinkOut"
+            },
+            "title": "Links In",
+            "type": "array"
+          },
+          "links_out": {
+            "items": {
+              "$ref": "#/components/schemas/LinkOut"
+            },
+            "title": "Links Out",
+            "type": "array"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "type": {
+            "$ref": "#/components/schemas/EntityType"
+          }
+        },
+        "required": [
+          "type",
+          "id",
+          "name",
+          "claims",
+          "links_out",
+          "links_in"
+        ],
+        "title": "EntityDetail",
+        "type": "object"
+      },
+      "EntityType": {
+        "description": "Things a claim can be about, and things a link can connect.",
+        "enum": [
+          "artist",
+          "album",
+          "track",
+          "person"
+        ],
+        "title": "EntityType",
+        "type": "string"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "ImportResult": {
+        "properties": {
+          "approved": {
+            "title": "Approved",
+            "type": "integer"
+          },
+          "claims": {
+            "title": "Claims",
+            "type": "integer"
+          },
+          "draft": {
+            "title": "Draft",
+            "type": "integer"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          },
+          "sources": {
+            "title": "Sources",
+            "type": "integer"
+          },
+          "tracks": {
+            "title": "Tracks",
+            "type": "integer"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Warnings",
+            "type": "array"
+          }
+        },
+        "required": [
+          "slug",
+          "tracks",
+          "sources",
+          "claims",
+          "approved",
+          "draft",
+          "warnings"
+        ],
+        "title": "ImportResult",
+        "type": "object"
+      },
+      "LinkOut": {
+        "properties": {
+          "claim": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ClaimOut"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "from_id": {
+            "title": "From Id",
+            "type": "integer"
+          },
+          "from_type": {
+            "$ref": "#/components/schemas/EntityType"
+          },
+          "relation": {
+            "$ref": "#/components/schemas/Relation"
+          },
+          "target_apple_music_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Apple Music Id"
+          },
+          "target_title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Title"
+          },
+          "to_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "To Id"
+          },
+          "to_type": {
+            "$ref": "#/components/schemas/EntityType"
+          }
+        },
+        "required": [
+          "relation",
+          "from_type",
+          "from_id",
+          "to_type",
+          "to_id",
+          "target_title",
+          "target_apple_music_id",
+          "claim"
+        ],
+        "title": "LinkOut",
+        "type": "object"
+      },
+      "MomentOut": {
+        "properties": {
+          "claim": {
+            "$ref": "#/components/schemas/ClaimOut"
+          },
+          "end_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Ms"
+          },
+          "start_ms": {
+            "title": "Start Ms",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "start_ms",
+          "end_ms",
+          "claim"
+        ],
+        "title": "MomentOut",
+        "type": "object"
+      },
+      "Phase": {
+        "enum": [
+          "before",
+          "during",
+          "between",
+          "after"
+        ],
+        "title": "Phase",
+        "type": "string"
+      },
+      "Relation": {
+        "enum": [
+          "samples",
+          "influenced_by",
+          "features",
+          "covers",
+          "references"
+        ],
+        "title": "Relation",
+        "type": "string"
+      },
+      "SourceKind": {
+        "enum": [
+          "interview",
+          "liner_notes",
+          "documentary",
+          "press",
+          "social_post",
+          "database",
+          "book"
+        ],
+        "title": "SourceKind",
+        "type": "string"
+      },
+      "SourceOut": {
+        "properties": {
+          "author": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Author"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/SourceKind"
+          },
+          "published_at": {
+            "anyOf": [
+              {
+                "format": "date",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Published At"
+          },
+          "publisher": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Publisher"
+          },
+          "tier": {
+            "$ref": "#/components/schemas/Tier"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "publisher",
+          "author",
+          "published_at",
+          "kind",
+          "tier"
+        ],
+        "title": "SourceOut",
+        "type": "object"
+      },
+      "Stance": {
+        "enum": [
+          "supports",
+          "contradicts"
+        ],
+        "title": "Stance",
+        "type": "string"
+      },
+      "Status": {
+        "enum": [
+          "draft",
+          "approved",
+          "rejected"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "Tier": {
+        "enum": [
+          "primary",
+          "secondary",
+          "tertiary"
+        ],
+        "title": "Tier",
+        "type": "string"
+      },
+      "TrackDetail": {
+        "properties": {
+          "album_slug": {
+            "title": "Album Slug",
+            "type": "string"
+          },
+          "annotations": {
+            "items": {
+              "$ref": "#/components/schemas/AnnotationOut"
+            },
+            "title": "Annotations",
+            "type": "array"
+          },
+          "apple_music_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Apple Music Id"
+          },
+          "between": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ClaimOut"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "credits": {
+            "items": {
+              "$ref": "#/components/schemas/CreditOut"
+            },
+            "title": "Credits",
+            "type": "array"
+          },
+          "disc": {
+            "title": "Disc",
+            "type": "integer"
+          },
+          "duration_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Ms"
+          },
+          "isrc": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Isrc"
+          },
+          "links": {
+            "items": {
+              "$ref": "#/components/schemas/LinkOut"
+            },
+            "title": "Links",
+            "type": "array"
+          },
+          "moments": {
+            "items": {
+              "$ref": "#/components/schemas/MomentOut"
+            },
+            "title": "Moments",
+            "type": "array"
+          },
+          "number": {
+            "title": "Number",
+            "type": "integer"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "number",
+          "disc",
+          "title",
+          "duration_ms",
+          "apple_music_id",
+          "isrc",
+          "album_slug",
+          "between",
+          "moments",
+          "annotations",
+          "credits",
+          "links"
+        ],
+        "title": "TrackDetail",
+        "type": "object"
+      },
+      "TrackSummary": {
+        "properties": {
+          "apple_music_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Apple Music Id"
+          },
+          "disc": {
+            "title": "Disc",
+            "type": "integer"
+          },
+          "duration_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Ms"
+          },
+          "number": {
+            "title": "Number",
+            "type": "integer"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "number",
+          "disc",
+          "title",
+          "duration_ms",
+          "apple_music_id"
+        ],
+        "title": "TrackSummary",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBasic": {
+        "scheme": "basic",
+        "type": "http"
+      }
+    }
+  },
+  "info": {
+    "title": "Album Deep-Dive API",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/admin/claims": {
+      "get": {
+        "description": "Claims awaiting review, with sources and anything blocking approval. Flagged first.",
+        "operationId": "review_queue_admin_claims_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "status",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/Status",
+              "default": "draft"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AdminClaimOut"
+                  },
+                  "title": "Response Review Queue Admin Claims Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBasic": []
+          }
+        ],
+        "summary": "Review Queue"
+      }
+    },
+    "/admin/claims/{claim_id}": {
+      "patch": {
+        "description": "Approve, reject or edit. 422 (with the reasons) if a claim rule fails; nothing is saved.",
+        "operationId": "update_claim_admin_claims__claim_id__patch",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "claim_id",
+            "required": true,
+            "schema": {
+              "title": "Claim Id",
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClaimPatch"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminClaimOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBasic": []
+          }
+        ],
+        "summary": "Update Claim"
+      }
+    },
+    "/admin/import/{slug}": {
+      "post": {
+        "description": "Re-import an album's seed files.",
+        "operationId": "import_seed_admin_import__slug__post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ImportResult"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBasic": []
+          }
+        ],
+        "summary": "Import Seed"
+      }
+    },
+    "/albums": {
+      "get": {
+        "description": "Curated album shelf.",
+        "operationId": "list_albums_albums_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AlbumSummary"
+                  },
+                  "title": "Response List Albums Albums Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "List Albums"
+      }
+    },
+    "/albums/{slug}": {
+      "get": {
+        "description": "Album, tracklist, credits and the `before` and `after` claims (approved only).",
+        "operationId": "get_album_albums__slug__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/Depth"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Depth"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AlbumDetail"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Album"
+      }
+    },
+    "/albums/{slug}/tracks/{number}": {
+      "get": {
+        "description": "Track with its `between` intro, `during` moments, annotations, credits and links.",
+        "operationId": "get_track_albums__slug__tracks__number__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "number",
+            "required": true,
+            "schema": {
+              "title": "Number",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/Depth"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Depth"
+            }
+          },
+          {
+            "in": "query",
+            "name": "disc",
+            "required": false,
+            "schema": {
+              "default": 1,
+              "title": "Disc",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrackDetail"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Track"
+      }
+    },
+    "/entities/{type}/{id}": {
+      "get": {
+        "description": "Deep-dive card: approved claims plus links in both directions.",
+        "operationId": "get_entity_entities__type___id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/EntityType"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "title": "Id",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "depth",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/Depth"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Depth"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EntityDetail"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Entity"
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Health Health Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Health"
+      }
+    }
+  }
+}

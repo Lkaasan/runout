@@ -47,3 +47,20 @@ jobs:
       - run: pnpm --filter web lint
       - run: pnpm --filter web test
       - run: pnpm --filter web build
+
+  client:
+    # The generated TypeScript client must match the API's OpenAPI schema.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: cd apps/api && uv sync
+      - run: pnpm gen:api
+      - name: Fail if generated client is stale
+        run: git diff --exit-code -- apps/web/openapi.json apps/web/src/api/schema.d.ts

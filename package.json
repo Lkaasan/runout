@@ -2,13 +2,20 @@
   "name": "album-app",
   "private": true,
   "packageManager": "pnpm@9.15.9",
-  "engines": { "node": ">=22.12" },
+  "engines": {
+    "node": ">=22.12"
+  },
   "scripts": {
+    "setup": "pnpm install && cd apps/api && uv sync && uv run alembic upgrade head && uv run python -m app.seed import placeholder-album",
     "db": "docker compose up -d db",
     "dev:api": "cd apps/api && uv run fastapi dev app/main.py",
     "dev:web": "pnpm --filter web dev",
-    "dev": "docker compose up -d db && pnpm run --parallel \"/^dev:(api|web)$/\"",
+    "dev": "concurrently -n api,web -c blue,green \"pnpm dev:api\" \"pnpm dev:web\"",
+    "gen:api": "cd apps/api && uv run python -m app.export_openapi ../web/openapi.json && cd ../web && pnpm gen:api",
     "lint": "pnpm --filter web lint && cd apps/api && uv run ruff check .",
     "test": "pnpm --filter web test && cd apps/api && uv run pytest"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
   }
 }
