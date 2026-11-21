@@ -1,0 +1,27 @@
+[project]
+name = "album-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi[standard]",
+  "pydantic>=2",
+  "pydantic-settings",
+  "sqlalchemy>=2",
+  "alembic",
+  "psycopg[binary]",
+  "pyyaml",
+]
+
+[dependency-groups]
+dev = ["pytest", "httpx", "ruff"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
