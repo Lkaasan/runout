@@ -16,13 +16,16 @@ class Base(DeclarativeBase):
     metadata = MetaData(naming_convention=NAMING_CONVENTION)
 
 
-def str_enum(enum_cls: type[enum.Enum]) -> Enum:
-    """Portable enum column: VARCHAR plus a CHECK constraint, no native Postgres enum type."""
+def str_enum(enum_cls: type[enum.Enum], name: str | None = None) -> Enum:
+    """Portable enum column: VARCHAR plus a CHECK constraint, no native Postgres enum type.
+
+    Pass `name` when a table has two columns of the same enum, so constraint names stay unique.
+    """
     return Enum(
         enum_cls,
         native_enum=False,
         create_constraint=True,
         length=24,
         values_callable=lambda e: [m.value for m in e],
-        name=enum_cls.__name__.lower(),
+        name=name or enum_cls.__name__.lower(),
     )

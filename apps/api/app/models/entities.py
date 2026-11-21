@@ -198,9 +198,9 @@ class Link(Base):
     __tablename__ = "link"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    from_type: Mapped[EntityType] = mapped_column(str_enum(EntityType))
+    from_type: Mapped[EntityType] = mapped_column(str_enum(EntityType, name="from_type"))
     from_id: Mapped[int] = mapped_column(Integer)
-    to_type: Mapped[EntityType] = mapped_column(str_enum(EntityType))
+    to_type: Mapped[EntityType] = mapped_column(str_enum(EntityType, name="to_type"))
     to_id: Mapped[int | None] = mapped_column(Integer)
     relation: Mapped[Relation] = mapped_column(str_enum(Relation))
     claim_id: Mapped[int | None] = mapped_column(ForeignKey("claim.id"))
