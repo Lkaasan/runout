@@ -1,0 +1,14 @@
+{
+  "name": "album-app",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": { "node": ">=22.12" },
+  "scripts": {
+    "db": "docker compose up -d db",
+    "dev:api": "cd apps/api && uv run fastapi dev app/main.py",
+    "dev:web": "pnpm --filter web dev",
+    "dev": "docker compose up -d db && pnpm run --parallel \"/^dev:(api|web)$/\"",
+    "lint": "pnpm --filter web lint && cd apps/api && uv run ruff check .",
+    "test": "pnpm --filter web test && cd apps/api && uv run pytest"
+  }
+}
