@@ -1,0 +1,40 @@
+# PLACEHOLDER CONTENT. Fictional artist and made-up claims, used only to exercise the importer.
+slug: placeholder-album
+title: Placeholder Album
+artist:
+  name: Placeholder Artist
+release_date: 2001-01-01
+credits:
+  - person: Pat Producer
+    role: producer
+claims:
+  - id: how-it-was-made
+    type: fact
+    phase: before
+    depth: listen
+    body: "Recorded in a single week in a rented farmhouse."
+    sources:
+      - ref: interview-1
+        stance: supports
+        excerpt: "We did the whole thing in a week."
+        locator: "04:10"
+    reviewed: true
+  - id: legacy
+    type: interpretation
+    phase: after
+    depth: study
+    author: Placeholder Critic
+    body: "The record reads as a quiet argument against polish."
+    reviewed: true
+  - id: contested-date
+    type: fact
+    phase: before
+    depth: study
+    body: "The album was finished in March."
+    sources:
+      - ref: interview-1
+        stance: supports
+      - ref: liner-notes
+        stance: contradicts
+        excerpt: "Mixing wrapped in April."
+    reviewed: true

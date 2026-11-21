@@ -1,0 +1,13 @@
+sources:
+  - id: interview-1
+    kind: interview
+    title: "Placeholder Artist on making the record"
+    url: https://example.com/interview-1
+    publisher: Example Magazine
+    author: A. Writer
+    published_at: 2001-03-01
+    tier: primary
+  - id: liner-notes
+    kind: liner_notes
+    title: "Placeholder Album liner notes"
+    tier: primary

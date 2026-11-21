@@ -6,6 +6,8 @@ Plan: [docs/PLAN.md](docs/PLAN.md). One PR per milestone; stop for review after 
 - `docker compose up -d db` start Postgres (copy `.env.example` to `.env` first)
 - `pnpm dev:api` FastAPI on :8000 (`uv run fastapi dev app/main.py` in `apps/api`)
 - `pnpm dev:web` Next.js on :3000
+- `cd apps/api && uv run alembic upgrade head` apply migrations; `uv run alembic revision --autogenerate -m msg` after model changes (a test fails if models and migrations drift)
+- `cd apps/api && uv run python -m app.seed import <slug>` import `content/albums/<slug>/` (validates first; safe to re-run)
 - `pnpm lint` / `pnpm test` run both apps' checks (`uv run ruff check .`, `uv run pytest`, eslint, vitest)
 
 ## Rules

@@ -1,0 +1,15 @@
+number: 2
+title: Closer
+duration: "4:02"
+apple_music_id: "0000000002"
+between:
+  claim: closer-intro
+claims:
+  - id: closer-intro
+    type: trivia
+    body: "Recorded live in one take."
+  - id: unsourced-fact
+    type: fact
+    phase: after
+    depth: study
+    body: "Not yet sourced, so it stays a draft."

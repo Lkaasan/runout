@@ -7,6 +7,19 @@ on:
 jobs:
   api:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: album
+          POSTGRES_PASSWORD: album
+          POSTGRES_DB: album
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U album" --health-interval 5s
+          --health-timeout 3s --health-retries 10
+    env:
+      DATABASE_URL: postgresql+psycopg://album:album@localhost:5432/album
     defaults:
       run:
         working-directory: apps/api
@@ -16,6 +29,10 @@ jobs:
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run pytest
+      # Migrations and importer against real Postgres (tests use SQLite).
+      - run: uv run alembic upgrade head
+      - run: uv run python -m app.seed import placeholder-album
+      - run: uv run python -m app.seed import placeholder-album
 
   web:
     runs-on: ubuntu-latest

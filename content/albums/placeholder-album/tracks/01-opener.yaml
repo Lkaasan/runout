@@ -1,0 +1,44 @@
+number: 1
+title: Opener
+duration: "3:10"
+apple_music_id: "0000000001"
+isrc: "XX0000000001"
+between:
+  claim: opener-intro
+moments:
+  - at: "0:45"
+    until: "1:00"
+    claim: drum-sample
+annotations:
+  - lines: [2, 4]
+    claim: verse-meaning
+links:
+  - relation: samples
+    to: { type: track, apple_music_id: "0000009999", title: "Original Break" }
+    claim: drum-sample
+credits:
+  - person: Sam Drummer
+    role: drums
+claims:
+  - id: opener-intro
+    type: trivia
+    depth: listen
+    body: "The first song written for the record, and the last one recorded."
+  - id: drum-sample
+    type: fact
+    depth: listen
+    body: "The drum loop is lifted from a 1969 b-side."
+    sources:
+      - ref: interview-1
+        stance: supports
+        excerpt: "The break is from an old b-side."
+        locator: "12:40"
+    reviewed: true
+  - id: verse-meaning
+    type: artist_intent
+    depth: study
+    body: "The second verse is about leaving home."
+    sources:
+      - ref: liner-notes
+        stance: supports
+    reviewed: true
