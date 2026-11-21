@@ -1,0 +1,36 @@
+from pathlib import Path
+
+from alembic.autogenerate import compare_metadata
+from alembic.config import Config
+from alembic.migration import MigrationContext
+from sqlalchemy import create_engine
+from sqlalchemy.pool import StaticPool
+
+from alembic import command
+from app.models import Base
+
+API_DIR = Path(__file__).resolve().parents[1]
+
+
+def alembic_config(connection) -> Config:
+    cfg = Config(str(API_DIR / "alembic.ini"))
+    cfg.set_main_option("script_location", str(API_DIR / "alembic"))
+    cfg.attributes["connection"] = connection
+    return cfg
+
+
+def test_migrations_match_models():
+    """After upgrading to head, the schema must equal the models (no forgotten migration)."""
+    engine = create_engine("sqlite://", poolclass=StaticPool)
+    with engine.begin() as conn:
+        command.upgrade(alembic_config(conn), "head")
+        diff = compare_metadata(MigrationContext.configure(conn), Base.metadata)
+    assert diff == []
+
+
+def test_downgrade_to_base():
+    engine = create_engine("sqlite://", poolclass=StaticPool)
+    with engine.begin() as conn:
+        cfg = alembic_config(conn)
+        command.upgrade(cfg, "head")
+        command.downgrade(cfg, "base")

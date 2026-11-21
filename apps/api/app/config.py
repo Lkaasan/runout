@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -7,6 +9,7 @@ class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://album:album@localhost:5432/album"
     web_origin: str = "http://localhost:3000"
     admin_password: str = ""
+    content_dir: Path = Path(__file__).resolve().parents[3] / "content" / "albums"
 
 
 settings = Settings()
