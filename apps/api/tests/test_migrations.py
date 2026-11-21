@@ -34,3 +34,18 @@ def test_downgrade_to_base():
         cfg = alembic_config(conn)
         command.upgrade(cfg, "head")
         command.downgrade(cfg, "base")
+
+
+def test_constraint_names_are_unique_per_table_on_postgres():
+    """SQLite tolerates duplicate constraint names; Postgres does not."""
+    import re
+    from collections import Counter
+
+    from sqlalchemy.dialects import postgresql
+    from sqlalchemy.schema import CreateTable
+
+    for table in Base.metadata.sorted_tables:
+        ddl = str(CreateTable(table).compile(dialect=postgresql.dialect()))
+        names = re.findall(r"CONSTRAINT (\w+)", ddl)
+        dupes = [n for n, c in Counter(names).items() if c > 1]
+        assert not dupes, f"{table.name}: {dupes}"
