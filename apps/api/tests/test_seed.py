@@ -143,3 +143,22 @@ def test_unknown_field_is_rejected(content):
     path = content / SLUG / "album.yaml"
     path.write_text(path.read_text(encoding="utf-8") + "typo_field: 1\n", encoding="utf-8")
     assert any("typo_field" in e for e in errors_for(content))
+
+
+def test_every_album_in_content_is_valid_and_imports(session):
+    """Real albums must stay valid as the rules and schema evolve."""
+    slugs = sorted(p.name for p in CONTENT.iterdir() if p.is_dir())
+    assert "animals" in slugs
+    for slug in slugs:
+        report = import_album(session, load_album(CONTENT, slug))
+        assert report.claims > 0
+
+
+def test_animals_artist_intent_stays_draft_without_primary_sources(session):
+    import_album(session, load_album(CONTENT, "animals"))
+    session.commit()
+    intent = session.scalars(select(Claim).filter_by(type="artist_intent")).all()
+    animals = [c for c in intent if c.key.startswith("animals/")]
+    assert animals and all(c.status == Status.draft for c in animals)
+    contested = session.scalar(select(Claim).filter_by(key="animals/pig-size"))
+    assert contested.flagged and contested.status == Status.draft

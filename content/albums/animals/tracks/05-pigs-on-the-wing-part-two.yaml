@@ -1,0 +1,24 @@
+number: 5
+title: "Pigs on the Wing (Part Two)"
+duration: "1:24"
+between:
+  claim: pow2-intro
+claims:
+  - id: pow2-intro
+    type: fact
+    depth: listen
+    body: "The second half of the bookend: the same gentle song, after three songs of anger."
+    sources:
+      - ref: wiki-pigs-wing
+    reviewed: true
+
+  - id: pow2-reading
+    type: interpretation
+    phase: during
+    depth: listen
+    author: Brice Ezell, Consequence of Sound (2017)
+    body: "Part Two reminds us that people find ways to stick together under a harsh, capitalist order."
+    sources:
+      - ref: wiki-pigs-wing
+        stance: supports
+    reviewed: true
