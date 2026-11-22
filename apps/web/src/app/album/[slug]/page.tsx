@@ -2,11 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { api } from "@/api/client";
 import { ClaimCard } from "@/components/ClaimCard";
+import { PlayerBar } from "@/components/PlayerBar";
+import { TrackPlayButton } from "@/components/TrackPlayButton";
 import { formatMs, parseMode } from "@/lib/format";
+import { playbackId, toPlaybackTracks } from "@/lib/playback";
+import { PlaybackProvider } from "@/player/PlaybackProvider";
 
 export const dynamic = "force-dynamic";
 
-// Reading view of the session. Playback and timing arrive with the player milestones.
+// The session page: content plus a basic player (Milestone 4). Phases and timed moments come later.
 export default async function AlbumPage({
   params,
   searchParams,
@@ -35,7 +39,11 @@ export default async function AlbumPage({
   );
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+    <PlaybackProvider
+      albumAppleMusicId={album.apple_music_id}
+      tracks={toPlaybackTracks(album.tracks)}
+    >
+    <main className="mx-auto max-w-3xl px-6 pb-40 pt-12">
       <nav className="flex items-center justify-between text-sm text-neutral-400">
         <Link href="/" className="hover:text-neutral-100">
           ← Albums
@@ -81,6 +89,7 @@ export default async function AlbumPage({
             return (
               <li key={`${t.disc}-${t.number}`}>
                 <div className="flex items-baseline gap-4">
+                  <TrackPlayButton trackId={playbackId(t)} title={t.title} />
                   <span className="w-6 text-right text-neutral-500">{t.number}</span>
                   <h3 className="text-2xl">{t.title}</h3>
                   {t.duration_ms != null && (
@@ -130,5 +139,7 @@ export default async function AlbumPage({
         </section>
       )}
     </main>
+    <PlayerBar />
+    </PlaybackProvider>
   );
 }

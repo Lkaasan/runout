@@ -161,6 +161,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/musickit/developer-token": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Developer Token
+         * @description Short-lived MusicKit developer token. 503 when Apple credentials aren't configured.
+         */
+        get: operations["developer_token_musickit_developer_token_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -295,6 +315,13 @@ export interface components {
          * @enum {string}
          */
         Depth: "listen" | "study";
+        /** DeveloperTokenOut */
+        DeveloperTokenOut: {
+            /** Expires At */
+            expires_at: number;
+            /** Token */
+            token: string;
+        };
         /** EntityDetail */
         EntityDetail: {
             /** Claims */
@@ -703,6 +730,26 @@ export interface operations {
                     "application/json": {
                         [key: string]: string;
                     };
+                };
+            };
+        };
+    };
+    developer_token_musickit_developer_token_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["DeveloperTokenOut"];
                 };
             };
         };
