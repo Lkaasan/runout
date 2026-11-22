@@ -131,7 +131,9 @@ def test_run_keeps_only_claims_whose_quotes_are_real():
     good = claim(0, "tenth studio album by the English rock band", "It is the tenth album.")
     invented = claim(0, "was recorded in a single week in a barn", "Recorded in a week.")
     backend = FakeBackend([{"claims": [good, invented]}, {"claims": []}])
-    result = run_extraction(bundle(), pages(), backend, skip_existing=False)
+    result = run_extraction(
+        bundle(), pages(), backend, skip_existing=False, verify=False, conflicts=False
+    )
     assert [c.body for c in result.proposal.candidates] == ["It is the tenth album."]
     assert result.proposed_by_model == 2 and len(result.dropped) == 1
 
@@ -140,7 +142,9 @@ def test_run_skips_what_the_seed_already_says_unless_asked_not_to():
     dup = claim(0, "tenth studio album by the English rock band", "Pink Floyd made Animals")
     for skip, expected in ((True, 0), (False, 1)):
         backend = FakeBackend([{"claims": [dup]}, {"claims": []}])
-        result = run_extraction(bundle(), pages(), backend, skip_existing=skip)
+        result = run_extraction(
+            bundle(), pages(), backend, skip_existing=skip, verify=False, conflicts=False
+        )
         assert len(result.proposal.candidates) == expected
 
 
@@ -151,7 +155,9 @@ def test_injection_text_in_a_page_cannot_make_the_run_approve_anything():
         0, "tenth studio album by the English rock band", "Body", status="approved", reviewed=True
     )
     backend = FakeBackend([{"claims": [evil]}, {"claims": []}])
-    result = run_extraction(bundle(), pages(), backend, skip_existing=False)
+    result = run_extraction(
+        bundle(), pages(), backend, skip_existing=False, verify=False, conflicts=False
+    )
     sources, claims = to_seed_documents(result.proposal)
     assert all(c["reviewed"] is False for c in claims)
     assert validate_documents(sources, claims) == []
@@ -170,7 +176,9 @@ def test_write_run_creates_valid_seed_style_files_that_the_importer_ignores(tmp_
         phase="during",
     )
     backend = FakeBackend([{"claims": []}, {"claims": [good]}])
-    result = run_extraction(bundle(), pages(), backend, skip_existing=False)
+    result = run_extraction(
+        bundle(), pages(), backend, skip_existing=False, verify=False, conflicts=False
+    )
     folder = write_run(result, tmp_path, run_id="r1")
 
     assert folder == tmp_path / "animals" / "proposals" / "r1"

@@ -4,8 +4,9 @@
 # keywords: a list of groups; the claim body must contain at least one word from EVERY group.
 # Keep them generous (several spellings) but specific enough not to match unrelated claims.
 #
-# collected: false marks items whose evidence is on a page the finder does not fetch yet
-#   (press articles, interviews); they are reported separately so recall stays fair.
+# collected: false marks items whose evidence is on a page the finder does not fetch (none
+#   right now: research.yaml lists the press pages this album's items come from), so recall
+#   stays fair when a gold item cannot be reached.
 #
 # kind:
 #   fact      a documented fact the finder should find
@@ -40,7 +41,7 @@ items:
   - { id: dogs-origin, kind: fact, seed_claim: dogs-intro, keywords: [["gilmour"], ["you've got to be crazy", "you gotta be crazy"]] }
   - { id: dogs-key, kind: fact, seed_claim: dogs-rewrite, keywords: [["key"], ["lowered", "lower"]] }
   - { id: dogs-middle, kind: fact, seed_claim: dogs-middle-section, keywords: [["vocoder"], ["bark", "dog"]] }
-  - { id: dogs-drums, kind: fact, collected: false, seed_claim: dogs-drums-wiped, keywords: [["drum"], ["wiped", "erased"]] }
+  - { id: dogs-drums, kind: fact, seed_claim: dogs-drums-wiped, keywords: [["drum"], ["wiped", "erased"]] }
   - { id: pigs-talkbox, kind: fact, seed_claim: pigs-intro, keywords: [["talk box", "talkbox"], ["gilmour"]] }
   - { id: pigs-players, kind: fact, seed_claim: pigs-players, keywords: [["bass"], ["pick"]] }
   - { id: pigs-live-numbers, kind: fact, seed_claim: pigs-live-numbers, keywords: [["number"], ["bootleg"]] }
@@ -48,19 +49,19 @@ items:
   - { id: sheep-origin, kind: fact, seed_claim: sheep-intro, keywords: [["raving and drooling"]] }
   - { id: sheep-psalm, kind: fact, seed_claim: sheep-psalm, keywords: [["psalm"], ["vocoder", "mason"]] }
   - { id: sheep-rhodes, kind: fact, seed_claim: sheep-opening, keywords: [["rhodes"], ["wright"]] }
-  - { id: sheep-first-take, kind: fact, collected: false, seed_claim: sheep-first-take, keywords: [["do your thing"], ["take"]] }
+  - { id: sheep-first-take, kind: fact, seed_claim: sheep-first-take, keywords: [["do your thing"], ["take"]] }
   - { id: sheep-jimmy-young, kind: fact, seed_claim: sheep-jimmy-young, keywords: [["jimmy young"]] }
 
   # ---- artist intent (must stay unapprovable until a primary source is attached) ----
-  - { id: cartoon-sketch, kind: intent, collected: false, seed_claim: cartoon-sketch, keywords: [["cartoon sketch", "sketch"]] }
-  - { id: punk-album, kind: intent, collected: false, seed_claim: punk-album, keywords: [["punk"], ["mason"]] }
+  - { id: cartoon-sketch, kind: intent, seed_claim: cartoon-sketch, keywords: [["cartoon sketch", "sketch"]] }
+  - { id: punk-album, kind: intent, seed_claim: punk-album, keywords: [["punk"], ["mason"]] }
   - { id: pow-love-song, kind: intent, seed_claim: pow1-love-song, keywords: [["love song"], ["christie", "carolyne", "caroline"]] }
-  - { id: pow-general, kind: intent, collected: false, seed_claim: pow1-more-general, keywords: [["empathy", "more general"], ["2017", "maybe"]] }
-  - { id: pow-rage, kind: intent, collected: false, seed_claim: pow1-scream-of-rage, keywords: [["scream of rage", "scream"], ["necessary"]] }
+  - { id: pow-general, kind: intent, seed_claim: pow1-more-general, keywords: [["empathy", "more general"], ["2017", "maybe"]] }
+  - { id: pow-rage, kind: intent, seed_claim: pow1-scream-of-rage, keywords: [["scream of rage", "scream"], ["necessary"]] }
   - { id: dogs-personal, kind: intent, seed_claim: dogs-personal-line, keywords: [["personal"], ["family", "infan"]] }
   - { id: dogs-howl, kind: intent, seed_claim: dogs-not-howl, keywords: [["howl"], ["denied", "influence"]] }
   - { id: pigs-targets, kind: intent, seed_claim: pigs-targets, keywords: [["thatcher"], ["whitehouse"]] }
   - { id: pigs-white-house, kind: intent, seed_claim: pigs-not-white-house, keywords: [["white house"], ["ladd"]] }
 
   # ---- conflicts ----
-  - { id: pig-size, kind: conflict, collected: false, seed_claim: pig-size, keywords: [["pig"], ["12 m", "12 metres", "40 ft", "30 feet", "30 ft", "40 feet"]] }
+  - { id: pig-size, kind: conflict, seed_claim: pig-size, keywords: [["pig"], ["12 m", "12 metres", "40 ft", "30 feet", "30 ft", "40 feet", "30-foot", "40-foot", "12-metre", "12-m"]] }

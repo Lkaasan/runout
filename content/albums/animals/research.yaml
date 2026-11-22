@@ -1,0 +1,7 @@
+# Pages the information finder reads for this album, besides Wikipedia and MusicBrainz.
+# Chosen by hand (the finder never adds to this list); step 4 will find pages by searching.
+urls:
+  - https://loudersound.com/features/raving-and-drooling-how-pink-floyd-made-animals
+  - https://americansongwriter.com/all-hell-broke-loose-the-chaotic-penny-pinching-story-behind-pink-floyds-animals-album-cover-photoshoot
+  - https://faroutmagazine.co.uk/song-roger-waters-said-was-necessary-to-animals/
+  - https://www.songfacts.com/facts/pink-floyd/dogs

@@ -140,7 +140,7 @@ Needs user accounts, which the foundations plan explicitly left out. Decide the 
   - [x] Z1.0 Spec, gold set (Animals) and scoring: `uv run python -m app.research score animals --oracle`
   - [x] Z1.1 No-AI collectors (MusicBrainz, Wikipedia) and page cache: `uv run python -m app.research collect animals`
   - [x] Z1.2 Extractor (Claude Code, subscription) and deterministic code checks (verbatim excerpt match, tiers, lyric guard): `uv run python -m app.research extract animals`; run log in `apps/api/evals/RESULTS.md`
-  - [ ] Z1.3 Verifier and conflict detection
+  - [x] Z1.3 Verifier and conflict detection, plus reading hand-picked press pages (`research.yaml`): `app.research extract`, `app.research verify-eval`
   - [ ] Z1.4 Agentic web search and primary-source tracing (also K2)
   - [ ] Z1.5 Proposals as a PR with provenance
   - [ ] Z1.6 Eval loop on held-out albums; second gold album

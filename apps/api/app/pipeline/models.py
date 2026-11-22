@@ -42,6 +42,8 @@ class Candidate(BaseModel):
     body_long: str | None = None
     author: str | None = None
     sources: list[CandidateSource] = []
+    # Things a reviewer should know: what the verifier doubted, which source disputes the claim.
+    notes: list[str] = []
 
 
 class Proposal(BaseModel):
@@ -64,7 +66,7 @@ class Page(BaseModel):
 
     url: str
     title: str
-    kind: Literal["wikipedia", "musicbrainz"]
+    kind: Literal["wikipedia", "musicbrainz", "web"]
     fetched_at: datetime
     text: str
     meta: dict[str, Any] = {}
