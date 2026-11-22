@@ -885,6 +885,13 @@
               }
             ]
           },
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimOut"
+            },
+            "title": "Claims",
+            "type": "array"
+          },
           "credits": {
             "items": {
               "$ref": "#/components/schemas/CreditOut"
@@ -950,6 +957,7 @@
           "isrc",
           "album_slug",
           "between",
+          "claims",
           "moments",
           "annotations",
           "credits",

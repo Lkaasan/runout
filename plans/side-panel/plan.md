@@ -13,7 +13,7 @@ Decisions made with the user:
 
 - Laptop and tablet landscape: two columns. Left: album header and tracklist (title, duration, play button, the current song highlighted). Right: the panel, sticky, full height above the existing fixed `PlayerBar`.
 - Tablet portrait and phone: the panel becomes a bottom sheet over the page, collapsed to a one-line peek showing the latest moment card.
-- The long inline per-track content on `apps/web/src/app/album/[slug]/page.tsx` goes away; it lives in the panel instead. "Before" and "After" album-level claims stay on the page (they are not tied to a song).
+- The long inline per-track content on `apps/web/src/app/album/[slug]/page.tsx` goes away; it lives in the panel instead. "Before" and "After" album-level claims stay on the page (they are not tied to a song). **Superseded:** they now live in an Album tab in the panel, and the left column is only the tracklist (see the restructure PR).
 - Tab bar follows the ARIA tabs pattern (tablist, arrow keys). The last chosen tab is remembered per browser (localStorage, wrapped in try/catch). Tabs with nothing to show for the current song are hidden, except Now and Lyrics.
 
 ## Panel behaviour

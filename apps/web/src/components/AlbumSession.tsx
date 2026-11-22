@@ -5,9 +5,8 @@ import type { AlbumDetail, TrackDetail } from "@/api/client";
 import { formatMs } from "@/lib/format";
 import { playbackId, toPlaybackTracks } from "@/lib/playback";
 import { PlaybackProvider, usePlayback } from "@/player/PlaybackProvider";
-import { ClaimList } from "./ClaimList";
 import { PanelProvider, usePanel } from "./panel/PanelProvider";
-import { type PanelTrack, SidePanel } from "./panel/SidePanel";
+import { type PanelTrack, selectPanelTab, SidePanel } from "./panel/SidePanel";
 import { PlayerBar } from "./PlayerBar";
 import { TrackPlayButton } from "./TrackPlayButton";
 
@@ -40,51 +39,40 @@ export function AlbumSession({
             </Link>
           </nav>
 
-          <header className="mt-10">
-            <h1 className="text-5xl font-semibold tracking-tight">{album.title}</h1>
-            <p className="mt-2 text-xl text-neutral-400">
+          <header className="mt-8">
+            <h1 className="text-4xl font-semibold tracking-tight">
+              <button
+                type="button"
+                onClick={() => selectPanelTab("album")}
+                title="About the album"
+                className="text-left hover:text-neutral-300"
+              >
+                {album.title}
+              </button>
+            </h1>
+            <p className="mt-1 text-lg text-neutral-400">
               {album.artist}
               {album.release_date ? ` · ${album.release_date.slice(0, 4)}` : ""}
             </p>
           </header>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_26rem]">
-            <div className="order-2 lg:order-1">
-              {album.before.length > 0 && (
-                <section className="space-y-6" aria-label="Before you listen">
-                  <h2 className="text-sm uppercase tracking-widest text-neutral-500">
-                    Before you listen
-                  </h2>
-                  <ClaimList claims={album.before} />
-                </section>
-              )}
+          <div className="mt-8 grid items-start gap-8 lg:grid-cols-[22rem_minmax(0,1fr)]">
+            <section aria-label="Tracklist" className="lg:sticky lg:top-6">
+              <h2 className="text-sm uppercase tracking-widest text-neutral-500">Tracks</h2>
+              <ol className="mt-3 space-y-1">
+                {album.tracks.map((t) => (
+                  <TrackRow
+                    key={`${t.disc}-${t.number}`}
+                    id={playbackId(t)}
+                    number={t.number}
+                    title={t.title}
+                    durationMs={t.duration_ms}
+                  />
+                ))}
+              </ol>
+            </section>
 
-              <section className="mt-14" aria-label="Tracklist">
-                <h2 className="text-sm uppercase tracking-widest text-neutral-500">Tracks</h2>
-                <ol className="mt-4 space-y-1">
-                  {album.tracks.map((t) => (
-                    <TrackRow
-                      key={`${t.disc}-${t.number}`}
-                      id={playbackId(t)}
-                      number={t.number}
-                      title={t.title}
-                      durationMs={t.duration_ms}
-                    />
-                  ))}
-                </ol>
-              </section>
-
-              {album.after.length > 0 && (
-                <section className="mt-14 space-y-6" aria-label="After">
-                  <h2 className="text-sm uppercase tracking-widest text-neutral-500">After</h2>
-                  <ClaimList claims={album.after} />
-                </section>
-              )}
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <SidePanel tracks={panelTracks} />
-            </div>
+            <SidePanel tracks={panelTracks} album={album} />
           </div>
         </main>
         <PlayerBar />
@@ -122,7 +110,7 @@ function TrackRow({
         type="button"
         onClick={() => pin(id)}
         title="Read about this song"
-        className={`min-w-0 flex-1 truncate text-left text-xl hover:text-neutral-100 ${
+        className={`min-w-0 flex-1 truncate text-left text-lg hover:text-neutral-100 ${
           playing ? "text-neutral-100" : "text-neutral-300"
         }`}
       >

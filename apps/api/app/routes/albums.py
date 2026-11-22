@@ -114,6 +114,10 @@ def get_track(
         isrc=track.isrc,
         album_slug=album.slug,
         between=ser.claim_out(between[0]) if between else None,
+        claims=[
+            ser.claim_out(c)
+            for c in ser.public_claims(session, [(EntityType.track, track.id)], depth=depth)
+        ],
         moments=[
             MomentOut(start_ms=m.start_ms, end_ms=m.end_ms, claim=ser.claim_out(m.claim))
             for m in moments

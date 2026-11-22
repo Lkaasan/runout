@@ -26,7 +26,7 @@ export function PlayerBar() {
               : "Previews only (about 30 s per track)."}
         </p>
       )}
-      <div className="mx-auto flex max-w-3xl items-center gap-4 px-6 py-3">
+      <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3">
         <button
           type="button"
           onClick={() => (state.playing ? pause() : play())}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isBrowsing, nextTab, resolveActiveTrack, resolveTab } from "./panel";
+import { availableTabs, isBrowsing, nextTab, resolveActiveTrack, resolveTab } from "./panel";
 
 describe("resolveActiveTrack", () => {
   it("follows the playing song when nothing is pinned", () => {
@@ -42,5 +42,17 @@ describe("nextTab", () => {
     expect(nextTab(tabs, "meaning", "Home")).toBe("now");
     expect(nextTab(tabs, "meaning", "End")).toBe("lyrics");
     expect(nextTab(tabs, "meaning", "a")).toBe("meaning");
+  });
+});
+
+describe("availableTabs", () => {
+  it("offers only the Album tab when no song is active", () => {
+    expect(availableTabs(false)).toEqual(["album"]);
+  });
+  it("adds the song tabs when a song is active", () => {
+    expect(availableTabs(true)).toEqual(["now", "meaning", "album"]);
+  });
+  it("falls back to the first tab when a remembered song tab disappears", () => {
+    expect(resolveTab("meaning", availableTabs(false))).toBe("album");
   });
 });

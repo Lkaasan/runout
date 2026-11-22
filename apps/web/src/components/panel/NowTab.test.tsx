@@ -31,6 +31,7 @@ const detail = {
   isrc: null,
   album_slug: "x",
   between: claim(1, "The first song written for the record."),
+  claims: [],
   moments: [
     { start_ms: 45_000, end_ms: 60_000, claim: claim(2, "The drum loop is from a b-side.") },
     { start_ms: 100_000, end_ms: null, claim: claim(3, "A quiet extra detail.", "study") },

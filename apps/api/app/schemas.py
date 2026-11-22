@@ -112,6 +112,8 @@ class TrackDetail(TrackSummary):
     isrc: str | None
     album_slug: str
     between: ClaimOut | None
+    # Every approved claim about this track (the between intro and moment claims included).
+    claims: list[ClaimOut]
     moments: list[MomentOut]
     annotations: list[AnnotationOut]
     credits: list[CreditOut]
