@@ -1,0 +1,174 @@
+# Pink Floyd, Animals (1977). Written from the research notes; every claim cites a source.
+# No Apple Music ids yet (the app uses the demo player until real ids are added), no lyrics, and
+# no timed moments: we do not have verified timestamps for events inside the songs.
+slug: animals
+title: Animals
+artist:
+  name: Pink Floyd
+release_date: 1977-01-21
+
+credits:
+  - { person: Roger Waters, role: "lead vocals, bass, rhythm and acoustic guitar" }
+  - { person: David Gilmour, role: "lead guitar, vocals, bass" }
+  - { person: Nick Mason, role: "drums, percussion" }
+  - { person: Richard Wright, role: "keyboards" }
+  - { person: Brian Humphries, role: "engineer" }
+  - { person: Nick Griffiths, role: "assistant engineer" }
+  - { person: Storm Thorgerson, role: "sleeve design (Hipgnosis)" }
+  - { person: Aubrey Powell, role: "sleeve design (Hipgnosis)" }
+  - { person: Howard Bartrop, role: "cover photograph" }
+
+links:
+  - relation: influenced_by
+    to: { type: person, title: George Orwell }
+    claim: orwell-concept
+
+claims:
+  # ---- Before you listen -------------------------------------------------------------------
+  - id: orwell-concept
+    type: fact
+    phase: before
+    depth: listen
+    body: "A loose retelling of Orwell's Animal Farm: society sorted into predatory dogs, ruthless pigs and passive sheep."
+    body_long: "Unlike Orwell's attack on Stalinism, the target here is capitalism and 1970s Britain, and at the end the sheep rise up against the dogs."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: britannia-row
+    type: fact
+    phase: before
+    depth: listen
+    body: "Recorded at the band's own Britannia Row studio in Islington, London, between April and December 1976."
+    body_long: "In 1975 Pink Floyd bought a three-storey block of church halls at 35 Britannia Row and converted it into a studio and storage space. Sources differ on whether sessions ran into early 1977."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: old-songs
+    type: fact
+    phase: before
+    depth: listen
+    body: "Two of the songs began as live pieces from 1974, written while the band was making Wish You Were Here."
+    body_long: "\"You've Got to Be Crazy\" became \"Dogs\" and \"Raving and Drooling\" became \"Sheep\". Waters felt they did not fit that album's theme of absence, so they were saved for Animals."
+    sources:
+      - ref: wiki-album
+      - ref: wiki-dogs
+      - ref: wiki-sheep
+    reviewed: true
+
+  - id: cartoon-sketch
+    type: artist_intent
+    phase: before
+    depth: listen
+    author: Roger Waters
+    body: "Waters called the album \"a sort of cartoon sketch of how I saw the way society was organized.\""
+    body_long: "Attributed to a 2017 Uncut interview by Songfacts. We have not read the original interview, so this stays a draft until a primary source is attached."
+    sources:
+      - ref: songfacts-dogs
+        stance: supports
+        excerpt: "It's a sketch, a sort of cartoon sketch of how I saw the way society was organized."
+
+  - id: punk-album
+    type: artist_intent
+    phase: before
+    depth: study
+    author: Nick Mason
+    body: "Mason, in 2019: \"I suppose I always saw Animals as more of a punk album.\""
+    sources:
+      - ref: louder-making
+        stance: supports
+        excerpt: "I suppose I always saw Animals as more of a punk album."
+
+  - id: no-wright-credit
+    type: fact
+    phase: before
+    depth: study
+    body: "It is the first Pink Floyd album on which Richard Wright has no writing credit. He left the band two years later."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: cover-concept
+    type: fact
+    phase: before
+    depth: listen
+    body: "Waters conceived the cover: a photograph of Battersea Power Station with an inflatable pig floating between its chimneys."
+    body_long: "After Hipgnosis's own ideas were rejected, Waters cycled around London with a camera and settled on the power station, which he called \"doomy, inhuman\". The sleeve was produced by Hipgnosis."
+    sources:
+      - ref: songwriter-cover
+      - ref: wiki-album
+    reviewed: true
+
+  - id: pig-escape
+    type: fact
+    phase: before
+    depth: listen
+    body: "During the cover shoot the pig broke loose, was reported to Heathrow air traffic control, and landed in a field in Kent."
+    body_long: "Manager Steve O'Rourke had hired a marksman in case it escaped, but only for the first day. Sources disagree on the date of the shoot and on exactly what freed the pig."
+    sources:
+      - ref: songwriter-cover
+      - ref: wiki-album
+    reviewed: true
+
+  - id: pig-size
+    type: fact
+    phase: before
+    depth: study
+    body: "The pig, nicknamed \"Algie\", was about 12 metres (40 ft) long."
+    body_long: "Wikipedia gives 12 metres; American Songwriter says about 30 feet. Needs a better source before this can be approved."
+    sources:
+      - ref: wiki-album
+        stance: supports
+      - ref: songwriter-cover
+        stance: contradicts
+        excerpt: "About 30 feet long."
+
+  # ---- After -------------------------------------------------------------------------------
+  - id: charts
+    type: fact
+    phase: after
+    depth: listen
+    body: "It reached number 2 in the UK and number 3 in the US, and was number 1 in several other countries."
+    body_long: "Pink Floyd spent 108 weeks on the UK Albums Chart in 1977, more than ABBA."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: reception
+    type: fact
+    phase: after
+    depth: listen
+    body: "Reviews at the time were mixed, and its reputation has grown since."
+    body_long: "Rolling Stone's Frank Rose was negative; Robert Christgau gave it a B+; NME and Melody Maker were positive. Retrospective ratings are high, for example Pitchfork 10/10."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: in-the-flesh-tour
+    type: fact
+    phase: after
+    depth: study
+    body: "The In the Flesh tour began in Dortmund on the day the album came out."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: montreal
+    type: fact
+    phase: after
+    depth: study
+    body: "At a July 1977 show in Montreal, Waters spat at a fan. The experience is credited with helping to inspire The Wall."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+
+  - id: remix-2022
+    type: fact
+    phase: after
+    depth: study
+    body: "A new mix was released on 16 September 2022 on vinyl, CD and Blu-ray, with a deluxe edition on 7 October 2022."
+    sources:
+      - ref: wiki-album
+    reviewed: true
+

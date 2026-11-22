@@ -1,0 +1,56 @@
+number: 1
+title: "Pigs on the Wing (Part One)"
+duration: "1:24"
+between:
+  claim: pow1-intro
+claims:
+  - id: pow1-intro
+    type: fact
+    depth: listen
+    body: "A short, warm acoustic song that opens the album and returns to close it."
+    sources:
+      - ref: wiki-pigs-wing
+    reviewed: true
+
+  - id: pow1-love-song
+    type: artist_intent
+    phase: during
+    depth: listen
+    author: Nick Mason
+    body: "Mason said, and Waters confirmed, that it is a love song for Carolyne Christie, Waters' partner at the time."
+    body_long: "Mason described her as someone who could hold her own in an argument with Waters. Her name is spelled \"Caroline\" in some sources."
+    sources:
+      - ref: wiki-pigs-wing
+        stance: supports
+
+  - id: pow1-more-general
+    type: artist_intent
+    phase: during
+    depth: study
+    author: Roger Waters
+    body: "In 2017 Waters said it \"maybe\" was about one person, but that he now sees it as more general: the need for care and empathy between people."
+    sources:
+      - ref: farout-pigs-wing
+        stance: supports
+
+  - id: pow1-scream-of-rage
+    type: artist_intent
+    phase: during
+    depth: listen
+    author: Roger Waters
+    body: "Waters thought the song was \"very necessary\": without it, he said, the album would have been \"a kind of scream of rage\"."
+    sources:
+      - ref: farout-pigs-wing
+        stance: supports
+        excerpt: "the album would have just been a kind of scream, you know, of rage"
+
+  - id: pow1-eight-track
+    type: fact
+    phase: during
+    depth: study
+    body: "The 8-track cartridge version joins the two parts with an electric guitar solo by Snowy White. It is not on the vinyl."
+    body_long: "Richard Wright plays Hammond organ on that version only. White recorded the solo after Waters and Mason accidentally erased one of Gilmour's."
+    sources:
+      - ref: wiki-pigs-wing
+      - ref: wiki-album
+    reviewed: true

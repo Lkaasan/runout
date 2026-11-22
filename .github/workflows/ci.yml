@@ -33,6 +33,7 @@ jobs:
       - run: uv run alembic upgrade head
       - run: uv run python -m app.seed import placeholder-album
       - run: uv run python -m app.seed import placeholder-album
+      - run: uv run python -m app.seed import animals
 
   web:
     runs-on: ubuntu-latest

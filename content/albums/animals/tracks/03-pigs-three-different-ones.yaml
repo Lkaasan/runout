@@ -1,0 +1,72 @@
+number: 3
+title: "Pigs (Three Different Ones)"
+duration: "11:28"
+between:
+  claim: pigs-intro
+credits:
+  - { person: David Gilmour, role: "guitar (talk box solo), bass" }
+  - { person: Roger Waters, role: "rhythm guitar, vocals" }
+claims:
+  - id: pigs-intro
+    type: fact
+    depth: listen
+    body: "Recorded in April and May 1976. Gilmour's guitar solo goes through a talk box to imitate a pig, the first time the band used one."
+    sources:
+      - ref: wiki-pigs
+    reviewed: true
+
+  - id: pigs-targets
+    type: artist_intent
+    phase: during
+    depth: listen
+    author: Roger Waters
+    body: "According to Waters, the three verses are about businessmen in general, Margaret Thatcher and the morality campaigner Mary Whitehouse."
+    sources:
+      - ref: wiki-pigs
+        stance: supports
+
+  - id: pigs-not-white-house
+    type: artist_intent
+    phase: during
+    depth: study
+    author: Roger Waters
+    body: "In 1992 Waters told Jim Ladd that the \"Whitehouse\" in the song was not the White House, after Ladd suggested the last verse was about Gerald Ford."
+    sources:
+      - ref: wiki-pigs
+        stance: supports
+
+  - id: pigs-players
+    type: fact
+    phase: during
+    depth: study
+    body: "Waters plays rhythm guitar on the studio recording, while Gilmour plays bass with a pick, including two short syncopated bass solos."
+    sources:
+      - ref: wiki-pigs
+    reviewed: true
+
+  - id: pigs-the-pigs
+    type: fact
+    phase: during
+    depth: listen
+    body: "The pigs are the people at the top who hold wealth and power and push others to compete ruthlessly to keep it."
+    sources:
+      - ref: wiki-pigs
+    reviewed: true
+
+  - id: pigs-live-numbers
+    type: fact
+    phase: after
+    depth: study
+    body: "Live versions ran around 17 to 20 minutes. On the 1977 tour Waters shouted a different number at each show, reportedly to help identify bootleg recordings."
+    sources:
+      - ref: wiki-pigs
+    reviewed: true
+
+  - id: pigs-live-2017
+    type: fact
+    phase: after
+    depth: study
+    body: "Waters revived the song in 2016 with anti-Donald Trump imagery. During the 2017 Us + Them tour some fans booed or walked out, and he said he lost sponsors, including American Express."
+    sources:
+      - ref: wiki-pigs
+    reviewed: true

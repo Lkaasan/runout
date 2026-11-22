@@ -1,0 +1,59 @@
+# Sources read while researching Animals (see docs/research/ on the research branch).
+# Tiers are honest: nothing here is a primary source we read directly. Wikipedia and Songfacts are
+# tertiary; the press pieces are secondary and quote or cite the band. Claims about what the band
+# *meant* need a primary source (the original interview or book) before they can be approved.
+sources:
+  - id: wiki-album
+    kind: database
+    title: "Animals (Pink Floyd album), Wikipedia"
+    url: https://en.wikipedia.org/wiki/Animals_(Pink_Floyd_album)
+    publisher: Wikipedia
+    tier: tertiary
+  - id: wiki-dogs
+    kind: database
+    title: "Dogs (Pink Floyd song), Wikipedia"
+    url: https://en.wikipedia.org/wiki/Dogs_(Pink_Floyd_song)
+    publisher: Wikipedia
+    tier: tertiary
+  - id: wiki-pigs
+    kind: database
+    title: "Pigs (Three Different Ones), Wikipedia"
+    url: https://en.wikipedia.org/wiki/Pigs_(Three_Different_Ones)
+    publisher: Wikipedia
+    tier: tertiary
+  - id: wiki-sheep
+    kind: database
+    title: "Sheep (Pink Floyd song), Wikipedia"
+    url: https://en.wikipedia.org/wiki/Sheep_(Pink_Floyd_song)
+    publisher: Wikipedia
+    tier: tertiary
+  - id: wiki-pigs-wing
+    kind: database
+    title: "Pigs on the Wing, Wikipedia"
+    url: https://en.wikipedia.org/wiki/Pigs_on_the_Wing
+    publisher: Wikipedia
+    tier: tertiary
+  - id: songfacts-dogs
+    kind: database
+    title: "Dogs by Pink Floyd, Songfacts"
+    url: https://www.songfacts.com/facts/pink-floyd/dogs
+    publisher: Songfacts
+    tier: tertiary
+  - id: louder-making
+    kind: press
+    title: "Raving and drooling: how Pink Floyd made Animals"
+    url: https://loudersound.com/features/raving-and-drooling-how-pink-floyd-made-animals
+    publisher: Louder
+    tier: secondary
+  - id: songwriter-cover
+    kind: press
+    title: "\"All Hell Broke Loose\": the chaotic, penny-pinching story behind Pink Floyd's Animals album cover photoshoot"
+    url: https://americansongwriter.com/all-hell-broke-loose-the-chaotic-penny-pinching-story-behind-pink-floyds-animals-album-cover-photoshoot
+    publisher: American Songwriter
+    tier: secondary
+  - id: farout-pigs-wing
+    kind: press
+    title: "The Pink Floyd song Roger Waters said was \"very necessary\" to Animals"
+    url: https://faroutmagazine.co.uk/song-roger-waters-said-was-necessary-to-animals/
+    publisher: Far Out
+    tier: secondary

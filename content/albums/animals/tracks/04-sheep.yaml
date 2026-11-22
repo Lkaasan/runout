@@ -1,0 +1,67 @@
+number: 4
+title: Sheep
+duration: "10:20"
+between:
+  claim: sheep-intro
+credits:
+  - { person: Richard Wright, role: "Rhodes piano (introduction)" }
+  - { person: Nick Mason, role: "Psalm 23 narration (vocoder)" }
+  - { person: David Gilmour, role: "bass" }
+  - { person: Roger Waters, role: "lead vocals, rhythm guitar" }
+claims:
+  - id: sheep-intro
+    type: fact
+    depth: listen
+    body: "It began as \"Raving and Drooling\" in the band's 1974 live shows, and was held back from Wish You Were Here because it did not fit that album's theme of absence."
+    sources:
+      - ref: wiki-sheep
+    reviewed: true
+
+  - id: sheep-about
+    type: fact
+    phase: during
+    depth: listen
+    body: "The sheep are the passive public, following the dogs and pigs without questioning, until they rise up at the end."
+    body_long: "Wikipedia flags its article on the song as needing more citations, so this reading is also supported by the album article."
+    sources:
+      - ref: wiki-sheep
+      - ref: wiki-album
+    reviewed: true
+
+  - id: sheep-psalm
+    type: fact
+    phase: during
+    depth: listen
+    body: "The middle section is a parody of Psalm 23, spoken through a vocoder and recorded by Nick Mason."
+    sources:
+      - ref: wiki-sheep
+    reviewed: true
+
+  - id: sheep-opening
+    type: fact
+    phase: during
+    depth: study
+    body: "Richard Wright plays the Rhodes piano introduction over sheep noises. Waters moved from bass to rhythm guitar and Gilmour overdubbed the bass."
+    sources:
+      - ref: wiki-sheep
+    reviewed: true
+
+  - id: sheep-first-take
+    type: fact
+    phase: during
+    depth: study
+    body: "Engineer Brian Humphries said he told Wright \"Rick, just do your thing\" and used the first of about four takes for the opening."
+    sources:
+      - ref: louder-making
+        stance: supports
+        excerpt: "Rick, just do your thing"
+    reviewed: true
+
+  - id: sheep-jimmy-young
+    type: trivia
+    phase: during
+    depth: study
+    body: "The 1974 live version used a cut-up recording of the BBC DJ Jimmy Young, meant to evoke a man \"raving and drooling\"."
+    sources:
+      - ref: wiki-sheep
+    reviewed: true

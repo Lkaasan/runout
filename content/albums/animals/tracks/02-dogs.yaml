@@ -1,0 +1,85 @@
+number: 2
+title: Dogs
+duration: "17:04"
+between:
+  claim: dogs-intro
+credits:
+  - { person: David Gilmour, role: "lead vocals (first half), guitars" }
+  - { person: Roger Waters, role: "lead vocals (second half), bass, vocoder" }
+claims:
+  - id: dogs-intro
+    type: fact
+    depth: listen
+    body: "Written by Gilmour and Waters, and the only song on the album with a Gilmour writing credit. It grew from a 1974 live piece, \"You've Got to Be Crazy\"."
+    sources:
+      - ref: wiki-dogs
+      - ref: wiki-album
+    reviewed: true
+
+  - id: dogs-about
+    type: fact
+    phase: during
+    depth: listen
+    body: "It follows a ruthless businessman who charms and preys on those who trust him, and ends by comparing office workers to dogs: trained, controlled and rewarded."
+    body_long: "As the businessman ages his life empties out and he sinks under a metaphorical weight, the \"stone\" of the final section."
+    sources:
+      - ref: wiki-dogs
+    reviewed: true
+
+  - id: dogs-voices
+    type: fact
+    phase: during
+    depth: listen
+    body: "Gilmour sings the first half and Waters the second."
+    sources:
+      - ref: wiki-dogs
+    reviewed: true
+
+  - id: dogs-rewrite
+    type: fact
+    phase: during
+    depth: study
+    body: "Waters cut many words from the 1974 lyrics and lowered the key so that both singers could reach the high notes."
+    body_long: "The 1974 live versions were faster and in E minor before the band tuned down to D."
+    sources:
+      - ref: wiki-dogs
+    reviewed: true
+
+  - id: dogs-middle-section
+    type: fact
+    phase: during
+    depth: study
+    body: "The middle section, in 6/4, layers synthesizers with dog barks processed through a vocoder, with Gilmour's \"stone\" echoing over it."
+    sources:
+      - ref: wiki-dogs
+    reviewed: true
+
+  - id: dogs-drums-wiped
+    type: fact
+    phase: during
+    depth: study
+    body: "Engineer Brian Humphries recalled that Gilmour's overdubbed drums on \"Dogs\" were wiped without his knowledge and had to be re-recorded."
+    body_long: "A single witness's account. Wikipedia's article on the song does not mention it."
+    sources:
+      - ref: louder-making
+    reviewed: true
+
+  - id: dogs-personal-line
+    type: artist_intent
+    phase: during
+    depth: study
+    author: Roger Waters
+    body: "Waters said one line in the last section was personal, because he was separated from his family as an infant."
+    sources:
+      - ref: wiki-dogs
+        stance: supports
+
+  - id: dogs-not-howl
+    type: artist_intent
+    phase: during
+    depth: study
+    author: Roger Waters
+    body: "The repeated \"who was\" lines recall Ginsberg's \"Howl\", but Waters denied that it was an influence."
+    sources:
+      - ref: wiki-dogs
+        stance: supports
