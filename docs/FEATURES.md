@@ -136,7 +136,15 @@ Needs user accounts, which the foundations plan explicitly left out. Decide the 
 
 ## Later and maybe
 
-- [ ] **Z1 AI source gathering and claim extraction.** Interfaces exist in `app/pipeline/`; no implementation. Must keep human review and the claim rules.
+- [~] **Z1 AI source gathering and claim extraction (the information finder).** Plan: [plans/information-finder/plan.md](../plans/information-finder/plan.md). Must keep human review and the claim rules.
+  - [x] Z1.0 Spec, gold set (Animals) and scoring: `uv run python -m app.research score animals --oracle`
+  - [ ] Z1.1 No-AI collectors (MusicBrainz, Wikipedia) and page cache
+  - [ ] Z1.2 Extractor and deterministic code checks (verbatim excerpt match, tiers, lyric guard)
+  - [ ] Z1.3 Verifier and conflict detection
+  - [ ] Z1.4 Agentic web search and primary-source tracing (also K2)
+  - [ ] Z1.5 Proposals as a PR with provenance
+  - [ ] Z1.6 Eval loop on held-out albums; second gold album
+  - [ ] Z1.7 Admin-queue integration (needs A1)
 - [ ] **Z2 Spotify support.**
 - [ ] **Z3 Native iOS and Android apps.**
 - [ ] **Z4 Saved sessions and listening history.**

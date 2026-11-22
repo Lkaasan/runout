@@ -1,0 +1,63 @@
+# Gold set for Pink Floyd, Animals. Hand-checked against the reviewed seed in content/albums/animals
+# and the research notes in docs/research/.
+#
+# keywords: a list of groups; the claim body must contain at least one word from EVERY group.
+# Keep them generous (several spellings) but specific enough not to match unrelated claims.
+#
+# kind:
+#   fact      a documented fact the finder should find
+#   intent    something a band member said or meant; needs a PRIMARY source before approval, which
+#             we do not have for any of these yet, so it must never be approvable on its own
+#   conflict  sources disagree; the claim must carry both a supporting and a contradicting source
+slug: animals
+
+# A "primary" tier from any of these is wrong: they report what others said.
+non_primary_domains:
+  - wikipedia.org
+  - songfacts.com
+  - loudersound.com
+  - americansongwriter.com
+  - faroutmagazine.co.uk
+
+items:
+  # ---- album facts ----
+  - { id: orwell, kind: fact, seed_claim: orwell-concept, keywords: [["animal farm", "orwell"]] }
+  - { id: britannia-row, kind: fact, seed_claim: britannia-row, keywords: [["britannia row"], ["1976"]] }
+  - { id: old-songs, kind: fact, seed_claim: old-songs, keywords: [["1974"], ["wish you were here"]] }
+  - { id: no-wright-credit, kind: fact, seed_claim: no-wright-credit, keywords: [["wright"], ["writing credit"]] }
+  - { id: cover-concept, kind: fact, seed_claim: cover-concept, keywords: [["battersea"], ["pig"], ["waters"]] }
+  - { id: pig-escape, kind: fact, seed_claim: pig-escape, keywords: [["pig"], ["heathrow", "kent"], ["loose", "escape", "free"]] }
+  - { id: charts, kind: fact, seed_claim: charts, keywords: [["number 2", "no. 2", "number two"], ["uk"]] }
+  - { id: reception, kind: fact, seed_claim: reception, keywords: [["mixed"], ["review"]] }
+  - { id: tour, kind: fact, seed_claim: in-the-flesh-tour, keywords: [["in the flesh"], ["dortmund"]] }
+  - { id: montreal, kind: fact, seed_claim: montreal, keywords: [["montreal"], ["spat", "spit"]] }
+  - { id: remix-2022, kind: fact, seed_claim: remix-2022, keywords: [["2022"], ["mix"]] }
+  # ---- track facts ----
+  - { id: pow-eight-track, kind: fact, seed_claim: pow1-eight-track, keywords: [["snowy white"], ["8-track", "eight-track"]] }
+  - { id: dogs-origin, kind: fact, seed_claim: dogs-intro, keywords: [["gilmour"], ["you've got to be crazy", "you gotta be crazy"]] }
+  - { id: dogs-key, kind: fact, seed_claim: dogs-rewrite, keywords: [["key"], ["lowered", "lower"]] }
+  - { id: dogs-middle, kind: fact, seed_claim: dogs-middle-section, keywords: [["vocoder"], ["bark", "dog"]] }
+  - { id: dogs-drums, kind: fact, seed_claim: dogs-drums-wiped, keywords: [["drum"], ["wiped", "erased"]] }
+  - { id: pigs-talkbox, kind: fact, seed_claim: pigs-intro, keywords: [["talk box", "talkbox"], ["gilmour"]] }
+  - { id: pigs-players, kind: fact, seed_claim: pigs-players, keywords: [["bass"], ["pick"]] }
+  - { id: pigs-live-numbers, kind: fact, seed_claim: pigs-live-numbers, keywords: [["number"], ["bootleg"]] }
+  - { id: pigs-2017, kind: fact, seed_claim: pigs-live-2017, keywords: [["2017"], ["booed", "walked out", "sponsor"]] }
+  - { id: sheep-origin, kind: fact, seed_claim: sheep-intro, keywords: [["raving and drooling"]] }
+  - { id: sheep-psalm, kind: fact, seed_claim: sheep-psalm, keywords: [["psalm"], ["vocoder", "mason"]] }
+  - { id: sheep-rhodes, kind: fact, seed_claim: sheep-opening, keywords: [["rhodes"], ["wright"]] }
+  - { id: sheep-first-take, kind: fact, seed_claim: sheep-first-take, keywords: [["do your thing"], ["take"]] }
+  - { id: sheep-jimmy-young, kind: fact, seed_claim: sheep-jimmy-young, keywords: [["jimmy young"]] }
+
+  # ---- artist intent (must stay unapprovable until a primary source is attached) ----
+  - { id: cartoon-sketch, kind: intent, seed_claim: cartoon-sketch, keywords: [["cartoon sketch", "sketch"]] }
+  - { id: punk-album, kind: intent, seed_claim: punk-album, keywords: [["punk"], ["mason"]] }
+  - { id: pow-love-song, kind: intent, seed_claim: pow1-love-song, keywords: [["love song"], ["christie", "carolyne", "caroline"]] }
+  - { id: pow-general, kind: intent, seed_claim: pow1-more-general, keywords: [["empathy", "more general"], ["2017", "maybe"]] }
+  - { id: pow-rage, kind: intent, seed_claim: pow1-scream-of-rage, keywords: [["scream of rage", "scream"], ["necessary"]] }
+  - { id: dogs-personal, kind: intent, seed_claim: dogs-personal-line, keywords: [["personal"], ["family", "infan"]] }
+  - { id: dogs-howl, kind: intent, seed_claim: dogs-not-howl, keywords: [["howl"], ["denied", "influence"]] }
+  - { id: pigs-targets, kind: intent, seed_claim: pigs-targets, keywords: [["thatcher"], ["whitehouse"]] }
+  - { id: pigs-white-house, kind: intent, seed_claim: pigs-not-white-house, keywords: [["white house"], ["ladd"]] }
+
+  # ---- conflicts ----
+  - { id: pig-size, kind: conflict, seed_claim: pig-size, keywords: [["pig"], ["12 m", "12 metres", "40 ft", "30 feet", "30 ft", "40 feet"]] }
