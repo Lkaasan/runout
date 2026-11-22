@@ -6,7 +6,8 @@ extras the seed has no room for: the source URL, an excerpt and the stance of ea
 Nothing here is trusted: candidates are only proposals until the code checks and a human review.
 """
 
-from typing import Literal
+from datetime import datetime
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -50,3 +51,20 @@ class Proposal(BaseModel):
 
     slug: str
     candidates: list[Candidate] = []
+
+
+class Page(BaseModel):
+    """Text the finder fetched, stored so every later stage reads the same words.
+
+    `text` is what excerpts are verified against, so it is stored exactly as collected.
+    `meta` holds structured extras (ids, outgoing links) that are not part of the text.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
+    url: str
+    title: str
+    kind: Literal["wikipedia", "musicbrainz"]
+    fetched_at: datetime
+    text: str
+    meta: dict[str, Any] = {}
