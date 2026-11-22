@@ -142,6 +142,7 @@ def render_report(result: RunResult, run_id: str) -> str:
         for s in c.sources:
             tier = "" if s.tier != Tier.primary else " PRIMARY"
             lines.append(f'- {s.stance.value} [{s.title}]({s.url}){tier}: "{s.excerpt}"')
+        lines += [f"- NOTE: {n}" for n in c.notes]
         lines.append("")
     return "\n".join(lines)
 

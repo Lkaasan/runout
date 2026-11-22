@@ -29,13 +29,27 @@ LYRIC_DOMAINS = (
     "lyricsfreak.com",
 )
 
-# What each kind of page we can collect right now is worth. Primary is never granted from a
-# fetched page: a page is a tertiary or secondary account of what someone said, even when it
-# quotes them. Primary needs the original source (step 4).
-PAGE_KIND = {
-    "wikipedia": (SourceKind.database, Tier.tertiary),
-    "musicbrainz": (SourceKind.database, Tier.tertiary),
+# What a fetched page is worth. Primary is never granted from a fetched page: a page is a
+# tertiary or secondary account of what someone said, even when it quotes them. Primary needs
+# the original source (step 4).
+DOMAIN_RULES = {
+    "loudersound.com": (SourceKind.press, Tier.secondary),
+    "americansongwriter.com": (SourceKind.press, Tier.secondary),
+    "faroutmagazine.co.uk": (SourceKind.press, Tier.secondary),
+    "songfacts.com": (SourceKind.database, Tier.tertiary),
 }
+
+
+def classify(page: Page) -> tuple[SourceKind, Tier]:
+    """Source kind and tier for a page, from what it is and where it came from."""
+    if page.kind in ("wikipedia", "musicbrainz"):
+        return SourceKind.database, Tier.tertiary
+    host = (urlparse(page.url).hostname or "").removeprefix("www.")
+    for domain, rule in DOMAIN_RULES.items():
+        if host == domain or host.endswith("." + domain):
+            return rule
+    return SourceKind.press, Tier.tertiary  # an unknown site is not trusted as secondary
+
 
 _TRANSLATE = str.maketrans(
     {
@@ -69,6 +83,22 @@ def excerpt_in_page(excerpt: str, page_text: str) -> bool:
 def is_lyric_domain(url: str | None) -> bool:
     host = (urlparse(url).hostname or "").removeprefix("www.") if url else ""
     return any(host == d or host.endswith("." + d) for d in LYRIC_DOMAINS)
+
+
+_SPEECH = (
+    r"said|says|told|wrote|recalled|explained|stated|confirmed|described|noted|claimed|"
+    r"revealed|remarked|added|admitted|insisted|reflected|commented|called|thought|felt"
+)
+_SPEAKER = re.compile(rf"^((?:[A-Z][\w'.\-]+)(?: [A-Z][\w'.\-]+){{0,2}}) (?:{_SPEECH})\b")
+
+
+def infer_speaker(body: str, page_text: str) -> str | None:
+    """ "Waters said ..." -> "Waters", but only when that name appears on the page."""
+    match = _SPEAKER.match(body.strip())
+    if not match:
+        return None
+    name = match.group(1)
+    return name if name in normalize(page_text) else None
 
 
 # ---- turning what a model said into a checked Candidate ---------------------------------------
@@ -118,7 +148,7 @@ def check_claim(raw: dict, pages: list[Page], claim_id: str) -> Candidate | Drop
             return Dropped("source is a lyrics site", body)
         if not excerpt_in_page(excerpt, page.text):
             return Dropped("excerpt is not in the page it cites (invented or altered)", body)
-        kind, tier = PAGE_KIND[page.kind]
+        kind, tier = classify(page)
         sources.append(
             CandidateSource(
                 url=page.url,
@@ -150,7 +180,12 @@ def check_claim(raw: dict, pages: list[Page], claim_id: str) -> Candidate | Drop
     if candidate.subject == "track" and candidate.track_number is None:
         return Dropped("track claim without a track number", body)
     if candidate.type == ClaimType.artist_intent and not candidate.author:
-        return Dropped("artist intent without a named speaker", body)
+        # The model left the speaker blank although the claim says who spoke ("Waters said ...").
+        # Recover the name only if it is really on the cited page; otherwise drop the claim.
+        speaker = infer_speaker(body, pages[raw["evidence"][0]["page"]].text)
+        if speaker is None:
+            return Dropped("artist intent without a named speaker", body)
+        candidate.author = speaker
     return candidate
 
 

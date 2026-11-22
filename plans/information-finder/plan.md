@@ -9,7 +9,7 @@ Written for: the project owner, to decide direction before any code. Nothing her
 - **First scope:** steps 0 to 3 below.
 - **Budget:** use the Claude subscription, not pay-per-token API calls. LLM stages go through a swappable `LLMBackend`: Claude Code in headless mode first (confirm the exact flags and the subscription terms before building it, in step 2); a Messages API backend later for scale.
 - **Nail a couple of albums first:** the gold set is two albums (*Animals* plus one the owner picks) before anything runs in bulk.
-- **Progress:** step 0 (spec, gold set, scoring) and step 1 (no-AI collectors and cache: `uv run python -m app.research collect animals`) are built. Step 2 (extractor with Claude Code headless on the subscription, plus deterministic checks) is built; run log in `apps/api/evals/RESULTS.md`. Step 3 (verifier and conflicts) is next.
+- **Progress:** step 0 (spec, gold set, scoring) and step 1 (no-AI collectors and cache: `uv run python -m app.research collect animals`) are built. Step 2 (extractor with Claude Code headless on the subscription, plus deterministic checks) is built; run log in `apps/api/evals/RESULTS.md`. Step 3 (verifier, conflict detection and hand-picked press pages via `research.yaml`) is built. Step 4 (finding pages by search, tracing quotes to primary sources) is next.
 
 ## What it is
 

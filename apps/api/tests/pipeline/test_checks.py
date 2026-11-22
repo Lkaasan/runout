@@ -9,6 +9,7 @@ from app.pipeline.checks import (
     check_claim,
     drop_existing,
     excerpt_in_page,
+    infer_speaker,
     is_lyric_domain,
     merge_duplicates,
     normalize,
@@ -202,3 +203,14 @@ def test_claims_the_seed_already_has_are_dropped():
     )
     assert [c.body for c in kept] == ["The sleeve shows a pig"]
     assert dropped[0].reason == "already in the seed"
+
+
+def test_a_missing_speaker_is_recovered_only_when_the_body_names_one_on_the_page():
+    assert infer_speaker("Gilmour said the album was a sketch.", TEXT) is None  # not on the page
+    assert infer_speaker("Roger Waters said it was a sketch.", TEXT) == "Roger Waters"
+    assert infer_speaker("The band said it was a sketch.", TEXT) is None  # not a name
+    assert infer_speaker("Pink Floyd were a band. Waters said hi.", TEXT) is None
+    ok = check_claim(
+        raw(type="artist_intent", body="Roger Waters said the cover was his idea."), [page()], "x"
+    )
+    assert isinstance(ok, Candidate) and ok.author == "Roger Waters"

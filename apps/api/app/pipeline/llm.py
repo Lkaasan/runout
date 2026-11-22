@@ -16,6 +16,7 @@ Isolation, because the model reads untrusted web text:
   run from the subscription to paid API billing.
 """
 
+import hashlib
 import json
 import os
 import shutil
@@ -142,3 +143,40 @@ class ClaudeCodeBackend:
         if not isinstance(output, dict):
             raise LLMError("claude gave no structured output (it may have declined the request)")
         return output
+
+
+class CachingBackend:
+    """Remembers every answer, so a re-run only pays for prompts that changed.
+
+    Useful while tuning the checks and the verifier: the same pages and prompts give the same
+    answers, so a difference in the result is the change you made, not model variation. Pass
+    `fresh=True` to ask the model again (and replace what was remembered).
+    """
+
+    def __init__(self, inner: LLMBackend, root: Path, *, fresh: bool = False):
+        self.inner = inner
+        self.folder = Path(root) / "llm"
+        self.fresh = fresh
+        self.hits = 0
+
+    @property
+    def usage(self) -> LLMUsage:
+        return self.inner.usage
+
+    def run_structured(self, *, system: str, prompt: str, schema: dict) -> dict:
+        identity = [
+            getattr(self.inner, "model", ""),
+            getattr(self.inner, "effort", ""),
+            system,
+            prompt,
+            schema,
+        ]
+        key = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
+        path = self.folder / f"{key}.json"
+        if not self.fresh and path.exists():
+            self.hits += 1
+            return json.loads(path.read_text("utf-8"))
+        answer = self.inner.run_structured(system=system, prompt=prompt, schema=schema)
+        self.folder.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(answer), encoding="utf-8")
+        return answer

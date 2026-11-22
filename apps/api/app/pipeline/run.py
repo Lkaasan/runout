@@ -4,9 +4,11 @@ from collections import Counter
 from dataclasses import dataclass, field
 
 from app.pipeline.checks import Dropped, check_all, drop_existing, merge_duplicates
+from app.pipeline.conflicts import ConflictResult, find_conflicts
 from app.pipeline.extractor import extract_pages
 from app.pipeline.llm import LLMBackend
 from app.pipeline.models import Page, Proposal
+from app.pipeline.verifier import VerifyResult, verify_candidates
 from app.services.seed_loader import AlbumBundle
 
 
@@ -17,6 +19,8 @@ class RunResult:
     merged: int = 0
     proposed_by_model: int = 0
     notes: list[str] = field(default_factory=list)
+    verified: VerifyResult | None = None
+    conflicts: ConflictResult | None = None
 
     def summary(self) -> str:
         reasons = Counter(d.reason for d in self.dropped)
@@ -26,6 +30,16 @@ class RunResult:
             f"{len(self.dropped)} dropped).",
         ]
         lines += [f"  dropped: {n} x {reason}" for reason, n in reasons.most_common()]
+        if self.verified:
+            lines.append(
+                f"  verifier: {self.verified.flagged} of {len(self.verified.verdicts)} "
+                "claim(s) flagged (unsupported, overstated, wrong type or speaker)"
+            )
+        if self.conflicts:
+            lines.append(
+                f"  conflicts: {self.conflicts.added} contradicting source(s) added, "
+                f"{self.conflicts.discarded} unverifiable report(s) discarded"
+            )
         lines += [f"  note: {n}" for n in self.notes]
         return "\n".join(lines)
 
@@ -40,6 +54,8 @@ def run_extraction(
     backend: LLMBackend,
     *,
     skip_existing: bool = True,
+    verify: bool = True,
+    conflicts: bool = True,
 ) -> RunResult:
     """Ask the model for claims, then keep only what the deterministic checks accept.
 
@@ -51,6 +67,15 @@ def run_extraction(
     checked = check_all(extraction.raw_claims, pages)
     candidates, merged = merge_duplicates(checked.candidates)
     dropped = list(checked.dropped)
+
+    verified = conflict_result = None
+    if verify and candidates:
+        verified = verify_candidates(backend, candidates, pages)
+        candidates = verified.kept
+        dropped += verified.dropped
+    if conflicts and candidates:
+        conflict_result = find_conflicts(backend, candidates, pages)
+
     if skip_existing:
         candidates, already = drop_existing(candidates, existing_bodies(bundle))
         dropped += already
@@ -64,5 +89,9 @@ def run_extraction(
         dropped=dropped,
         merged=merged,
         proposed_by_model=len(extraction.raw_claims),
-        notes=extraction.notes,
+        notes=extraction.notes
+        + (verified.notes if verified else [])
+        + (conflict_result.notes if conflict_result else []),
+        verified=verified,
+        conflicts=conflict_result,
     )

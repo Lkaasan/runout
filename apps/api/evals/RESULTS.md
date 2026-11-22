@@ -15,9 +15,25 @@ is measured against the gold set built from it).
 | 2 | Prompt: author is mandatory, count words | sonnet, medium | 87 / 95 | 23/28 | 20/25 | 4/9 | 0/1 | 1 duplicate | 6 long excerpt, 1 empty body, 1 invented excerpt | 5, 155 s, $0.29 |
 | 3 | Excerpt cap raised to 60 words (a longer verbatim quote is still checkable) | sonnet, medium | 85 / 86 | 23/28 | 20/25 | 4/9 | 0/1 | 0 | 1 invented excerpt | 5, 189 s, $0.37 |
 
+| 4 | Step 3: four press pages added, verifier and conflict detection on | sonnet, medium | 138 / 150 | 29/35 (83%) | 20/25 | 8/9 | 1/1 | 0 | 11 invented excerpt (a spacing bug in the web-page text, fixed in run 5), 1 verifier | 27, 842 s, $2.13 |
+| 5 | Web text keeps inline markup joined ("Animals, the album"); verifier told who counts as the artist | sonnet, medium | 142 / 149 | 27/35 (77%) | 20/25 | 6/9 | 1/1 | 0 | 4 intent without speaker, 2 invented excerpt, 1 verifier | 22 (5 saved), 545 s, $1.58 |
+| 6 | Speaker recovered from the claim when the page confirms the name | sonnet, medium | 143 / 149 | 28/35 (80%) | 20/25 | 7/9 | 1/1 | 0 | 3 intent without speaker, 2 invented excerpt, 1 verifier | 9 (18 saved), 207 s, $0.78 |
+
+Verifier test on planted errors (`app.research verify-eval animals`, 40 claims from run 6, every second one damaged):
+caught 20/20 (invented detail 8/8, opinion stated as fact 8/8, wrong speaker 4/4), false alarms 0/20.
+The damage is fairly blatant and no changed-number case came up in this sample, so this shows the
+verifier is not asleep, not that it catches every subtle slip.
+
 Notes
+- Run 6 reported conflict recall 0/1 only because the gold item did not list "12-metre"; the
+  finder had flagged the pig's size (12 metres on Wikipedia against a 30-foot pig in American
+  Songwriter). The gold keywords were widened and the score recomputed offline to 1/1.
 - Gold items marked `collected: false` come from press pages (Louder, Far Out, Songfacts, American
   Songwriter) that the finder does not fetch until step 4, so they cannot be found yet. The
   "collected pages" column leaves them out.
-- The conflict item (the pig's size) needs a second source page and the verifier: step 3.
+- Run 4 onward read four hand-picked press pages listed in `content/albums/animals/research.yaml`
+  (Louder, American Songwriter, Far Out, Songfacts), so no gold item is unreachable any more.
+- Conflict detection finds real disagreements (pig size, Heathrow flights, fiancée versus wife,
+  recording dates) and some weak ones (wording differences); each comes with its quote and
+  explanation for a human to judge.
 - The check that caught an invented quote in every run is the verbatim excerpt match.

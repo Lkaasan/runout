@@ -9,6 +9,7 @@ from dataclasses import dataclass, field
 
 from app.pipeline.cache import ResearchCache
 from app.pipeline.collectors.musicbrainz import MusicBrainzCollector
+from app.pipeline.collectors.web import WebCollector
 from app.pipeline.collectors.wikipedia import WikipediaCollector
 from app.pipeline.http import Fetcher, FetchError
 from app.pipeline.models import Page
@@ -29,6 +30,8 @@ class CollectReport:
             extra = ""
             if p.kind == "wikipedia":
                 extra = f", {len(p.meta.get('extlinks', []))} external links"
+            if p.kind == "web":
+                extra = f", {p.url}"
             lines.append(f"  [{p.kind}] {p.title} - {len(p.text):,} characters{extra}")
         lines += [f"  note: {n}" for n in self.notes]
         lines.append(
@@ -37,7 +40,13 @@ class CollectReport:
         return "\n".join(lines)
 
 
-def collect_album(bundle: AlbumBundle, fetcher: Fetcher, cache: ResearchCache) -> CollectReport:
+def collect_album(
+    bundle: AlbumBundle,
+    fetcher: Fetcher,
+    cache: ResearchCache,
+    urls: list[str] | None = None,
+) -> CollectReport:
+    """`urls` are extra pages to read (from research.yaml); none by default."""
     album, artist = bundle.album.title, bundle.album.artist.name
     titles = [t.title for t in bundle.tracks]
     report = CollectReport(slug=bundle.album.slug)
@@ -46,6 +55,7 @@ def collect_album(bundle: AlbumBundle, fetcher: Fetcher, cache: ResearchCache) -
     for name, run in (
         ("MusicBrainz", lambda: MusicBrainzCollector(fetcher).collect(album, artist)),
         ("Wikipedia", lambda: WikipediaCollector(fetcher).collect(album, artist, titles)),
+        ("Web", lambda: WebCollector(fetcher).collect(urls or [])),
     ):
         try:
             pages, notes = run()
