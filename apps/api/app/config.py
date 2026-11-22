@@ -15,6 +15,9 @@ class Settings(BaseSettings):
     content_dir: Path = Path(__file__).resolve().parents[3] / "content" / "albums"
     # Fetched pages and API responses for the information finder (never served, gitignored).
     research_cache_dir: Path = Path(__file__).resolve().parents[3] / ".research-cache"
+    # Information finder model (a Claude Code alias or full name) and thinking effort.
+    research_model: str = "sonnet"
+    research_effort: str = "medium"
 
 
 settings = Settings()

@@ -39,6 +39,8 @@ class GoldItem(BaseModel):
     kind: str  # "fact", "intent" or "conflict"
     keywords: list[list[str]]
     seed_claim: str | None = None
+    # False when the evidence lives on a page we do not collect yet (press, interviews).
+    collected: bool = True
 
 
 class Gold(BaseModel):
@@ -69,7 +71,8 @@ def _words(text: str) -> set[str]:
     return set(re.findall(r"[a-z0-9']+", _norm(text)))
 
 
-def _similar(a: str, b: str) -> float:
+def similarity(a: str, b: str) -> float:
+    """Share of words two texts have in common (0 to 1)."""
     wa, wb = _words(a), _words(b)
     return len(wa & wb) / len(wa | wb) if wa | wb else 0.0
 
@@ -100,6 +103,9 @@ class Score:
     facts_total: int = 0
     intent_found: int = 0
     intent_total: int = 0
+    # Items whose evidence is on the pages collected so far (Wikipedia): the fair recall number.
+    reachable_found: int = 0
+    reachable_total: int = 0
     conflicts_found: int = 0
     conflicts_total: int = 0
     # Wrong in a way a human reviewer should never have to catch:
@@ -131,6 +137,7 @@ class Score:
         pct = lambda a, b: f"{a}/{b}" + (f" ({a / b:.0%})" if b else "")  # noqa: E731
         lines = [
             f"Score for '{self.slug}' ({self.candidates} candidates)",
+            f"  recall, collected pages {pct(self.reachable_found, self.reachable_total)}",
             f"  fact recall          {pct(self.facts_found, self.facts_total)}",
             f"  artist-intent recall {pct(self.intent_found, self.intent_total)}",
             f"  conflict recall      {pct(self.conflicts_found, self.conflicts_total)}",
@@ -167,8 +174,11 @@ def score(gold: Gold, proposal: Proposal) -> Score:
             s.conflicts_found += ok
         else:
             raise ValueError(f"gold item {item.id}: unknown kind {item.kind!r}")
+        if item.collected:
+            s.reachable_total += 1
+            s.reachable_found += ok
         if not ok:
-            s.missed.append(item.id)
+            s.missed.append(item.id + ("" if item.collected else " (source not collected)"))
 
     for i, c in enumerate(proposal.candidates):
         if not c.sources or any(not src.excerpt for src in c.sources):
@@ -181,7 +191,7 @@ def score(gold: Gold, proposal: Proposal) -> Score:
                 s.false_primary += 1
         if c.type == ClaimType.artist_intent and approvable(c):
             s.intent_wrongly_approvable += 1
-        s.duplicates += any(_similar(c.body, d.body) >= 0.8 for d in proposal.candidates[:i])
+        s.duplicates += any(similarity(c.body, d.body) >= 0.8 for d in proposal.candidates[:i])
     return s
 
 

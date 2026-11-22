@@ -12,6 +12,7 @@ Plan: [docs/PLAN.md](docs/PLAN.md). One PR per milestone; stop for review after 
 - `cd apps/api && uv run python -m app.seed import <slug>` import `content/albums/<slug>/` (validates first; safe to re-run)
 - `pnpm gen:api` regenerate `apps/web/openapi.json` and `src/api/schema.d.ts` after any API schema change (CI fails if stale)
 - `cd apps/api && uv run python -m app.research collect <slug>` fetch MusicBrainz and Wikipedia pages into `.research-cache/` (no AI; repeat runs use the cache)
+- `cd apps/api && uv run python -m app.research extract <slug> [--ignore-seed]` ask Claude Code (your subscription login, no API key) to propose claims from the collected pages; writes `content/albums/<slug>/proposals/<run>/`. Needs `claude` signed in; uses subscription usage
 - `cd apps/api && uv run python -m app.research score <slug> --oracle|--empty|--proposal FILE` score an information-finder run against `apps/api/evals/gold/<slug>.yaml`
 - `pnpm lint` / `pnpm test` run both apps' checks (`uv run ruff check .`, `uv run pytest`, eslint, vitest)
 
