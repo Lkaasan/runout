@@ -12,7 +12,7 @@ Build the foundations of a web app for focused, sit-down album listening. It pla
 - Depth follows the record: heavy context before playing, notes you can glance at during a track, short intros between tracks, the deep dive after.
 - Every factual statement is a claim with at least one source. Facts, artist intent and interpretation are separate types and are displayed differently.
 - The deep dive is a graph: people, samples and influences link across albums, and a linked track can be played right away.
-- Two modes: **Listen** (minimal) and **Study** (everything).
+- Depth is embedded, not a mode: each card shows the short version and "Go deeper" opens the long text and sources in place.
 
 **What "foundations" means:** a running web app where one hand-curated album can be played start to finish through all four session phases. Content loads from seed files into Postgres, and a minimal admin view lets claims be reviewed. Foundations do not include an AI content pipeline, community features or user accounts beyond Apple Music sign-in.
 
@@ -25,7 +25,7 @@ Build the foundations of a web app for focused, sit-down album listening. It pla
 - Seed-file importer for hand-written album content
 - Read API (approved content only) and a typed frontend client
 - Apple Music playback through MusicKit JS, behind a player interface, plus a fake player for dev and tests
-- Listening screen with before / during / between / after phases, Listen and Study modes
+- Listening screen with before / during / between / after phases and embedded depth
 - Deep-dive pages for people, samples and influences, with play-the-original
 - Minimal admin claim-review queue
 - Installable PWA shell
@@ -139,7 +139,7 @@ Filter by `depth` with a query param (`?depth=listen`). Generate the TypeScript 
 - **Between:** a short intro card for the next song that fades out after ~8 s unless tapped.
 - **After:** reception, legacy, interviews, rabbit holes.
 - Artist / Album / Track (and later Live) layers sit one tap away without stopping playback.
-- Listen / Study toggle; Study shows everything. Remember the choice in localStorage.
+- No Listen / Study toggle. Each card has a "Go deeper" disclosure; deeper (study-depth) notes sit behind a quiet disclosure and never interrupt playback. The side panel remembers the last tab in localStorage.
 - "Play the original" pauses the album, plays the linked track, and "Back to the album" resumes at the saved position.
 - One `PlaybackProvider` context owns the player; timing comes from the player's time events, not your own timers.
 - Calm by default: dark theme, large type, no shuffle, respect `prefers-reduced-motion`. Laptop and tablet first, phone second.
@@ -224,7 +224,7 @@ One PR per milestone; stop for review after each.
     - Done when: FakePlayer plays the album through in dev without Apple credentials; with real credentials a subscriber can play the real album in Chrome and Safari.
     - Status: built and tested with FakePlayer; Apple playback is preview-only (about 30 s per track) until full-length playback is checked with a subscriber account. Plan: [plans/player-foundation/plan.md](../plans/player-foundation/plan.md).
 5. **Listening screen**
-    - Before, during, between and after phases, moments, lyrics stub with annotations, layer sheet, Listen/Study toggle.
+    - Before, during, between and after phases, moments, lyrics stub with annotations, layer sheet, embedded depth.
     - Done when: a Playwright test on FakePlayer asserts each moment appears within 500 ms of its timestamp, including after a seek.
 6. **Deep-dive graph**
     - Entity pages, links in both directions, play-the-original and return-to-album.

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatMs, parseMode } from "./format";
+import { formatMs } from "./format";
 
 describe("formatMs", () => {
   it("formats minutes and seconds", () => {
@@ -8,15 +8,5 @@ describe("formatMs", () => {
   });
   it("formats hours", () => {
     expect(formatMs(3_723_000)).toBe("1:02:03");
-  });
-});
-
-describe("parseMode", () => {
-  it("defaults to listen", () => {
-    expect(parseMode(undefined)).toBe("listen");
-    expect(parseMode("nonsense")).toBe("listen");
-  });
-  it("accepts study", () => {
-    expect(parseMode("study")).toBe("study");
   });
 });

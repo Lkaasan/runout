@@ -7,9 +7,3 @@ export function formatMs(ms: number): string {
   const ss = String(s).padStart(2, "0");
   return h > 0 ? `${h}:${String(m).padStart(2, "0")}:${ss}` : `${m}:${ss}`;
 }
-
-export type Mode = "listen" | "study";
-
-export function parseMode(value: string | string[] | undefined): Mode {
-  return value === "study" ? "study" : "listen";
-}
