@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     apple_key_id: str = ""
     apple_private_key_path: Path | None = None
     content_dir: Path = Path(__file__).resolve().parents[3] / "content" / "albums"
+    # Fetched pages and API responses for the information finder (never served, gitignored).
+    research_cache_dir: Path = Path(__file__).resolve().parents[3] / ".research-cache"
 
 
 settings = Settings()

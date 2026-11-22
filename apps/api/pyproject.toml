@@ -10,11 +10,12 @@ dependencies = [
   "alembic",
   "psycopg[binary]",
   "pyyaml",
+  "httpx",
   "pyjwt[crypto]>=2.15.1",
 ]
 
 [dependency-groups]
-dev = ["pytest", "httpx", "ruff"]
+dev = ["pytest", "ruff"]
 
 [tool.ruff]
 extend-exclude = ["alembic/versions"]
