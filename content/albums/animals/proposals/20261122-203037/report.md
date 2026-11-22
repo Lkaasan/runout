@@ -1,20 +1,14 @@
-# Information finder run 20261122-194235 for `animals`
+# Information finder run 20261122-203037 for `animals`
 
-143 candidate(s) kept (149 proposed by the model, 0 merged as duplicates, 6 dropped).
-  dropped: 3 x artist intent without a named speaker
-  dropped: 2 x excerpt is not in the page it cites (invented or altered)
-  dropped: 1 x verifier: unsupported (The page does not attribute this quote to Richard Wright by name.)
-  verifier: 17 of 144 claim(s) flagged (unsupported, overstated, wrong type or speaker)
-  conflicts: 11 contradicting source(s) added, 0 unverifiable report(s) discarded
-  note: 'Animals (Pink Floyd album)': 36 claim(s) proposed
-  note: 'Pigs on the Wing': 8 claim(s) proposed
-  note: 'Dogs (Pink Floyd song)': 16 claim(s) proposed
-  note: 'Pigs (Three Different Ones)': 14 claim(s) proposed
-  note: 'Sheep (Pink Floyd song)': 16 claim(s) proposed
-  note: 'Raving and drooling: how Pink Floyd made Animals | Louder': 33 claim(s) proposed
-  note: '“All Hell Broke Loose”: The Chaotic, Penny-Pinching Story Behind Pink Floyd’s ‘Animals’ Album Cover Photoshoot - American Songwriter': 9 claim(s) proposed
-  note: 'The Pink Floyd song Roger Waters said was “very necessary” to ‘Animals’': 8 claim(s) proposed
-  note: 'Dogs by Pink Floyd - Songfacts': 9 claim(s) proposed
+143 candidate(s) kept (0 proposed by the model, 0 merged as duplicates, 0 dropped).
+  note: Tracing: 10 artist-intent claim(s) examined, 1 original source(s) proposed as primary, 6 page(s) read, 1 address(es) refused.
+  note:   proposed primary for proposed-069: https://transcripts.cnn.com/show/smer/date/2017-07-15/segment/01
+  note:   note: proposed-032: https://archive.org/details/insideoutpersona0000nick: the page does not contain the speaker's words
+  note:   note: proposed-032: https://archive.org/details/insideoutpersona0000maso_e9g7: the page does not contain the speaker's words
+  note:   note: proposed-034: https://www.loudersound.com/bands-artists/i-formed-this-band-for-gods-sake-and-i-helped-roger-a-hell-of-a-lot-because-he-wasnt-a-musician-when-we-started-the-lost-richard-wright-interview: the page does not contain the speaker's words
+  note:   note: proposed-035: https://www.rollingstone.com/music/music-news/roger-waters-tour-postponed-2021-984579/: the page does not contain the speaker's words
+  note:   note: proposed-035: https://ultimateclassicrock.com/roger-waters-pink-floyd-peace-meeting-failed/: the page quotes the words but is not the original publication
+  note:   note: proposed-038: Could not read https://www.brain-damage.co.uk/pink-floyd-band-interviews/january-21st-1977-capital-radio-pf-story-p.html: https://www.brain-damage.co.uk/pink-floyd-band-interviews/january-21st-1977-capital-radio-pf-story-p.html: HTTP 403
 
 ## What the rules would do
 
@@ -24,12 +18,7 @@
 
 ## Dropped
 
-- **excerpt is not in the page it cites (invented or altered)**: On the In the Flesh Tour, promoters in Chicago claimed Soldier Field had sold out at 67,000, but an investigation by Wat
-- **excerpt is not in the page it cites (invented or altered)**: The line about being "a stranger at home" was reportedly suggested by Waters' friend Joel Eaves, who felt personally con
-- **artist intent without a named speaker**: Pigs On The Wing, which bookends the album, was written as a celebration of Roger Waters' new marriage to Carolyne Chris
-- **artist intent without a named speaker**: Nick Mason suggested that what drew Waters to Caroline Christie was her ability to hold her own in good-faith arguments 
-- **artist intent without a named speaker**: Roger Waters later said the song's message had become more general, about the need for empathy between people rather tha
-- **verifier: unsupported (The page does not attribute this quote to Richard Wright by name.)**: Richard Wright said that the original lyrics for the song had too many words to sing, so they had to cut out about two-t
+- nothing
 
 ## Proposals
 
@@ -347,6 +336,8 @@ Waters revived the song live in 2016 and on his 2017 Us + Them Tour with anti-Do
 Waters responded to fans who booed his anti-Trump imagery by saying he was surprised anyone could have listened to his songs for 50 years without understanding them, and suggested critics watch Katy Perry or the Kardashians instead.
 - supports [Pigs (Three Different Ones)](https://en.wikipedia.org/wiki/Pigs_(Three_Different_Ones)?oldid=1368552862): "I find it slightly surprising that anybody could have been listening to my songs for 50 years without understanding"
 - supports [Pigs (Three Different Ones)](https://en.wikipedia.org/wiki/Pigs_(Three_Different_Ones)?oldid=1368552862): "those critics who didn't like what he was doing should "go see Katy Perry or watch the Kardashians. I don't care.""
+- supports [CNN.com - Transcripts](https://transcripts.cnn.com/show/smer/date/2017-07-15/segment/01) PROPOSED PRIMARY (CNN Smerconish transcript, aired July 15, 2017 This is CNN's own transcript of Michael Smerconish's exclusive interview with Roger Waters, containing Waters' first-person remarks about fans not understanding his songs and his suggestion to watch Katy Perry or the Kardashians instead.): "I do find it slightly surprising that anybody could have been listening to my songs for 50 years without understanding"
+- NOTE: PRIMARY PROPOSED (CNN Smerconish transcript, aired July 15, 2017 This is CNN's own transcript of Michael Smerconish's exclusive interview with Roger Waters, containing Waters' first-person remarks about fans not understanding his songs and his suggestion to watch Katy Perry or the Kardashians instead.). Open https://transcripts.cnn.com/show/smer/date/2017-07-15/segment/01, confirm it is the original, then set the source tier to primary.
 
 ### proposed-070 (trivia, track 3, study)
 Waters said he lost sponsors such as American Express, who did not want their company associated with the anti-Trump images in his shows.

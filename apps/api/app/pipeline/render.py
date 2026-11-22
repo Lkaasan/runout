@@ -18,6 +18,8 @@ from app.pipeline.run import RunResult
 from app.pipeline.scoring import approvable
 from app.services.seed_schema import ClaimSeed, SourceSeed
 
+PROPOSED_PRIMARY = " (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)"
+
 HEADER = (
     "# PROPOSED by the information finder. Nothing here is reviewed or approved.\n"
     "# Check each claim against its excerpt, then copy what you accept into the album's seed\n"
@@ -57,7 +59,7 @@ def to_seed_documents(proposal: Proposal) -> tuple[list[dict], list[dict]]:
                 {
                     "id": sid,
                     "kind": s.kind.value,
-                    "title": s.title,
+                    "title": s.title + (PROPOSED_PRIMARY if s.primary_proposed else ""),
                     "url": s.url,
                     "tier": s.tier.value,
                 },
@@ -140,7 +142,9 @@ def render_report(result: RunResult, run_id: str) -> str:
         lines.append(f"### {c.id} ({c.type.value}, {where}, {c.depth.value})")
         lines.append(c.body)
         for s in c.sources:
-            tier = "" if s.tier != Tier.primary else " PRIMARY"
+            tier = " PRIMARY" if s.tier == Tier.primary else ""
+            if s.primary_proposed:
+                tier = f" PROPOSED PRIMARY ({s.proposed_why})"
             lines.append(f'- {s.stance.value} [{s.title}]({s.url}){tier}: "{s.excerpt}"')
         lines += [f"- NOTE: {n}" for n in c.notes]
         lines.append("")

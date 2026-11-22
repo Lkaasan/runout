@@ -38,6 +38,11 @@ sources:
   title: Pigs (Three Different Ones)
   url: https://en.wikipedia.org/wiki/Pigs_(Three_Different_Ones)?oldid=1368552862
   tier: tertiary
+- id: cnn-com-transcripts
+  kind: interview
+  title: 'CNN.com - Transcripts (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)'
+  url: https://transcripts.cnn.com/show/smer/date/2017-07-15/segment/01
+  tier: secondary
 - id: sheep-pink-floyd-song
   kind: database
   title: Sheep (Pink Floyd song)
@@ -1067,6 +1072,10 @@ claims:
     stance: supports
     excerpt: those critics who didn't like what he was doing should "go see Katy Perry or watch the Kardashians.
       I don't care."
+  - ref: cnn-com-transcripts
+    stance: supports
+    excerpt: I do find it slightly surprising that anybody could have been listening to my songs for 50
+      years without understanding
 - track: 3
   id: proposed-070
   type: trivia

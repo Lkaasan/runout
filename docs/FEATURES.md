@@ -141,7 +141,7 @@ Needs user accounts, which the foundations plan explicitly left out. Decide the 
   - [x] Z1.1 No-AI collectors (MusicBrainz, Wikipedia) and page cache: `uv run python -m app.research collect animals`
   - [x] Z1.2 Extractor (Claude Code, subscription) and deterministic code checks (verbatim excerpt match, tiers, lyric guard): `uv run python -m app.research extract animals`; run log in `apps/api/evals/RESULTS.md`
   - [x] Z1.3 Verifier and conflict detection, plus reading hand-picked press pages (`research.yaml`): `app.research extract`, `app.research verify-eval`
-  - [ ] Z1.4 Agentic web search and primary-source tracing (also K2)
+  - [~] Z1.4 Agentic web search and primary-source tracing (also K2): `uv run python -m app.research trace animals` finds and checks the original publication of artist-intent claims and proposes it as primary for a person to confirm. Not yet: searching for pages to support ordinary facts, full text of books on archive.org, PDFs
   - [ ] Z1.5 Proposals as a PR with provenance
   - [ ] Z1.6 Eval loop on held-out albums; second gold album
   - [ ] Z1.7 Admin-queue integration (needs A1)

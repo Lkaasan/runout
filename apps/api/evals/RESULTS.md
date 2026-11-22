@@ -37,3 +37,23 @@ Notes
   recording dates) and some weak ones (wording differences); each comes with its quote and
   explanation for a human to judge.
 - The check that caught an invented quote in every run is the verbatim excerpt match.
+
+## Tracing to the original (step 4)
+
+`uv run python -m app.research trace animals --limit 10`: for each of 10 artist-intent claims a model
+with web search and fetch (addresses out only) looked for the original publication, our fetcher
+downloaded what it named, and a tool-less model quoted the speaker's own first-person words, which code
+verified.
+
+| Claims examined | Original proposed as primary | Pages read | Addresses refused | Calls, list cost |
+|---|---|---|---|---|
+| 10 | 1 | 6 | 1 | 16, $1.81 |
+
+- Found: a CNN transcript of Waters' 2017 interview (the "surprised anyone could have listened to my songs for
+  50 years" quote), with a verbatim first-person excerpt.
+- Not found, and why: two archive.org pages for Nick Mason's book (they hold the catalogue record, not the text),
+  a Louder piece on a lost Wright interview and a Rolling Stone story that did not contain the words, Ultimate
+  Classic Rock (quotes the words but is not the original), and a fan-site transcript that returned HTTP 403.
+- One in ten is a modest hit rate, and most of these statements come from books and old magazines that are not
+  freely readable online. The step is working as designed: it says "not found" instead of guessing.
+
