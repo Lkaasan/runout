@@ -2,7 +2,7 @@
 
 How the app is built today (after Milestone 4). For the product plan and milestones see [PLAN.md](PLAN.md).
 
-**Status:** the app is runnable. You can browse the shelf, play an album and read about the song that is playing in a side panel (the Now tab so far). An album can be played from its page: through Apple Music (about 30 s previews until full-length playback is switched on, see below) or, with no Apple credentials, through a demo player that has no audio. The listening screen phases, entity pages, the admin UI and the PWA shell are not built yet (Milestones 5 to 8).
+**Status:** the app is runnable. You can browse the shelf, play an album and read about the song that is playing in a side panel (tabs: Now, Meaning, Album). An album can be played from its page: through Apple Music (about 30 s previews until full-length playback is switched on, see below) or, with no Apple credentials, through a demo player that has no audio. The listening screen phases, entity pages, the admin UI and the PWA shell are not built yet (Milestones 5 to 8).
 
 ## System overview
 
@@ -74,7 +74,7 @@ runout/
 │       └── src/
 │           ├── app/                 Routes: / (shelf), /album/[slug]
 │           ├── api/                 client.ts (typed client), schema.d.ts (generated)
-│           ├── components/          AlbumSession, ClaimCard, ClaimList, PlayerBar, panel/ (PanelProvider, SidePanel, NowTab)
+│           ├── components/          AlbumSession, ClaimCard, ClaimList, PlayerBar, panel/ (PanelProvider, SidePanel, NowTab, MeaningTab, AlbumTab)
 │           ├── lib/                 format, moment timing (moments.ts) and panel (panel.ts) helpers
 │           ├── player/              PlayerAdapter, FakePlayer, MusicKitPlayer, PlaybackProvider
 │           └── lyrics/              LyricsProvider interface + stub
@@ -215,7 +215,7 @@ sequenceDiagram
 ```
 
 - There is no Listen/Study mode. The page fetches everything at every depth and the UI decides: a claim card shows its short body and a "Go deeper" disclosure for the long text and sources; study-depth claims sit under "Deeper notes". The API's `depth` filter still exists but the web app does not use it.
-- `AlbumSession` (client) wraps the page in `PlaybackProvider` and `PanelProvider`. The side panel follows the playing song; clicking another song pins the panel to it ("Back to now playing" releases it, and a new song starting also does). Moment cards come from the player's position only, through `visibleMoments`.
+- `AlbumSession` (client) wraps the page in `PlaybackProvider` and `PanelProvider`. The page is two columns: the tracklist on the left and the information panel on the right. The **Album** tab (before and after claims, credits) is always available and is all the panel shows until a song is playing or picked; **Now** and **Meaning** appear for a song. Meaning lists every approved claim on the track (`TrackDetail.claims`) grouped by who is speaking. The side panel follows the playing song; clicking another song pins the panel to it ("Back to now playing" releases it, and a new song starting also does). Moment cards come from the player's position only, through `visibleMoments`.
 - The typed client (`api.GET("/albums/{slug}", ...)`) is generated from the API schema, so a mismatch is a TypeScript error.
 - Pages are server-rendered with `cache: "no-store"`, so newly approved claims show up on the next load.
 
@@ -308,7 +308,7 @@ Requirements: Node 22.12 or newer, pnpm, uv. Docker is optional.
 | Milestone | Adds | Lands in |
 |-----------|------|----------|
 | 4 Player foundation (done) | `PlayerAdapter` implementations (`FakePlayer`, `MusicKitPlayer`), `PlaybackProvider`, `GET /musickit/developer-token`, player bar and per-track play buttons | `web/src/player/`, `web/src/components/`, `api/app/services/` |
-| 5 Listening screen | Panel shell and Now tab (done), Meaning, Lyrics, Making and Sources tabs, layer sheet | `web/src/components/panel/` |
+| 5 Listening screen | Panel shell, Now, Meaning and Album tabs (done); Lyrics, Making and Sources tabs, layer sheet | `web/src/components/panel/` |
 | 6 Deep-dive graph | Entity pages, play-the-original and return | `web/src/app/entity/` |
 | 7 Admin review | Review queue UI | `web/src/app/admin/` |
 | 8 PWA and polish | Manifest, icons, accessibility, tablet layout | `web/` |

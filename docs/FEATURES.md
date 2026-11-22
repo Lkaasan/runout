@@ -9,7 +9,7 @@ The living list of what we want to build. Tick items off as they ship, add new i
 - One feature per PR where possible. Features are grouped by area, not ordered: you decide what to build next and move it into **Next up**.
 - Anything with a ⚠️ has a legal, licensing or account decision to make before building.
 
-**Status (2026-11-22):** foundations M1 to M4 are merged (read API, admin API, importer, player). The album page has a side panel with the Now tab. Meaning, Lyrics, Making and Sources are next, per [plans/side-panel/plan.md](../plans/side-panel/plan.md).
+**Status (2026-11-22):** foundations M1 to M4 are merged (read API, admin API, importer, player). The album page has the tracklist on the left and all information on the right, in a panel with Now, Meaning and Album tabs. Lyrics, Making and Sources are next, per [plans/side-panel/plan.md](../plans/side-panel/plan.md).
 
 ## The vision
 
@@ -46,7 +46,7 @@ Foundations milestone 4.
 
 The core product surface. Foundations milestone 5. The panel shell comes before any individual tab.
 
-- [x] **S1 Side panel shell.** Right-hand panel on laptop and tablet; on small screens it stacks above the tracklist (a true bottom sheet is still to do, see X3). Tab bar, remembers the last tab, follows the playing song with a browse pin, never interrupts playback.
+- [x] **S1 Side panel shell.** Tracklist on the left, information panel on the right on laptop and tablet; on small screens it stacks above the tracklist (a true bottom sheet is still to do, see X3). Tab bar, remembers the last tab, follows the playing song with a browse pin, never interrupts playback.
 - [x] **S2 Embedded depth.** Replaces the Listen/Study toggle. Cards show the short body with a "Go deeper" disclosure; study-depth notes sit under "Deeper notes" and show as small chips in Now.
 - [~] **S3 "Now" tab: moments.** (built and unit-tested; the Playwright 500 ms check is still to do) Cards fade in at `start_ms` and out after `end_ms` (or about 12 seconds), including after a seek. Respect `prefers-reduced-motion`. Test: each moment appears within 500 ms of its timestamp on the fake player.
 - [x] **S4 Between-songs intro.** A short intro card for the next song that fades after about 8 seconds unless tapped.
@@ -149,7 +149,7 @@ Needs user accounts, which the foundations plan explicitly left out. Decide the 
 
 Features you have chosen to build next, in order. Move IDs here from the sections above.
 
-1. Side panel tabs, one PR each: Meaning, then Lyrics (dev stub), then Making and Sources. See [plans/side-panel/plan.md](../plans/side-panel/plan.md).
+1. Side panel tabs, one PR each (Now, Meaning and Album are done): Lyrics (dev stub), then Making and Sources. See [plans/side-panel/plan.md](../plans/side-panel/plan.md).
 
 Dependencies to keep in mind when choosing (not a build order): the player bar (P3) and playback provider (P2) need the fake player (P1); every tab needs the panel shell (S1); the Lyrics tab (L2) can be built on the dev stub (L5) before a licence exists; the Live and Photos tabs need their data models (F1, V1); Community (C) needs accounts (C1).
 
@@ -170,6 +170,9 @@ Dependencies to keep in mind when choosing (not a build order): the player bar (
 
 Shipped items with PR links go here, newest first.
 
+- Layout: tracklist left, information right; Album tab (before, after, credits) and Meaning tab (all of a song's approved claims, grouped by who is speaking)
+- Animals seed content: [#6](https://github.com/Lkaasan/runout/pull/6)
+- Side panel shell and Now tab, embedded depth: [#5](https://github.com/Lkaasan/runout/pull/5)
 - Side panel shell and Now tab, embedded depth (S1, S2, S3, S4)
 - Foundations M4 player foundation (P1 to P6): [#4](https://github.com/Lkaasan/runout/pull/4)
 - Foundations M1 repo and tooling: [#1](https://github.com/Lkaasan/runout/pull/1)

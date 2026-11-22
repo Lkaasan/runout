@@ -86,3 +86,24 @@ def test_entity_card_links_both_directions(seeded, engine):
     assert [link["from_id"] for link in incoming["links_in"]] == [t1]
     assert seeded.get("/entities/track/9999").status_code == 404
     assert seeded.get("/entities/nonsense/1").status_code == 422
+
+
+def test_track_claims_are_approved_only_and_respect_depth(seeded):
+    track = seeded.get("/albums/placeholder-album/tracks/1").json()
+    bodies = {c["body"] for c in track["claims"]}
+    # drum-sample and verse-meaning are approved; opener-intro is a draft
+    assert any("1969" in b for b in bodies) and any("second verse" in b for b in bodies)
+    assert not any("first song written" in b for b in bodies)
+    assert {c["subject_type"] for c in track["claims"]} == {"track"}
+
+    listen = seeded.get("/albums/placeholder-album/tracks/1", params={"depth": "listen"}).json()
+    assert [c["depth"] for c in listen["claims"]] == ["listen"]
+
+
+def test_track_claims_hide_rejected(seeded, engine):
+    with Session(engine) as s:
+        claim = s.query(Claim).filter_by(key="placeholder-album/drum-sample").one()
+        claim.status = Status.rejected
+        s.commit()
+    track = seeded.get("/albums/placeholder-album/tracks/1").json()
+    assert not any("1969" in c["body"] for c in track["claims"])

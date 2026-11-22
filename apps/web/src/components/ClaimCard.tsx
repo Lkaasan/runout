@@ -19,17 +19,21 @@ const STYLE: Record<Claim["type"], string> = {
  * One claim. The short body is always visible; "Go deeper" opens the long body and the sources
  * in place, so depth is part of the card instead of a separate mode.
  */
-export function ClaimCard({ claim }: { claim: Claim }) {
+export function ClaimCard({ claim, showType = true }: { claim: Claim; showType?: boolean }) {
   const supporting = claim.sources.filter((s) => s.stance === "supports");
   const contradicting = claim.sources.filter((s) => s.stance === "contradicts");
   const hasMore = Boolean(claim.body_long) || claim.sources.length > 0;
 
   return (
     <article className={`border-l-2 pl-4 ${STYLE[claim.type]}`}>
-      <div className="text-xs uppercase tracking-wide text-neutral-500 not-italic">
-        {LABEL[claim.type]}
-        {claim.type === "interpretation" && claim.author ? ` · ${claim.author}` : ""}
-      </div>
+      {(showType || (claim.type === "interpretation" && claim.author)) && (
+        <div className="text-xs uppercase tracking-wide text-neutral-500 not-italic">
+          {showType ? LABEL[claim.type] : ""}
+          {claim.type === "interpretation" && claim.author
+            ? `${showType ? " · " : ""}${claim.author}`
+            : ""}
+        </div>
+      )}
       <p className="mt-1 text-lg leading-relaxed">{claim.body}</p>
       {hasMore && (
         <details className="group mt-2 not-italic">

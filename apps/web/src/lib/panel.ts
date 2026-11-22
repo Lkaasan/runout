@@ -26,3 +26,10 @@ export function nextTab(available: string[], current: string, key: string): stri
   if (key === "End") return available[available.length - 1];
   return current;
 }
+
+export type TabId = "now" | "meaning" | "album";
+
+/** Song tabs exist only when a song is active; the Album tab is always there. */
+export function availableTabs(hasSong: boolean): TabId[] {
+  return hasSong ? ["now", "meaning", "album"] : ["album"];
+}

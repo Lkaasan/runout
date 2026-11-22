@@ -441,6 +441,8 @@ export interface components {
             /** Apple Music Id */
             apple_music_id: string | null;
             between: components["schemas"]["ClaimOut"] | null;
+            /** Claims */
+            claims: components["schemas"]["ClaimOut"][];
             /** Credits */
             credits: components["schemas"]["CreditOut"][];
             /** Disc */
