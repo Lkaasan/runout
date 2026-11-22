@@ -7,7 +7,9 @@ Code to be used with your own subscription, but not to route other people's requ
 For anything bigger, add an API-key backend behind the same interface.
 
 Isolation, because the model reads untrusted web text:
-- `--tools ""` removes every built-in tool, so the model can only return text.
+- `--tools ""` removes every built-in tool, so the model can only return text. The one exception
+  is address discovery in trace.py, which is given web search and fetch and nothing else, and
+  whose answer is used only as a list of addresses that our own fetcher then vets and downloads.
 - `--safe-mode` turns off CLAUDE.md, skills, hooks, plugins and MCP, but keeps the subscription
   login (`--bare` would drop it, so it is deliberately not used).
 - `--permission-mode dontAsk` denies anything that would ask, `--no-session-persistence` keeps
@@ -82,8 +84,11 @@ class ClaudeCodeBackend:
         timeout: float = 600,
         runner=subprocess.run,
         claude_path: str | None = None,
+        tools: tuple[str, ...] = (),
     ):
         self.model, self.effort, self.timeout = model, effort, timeout
+        # Built-in tools the model may use. Empty (the default) means text in, text out.
+        self.tools = tuple(tools)
         self._run = runner
         self._claude_path = claude_path
         self.usage = LLMUsage()
@@ -97,7 +102,8 @@ class ClaudeCodeBackend:
             "--json-schema",
             json.dumps(schema),
             "--tools",
-            "",
+            ",".join(self.tools),
+            *(["--allowedTools", *self.tools] if self.tools else []),
             "--safe-mode",
             "--no-session-persistence",
             "--permission-mode",
@@ -167,6 +173,7 @@ class CachingBackend:
         identity = [
             getattr(self.inner, "model", ""),
             getattr(self.inner, "effort", ""),
+            list(getattr(self.inner, "tools", ())),
             system,
             prompt,
             schema,

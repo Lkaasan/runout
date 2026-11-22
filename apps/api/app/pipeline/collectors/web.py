@@ -94,6 +94,9 @@ class WebCollector:
             except FetchError as exc:
                 notes.append(f"Could not read {url}: {exc}")
                 continue
+            if record.text.lstrip().startswith("%PDF"):
+                notes.append(f"{url}: a PDF, which the finder cannot read yet")
+                continue
             title, text = html_to_text(record.text)
             if len(text) < 200:
                 notes.append(f"{url}: no readable article text found")

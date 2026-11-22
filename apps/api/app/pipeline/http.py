@@ -7,9 +7,12 @@
 - Retries with back-off when a server says it is busy (HTTP 429/503, or MusicBrainz's JSON notice).
 """
 
+import ipaddress
 import json
+import socket
 import time
 from collections.abc import Callable
+from urllib.parse import urlparse
 from urllib.robotparser import RobotFileParser
 
 import httpx
@@ -39,6 +42,44 @@ class RobotsDisallowed(FetchError):
     pass
 
 
+class UnsafeURL(FetchError):
+    pass
+
+
+def ensure_public(url: str, resolver=socket.getaddrinfo) -> None:
+    """Refuse URLs that could reach this machine or a private network.
+
+    Used for addresses a model suggested: only plain http(s) on the default ports, never a
+    login in the URL, and every address the host name resolves to must be public.
+    """
+    parts = urlparse(url)
+    if parts.scheme not in ("http", "https") or not parts.hostname:
+        raise UnsafeURL(f"not a web address: {url}")
+    if parts.username or parts.password:
+        raise UnsafeURL("addresses with a login in them are refused")
+    try:
+        port = parts.port
+    except ValueError as exc:
+        raise UnsafeURL(f"bad port in {url}") from exc
+    if port not in (None, 80, 443):
+        raise UnsafeURL(f"unusual port {port} is refused")
+    host = parts.hostname
+    if host == "localhost" or host.endswith((".localhost", ".local", ".internal")):
+        raise UnsafeURL(f"{host} is not a public site")
+    try:
+        infos = resolver(host, port or (443 if parts.scheme == "https" else 80))
+    except OSError as exc:
+        raise UnsafeURL(f"{host} did not resolve") from exc
+    for info in infos:
+        address = ipaddress.ip_address(info[4][0])
+        if not address.is_global:
+            raise UnsafeURL(f"{host} points at a non-public address ({address})")
+
+
+def _guard_redirects(request: httpx.Request) -> None:
+    ensure_public(str(request.url))
+
+
 def _host_matches(host: str, suffix: str) -> bool:
     return host == suffix or host.endswith("." + suffix)
 
@@ -56,12 +97,18 @@ class Fetcher:
         sleep: Callable[[float], None] = time.sleep,
         clock: Callable[[], float] = time.monotonic,
         respect_robots: bool = True,
+        public_only: bool | None = None,
         refresh: bool = False,
         retries: int = 3,
         backoff: float = 2.0,
     ):
         self.cache = cache
-        self.client = client or httpx.Client(timeout=30, follow_redirects=True)
+        # Real clients only ever talk to public sites (redirects included); tests that pass a fake
+        # client opt in explicitly.
+        self.public_only = (client is None) if public_only is None else public_only
+        self.client = client or httpx.Client(
+            timeout=30, follow_redirects=True, event_hooks={"request": [_guard_redirects]}
+        )
         self._sleep, self._clock = sleep, clock
         self.respect_robots = respect_robots
         # Ignore cached responses and fetch again (the new response replaces the old one).
@@ -85,6 +132,8 @@ class Fetcher:
             return record
 
         host = httpx.URL(full).host
+        if self.public_only:
+            ensure_public(full)
         self._check_robots(host, full)
 
         response, busy = None, False
@@ -114,7 +163,12 @@ class Fetcher:
     def _get(self, url: str) -> httpx.Response:
         self.network_calls += 1
         self._last[httpx.URL(url).host] = self._clock()
-        return self.client.get(url, headers={"User-Agent": USER_AGENT})
+        try:
+            return self.client.get(url, headers={"User-Agent": USER_AGENT})
+        except UnsafeURL:
+            raise
+        except httpx.HTTPError as exc:
+            raise FetchError(f"{url}: {exc.__class__.__name__}") from exc
 
     def _throttle(self, host: str) -> None:
         interval = next(

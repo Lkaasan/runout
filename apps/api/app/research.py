@@ -19,6 +19,7 @@ from app.pipeline.models import Proposal
 from app.pipeline.render import write_run
 from app.pipeline.run import run_extraction
 from app.pipeline.scoring import load_gold, proposal_from_seed, score
+from app.pipeline.trace import DISCOVERY_TOOLS, trace_claims
 from app.services.seed_loader import load_album
 
 
@@ -45,6 +46,15 @@ def main(argv: list[str] | None = None) -> int:
     ex.add_argument(
         "--fresh", action="store_true", help="ask the model again, not reuse saved answers"
     )
+
+    tr = sub.add_parser(
+        "trace", help="look for the original publication of artist-intent claims (uses web tools)"
+    )
+    tr.add_argument("slug")
+    tr.add_argument("--limit", type=int, default=8, help="how many claims to trace")
+    tr.add_argument("--model", default=settings.research_model)
+    tr.add_argument("--effort", default=settings.research_effort)
+    tr.add_argument("--fresh", action="store_true")
 
     ve = sub.add_parser("verify-eval", help="test the verifier on planted errors")
     ve.add_argument("slug")
@@ -74,6 +84,8 @@ def main(argv: list[str] | None = None) -> int:
         return _extract(args)
     if args.command == "verify-eval":
         return _verify_eval(args)
+    if args.command == "trace":
+        return _trace(args)
 
     gold = load_gold(args.slug)
     if args.empty:
@@ -126,6 +138,50 @@ def _extract(args) -> int:
         print(score(load_gold(args.slug), result.proposal).report())
     except FileNotFoundError:
         pass
+    return 0
+
+
+def _trace(args) -> int:
+    from app.pipeline.run import RunResult
+
+    cache = ResearchCache(settings.research_cache_dir)
+    pages = cache.get_pages(args.slug)
+    folder = settings.content_dir / args.slug / "proposals"
+    runs = sorted(folder.glob("*/proposal.json")) if folder.exists() else []
+    if not pages or not runs:
+        print("Needs collected pages and an earlier extract run (proposal.json).")
+        return 1
+    proposal = Proposal.model_validate_json(runs[-1].read_text("utf-8"))
+
+    def backend(tools: tuple[str, ...]) -> CachingBackend:
+        return CachingBackend(
+            ClaudeCodeBackend(
+                model=args.model, effort=args.effort, tools=tools, timeout=420 if tools else 600
+            ),
+            settings.research_cache_dir,
+            fresh=args.fresh,
+        )
+
+    discover, check = backend(DISCOVERY_TOOLS), backend(())
+    fetcher = Fetcher(cache)
+    traced = trace_claims(
+        discover,
+        check,
+        proposal.candidates,
+        {p.url for p in pages},
+        fetcher,
+        limit=args.limit,
+    )
+    result = RunResult(proposal=proposal, notes=traced.summary().splitlines())
+    out = write_run(result, settings.content_dir)
+    print(traced.summary())
+    used = discover.usage.calls + check.usage.calls
+    cost = discover.usage.cost_usd + check.usage.cost_usd
+    print(
+        f"{used} model call(s), about ${cost:.2f} at list price "
+        "(counted against your Claude subscription)."
+    )
+    print(f"Wrote {out}")
     return 0
 
 

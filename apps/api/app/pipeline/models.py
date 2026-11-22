@@ -26,6 +26,10 @@ class CandidateSource(BaseModel):
     # Short quote from the fetched page. Must be verifiable against the cached page text.
     excerpt: str | None = Field(default=None, max_length=400)
     locator: str | None = None
+    # Set by the tracing step when this looks like the original publication of the speaker's own
+    # words. The tier stays secondary: only a person may declare a source primary.
+    primary_proposed: bool = False
+    proposed_why: str | None = None
 
 
 class Candidate(BaseModel):
