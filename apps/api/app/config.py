@@ -9,6 +9,9 @@ class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://album:album@localhost:5432/album"
     web_origin: str = "http://localhost:3000"
     admin_password: str = ""
+    apple_team_id: str = ""
+    apple_key_id: str = ""
+    apple_private_key_path: Path | None = None
     content_dir: Path = Path(__file__).resolve().parents[3] / "content" / "albums"
 
 

@@ -1,8 +1,8 @@
 # Architecture
 
-How the app is built today (after Milestone 3). For the product plan and milestones see [PLAN.md](PLAN.md).
+How the app is built today (after Milestone 4). For the product plan and milestones see [PLAN.md](PLAN.md).
 
-**Status:** the app is runnable. You can browse the shelf and read an album's content in Listen or Study mode. Playback, the listening screen, entity pages, the admin UI and the PWA shell are not built yet (Milestones 4 to 8).
+**Status:** the app is runnable. You can browse the shelf and read an album's content in Listen or Study mode. An album can be played from its page: through Apple Music (about 30 s previews until full-length playback is switched on, see below) or, with no Apple credentials, through a demo player that has no audio. The listening screen phases, entity pages, the admin UI and the PWA shell are not built yet (Milestones 5 to 8).
 
 ## System overview
 
@@ -76,7 +76,7 @@ runout/
 │           ├── api/                 client.ts (typed client), schema.d.ts (generated)
 │           ├── components/          ClaimCard
 │           ├── lib/                 format helpers (ms -> "2:14", mode parsing)
-│           ├── player/              PlayerAdapter interface only (Milestone 4)
+│           ├── player/              PlayerAdapter, FakePlayer, MusicKitPlayer, PlaybackProvider
 │           └── lyrics/              LyricsProvider interface + stub
 ├── content/albums/placeholder-album/   Fake two-track album used for dev and tests
 │   ├── album.yaml                   Artist, album, credits, before/after claims
@@ -267,9 +267,17 @@ CI "client" job re-runs pnpm gen:api and fails on any git diff
 | PATCH | `/admin/claims/{id}` | basic | Approve, reject or edit; 422 if a rule fails |
 | POST | `/admin/import/{slug}` | basic | Re-import an album's seed files |
 
-All public endpoints accept `?depth=listen|study`. Interactive docs are at `/docs` while the API runs. `GET /musickit/developer-token` is planned for Milestone 4.
+All public endpoints accept `?depth=listen|study`. Interactive docs are at `/docs` while the API runs. `GET /musickit/developer-token` returns a cached MusicKit developer token, or 503 when the Apple credentials are not set.
 
 Admin uses a single shared password (`ADMIN_PASSWORD`, any username). If it is empty, admin routes return 503.
+
+## Playback
+
+`PlaybackProvider` owns one `PlayerAdapter` for the album page. On mount it asks the API for a developer token: 200 means `MusicKitPlayer`, 503 or any failure means `FakePlayer` (full-length durations, no audio). `NEXT_PUBLIC_PLAYER=fake|musickit` forces one. The player bar and the per-track buttons only talk to the provider. Timing comes from the player's events, never from timers in the UI.
+
+**Previews first.** Without an Apple Music subscription MusicKit plays about 30 s per track, and `state().previewOnly` is true. The UI treats that as normal: a small notice, no blocking. The scrubber follows `state().durationMs` (what the player reports), not the catalogue duration.
+
+**Going to full length (later).** There should be no code change: a subscriber signs in with "Connect Apple Music", `previewOnly` becomes false and the full tracks play. What remains is to test full playback in Chrome and Safari over https, and to check whether public users need an organisation developer account (see "Before Milestone 4" in PLAN.md). Moment cards after 0:30 can't show in preview mode, so test timing against `FakePlayer`.
 
 ## Running it
 
@@ -298,7 +306,7 @@ Requirements: Node 22.12 or newer, pnpm, uv. Docker is optional.
 
 | Milestone | Adds | Lands in |
 |-----------|------|----------|
-| 4 Player foundation | `PlayerAdapter` implementations (`FakePlayer`, `MusicKitPlayer`), `PlaybackProvider`, `GET /musickit/developer-token` | `web/src/player/`, `api/app/services/` |
+| 4 Player foundation (done) | `PlayerAdapter` implementations (`FakePlayer`, `MusicKitPlayer`), `PlaybackProvider`, `GET /musickit/developer-token`, player bar and per-track play buttons | `web/src/player/`, `web/src/components/`, `api/app/services/` |
 | 5 Listening screen | Timed moment cards, lyrics with annotations, layer sheet, persisted mode | `web/src/app/album/` |
 | 6 Deep-dive graph | Entity pages, play-the-original and return | `web/src/app/entity/` |
 | 7 Admin review | Review queue UI | `web/src/app/admin/` |

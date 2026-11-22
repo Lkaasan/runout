@@ -222,6 +222,7 @@ One PR per milestone; stop for review after each.
 4. **Player foundation**
     - `PlayerAdapter`, `FakePlayer`, `MusicKitPlayer`, developer-token endpoint, `PlaybackProvider`.
     - Done when: FakePlayer plays the album through in dev without Apple credentials; with real credentials a subscriber can play the real album in Chrome and Safari.
+    - Status: built and tested with FakePlayer; Apple playback is preview-only (about 30 s per track) until full-length playback is checked with a subscriber account. Plan: [plans/player-foundation/plan.md](../plans/player-foundation/plan.md).
 5. **Listening screen**
     - Before, during, between and after phases, moments, lyrics stub with annotations, layer sheet, Listen/Study toggle.
     - Done when: a Playwright test on FakePlayer asserts each moment appears within 500 ms of its timestamp, including after a seek.

@@ -486,6 +486,24 @@
         "title": "Depth",
         "type": "string"
       },
+      "DeveloperTokenOut": {
+        "properties": {
+          "expires_at": {
+            "title": "Expires At",
+            "type": "integer"
+          },
+          "token": {
+            "title": "Token",
+            "type": "string"
+          }
+        },
+        "required": [
+          "token",
+          "expires_at"
+        ],
+        "title": "DeveloperTokenOut",
+        "type": "object"
+      },
       "EntityDetail": {
         "properties": {
           "claims": {
@@ -1428,6 +1446,28 @@
           }
         },
         "summary": "Health"
+      }
+    },
+    "/musickit/developer-token": {
+      "get": {
+        "description": "Short-lived MusicKit developer token. 503 when Apple credentials aren't configured.",
+        "operationId": "developer_token_musickit_developer_token_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeveloperTokenOut"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Developer Token",
+        "tags": [
+          "musickit"
+        ]
       }
     }
   }
