@@ -9,7 +9,7 @@ The living list of what we want to build. Tick items off as they ship, add new i
 - One feature per PR where possible. Features are grouped by area, not ordered: you decide what to build next and move it into **Next up**.
 - Anything with a ⚠️ has a legal, licensing or account decision to make before building.
 
-**Status (2026-11-22):** foundations M1 to M4 are merged (read API, admin API, importer, player). The album page has the tracklist on the left and all information on the right, in a panel with Now, Meaning and Album tabs. Lyrics, Making and Sources are next, per [plans/side-panel/plan.md](../plans/side-panel/plan.md).
+**Status (2026-11-23):** direction change: playback is **parked** and the app is browse-first, a place to dive deep into what is known about a record (plan: search and artist pages next, then Making, Sources and Connections tabs). The album page has the tracklist on the left and a panel with Meaning, Listen for and Album tabs on the right, opened by picking a song (`?track=N` links straight to one). The player code stays in the repo, unused, ready to come back.
 
 ## The vision
 
@@ -29,7 +29,9 @@ Press play on an album and it plays song by song. While a song plays, a panel on
 
 ---
 
-## Play the music
+## Play the music (parked)
+
+Parked on 2026-11-23: nothing here is shown in the app. The code (`apps/web/src/player/`, `PlayerBar`, `TrackPlayButton`, the developer-token endpoint) is kept and still tested.
 
 Foundations milestone 4.
 

@@ -3,21 +3,20 @@
 import { useSyncExternalStore } from "react";
 import type { AlbumDetail, TrackDetail } from "@/api/client";
 import { availableTabs, nextTab, resolveTab, type TabId } from "@/lib/panel";
-import { usePlayback } from "@/player/PlaybackProvider";
 import { AlbumTab } from "./AlbumTab";
+import { ListenForTab } from "./ListenForTab";
 import { MeaningTab } from "./MeaningTab";
-import { NowTab } from "./NowTab";
 import { usePanel } from "./PanelProvider";
 
 export interface PanelTrack {
-  /** Player id (see playbackId). */
+  /** See trackKey. */
   id: string;
   number: number;
   title: string;
   detail: TrackDetail | null;
 }
 
-const LABELS: Record<TabId, string> = { now: "Now", meaning: "Meaning", album: "Album" };
+const LABELS: Record<TabId, string> = { meaning: "Meaning", listen: "Listen for", album: "Album" };
 
 const STORAGE_KEY = "runout.panel.tab";
 const listeners = new Set<() => void>();
@@ -30,7 +29,7 @@ function readStoredTab(): string | null {
   }
 }
 
-/** Choose a tab (and remember it). Also used by the album title to open the Album tab. */
+/** Choose a tab (and remember it). Also used by the album title and by picking a song. */
 export function selectPanelTab(id: TabId) {
   try {
     localStorage.setItem(STORAGE_KEY, id);
@@ -50,14 +49,13 @@ function subscribe(cb: () => void) {
 }
 
 export function SidePanel({ tracks, album }: { tracks: PanelTrack[]; album: AlbumDetail }) {
-  const { activeId, browsing, unpin } = usePanel();
-  const { state } = usePlayback();
+  const { selectedId, select } = usePanel();
   // Server render and first paint use "no remembered tab"; the browser value follows.
   const stored = useSyncExternalStore(subscribe, readStoredTab, () => null);
 
-  const track = tracks.find((t) => t.id === activeId) ?? null;
+  const track = tracks.find((t) => t.id === selectedId) ?? null;
   const detail = track?.detail ?? null;
-  const tabIds = availableTabs(detail !== null);
+  const tabIds = availableTabs(detail !== null, (detail?.moments.length ?? 0) > 0);
   const tab = (resolveTab(stored, tabIds) ?? "album") as TabId;
   const songView = track && detail && tab !== "album";
 
@@ -69,19 +67,22 @@ export function SidePanel({ tracks, album }: { tracks: PanelTrack[]; album: Albu
       <header className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <div className="text-xs uppercase tracking-widest text-neutral-500">
-            {songView ? (browsing ? "Reading about" : "Now playing") : "About the album"}
+            {songView ? "About the song" : "About the album"}
           </div>
           <h2 className="truncate text-xl">
             {songView ? `${track.number}. ${track.title}` : album.title}
           </h2>
         </div>
-        {browsing && (
+        {track && (
           <button
             type="button"
-            onClick={unpin}
+            onClick={() => {
+              select(null);
+              selectPanelTab("album");
+            }}
             className="shrink-0 rounded-full border border-neutral-600 px-3 py-1 text-sm hover:border-neutral-300"
           >
-            Back to now playing
+            Whole album
           </button>
         )}
       </header>
@@ -128,14 +129,7 @@ export function SidePanel({ tracks, album }: { tracks: PanelTrack[]; album: Albu
       >
         {tab === "album" && <AlbumTab album={album} />}
         {tab === "meaning" && track && detail && <MeaningTab key={track.id} detail={detail} />}
-        {tab === "now" && track && detail && (
-          <NowTab
-            key={track.id}
-            detail={detail}
-            positionMs={state.positionMs}
-            live={!browsing && state.trackId === track.id}
-          />
-        )}
+        {tab === "listen" && track && detail && <ListenForTab key={track.id} detail={detail} />}
       </div>
     </aside>
   );

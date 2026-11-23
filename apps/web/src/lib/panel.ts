@@ -1,14 +1,4 @@
-/** Which song the side panel is about, and which tab is open. Pure helpers. */
-
-/** Pinned song wins; otherwise the panel follows what is playing. */
-export function resolveActiveTrack(pinnedId: string | null, playingId: string | null): string | null {
-  return pinnedId ?? playingId;
-}
-
-/** True when the panel is showing a song other than the one playing. */
-export function isBrowsing(pinnedId: string | null, playingId: string | null): boolean {
-  return pinnedId !== null && pinnedId !== playingId;
-}
+/** Which tab of the information panel is open. Pure helpers. */
 
 /** Use the remembered tab if it still exists, else the first available. */
 export function resolveTab(stored: string | null, available: string[]): string | null {
@@ -27,9 +17,13 @@ export function nextTab(available: string[], current: string, key: string): stri
   return current;
 }
 
-export type TabId = "now" | "meaning" | "album";
+export type TabId = "meaning" | "listen" | "album";
 
-/** Song tabs exist only when a song is active; the Album tab is always there. */
-export function availableTabs(hasSong: boolean): TabId[] {
-  return hasSong ? ["now", "meaning", "album"] : ["album"];
+/**
+ * Song tabs exist only when a song is selected; the Album tab is always there. "Listen for" lists
+ * the moments worth noticing in a song, so it only appears when the song has some.
+ */
+export function availableTabs(hasSong: boolean, hasListenFor = false): TabId[] {
+  if (!hasSong) return ["album"];
+  return hasListenFor ? ["meaning", "listen", "album"] : ["meaning", "album"];
 }
