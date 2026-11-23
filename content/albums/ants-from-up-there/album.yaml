@@ -1,0 +1,587 @@
+# Black Country, New Road, Ants From Up There. Skeleton from https://music.apple.com/us/album/ants-from-up-there/1586070259
+# Skeleton only: no claims yet. Run `app.research collect/extract` to propose some.
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+slug: ants-from-up-there
+title: Ants From Up There
+artist:
+  name: Black Country, New Road
+  apple_music_id: '1449884900'
+release_date: '2022-02-04'
+apple_music_id: '1586070259'
+artwork_url: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/6a/c6/8f6ac6c6-5bcd-fa25-94f2-fd9922725215/5054429151442.png/600x600bb.jpg
+claims:
+- id: auto-001
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was recorded at Chale Abbey on the Isle of Wight and produced by the band's live sound
+    engineer Sergio Maschetzko.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Recorded at Chale Abbey on the Isle of Wight, the album was produced by the band's live sound
+      engineer Sergio Maschetzko
+- id: auto-002
+  type: fact
+  depth: listen
+  phase: after
+  body: It is the final album to feature lead vocalist and guitarist Isaac Wood, who announced his departure
+    four days before release.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: is the final album to feature lead vocalist and guitarist Isaac Wood, who announced his departure
+      from the band four days prior to the album's release
+- id: auto-003
+  type: fact
+  depth: study
+  phase: before
+  body: The album was written during COVID-19 lockdowns and road-tested during brief touring in support
+    of the band's debut album.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Written during COVID-19 lockdowns and road-tested during brief touring stints in support
+      of the debut album, For the First Time (2021)
+- id: auto-004
+  type: fact
+  depth: listen
+  phase: before
+  body: 'It was preceded by four singles: ''Chaos Space Marine'', ''Bread Song'', ''Concorde'' and ''Snow
+    Globes''.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: 'was preceded by four singles: "Chaos Space Marine", "Bread Song", "Concorde" and "Snow Globes"'
+- id: auto-005
+  type: fact
+  depth: listen
+  phase: after
+  body: The album became the band's highest-charting, debuting at number 3 on the UK Albums Chart and
+    reaching the top 10 in Australia, Germany and the Netherlands.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: becoming Black Country, New Road's highest-charting album, debuting at number 3 on the UK
+      Albums Chart and reaching the top 10 in Australia, Germany and the Netherlands
+- id: auto-006
+  type: fact
+  depth: study
+  phase: after
+  body: A deluxe edition featuring live songs was released about four months after the original album.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: A deluxe edition of the album featuring live songs was released four months after
+- id: auto-007
+  type: fact
+  depth: study
+  phase: before
+  body: Recording took place over three weeks at Chale Abbey Studios with Sergio Maschetzko, the band's
+    live sound engineer, producing despite never having produced an album before.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was recorded over three weeks at Chale Abbey Studios
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Hyde revealed that Maschetzko had not recorded an album before, but they picked him because
+      the band wanted to capture their material in a live setting
+- id: auto-009
+  type: fact
+  depth: study
+  phase: before
+  body: The album draws on post-rock, chamber pop and indie rock, with the band citing influences including
+    Arcade Fire's Funeral, Sufjan Stevens' Illinois, Arthur Russell's Iowa Dream and Billie Eilish's Happier
+    Than Ever.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the band noting that during the recording process they were influenced by Arcade Fire's Funeral
+      (2004), Sufjan Stevens' Illinois (2005), Arthur Russell's Iowa Dream (2019) and Billie Eilish's
+      Happier Than Ever (2021)
+- id: auto-010
+  type: fact
+  depth: study
+  phase: before
+  body: Many tracks stemmed from writing sessions between Wood, Hyde and guitarist Luke Mark, who lived
+    together during the first lockdown; the full band convened in January 2021 to develop new material
+    further.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Many of the album's tracks stem from the initial writing sessions between Wood, Hyde and
+      guitarist Luke Mark, who lived together during the first COVID-19 lockdown
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the full band convened for a week to work on new material, where each member "brought their
+      own constituent parts" to songs
+- id: auto-027
+  type: fact
+  depth: study
+  phase: before
+  body: The album's title, finalised on the day of its deadline, refers to how people appear when viewed
+    from an airplane, tying into the cover art and the recurring lyrical theme of the Concorde jet.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The album's title was finalised by the band on the day of its deadline
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It refers to the appearance of people while viewed from an airplane, tying in with the album
+      cover and the recurring lyrical theme of the Concorde jet
+- id: auto-028
+  type: trivia
+  depth: study
+  phase: before
+  body: The album cover artwork was made by Simon Monk, while promotional material artwork came from the
+    band members' own childhood drawings.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The artwork for the album was made by Simon Monk. The artwork for the promotional materials
+      came from the band members' childhood drawings
+- id: auto-029
+  type: fact
+  depth: listen
+  phase: after
+  body: Four days before release, Isaac Wood announced his departure from the band citing mental health
+    reasons, clarifying he remained on good terms with them.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Four days before the album's release, Wood announced his departure from the band, citing
+      mental health reasons. He clarified he was still on good terms with the band
+- id: auto-030
+  type: fact
+  depth: study
+  phase: after
+  body: The remaining members said they would not perform music written with Wood after his departure,
+    and the planned February tour was cancelled, though a new tour launched in May without him.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The remaining members said they would not perform music written with Wood after his departure
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: however dates were cancelled after the departure of Wood. In May, the band, sans Wood, launched
+      another tour that concluded in September
+- id: auto-031
+  type: fact
+  depth: study
+  phase: after
+  body: The band road-tested new material on their 2022 tour that later became the live album Live at
+    Bush Hall, and a deluxe edition of Ants from Up There featured songs performed live at the Queen Elizabeth
+    Hall.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The band once again road-tested new material on this tour, which later became Live at Bush
+      Hall
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: A deluxe edition of the album was released on 10 June, featuring songs performed live at
+      the Queen Elizabeth Hall
+- id: auto-032
+  type: fact
+  depth: listen
+  phase: after
+  body: The album received universal acclaim, averaging a score of 92 on Metacritic and ranking as the
+    third-most critically acclaimed album of 2022 according to that site.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: At Metacritic, the album has received an average score of 92, based on 20 reviews
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: it was the third-most critically acclaimed album of 2022
+- id: auto-033
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Will Richards of NME said the band pivoted toward more accessible sounds without sacrificing inventiveness,
+    calling the album a future cult classic in light of Wood's departure.
+  author: Will Richards
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: to pivot towards more familiar, accessible sounds and embrace traditional song structures
+      – without sacrificing an ounce of their musical wizardry or inventiveness
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: declaring it "truly remarkable" and a "future cult classic" in the wake of Wood's departure
+- id: auto-034
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Ian Cohen of Pitchfork praised the album's life-affirming, emo-like sentimentality, comparing
+    it to adjacent masterpieces like In the Aeroplane Over the Sea, The Monitor, and Teens of Denial.
+  author: Ian Cohen
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: he stated that by "manifesting every glimmer of hope as a heaven-sent beacon and every letdown
+      as a plunge towards the void", the band captured the essence of "adjacent masterpieces like Neutral
+      Milk Hotel's In the Aeroplane Over the Sea, Titus Andronicus's The Monitor, and Car Seat Headrest's
+      Teens of Denial"
+- id: auto-035
+  type: interpretation
+  depth: study
+  phase: after
+  body: AllMusic's Timothy Monger described the album as impressive and rife with forward momentum, but
+    preempted by its own self-mythology regarding Wood.
+  author: Timothy Monger
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: an impressive one, rife with forward momentum but preempted by its own self-mythology
+- id: auto-036
+  type: interpretation
+  depth: study
+  phase: after
+  body: Dafydd Jenkins of Loud and Quiet felt the album fell short of its predecessor, with its songs
+    leading to interesting trajectories of almost-pop near-misses, and called 'Chaos Space Marine' a low-light.
+  author: Dafydd Jenkins
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: felt the album fell short of its predecessor, and felt like its songs "lead to interesting
+      trajectories of almost-pop near-misses"
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Jenkins also called "Chaos Space Marine" a low-light of the album
+- id: auto-037
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The Line of Best Fit's Kyle Kohner gave the album a perfect score, praising Wood as a clairvoyant
+    author of witty, abstract storytelling and the band's wry mouthpiece for a generation of young people.
+  author: Kyle Kohner
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: praising Wood as a "clairvoyant" author of "witty, abstract storytelling" on Ants and remarking
+      upon his position as "the wry mouthpiece of a band... keenly speaking to a generation of young people"
+- id: auto-038
+  type: interpretation
+  depth: study
+  phase: after
+  body: Tom Morgan of PopMatters applauded the band's bold, progressive compositions and distinguished
+    Wood's lyrics as unique, profound, and more contemporarily relevant than those of his indie peers.
+  author: Tom Morgan
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: applauded the band's "bold and progressive" compositions, but particularly distinguished
+      Wood's lyrics as "unique and often profound", hailing his "deft, resonant words" for their "contemporary
+      relevance"
+- id: auto-039
+  type: interpretation
+  depth: study
+  phase: after
+  body: Damien Morris of The Observer noted that Wood was often the best thing about the band and called
+    his voice and lyricism 'a hoot'.
+  author: Damien Morris
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Damien Morris of The Observer noted how Wood was "often the best thing about [the band]"
+      and called his voice and lyricism "a hoot"
+- id: auto-042
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Mark Beaumont of The Independent said the album's grace and ambition would be tough for 2022 to
+    top, citing grunge rock crescendos on 'Good Will Hunting' and gargantuan arias on 'Basketball Shoes'
+    as highlights.
+  author: Mark Beaumont
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the sheer grace and ambition of Ants... will prove tough for 2022 to top
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: citing the "grunge rock crescendos accompanying images of burning starships on 'Good Will
+      Hunting', and gargantuan arias on the 12-minute 'Basketball Shoes'" as track highlights
+- id: auto-050
+  type: fact
+  depth: study
+  phase: before
+  body: Ants From Up There was recorded at Chale Abbey Studios on the Isle of Wight with longtime collaborator
+    Sergio Maschetzko.
+  reviewed: true
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: was recorded at Chale Abbey Studios on the Isle Of Wight, with longtime collaborator Sergio
+      Maschetzko
+- id: auto-053
+  type: fact
+  depth: study
+  phase: before
+  body: The band had postponed their remaining 2021 UK and Ireland tour dates due to ongoing illness within
+    the band.
+  reviewed: true
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: due to the ongoing illness within the band we are in the unfortunate position of having to
+      postpone our remaining 2021 dates in the UK and Ireland
+- id: auto-054
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Compared to the debut's breakneck pace, this album favors a colossal slowness that adds greater
+    heaviness and spaciousness.
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: this album mostly revels in a colossal slowness that extracts several tonnes more heaviness
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: The album feels much more spacious, steeped in a more contemplative, pensive romanticism
+- id: auto-059
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The review calls the album more melodic and anthemic than ever, capturing the band at a critically
+    transformative point.
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: More melodic and anthemic than ever, 'Ants From Up There' captures Black Country, New Road
+      at a critically transformative juncture
+- id: auto-060
+  type: fact
+  depth: listen
+  phase: after
+  body: In the same week that Ants From Up There was released, frontman Isaac Wood announced he was leaving
+    the band, citing mental health issues.
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: In the week of Ants From Up There's release, frontman Isaac Wood announced his departure
+      from the band, citing mental health issues.
+- id: auto-061
+  type: interpretation
+  depth: listen
+  phase: after
+  body: A reviewer described the album as a blow-out open to all-comers, calling it Wood's swansong, and
+    said it embraces accessibility compared to the band's debut.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: If a cult grew around the debut, Wood's swansong is a blow-out open to all-comers.
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: But now, embracing accessibility, they bloom into glorious carnival sway-alongs
+- id: auto-066
+  type: interpretation
+  depth: study
+  phase: during
+  body: A reviewer compared Isaac Wood's spoken-sung vocal style to a mix of David Byrne, Orlando Weeks
+    and a baritone Jarvis Cocker, noting his lyrics were full of pop culture references.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: Wood's tremulous sprechgesang vocals (part David Byrne, part Orlando Weeks, part baritone
+      Jarvis Cocker) and impressionist lyrics speckled with pop culture references
+- id: auto-073
+  type: trivia
+  depth: study
+  phase: after
+  body: The review connects the album's themes to photographer Wolfgang Tillmans' "Concorde Grid" series,
+    which captured the Concorde jet in flight shortly before the aircraft program ended.
+  body_long: The reviewer draws a parallel between Isaac Wood's departure and Tillmans' photo project,
+    which captured a hopeful vision of the future just before it collapsed, similar to themes on the record.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: In a photo series titled "Concorde Grid", Tillmans captured this luxurious, hypersonic jet
+      in flight only a few years before the entire operation finally folded
+- id: auto-074
+  type: fact
+  depth: listen
+  phase: before
+  body: Frontman Isaac Wood left Black Country, New Road during the lead-up to the album's release, citing
+    mental health reasons.
+  body_long: His departure was described as a significant blow for the young band, even as his health
+    was said to take priority.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the band’s frontman Issac Wood left Black Country, New Road, citing mental health reasons
+- id: auto-075
+  type: fact
+  depth: study
+  phase: after
+  body: The band has often been compared to 1990s experimental rock group Slint, though the page argues
+    this comparison is largely inaccurate.
+  body_long: The two acts are said to share little beyond a patient compositional approach, with Slint's
+    brooding darkness and dissonant bursts absent from the band's more reflective, emotive style.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: Black Country, New Road have been dogged by comparisons to the 1990’s experimental rock band
+      Slint
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: The two share little in common besides a patient approach to composition
+- id: auto-077
+  type: fact
+  depth: listen
+  phase: before
+  body: The band's musical craft had developed since their previous release, For the First Time, with
+    louder and quieter passages both pushed further.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: The band’s musical craft has already developed since last year’s For the First Time
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the loud moments are more muscular and ornate, the quiet moments more poised and nuanced
+- id: auto-078
+  type: fact
+  depth: listen
+  phase: during
+  body: The album moves between very different musical textures, from trilling klezmer to stately piano
+    to cacophonous brass, while still feeling unified.
+  body_long: Despite shifting dramatically in style from track to track, the record is described as maintaining
+    an overall sense of musical cohesion.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: Ants From Up There maintains an impressive musical cohesion
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: the band slot into a groove that can gallop, murmur or shock from one moment to the next,
+      without ever sacrificing a sense of unity
+- id: auto-079
+  type: fact
+  depth: study
+  phase: during
+  body: Half of the album's ten songs run longer than six minutes.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: With half the album's ten songs over six minutes long, you'd expect a little space to breathe
+- id: auto-083
+  type: trivia
+  depth: study
+  phase: during
+  body: Somewhere on the album a whispered line references 'Billie Eilish style'.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: a whispered line about 'Billie Eilish style' or piercing saxophone run can hit just as effectively
+- id: auto-084
+  type: fact
+  depth: listen
+  phase: after
+  body: The reviewer singles out Concorde, Chaos Space Marine and Snow Globes as the tracks to listen
+    to.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: 'Listen to: Concorde, Chaos Space Marine, Snow Globes'
+- id: auto-085
+  type: fact
+  depth: listen
+  phase: after
+  body: Frontman Isaac Wood unexpectedly left Black Country, New Road shortly before this review of the
+    album was published.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: Shame that he unexpectedly left the band last week, as he’s often the best thing about it.
+- id: auto-086
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The reviewer calls the album a baroque pop masterpiece, saying the band excels at creating remarkable
+    baroque pop soundworlds.
+  author: Isaac Wood
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: it can be about creating remarkable soundworlds of baroque pop fantasias, and this band are
+      outstanding at those
+- id: auto-088
+  type: fact
+  depth: listen
+  phase: after
+  body: On January 31, Black Country, New Road announced through a letter from Isaac Wood that he would
+    no longer be a member of the group.
+  body_long: The announcement came just days before the album's release, with the remaining members stating
+    they would carry on without him.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: the band announced, through Wood’s own emotional letter, that he “won’t be a member of the
+      group anymore,” and that the remaining members will carry on without him
+- id: auto-092
+  type: fact
+  depth: listen
+  phase: during
+  body: Of the album's ten songs, two are instrumentals and five run at least six minutes long.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: of the 10 songs on Ants From Up There, two are instrumentals and five are at least six minutes
+      long
+- id: auto-097
+  type: fact
+  depth: study
+  phase: after
+  body: Ants From Up There debuted on the ARIA Top 50 Albums chart at a peak position of number 6 for
+    the week of 14 February 2022.
+  reviewed: true
+  sources:
+  - ref: aria-top-50-albums-for-week-of-14-februa
+    stance: supports
+    excerpt: Ants From Up There Black Country, New Road New! - last week 6 peak 1 weeks in

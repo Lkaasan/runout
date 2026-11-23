@@ -1,0 +1,168 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 2
+title: Chaos Space Marine
+duration: '3:36'
+apple_music_id: '1586070261'
+claims:
+- id: auto-012
+  type: trivia
+  depth: listen
+  phase: during
+  body: '''Chaos Space Marine'' got its name from the eponymous miniature figurines in the Warhammer 40,000
+    franchise.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Chaos Space Marine" got its name from the eponymous miniature figurines in the Warhammer
+      40,000 franchise'
+- id: auto-013
+  type: fact
+  depth: study
+  phase: during
+  body: The song's melody draws on glam rock, with lyrics combining grandiose imagery with introspective
+    anxiety referencing England and pop culture figures like Billie Eilish.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song's melody draws inspiration from glam rock, while the lyrics combine grandiose imagery
+      with introspective anxiety that references England and pop culture figures like Billie Eilish
+- id: auto-043
+  type: fact
+  depth: listen
+  phase: before
+  body: '"Chaos Space Marine" was released as the lead single from Ants from Up There on 12 October 2021,
+    alongside the album''s announcement.'
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: released as the lead single from their studio album Ants from Up There (2022)
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The song was released on 12 October 2021, as the lead single from the studio album Ants from
+      Up There.
+- id: auto-044
+  type: trivia
+  depth: listen
+  phase: during
+  body: The song's title references the Chaos Space Marine miniatures from the Warhammer 40,000 franchise,
+    and its lyrics tell the story of a surrealist character of that name.
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: With its name referencing the eponymous miniatures from the Warhammer 40,000 franchise, the
+      track begins in a frantic, engaging, and fun manner
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The lyrics detail the story of a surrealist character known as the "Chaos Space Marine" from
+      Warhammer 40,000.
+- id: auto-045
+  type: fact
+  depth: study
+  phase: during
+  body: The song's lyrics include quotations from the Smiths and the Bible as Wood contemplates leaving
+    London for New York City and the high seas.
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: he contemplates leaving London behind for New York City and the high seas, with quotations
+      from the Smiths ("though England is mine") and the Bible
+- id: auto-046
+  type: fact
+  depth: study
+  phase: during
+  body: The track's melody draws on glam rock as well as classical music and jazz, and at times resembles
+    the sound of Arcade Fire.
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The song's melody draws inspiration from glam rock, as well as styles of classical music
+      and jazz.
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The track at times resembles the sound of the band Arcade Fire.
+- id: auto-047
+  type: fact
+  depth: study
+  phase: during
+  body: The track closes with soft backing vocals from Tyler Hyde and May Kershaw, a piano cadence, and
+    a melancholic saxophone part as Lewis Evans slows the tempo.
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The track then culminates with soft backing vocals from Tyler Hyde and Kershaw, a comforting
+      piano cadence from Kershaw, and a melancholic saxophone sigh as Lewis Evans slows the tempo.
+- id: auto-048
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Matthew Prudham of The Indiependent said the track is masterfully planned and works well despite
+    its musical surprises.
+  author: Matthew Prudham
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: Matthew Prudham of The Indiependent stated the track is so masterfully planned that, despite
+      its musical surprises, it works very well.
+- id: auto-049
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Aran Grover of Exposé wrote that the single presents a more refined sound than the band's debut.
+  author: Aran Grover
+  reviewed: true
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: BCNR with this single present a perhaps more refined sound than their debut
+- id: auto-062
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A critic characterized this track as a glam showtune with a chorus big enough to risk comparison
+    to The Killers.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: glam showtunes with choruses that might prompt cease-and-desist orders from The Killers (“Chaos
+      Space Marine”)
+- id: auto-080
+  type: fact
+  depth: listen
+  phase: during
+  body: Chaos Space Marine is built around string-laden melodrama.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: string-laden melodrama (Chaos Space Marine)
+- id: auto-090
+  type: trivia
+  depth: listen
+  phase: before
+  body: The band itself has called "Chaos Space Marine" the best song they've ever written.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: barging right into what the band has called the “best song we’ve ever written.”
+- id: auto-091
+  type: fact
+  depth: study
+  phase: before
+  body: '"Chaos Space Marine" was released as the album''s lead single in October of the prior year.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: Since the release of the lead single “Chaos Space Marine” in October of last year

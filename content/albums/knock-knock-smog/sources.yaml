@@ -1,0 +1,31 @@
+sources:
+- id: knock-knock-smog-album
+  kind: database
+  title: Knock Knock (Smog album)
+  url: https://en.wikipedia.org/wiki/Knock_Knock_(Smog_album)?oldid=1369128985
+  tier: tertiary
+- id: smog-knock-knock-album-review-pitchfork
+  kind: press
+  title: 'Smog: Knock Knock Album Review | Pitchfork'
+  url: https://pitchfork.com/reviews/albums/smog-knock-knock/
+  tier: secondary
+- id: subscribe-to-vice
+  kind: press
+  title: Subscribe to VICE
+  url: https://www.vice.com/en/article/bill-callahan-goes-deep-on-his-classic-track-river-guard/
+  tier: tertiary
+- id: post-rock-magician-jim-o-rourkedisappear
+  kind: press
+  title: Post-Rock Magician Jim O’RourkeDisappears Behind Smog | Observer
+  url: https://observer.com/1999/03/postrock-magician-jim-orourkedisappears-behind-smog/
+  tier: tertiary
+- id: knock-knock-turns-20
+  kind: press
+  title: Knock Knock Turns 20
+  url: https://www.stereogum.com/2028117/smog-knock-knock-turns-20/reviews/the-anniversary/
+  tier: secondary
+- id: smog-s-classic-knock-knock-gets-20th-ann
+  kind: press
+  title: Smog's Classic 'Knock Knock' Gets 20th Anniversary Vinyl Reissue
+  url: https://exclaim.ca/music/article/smogs_classic_knock_knock_gets_20th_anniversary_vinyl_reissue
+  tier: tertiary

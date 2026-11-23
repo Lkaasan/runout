@@ -57,3 +57,29 @@ verified.
 - One in ten is a modest hit rate, and most of these statements come from books and old magazines that are not
   freely readable online. The step is working as designed: it says "not found" instead of guessing.
 
+## A new, lesser-known album: Westside Cowboy, *It Goes On* (released 21 August 2026)
+
+Not scored: there is no gold set for it, so these are counts and spot checks, not accuracy. The point was to see
+whether the finder works on an album it was never tuned on, with no hand-written files.
+
+- `init`: built the folder from the Apple Music page linked in the album's Wikipedia article: 11 tracks with lengths
+  and Apple Music ids, release date, cover, and 14 pages to read from the article's references. (This needed a fix: the
+  article is filed under the plain title "It Goes On", which the Animals-era search rejected.)
+- `collect`: 15 pages (MusicBrainz, the album's Wikipedia article, 13 press pages). No Wikipedia article for any of the
+  11 songs, as expected for a new band. Two pages unreadable (Stereogum gave no article text, Under the Radar answered 403).
+- `extract` + verifier + conflicts: 154 proposals (59 facts, 62 interpretations, 23 artist-intent, 10 trivia), 4 dropped,
+  7 merged duplicates, 30 flagged by the verifier, 10 contradicting sources found. 40 calls, 15 minutes, $2.18 list price.
+  Real disagreements surfaced: one page calls the record a debut EP, the title of the last track is spelled two ways,
+  and a claim of "no synths" meets a credit list that includes synths.
+- `trace` (now checks the page a claim already cites before searching): 12 of 23 artist-intent claims got a proposed
+  primary source (7 straight from the interview page that backed them, 5 after a search). 38 calls, $2.75 list price.
+  Animals managed 1 of 10, because a 1977 record's interviews are in books and old magazines; a record from this summer
+  has its interviews online.
+- Weak spots: 154 proposals is a lot to review (62 are critics' opinions, many repeating each other); song-level facts
+  exist only where a review or interview covers the song; no gold set means no recall number yet.
+
+`app.research promote` then moved the clean part into the album's seed files: 87 claims (facts and trivia nothing
+doubted, plus critics' views that name the critic), all approved on import. Left as proposals: 25 opinions with no named
+author, 23 artist-intent claims (waiting for a person to confirm their primary sources), 10 contradicted, 8 doubted,
+1 repeat. This is a first pass by rule, not a line-by-line review.
+

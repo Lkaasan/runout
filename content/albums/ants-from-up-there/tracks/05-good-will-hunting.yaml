@@ -1,0 +1,47 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 5
+title: Good Will Hunting
+duration: '4:57'
+apple_music_id: '1586070264'
+claims:
+- id: auto-018
+  type: fact
+  depth: study
+  phase: during
+  body: While working on 'Good Will Hunting' the band listened to Kurt Vile and blended Midwest emo, jazz,
+    and grunge textures, writing two versions with different time signatures that were combined.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: While working on "Good Will Hunting" the band listened to Kurt Vile; and blended Midwest
+      emo, jazz, and grunge textures
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was written in two versions with different time signatures, which were ultimately combined
+      into the final version
+- id: auto-057
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '''Good Will Hunting'' is described as an electronic-swirling elegy that builds to a gloriously
+    filthy skronk.'
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: as on 'Good Will Hunting's electronic-swirling elegy, culminating in a gloriously filthy
+      skronk
+- id: auto-065
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A critic noted this song pairs grunge rock crescendos with imagery of burning starships.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: With grunge rock crescendos accompanying images of burning starships on “Good Will Hunting”

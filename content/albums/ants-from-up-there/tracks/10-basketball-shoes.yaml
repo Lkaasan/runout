@@ -1,0 +1,100 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 10
+title: Basketball Shoes
+duration: '12:37'
+apple_music_id: '1586070269'
+claims:
+- id: auto-025
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Basketball Shoes'' is a twelve-minute closing track structured like a surrealist three-act
+    play, containing leitmotifs from ''Concorde'', ''Snow Globes'' and ''Intro'' and climaxing with saxophone,
+    violin, and vocals.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It contains various leitmotif taken from the rest of the songs such as "Concorde", "Snow
+      Globes" and "Intro"
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Structured like a surrealist three-act play, it evolves from delicate poetry to aggressive
+      emo, resulting in an ultimate climax of saxophone, violin, and vocals
+- id: auto-026
+  type: trivia
+  depth: study
+  phase: before
+  body: '''Basketball Shoes'' was one of the band''s earliest songs, predating their debut album, and
+    originally described an unhealthy obsession with Charli XCX before its lyrics were changed for the
+    final version.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was one of the first songs the band wrote and predates For the First Time, originally
+      describing an unhealthy obsession with British singer Charli XCX in its earliest form before undergoing
+      lyrical changes for the final version
+- id: auto-040
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Sam Richards of Uncut compared 'Basketball Shoes' favourably to 'Marquee Moon' and Godspeed You!
+    Black Emperor, calling it a gut-wrenching epic of Dostoevskian proportions.
+  author: Sam Richards
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Sam Richards of Uncut compared the song favourably to "Marquee Moon" and the work of Godspeed
+      You! Black Emperor, praising it as "a moment of euphoria, catharsis or collapse" and declaring it
+      "a gut-wrenching epic of Dostoevskian proportions"
+- id: auto-041
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Kyle Kohner characterized 'Basketball Shoes' emotional impact as devastating yet cleansing.
+  author: Kyle Kohner
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Kohner characterised it as "devastating, yet cleansing" emotional impact
+- id: auto-067
+  type: fact
+  depth: listen
+  phase: during
+  body: '"Basketball Shoes" is a three-part epic that makes up the final twelve minutes of the record
+    and had long been a fan favorite before the album''s release.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: come to complete ruin during the album's final 12 minutes, the three-part epic and long-time
+      fan favorite
+- id: auto-087
+  type: trivia
+  depth: study
+  phase: before
+  body: Basketball Shoes had been long-awaited by the band's live audiences before appearing on this album.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: He kills on the long-awaited Basketball Shoes, which performs the same task here as it does
+      at their gigs
+- id: auto-096
+  type: trivia
+  depth: listen
+  phase: after
+  body: The closing track "Basketball Shoes" has been spoken of with hushed reverence by fans since the
+    band's early days and went through numerous versions and rewrites since 2019.
+  body_long: The reviewer likens its legendary status among fans to Radiohead's long-bootlegged "True
+    Love Waits."
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: a song that’s been spoken of with hushed reverence by fans since the band’s early days and
+      has gone through numerous versions and rewrites since 2019

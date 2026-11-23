@@ -1,0 +1,48 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 8
+title: The Place Where He Inserted the Blade
+duration: '7:13'
+apple_music_id: '1586070267'
+claims:
+- id: auto-022
+  type: fact
+  depth: study
+  phase: during
+  body: '''The Place Where He Inserted the Blade'' is a flute-led track dealing lyrically with trust and
+    vulnerability in relationships, and its recording was noted as difficult due to a technical error
+    by Wayne.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"The Place Where He Inserted the Blade" is a flute-led track, evoking reciprocal and gentle
+      feelings, and lyrically dealing with trust and vulnerability in relationships'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Its recording was noted by the band as difficult due to a technical error on Wayne's part
+- id: auto-056
+  type: interpretation
+  depth: study
+  phase: during
+  body: '''The Place Where He Inserted the Blade'' leans into a bluesy, late-period Dylan influence, inspired
+    by his 2020 album.'
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: a hybrid of late-period Dylan (specifically the bluesy plea of 'The Place Where He Inserted
+      The Blade', inspired by 2020’s 'I’ve Made Up My Mind…')
+- id: auto-064
+  type: interpretation
+  depth: listen
+  phase: during
+  body: This track is described as a glorious carnival sway-along, part of the album's shift toward more
+    accessible, bloom-like arrangements.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: they bloom into glorious carnival sway-alongs (“The Place Where He Inserted the Blade”)

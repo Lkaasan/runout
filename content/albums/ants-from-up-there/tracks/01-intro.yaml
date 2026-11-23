@@ -1,0 +1,48 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 1
+title: Intro
+duration: 0:54
+apple_music_id: '1586070260'
+claims:
+- id: auto-011
+  type: fact
+  depth: study
+  phase: during
+  body: '''Intro'' is a 54-second instrumental incorporating klezmer elements and was one of the first
+    songs the band wrote, predating their debut album.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The album opens with a 54-second instrumental piece, "Intro". It incorporates klezmer elements,
+      a style of Jewish music
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: was one of the first songs the band wrote, predating their debut
+- id: auto-055
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The Intro is a more succinct version of the klezmer-centred intro from the debut, segueing fluidly
+    into 'Chaos Space Marine'.
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: a klezmer-centred Intro on their debut; a more succinct, and more on the intro here
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: This time it segues fluidly into 'Chaos Space Marine'
+- id: auto-089
+  type: fact
+  depth: study
+  phase: during
+  body: The "Intro" lasts only 54 seconds before leading directly into "Chaos Space Marine."
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: this “Intro” lasts 54 seconds before barging right into what the band has called the “best
+      song we’ve ever written.”

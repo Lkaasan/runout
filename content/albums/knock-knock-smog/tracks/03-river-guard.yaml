@@ -1,0 +1,108 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 3
+title: River Guard
+duration: '6:22'
+apple_music_id: '81379245'
+claims:
+- id: auto-022
+  type: interpretation
+  depth: study
+  phase: during
+  body: The reviewer suggests "River Guard," about a prison guard watching swimming prisoners, may be
+    a metaphor for the act of interpreting songs and deferring final judgment on their meaning.
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: I wonder if it isn’t in some way about the act of interpretation. Perhaps the prisoners are
+      his songs.
+- id: auto-025
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan recalled a Belgian interviewer who insisted on calling him "Mr. Callahan" after hearing
+    the song.
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember an interviewer from somewhere in Belgium, said he had to call me Mr. Callahan
+      after hearing that song.
+- id: auto-026
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan mentioned a four-year-old fan who loved the album and would dictate letters to her parents
+    asking him about the "tall grass" line.
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: She would always ask me about the tall grass.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: There was a little girl who used to write me, she must’ve been about four-years-old.
+- id: auto-027
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan noted that actress Milla Jovovich had said in interviews she would watch the ending of
+    the movie Contact with the sound off while listening to "River Guard."
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember at the time she was saying in interviews that she would watch the end of that
+      Contact movie with the sound off and “River Guard” on.
+- id: auto-028
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan said he wished someone would create a slow-motion edit pairing "River Guard" with the
+    prison-escape scene from season two of Orange Is the New Black.
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I wanted someone to do an edit of the scene in slo-mo with “River Guard” beneath it. I’m
+      still waiting.
+- id: auto-029
+  type: interpretation
+  depth: study
+  phase: during
+  body: Callahan opens the song with a line about taking prisoners swimming, and sings they "have the
+    time of their lives," setting up a sparse arrangement over which the song explores a prison guard's
+    existential struggle.
+  author: Bill Callahan
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: Over a sparse guitar line and gentle piano, Callahan sings of a prison guard wrestling his
+      own existential battle as he watches over prisoners swimming in a river.
+- id: auto-037
+  type: fact
+  depth: listen
+  phase: during
+  body: '"River Guard" is narrated by a prison guard who watches inmates swim and reflects on that image
+    as a metaphor for his own life.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: a prison guard who watches his inmates go for a swim and contemplates the metaphor within
+      the context of his own life
+- id: auto-045
+  type: fact
+  depth: study
+  phase: during
+  body: '"River Guard"''s arrangement of mournful piano and slide guitar moves slowly like light rain
+    but builds toward something life-affirming.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: The arrangement of "River Guard" laps slowly like light rain on a small body of water --
+      all mournful piano and slide guitar -- but it builds toward something life-affirming

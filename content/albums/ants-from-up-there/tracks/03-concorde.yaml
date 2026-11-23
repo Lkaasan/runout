@@ -1,0 +1,85 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 3
+title: Concorde
+duration: '6:03'
+apple_music_id: '1586070262'
+claims:
+- id: auto-008
+  type: fact
+  depth: study
+  phase: during
+  body: '''Concorde'' marked the first time Isaac Wood used double-tracked vocals, as the band experimented
+    with vocal overdubs throughout the album.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The band experimented with vocal overdubs throughout the album, particularly on "Concorde",
+      with it marking the first song Wood used double-tracked vocals on
+- id: auto-014
+  type: fact
+  depth: study
+  phase: during
+  body: '''Concorde'' was inspired by science fiction stories such as Luca and 2012, and the band used
+    mandolin to give it an unpredictable, spiky element.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Concorde" was inspired by such science fiction stories as Luca and 2012'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: they used the mandolin to give the song "unpredictability" and "a snappy and spiky element"
+- id: auto-015
+  type: interpretation
+  depth: study
+  phase: during
+  body: Gigwise interpreted 'Concorde' as portraying the yearning for a lost relationship through the
+    metaphor of the Concorde fallacy.
+  author: Gigwise
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Gigwise interpreted the song's meaning as "[portraying] the yearning for a lost relationship"
+      through the metaphor of the Concorde fallacy
+- id: auto-051
+  type: fact
+  depth: study
+  phase: before
+  body: '''Concorde'' was released as the third single showcased from Ants From Up There, following ''Bread
+    Song'' and ''Chaos Space Marine''.'
+  reviewed: true
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: The track, which you can listen to below, is the third to be showcased from their forthcoming
+      album ‘Ants From Up There’
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: They previously released Steve Reich-inspired single, ‘Bread Song‘ and ‘Chaos Space Marine’
+      from the LP
+- id: auto-063
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A reviewer described this song as an alt-folk waltz.
+  author: MB
+  reviewed: true
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: alt-folk waltzes (“Concorde”)
+- id: auto-068
+  type: fact
+  depth: study
+  phase: during
+  body: '"Concorde," described as the record''s centerpiece, builds from a big, billowing sound into a
+    euphoric display that contrasts with the grim news delivered in its lyrics.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: the record’s centerpiece, is big, billowing, and slowly expands into a euphoric display that
+      all but juxtaposes a doomful reality

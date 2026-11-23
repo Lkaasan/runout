@@ -1,0 +1,57 @@
+sources:
+- id: ants-from-up-there
+  kind: database
+  title: Ants from Up There
+  url: https://en.wikipedia.org/wiki/Ants_from_Up_There?oldid=1382849504
+  tier: tertiary
+- id: chaos-space-marine-song
+  kind: database
+  title: Chaos Space Marine (song)
+  url: https://en.wikipedia.org/wiki/Chaos_Space_Marine_(song)?oldid=1376912927
+  tier: tertiary
+- id: listen-to-black-country-new-road-s-tende
+  kind: press
+  title: Listen to Black Country, New Road's tender new single 'Concorde'
+  url: https://www.nme.com/news/music/listen-to-black-country-new-roads-tender-new-single-concorde-3107886
+  tier: secondary
+- id: black-country-new-road-ants-from-up-ther
+  kind: press
+  title: Black Country, New Road – Ants From Up There
+  url: https://www.clashmusic.com/reviews/black-country-new-road-ants-from-up-there
+  tier: secondary
+- id: become-an-independent-member-to-bookmark
+  kind: press
+  title: Become an Independent member to bookmark this article
+  url: https://www.independent.co.uk/arts-entertainment/music/reviews/bastille-review-bcnr-cate-le-bon-b2006778.html
+  tier: tertiary
+- id: black-country-new-road-push-against-the-
+  kind: press
+  title: Black Country, New Road push against the fate of oblivion on the excellent Ants From Up Here
+  url: https://www.thelineofbestfit.com/reviews/albums/black-country-new-road-ants-from-up-there-album-review
+  tier: secondary
+- id: ants-from-up-there-sees-black-country-ne
+  kind: press
+  title: '''Ants From Up There'' Sees Black Country, New Road Thrillingly Solidify Their Unique Vision
+    » PopMatters'
+  url: https://www.popmatters.com/black-country-new-road-ants
+  tier: tertiary
+- id: black-country-new-road-ants-from-up-ther-2
+  kind: press
+  title: Black Country, New Road – Ants From Up There
+  url: https://www.theskinny.co.uk/music/reviews/albums/black-country-new-road-ants-from-up-there
+  tier: secondary
+- id: black-country-new-road-ants-from-up-ther-3
+  kind: press
+  title: 'Black Country, New Road: Ants from Up There review – a baroque pop masterpiece'
+  url: https://www.theguardian.com/music/2022/feb/06/black-country-new-road-ants-from-up-there-review-a-baroque-pop-masterpiece-isaac-wood
+  tier: secondary
+- id: black-country-new-road-ants-from-up-ther-4
+  kind: press
+  title: 'Black Country, New Road: Ants From Up There Album Review | Pitchfork'
+  url: https://pitchfork.com/reviews/albums/black-country-new-road-ants-from-up-there/
+  tier: secondary
+- id: aria-top-50-albums-for-week-of-14-februa
+  kind: press
+  title: ARIA Top 50 Albums for week of 14 February 2022
+  url: https://www.aria.com.au/charts/albums-chart/2022-02-14
+  tier: tertiary

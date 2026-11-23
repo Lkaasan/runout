@@ -1,0 +1,30 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 9
+title: I Could Drive Forever
+duration: '5:15'
+apple_music_id: '81379259'
+claims:
+- id: auto-020
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"I Could Drive Forever" serves as the subdued counterpart to the energetic "Hit the Ground Running,"
+    offering a measured meditation on regret.'
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: '“I Could Drive Forever” is the hushed yin to “Hit the Ground Running”’s ebullient yang:
+      a measured rumination on regret, a fuzzy dream of an infinitely receding horizon.'
+- id: auto-047
+  type: fact
+  depth: listen
+  phase: during
+  body: '"I Could Drive Forever" serves as the album''s dreary penultimate track before its closing farewell.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: in Knock Knock's dreary penultimate track "I Could Drive Forever."

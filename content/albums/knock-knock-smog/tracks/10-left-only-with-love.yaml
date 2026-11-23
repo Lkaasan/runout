@@ -1,0 +1,23 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 10
+title: Left Only With Love
+duration: '2:52'
+apple_music_id: '81379261'
+claims:
+- id: auto-021
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"Left Only With Love" closes the album as a weary, resigned farewell, serving as the mirror opposite
+    of the opening track''s optimism.'
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Weary and resigned, “Left Only With Love” wraps up the album with a farewell to the person
+      that he has left behind, a soft expression of regret.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It is the mirror opposite of the opening song’s boundless optimism.

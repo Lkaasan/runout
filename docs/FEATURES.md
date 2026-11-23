@@ -143,6 +143,8 @@ Needs user accounts, which the foundations plan explicitly left out. Decide the 
   - [x] Z1.1 No-AI collectors (MusicBrainz, Wikipedia) and page cache: `uv run python -m app.research collect animals`
   - [x] Z1.2 Extractor (Claude Code, subscription) and deterministic code checks (verbatim excerpt match, tiers, lyric guard): `uv run python -m app.research extract animals`; run log in `apps/api/evals/RESULTS.md`
   - [x] Z1.3 Verifier and conflict detection, plus reading hand-picked press pages (`research.yaml`): `app.research extract`, `app.research verify-eval`
+  - [x] Z1.4a Start a brand-new album with no hand-written files: `app.research init "<Artist>" "<Album>"` (first used on Westside Cowboy, *It Goes On*, 2026)
+  - [x] Z1.4b `app.research promote <slug>`: moves the clean proposals into the seed files so they show in the app (artist intent stays out until a primary source is confirmed)
   - [~] Z1.4 Agentic web search and primary-source tracing (also K2): `uv run python -m app.research trace animals` finds and checks the original publication of artist-intent claims and proposes it as primary for a person to confirm. Not yet: searching for pages to support ordinary facts, full text of books on archive.org, PDFs
   - [ ] Z1.5 Proposals as a PR with provenance
   - [ ] Z1.6 Eval loop on held-out albums; second gold album

@@ -151,7 +151,8 @@ def test_every_album_in_content_is_valid_and_imports(session):
     assert "animals" in slugs
     for slug in slugs:
         report = import_album(session, load_album(CONTENT, slug))
-        assert report.claims > 0
+        # A skeleton made by `research init` has tracks but no claims yet; that is valid.
+        assert report.tracks > 0
 
 
 def test_animals_artist_intent_stays_draft_without_primary_sources(session):
