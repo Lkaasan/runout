@@ -1,0 +1,70 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 6
+title: Haldern
+duration: '5:05'
+apple_music_id: '1586070265'
+claims:
+- id: auto-019
+  type: trivia
+  depth: listen
+  phase: during
+  body: '''Haldern'' was named after the Germany-based Haldern Pop music festival the band played during
+    the pandemic.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Haldern" was named after the Germany-based Haldern Pop music festival the band played during
+      the pandemic'
+- id: auto-058
+  type: interpretation
+  depth: study
+  phase: during
+  body: '''Haldern'' builds from staccato strings, effusive sax and percussive piano into a climax of
+    hurried saxophone stabs and piano capturing an improvisatory energy.'
+  author: James Kilkenny
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: from staccato strings, slowly effusive sax and percussive piano to a malaise of all of these,
+      ratcheted up to a noxiously moving verve
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: A climax of increasingly hurried saxophone stabs and piano evokes this hot, heavy air of
+      improvisatory creation especially well
+- id: auto-076
+  type: fact
+  depth: listen
+  phase: during
+  body: The song's ending drops the rhythm section, leaving the orchestral instruments alone to build
+    toward a gradually synchronizing crescendo.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the rhythm fades away, leaving just the orchestral instruments to collide in a gradually
+      synchronizing crescendo
+- id: auto-081
+  type: fact
+  depth: listen
+  phase: during
+  body: Haldern features stately piano.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: stately piano (Haldern)
+- id: auto-094
+  type: trivia
+  depth: study
+  phase: before
+  body: '"Haldern" grew out of a 12-minute improvised jam during a half-hour festival livestream, played
+    between "Athens, France" and a Weezer cover.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: the latter emerged from a 12-minute jam in the middle of a half-hour festival live stream
+      set, between “Athens, France” and a Weezer cover

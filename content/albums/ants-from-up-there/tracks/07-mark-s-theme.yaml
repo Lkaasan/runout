@@ -1,0 +1,42 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 7
+title: Mark’s Theme
+duration: '2:47'
+apple_music_id: '1586070266'
+claims:
+- id: auto-020
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Mark''s Theme'' is a saxophone-led instrumental written by Lewis Evans following the death
+    of his uncle Mark from COVID-19 in 2021.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Mark''s Theme" is a saxophone-led instrumental written by Evans following the passing of
+      his uncle Mark from COVID-19 in 2021'
+- id: auto-021
+  type: interpretation
+  depth: study
+  phase: after
+  body: The track was described as akin to Tom Waits or Edward Hopper's visual world, according to a comparison
+    noted by MusicOMH.
+  author: MusicOMH
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: akin to Tom Waits or Edward Hopper's visual world, according to MusicOMH
+- id: auto-072
+  type: fact
+  depth: study
+  phase: during
+  body: '"Mark''s Theme" is a mournful, largely instrumental piece.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: hear the frantic percussive breakdown of “Snow Globes” or even the mournful instrumental
+      subminity of “Mark’s Theme.”

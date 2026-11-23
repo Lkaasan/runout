@@ -1,0 +1,77 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 4
+title: Bread Song
+duration: '6:21'
+apple_music_id: '1586070263'
+claims:
+- id: auto-016
+  type: fact
+  depth: study
+  phase: during
+  body: '''Bread Song'' is rooted in baroque pop and post-rock, drawing on Steve Reich''s Music for 18
+    Musicians, with the band playing without definitive timing and cues.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Bread Song" is musically rooted in baroque pop and post-rock, drawing inspiration from
+      Steve Reich''s Music for 18 Musicians, wherein the band play without definitive timing and cues'
+- id: auto-017
+  type: fact
+  depth: listen
+  phase: during
+  body: The song's narrator is left feeding on crumbs of the lasting memory of a one-sided affair and
+    being kicked out of bed for eating toast.
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The track's narrator is "left feeding on crumbs" of the lasting memory of a one-sided affair
+      and being kicked out of bed for eating toast
+- id: auto-052
+  type: fact
+  depth: study
+  phase: before
+  body: '''Bread Song'' is described as a Steve Reich-inspired single.'
+  reviewed: true
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: They previously released Steve Reich-inspired single, ‘Bread Song‘ and ‘Chaos Space Marine’
+      from the LP
+- id: auto-069
+  type: fact
+  depth: study
+  phase: during
+  body: '"Bread Song" uses everyday domestic details, like a faulty wi-fi connection and half-burned scented
+    candles, set against lush, baroque-pop instrumentation.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: From faulty wi-fi connection to half-burned scented candles, "Bread Song" sprinkles quotidian
+      crumbs of domestic imagery across an elegant bedspread of baroque pop majesty
+- id: auto-070
+  type: trivia
+  depth: study
+  phase: during
+  body: '"Bread Song" includes an unexpected reference to Billie Eilish amid its otherwise intimate, ambiguous
+    imagery.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: Now, not every memory or fantasy Wood recounts across this project is punctuated with a profound
+      image or odd insertion of "Billie Eilish."
+- id: auto-093
+  type: trivia
+  depth: study
+  phase: before
+  body: The placeholder title "Bread Song" reflects the track's origins as an improvised exploration rather
+    than a finished, deliberately named composition.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: The placeholder titles of “Bread Song” and “Haldern” reflect their origins as improv exploration

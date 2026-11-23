@@ -1,0 +1,1893 @@
+# PROPOSED by the information finder. Nothing here is reviewed or approved.
+# Check each claim against its excerpt, then copy what you accept into the album's seed
+# files (claims and sources). Delete this folder when done.
+sources:
+- id: ants-from-up-there
+  kind: database
+  title: Ants from Up There
+  url: https://en.wikipedia.org/wiki/Ants_from_Up_There?oldid=1382849504
+  tier: tertiary
+- id: black-country-new-road-ants-from-up-ther
+  kind: press
+  title: 'Black Country, New Road: Ants From Up There Album Review | Pitchfork'
+  url: https://pitchfork.com/reviews/albums/black-country-new-road-ants-from-up-there/
+  tier: secondary
+- id: chaos-space-marine-song
+  kind: database
+  title: Chaos Space Marine (song)
+  url: https://en.wikipedia.org/wiki/Chaos_Space_Marine_(song)?oldid=1376912927
+  tier: tertiary
+- id: listen-to-black-country-new-road-s-tende
+  kind: press
+  title: Listen to Black Country, New Road's tender new single 'Concorde'
+  url: https://www.nme.com/news/music/listen-to-black-country-new-roads-tender-new-single-concorde-3107886
+  tier: secondary
+- id: ants-from-up-there-sees-black-country-ne
+  kind: press
+  title: '''Ants From Up There'' Sees Black Country, New Road Thrillingly Solidify Their Unique Vision
+    » PopMatters'
+  url: https://www.popmatters.com/black-country-new-road-ants
+  tier: tertiary
+- id: black-country-new-road-ants-from-up-ther-2
+  kind: press
+  title: Black Country, New Road – Ants From Up There
+  url: https://www.clashmusic.com/reviews/black-country-new-road-ants-from-up-there
+  tier: secondary
+- id: become-an-independent-member-to-bookmark
+  kind: press
+  title: Become an Independent member to bookmark this article
+  url: https://www.independent.co.uk/arts-entertainment/music/reviews/bastille-review-bcnr-cate-le-bon-b2006778.html
+  tier: tertiary
+- id: black-country-new-road-push-against-the-
+  kind: press
+  title: Black Country, New Road push against the fate of oblivion on the excellent Ants From Up Here
+  url: https://www.thelineofbestfit.com/reviews/albums/black-country-new-road-ants-from-up-there-album-review
+  tier: secondary
+- id: black-country-new-road-ants-from-up-ther-3
+  kind: press
+  title: Black Country, New Road – Ants From Up There
+  url: https://www.theskinny.co.uk/music/reviews/albums/black-country-new-road-ants-from-up-there
+  tier: secondary
+- id: black-country-new-road-ants-from-up-ther-4
+  kind: press
+  title: 'Black Country, New Road: Ants from Up There review – a baroque pop masterpiece'
+  url: https://www.theguardian.com/music/2022/feb/06/black-country-new-road-ants-from-up-there-review-a-baroque-pop-masterpiece-isaac-wood
+  tier: secondary
+- id: aria-top-50-albums-for-week-of-14-februa
+  kind: press
+  title: ARIA Top 50 Albums for week of 14 February 2022
+  url: https://www.aria.com.au/charts/albums-chart/2022-02-14
+  tier: tertiary
+claims:
+- track: album
+  id: proposed-001
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was recorded at Chale Abbey on the Isle of Wight and produced by the band's live sound
+    engineer Sergio Maschetzko.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Recorded at Chale Abbey on the Isle of Wight, the album was produced by the band's live sound
+      engineer Sergio Maschetzko
+- track: album
+  id: proposed-002
+  type: fact
+  depth: listen
+  phase: after
+  body: It is the final album to feature lead vocalist and guitarist Isaac Wood, who announced his departure
+    four days before release.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: is the final album to feature lead vocalist and guitarist Isaac Wood, who announced his departure
+      from the band four days prior to the album's release
+- track: album
+  id: proposed-003
+  type: fact
+  depth: study
+  phase: before
+  body: The album was written during COVID-19 lockdowns and road-tested during brief touring in support
+    of the band's debut album.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Written during COVID-19 lockdowns and road-tested during brief touring stints in support
+      of the debut album, For the First Time (2021)
+- track: album
+  id: proposed-004
+  type: fact
+  depth: listen
+  phase: before
+  body: 'It was preceded by four singles: ''Chaos Space Marine'', ''Bread Song'', ''Concorde'' and ''Snow
+    Globes''.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: 'was preceded by four singles: "Chaos Space Marine", "Bread Song", "Concorde" and "Snow Globes"'
+- track: album
+  id: proposed-005
+  type: artist_intent
+  depth: study
+  phase: before
+  body: The band aimed to make the album feel like one collective body of work, focusing on vulnerable
+    topics rather than fictional scenarios and apathetic lyrics.
+  author: Black Country, New Road
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The band intended to produce the album as a collective body of work, preferring to focus
+      more on vulnerable topics than fictional scenarios and more apathetic lyrics
+- track: album
+  id: proposed-006
+  type: fact
+  depth: listen
+  phase: after
+  body: The album became the band's highest-charting, debuting at number 3 on the UK Albums Chart and
+    reaching the top 10 in Australia, Germany and the Netherlands.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: becoming Black Country, New Road's highest-charting album, debuting at number 3 on the UK
+      Albums Chart and reaching the top 10 in Australia, Germany and the Netherlands
+- track: album
+  id: proposed-007
+  type: fact
+  depth: study
+  phase: after
+  body: A deluxe edition featuring live songs was released about four months after the original album.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: A deluxe edition of the album featuring live songs was released four months after
+- track: album
+  id: proposed-008
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Bassist Tyler Hyde said the band had figured out what they were trying to say, making the follow-up
+    make more sense, with some songs intentionally shorter.
+  author: Tyler Hyde
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: we have figured out what we're trying to say, so it makes a bit more sense. Some of the songs
+      are shorter. We attempted to write songs that were three and a half minutes
+- track: album
+  id: proposed-009
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Drummer Charlie Wayne said the band needed the summer 2021 tour to workshop new songs and see
+    how they fared live before recording them.
+  author: Charlie Wayne
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: workshop [the] songs
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: see how they fared in front of people
+- track: album
+  id: proposed-010
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Wayne said recording began the day lockdown restrictions lifted across the UK, calling the album
+    a continuation of their isolation.
+  author: Charlie Wayne
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: everyone opened up in the UK
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: continuation of [their] isolation
+- track: album
+  id: proposed-011
+  type: fact
+  depth: study
+  phase: before
+  body: Recording took place over three weeks at Chale Abbey Studios with Sergio Maschetzko, the band's
+    live sound engineer, producing despite never having produced an album before.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was recorded over three weeks at Chale Abbey Studios
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Hyde revealed that Maschetzko had not recorded an album before, but they picked him because
+      the band wanted to capture their material in a live setting
+- track: album
+  id: proposed-012
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Hyde said Maschetzko sometimes knew the band's playing better than they did themselves.
+  author: Tyler Hyde
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: sometimes [knew their] playing better than [they did]
+- track: 3
+  id: proposed-013
+  type: fact
+  depth: study
+  phase: during
+  body: '''Concorde'' marked the first time Isaac Wood used double-tracked vocals, as the band experimented
+    with vocal overdubs throughout the album.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The band experimented with vocal overdubs throughout the album, particularly on "Concorde",
+      with it marking the first song Wood used double-tracked vocals on
+- track: album
+  id: proposed-014
+  type: fact
+  depth: study
+  phase: before
+  body: The album draws on post-rock, chamber pop and indie rock, with the band citing influences including
+    Arcade Fire's Funeral, Sufjan Stevens' Illinois, Arthur Russell's Iowa Dream and Billie Eilish's Happier
+    Than Ever.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the band noting that during the recording process they were influenced by Arcade Fire's Funeral
+      (2004), Sufjan Stevens' Illinois (2005), Arthur Russell's Iowa Dream (2019) and Billie Eilish's
+      Happier Than Ever (2021)
+- track: album
+  id: proposed-015
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Hyde and Wayne said the album took structural inspiration from pop music, describing it as more
+    conceptually pop than sounding like pop.
+  author: Tyler Hyde
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: more conceptually pop than sounding like pop
+- track: album
+  id: proposed-016
+  type: fact
+  depth: study
+  phase: before
+  body: Many tracks stemmed from writing sessions between Wood, Hyde and guitarist Luke Mark, who lived
+    together during the first lockdown; the full band convened in January 2021 to develop new material
+    further.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Many of the album's tracks stem from the initial writing sessions between Wood, Hyde and
+      guitarist Luke Mark, who lived together during the first COVID-19 lockdown
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the full band convened for a week to work on new material, where each member "brought their
+      own constituent parts" to songs
+- track: 1
+  id: proposed-017
+  type: fact
+  depth: study
+  phase: during
+  body: '''Intro'' is a 54-second instrumental incorporating klezmer elements and was one of the first
+    songs the band wrote, predating their debut album.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The album opens with a 54-second instrumental piece, "Intro". It incorporates klezmer elements,
+      a style of Jewish music
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: was one of the first songs the band wrote, predating their debut
+- track: 2
+  id: proposed-018
+  type: trivia
+  depth: listen
+  phase: during
+  body: '''Chaos Space Marine'' got its name from the eponymous miniature figurines in the Warhammer 40,000
+    franchise.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Chaos Space Marine" got its name from the eponymous miniature figurines in the Warhammer
+      40,000 franchise'
+- track: 2
+  id: proposed-019
+  type: fact
+  depth: study
+  phase: during
+  body: The song's melody draws on glam rock, with lyrics combining grandiose imagery with introspective
+    anxiety referencing England and pop culture figures like Billie Eilish.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song's melody draws inspiration from glam rock, while the lyrics combine grandiose imagery
+      with introspective anxiety that references England and pop culture figures like Billie Eilish
+- track: 3
+  id: proposed-020
+  type: fact
+  depth: study
+  phase: during
+  body: '''Concorde'' was inspired by science fiction stories such as Luca and 2012, and the band used
+    mandolin to give it an unpredictable, spiky element.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Concorde" was inspired by such science fiction stories as Luca and 2012'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: they used the mandolin to give the song "unpredictability" and "a snappy and spiky element"
+- track: 3
+  id: proposed-021
+  type: interpretation
+  depth: study
+  phase: during
+  body: Gigwise interpreted 'Concorde' as portraying the yearning for a lost relationship through the
+    metaphor of the Concorde fallacy.
+  author: Gigwise
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Gigwise interpreted the song's meaning as "[portraying] the yearning for a lost relationship"
+      through the metaphor of the Concorde fallacy
+- track: 4
+  id: proposed-022
+  type: fact
+  depth: study
+  phase: during
+  body: '''Bread Song'' is rooted in baroque pop and post-rock, drawing on Steve Reich''s Music for 18
+    Musicians, with the band playing without definitive timing and cues.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Bread Song" is musically rooted in baroque pop and post-rock, drawing inspiration from
+      Steve Reich''s Music for 18 Musicians, wherein the band play without definitive timing and cues'
+- track: 4
+  id: proposed-023
+  type: fact
+  depth: listen
+  phase: during
+  body: The song's narrator is left feeding on crumbs of the lasting memory of a one-sided affair and
+    being kicked out of bed for eating toast.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The track's narrator is "left feeding on crumbs" of the lasting memory of a one-sided affair
+      and being kicked out of bed for eating toast
+- track: 5
+  id: proposed-024
+  type: fact
+  depth: study
+  phase: during
+  body: While working on 'Good Will Hunting' the band listened to Kurt Vile and blended Midwest emo, jazz,
+    and grunge textures, writing two versions with different time signatures that were combined.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: While working on "Good Will Hunting" the band listened to Kurt Vile; and blended Midwest
+      emo, jazz, and grunge textures
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was written in two versions with different time signatures, which were ultimately combined
+      into the final version
+- track: 6
+  id: proposed-025
+  type: trivia
+  depth: listen
+  phase: during
+  body: '''Haldern'' was named after the Germany-based Haldern Pop music festival the band played during
+    the pandemic.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Haldern" was named after the Germany-based Haldern Pop music festival the band played during
+      the pandemic'
+- track: 6
+  id: proposed-026
+  type: fact
+  depth: study
+  phase: during
+  body: Built on minimalist piano patterns, 'Haldern' crescendos from staccato strings and saxophone,
+    with lyrics wrestling with self-pity, and is the only song on the album to originate from an improvisation
+    session.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Built on minimalist piano patterns, it crescendos from staccato strings and saxophone
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It is the only song on the album to originate from an improvisation session
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: contradicts
+    excerpt: The placeholder titles of “Bread Song” and “Haldern” reflect their origins as improv exploration;
+      the latter emerged from a 12-minute jam
+- track: 7
+  id: proposed-027
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Mark''s Theme'' is a saxophone-led instrumental written by Lewis Evans following the death
+    of his uncle Mark from COVID-19 in 2021.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Mark''s Theme" is a saxophone-led instrumental written by Evans following the passing of
+      his uncle Mark from COVID-19 in 2021'
+- track: 7
+  id: proposed-028
+  type: interpretation
+  depth: study
+  phase: after
+  body: The track was described as akin to Tom Waits or Edward Hopper's visual world, according to a comparison
+    noted by MusicOMH.
+  author: MusicOMH
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: akin to Tom Waits or Edward Hopper's visual world, according to MusicOMH
+- track: 8
+  id: proposed-029
+  type: fact
+  depth: study
+  phase: during
+  body: '''The Place Where He Inserted the Blade'' is a flute-led track dealing lyrically with trust and
+    vulnerability in relationships, and its recording was noted as difficult due to a technical error
+    by Wayne.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"The Place Where He Inserted the Blade" is a flute-led track, evoking reciprocal and gentle
+      feelings, and lyrically dealing with trust and vulnerability in relationships'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Its recording was noted by the band as difficult due to a technical error on Wayne's part
+- track: 9
+  id: proposed-030
+  type: fact
+  depth: study
+  phase: during
+  body: '''Snow Globes'' is a nearly 10-minute post-rock epic beginning with a repetitive guitar pattern
+    that builds tension through harmonising guitar and polyrhythmic drumming, and was inspired by Frank
+    Ocean''s ''White Ferrari''.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Snow Globes" is a nearly 10-minute post-rock epic that begins with a repetitive guitar
+      pattern and slowly builds tension through a harmonising guitar and polyrhythmic drumming'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song takes inspiration from Frank Ocean's song "White Ferrari"
+- track: 9
+  id: proposed-031
+  type: trivia
+  depth: study
+  phase: before
+  body: '''Snow Globes'' was performed as early as January 2020 and featured on a 2020 Christmas livestream
+    concert with Black Midi, evolving with new elements at each live performance before its first studio
+    take was used on the album.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song was performed as early as January 2020 and was featured on a 2020 Christmas livestream
+      concert with Black Midi, with the band adding new elements to each successive live performance;
+      its first take was used on the album
+- track: 10
+  id: proposed-032
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Basketball Shoes'' is a twelve-minute closing track structured like a surrealist three-act
+    play, containing leitmotifs from ''Concorde'', ''Snow Globes'' and ''Intro'' and climaxing with saxophone,
+    violin, and vocals.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It contains various leitmotif taken from the rest of the songs such as "Concorde", "Snow
+      Globes" and "Intro"
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Structured like a surrealist three-act play, it evolves from delicate poetry to aggressive
+      emo, resulting in an ultimate climax of saxophone, violin, and vocals
+- track: 10
+  id: proposed-033
+  type: trivia
+  depth: study
+  phase: before
+  body: '''Basketball Shoes'' was one of the band''s earliest songs, predating their debut album, and
+    originally described an unhealthy obsession with Charli XCX before its lyrics were changed for the
+    final version.'
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It was one of the first songs the band wrote and predates For the First Time, originally
+      describing an unhealthy obsession with British singer Charli XCX in its earliest form before undergoing
+      lyrical changes for the final version
+- track: album
+  id: proposed-034
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Isaac Wood described 'Chaos Space Marine', the album's first single, as the best song the band
+    had ever written.
+  author: Isaac Wood
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: which Wood described as "the best song [they have] ever written"
+- track: album
+  id: proposed-035
+  type: fact
+  depth: study
+  phase: before
+  body: The album's title, finalised on the day of its deadline, refers to how people appear when viewed
+    from an airplane, tying into the cover art and the recurring lyrical theme of the Concorde jet.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The album's title was finalised by the band on the day of its deadline
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: It refers to the appearance of people while viewed from an airplane, tying in with the album
+      cover and the recurring lyrical theme of the Concorde jet
+- track: album
+  id: proposed-036
+  type: trivia
+  depth: study
+  phase: before
+  body: The album cover artwork was made by Simon Monk, while promotional material artwork came from the
+    band members' own childhood drawings.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The artwork for the album was made by Simon Monk. The artwork for the promotional materials
+      came from the band members' childhood drawings
+- track: album
+  id: proposed-037
+  type: fact
+  depth: listen
+  phase: after
+  body: Four days before release, Isaac Wood announced his departure from the band citing mental health
+    reasons, clarifying he remained on good terms with them.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Four days before the album's release, Wood announced his departure from the band, citing
+      mental health reasons. He clarified he was still on good terms with the band
+- track: album
+  id: proposed-038
+  type: fact
+  depth: study
+  phase: after
+  body: The remaining members said they would not perform music written with Wood after his departure,
+    and the planned February tour was cancelled, though a new tour launched in May without him.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The remaining members said they would not perform music written with Wood after his departure
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: however dates were cancelled after the departure of Wood. In May, the band, sans Wood, launched
+      another tour that concluded in September
+- track: album
+  id: proposed-039
+  type: fact
+  depth: study
+  phase: after
+  body: The band road-tested new material on their 2022 tour that later became the live album Live at
+    Bush Hall, and a deluxe edition of Ants from Up There featured songs performed live at the Queen Elizabeth
+    Hall.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The band once again road-tested new material on this tour, which later became Live at Bush
+      Hall
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: A deluxe edition of the album was released on 10 June, featuring songs performed live at
+      the Queen Elizabeth Hall
+- track: album
+  id: proposed-040
+  type: fact
+  depth: listen
+  phase: after
+  body: The album received universal acclaim, averaging a score of 92 on Metacritic and ranking as the
+    third-most critically acclaimed album of 2022 according to that site.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: At Metacritic, the album has received an average score of 92, based on 20 reviews
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: it was the third-most critically acclaimed album of 2022
+- track: album
+  id: proposed-041
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Will Richards of NME said the band pivoted toward more accessible sounds without sacrificing inventiveness,
+    calling the album a future cult classic in light of Wood's departure.
+  author: Will Richards
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: to pivot towards more familiar, accessible sounds and embrace traditional song structures
+      – without sacrificing an ounce of their musical wizardry or inventiveness
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: declaring it "truly remarkable" and a "future cult classic" in the wake of Wood's departure
+- track: album
+  id: proposed-042
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Ian Cohen of Pitchfork praised the album's life-affirming, emo-like sentimentality, comparing
+    it to adjacent masterpieces like In the Aeroplane Over the Sea, The Monitor, and Teens of Denial.
+  author: Ian Cohen
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: he stated that by "manifesting every glimmer of hope as a heaven-sent beacon and every letdown
+      as a plunge towards the void", the band captured the essence of "adjacent masterpieces like Neutral
+      Milk Hotel's In the Aeroplane Over the Sea, Titus Andronicus's The Monitor, and Car Seat Headrest's
+      Teens of Denial"
+- track: album
+  id: proposed-043
+  type: interpretation
+  depth: study
+  phase: after
+  body: AllMusic's Timothy Monger described the album as impressive and rife with forward momentum, but
+    preempted by its own self-mythology regarding Wood.
+  author: Timothy Monger
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: an impressive one, rife with forward momentum but preempted by its own self-mythology
+- track: album
+  id: proposed-044
+  type: interpretation
+  depth: study
+  phase: after
+  body: Dafydd Jenkins of Loud and Quiet felt the album fell short of its predecessor, with its songs
+    leading to interesting trajectories of almost-pop near-misses, and called 'Chaos Space Marine' a low-light.
+  author: Dafydd Jenkins
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: felt the album fell short of its predecessor, and felt like its songs "lead to interesting
+      trajectories of almost-pop near-misses"
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Jenkins also called "Chaos Space Marine" a low-light of the album
+- track: album
+  id: proposed-045
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The Line of Best Fit's Kyle Kohner gave the album a perfect score, praising Wood as a clairvoyant
+    author of witty, abstract storytelling and the band's wry mouthpiece for a generation of young people.
+  author: Kyle Kohner
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: praising Wood as a "clairvoyant" author of "witty, abstract storytelling" on Ants and remarking
+      upon his position as "the wry mouthpiece of a band... keenly speaking to a generation of young people"
+- track: album
+  id: proposed-046
+  type: interpretation
+  depth: study
+  phase: after
+  body: Tom Morgan of PopMatters applauded the band's bold, progressive compositions and distinguished
+    Wood's lyrics as unique, profound, and more contemporarily relevant than those of his indie peers.
+  author: Tom Morgan
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: applauded the band's "bold and progressive" compositions, but particularly distinguished
+      Wood's lyrics as "unique and often profound", hailing his "deft, resonant words" for their "contemporary
+      relevance"
+- track: album
+  id: proposed-047
+  type: interpretation
+  depth: study
+  phase: after
+  body: Damien Morris of The Observer noted that Wood was often the best thing about the band and called
+    his voice and lyricism 'a hoot'.
+  author: Damien Morris
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Damien Morris of The Observer noted how Wood was "often the best thing about [the band]"
+      and called his voice and lyricism "a hoot"
+- track: 10
+  id: proposed-048
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Sam Richards of Uncut compared 'Basketball Shoes' favourably to 'Marquee Moon' and Godspeed You!
+    Black Emperor, calling it a gut-wrenching epic of Dostoevskian proportions.
+  author: Sam Richards
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Sam Richards of Uncut compared the song favourably to "Marquee Moon" and the work of Godspeed
+      You! Black Emperor, praising it as "a moment of euphoria, catharsis or collapse" and declaring it
+      "a gut-wrenching epic of Dostoevskian proportions"
+- track: 10
+  id: proposed-049
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Kyle Kohner characterized 'Basketball Shoes' emotional impact as devastating yet cleansing.
+  author: Kyle Kohner
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: Kohner characterised it as "devastating, yet cleansing" emotional impact
+- track: album
+  id: proposed-050
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Mark Beaumont of The Independent said the album's grace and ambition would be tough for 2022 to
+    top, citing grunge rock crescendos on 'Good Will Hunting' and gargantuan arias on 'Basketball Shoes'
+    as highlights.
+  author: Mark Beaumont
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: the sheer grace and ambition of Ants... will prove tough for 2022 to top
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: citing the "grunge rock crescendos accompanying images of burning starships on 'Good Will
+      Hunting', and gargantuan arias on the 12-minute 'Basketball Shoes'" as track highlights
+- track: 2
+  id: proposed-051
+  type: fact
+  depth: listen
+  phase: before
+  body: '"Chaos Space Marine" was released as the lead single from Ants from Up There on 12 October 2021,
+    alongside the album''s announcement.'
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: released as the lead single from their studio album Ants from Up There (2022)
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The song was released on 12 October 2021, as the lead single from the studio album Ants from
+      Up There.
+- track: 2
+  id: proposed-052
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Isaac Wood said the song's creation was a fast, whimsical process where the band threw every idea
+    they had at it.
+  author: Isaac Wood
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: the song's creation "was a really fast, whimsical approach – like throwing all the shit at
+      the wall and just letting everything stick"
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: He also admits the band "threw every idea anyone had".
+- track: 2
+  id: proposed-053
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Isaac Wood described "Chaos Space Marine" as the best song the band had ever written.
+  author: Isaac Wood
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: Wood described it as "the best song [they had] ever written".
+- track: 2
+  id: proposed-054
+  type: trivia
+  depth: listen
+  phase: during
+  body: The song's title references the Chaos Space Marine miniatures from the Warhammer 40,000 franchise,
+    and its lyrics tell the story of a surrealist character of that name.
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: With its name referencing the eponymous miniatures from the Warhammer 40,000 franchise, the
+      track begins in a frantic, engaging, and fun manner
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The lyrics detail the story of a surrealist character known as the "Chaos Space Marine" from
+      Warhammer 40,000.
+- track: 2
+  id: proposed-055
+  type: fact
+  depth: study
+  phase: during
+  body: The song's lyrics include quotations from the Smiths and the Bible as Wood contemplates leaving
+    London for New York City and the high seas.
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: he contemplates leaving London behind for New York City and the high seas, with quotations
+      from the Smiths ("though England is mine") and the Bible
+- track: 2
+  id: proposed-056
+  type: fact
+  depth: study
+  phase: during
+  body: The track's melody draws on glam rock as well as classical music and jazz, and at times resembles
+    the sound of Arcade Fire.
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The song's melody draws inspiration from glam rock, as well as styles of classical music
+      and jazz.
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The track at times resembles the sound of the band Arcade Fire.
+- track: 2
+  id: proposed-057
+  type: interpretation
+  depth: study
+  phase: during
+  body: The song's opening has been compared to Roxy Music's "Re-Make/Re-Model" and its chorus likened
+    to the emphatic "yeahhhhs" on Pink Floyd's The Wall.
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The opening was compared to the song "Re-Make/Re-Model" by the band Roxy Music.
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The song's chorus was compared to the album The Wall (1979) by Pink Floyd, specifically the
+      emphatic "yeahhhhs".
+- track: 2
+  id: proposed-058
+  type: fact
+  depth: study
+  phase: during
+  body: The track closes with soft backing vocals from Tyler Hyde and May Kershaw, a piano cadence, and
+    a melancholic saxophone part as Lewis Evans slows the tempo.
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: The track then culminates with soft backing vocals from Tyler Hyde and Kershaw, a comforting
+      piano cadence from Kershaw, and a melancholic saxophone sigh as Lewis Evans slows the tempo.
+- track: 2
+  id: proposed-059
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Matthew Prudham of The Indiependent said the track is masterfully planned and works well despite
+    its musical surprises.
+  author: Matthew Prudham
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: Matthew Prudham of The Indiependent stated the track is so masterfully planned that, despite
+      its musical surprises, it works very well.
+- track: 2
+  id: proposed-060
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Aran Grover of Exposé wrote that the single presents a more refined sound than the band's debut.
+  author: Aran Grover
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: BCNR with this single present a perhaps more refined sound than their debut
+- track: 2
+  id: proposed-061
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Dafydd Jenkins of Loud and Quiet called "Chaos Space Marine" a low point on the album, calling
+    it a victim of the album's overblown approach, while Niall Doherty of Rolling Stone compared it negatively
+    to a high school band showing off for a new teacher.
+  author: Dafydd Jenkins
+  reviewed: false
+  sources:
+  - ref: chaos-space-marine-song
+    stance: supports
+    excerpt: Dafydd Jenkins of Loud and Quiet called "Chaos Space Marine" a low point on the album, a
+      victim of the album's overblown approach.
+  - ref: chaos-space-marine-song
+    stance: contradicts
+    excerpt: comparing it to "a high school band trying to show off for their new cool teacher"
+- track: album
+  id: proposed-062
+  type: fact
+  depth: study
+  phase: before
+  body: Ants From Up There was recorded at Chale Abbey Studios on the Isle of Wight with longtime collaborator
+    Sergio Maschetzko.
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: was recorded at Chale Abbey Studios on the Isle Of Wight, with longtime collaborator Sergio
+      Maschetzko
+- track: album
+  id: proposed-063
+  type: fact
+  depth: study
+  phase: before
+  body: The album is the follow-up to the band's 2020 Mercury Prize-nominated debut 'For The First Time'.
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: the follow-up to the band’s 2020’s Mercury Prize-nominated ‘For The First Time’
+  - ref: ants-from-up-there
+    stance: contradicts
+    excerpt: Speaking to NME at the 2021 Mercury Prize awards ceremony, for which their debut album had
+      been nominated
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: contradicts
+    excerpt: The band’s musical craft has already developed since last year’s For the First Time.
+- track: 3
+  id: proposed-064
+  type: fact
+  depth: study
+  phase: before
+  body: '''Concorde'' was released as the third single showcased from Ants From Up There, following ''Bread
+    Song'' and ''Chaos Space Marine''.'
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: The track, which you can listen to below, is the third to be showcased from their forthcoming
+      album ‘Ants From Up There’
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: They previously released Steve Reich-inspired single, ‘Bread Song‘ and ‘Chaos Space Marine’
+      from the LP
+- track: 4
+  id: proposed-065
+  type: fact
+  depth: study
+  phase: before
+  body: '''Bread Song'' is described as a Steve Reich-inspired single.'
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: They previously released Steve Reich-inspired single, ‘Bread Song‘ and ‘Chaos Space Marine’
+      from the LP
+- track: album
+  id: proposed-066
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Bassist Tyler Hyde said making the album was such a pleasure that it might be the best thing she's
+    ever part of.
+  author: Tyler Hyde
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: We were just so hyped the whole time. It was such a pleasure to make. I’ve kind of accepted
+      that this might be the best thing that I’m ever part of for the rest of my life.
+- track: album
+  id: proposed-067
+  type: fact
+  depth: listen
+  phase: before
+  body: The album's release coincides with a large UK tour, including the band's largest headline show
+    to date at London's Roundhouse on February 8.
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: The run will include their largest headliner to date at London’s Roundhouse, set for Tuesday,
+      February 8
+  - ref: ants-from-up-there
+    stance: contradicts
+    excerpt: The band were scheduled to begin the tour in support of the album in February, however dates
+      were cancelled after the departure of Wood.
+- track: album
+  id: proposed-068
+  type: fact
+  depth: study
+  phase: before
+  body: The band had postponed their remaining 2021 UK and Ireland tour dates due to ongoing illness within
+    the band.
+  reviewed: false
+  sources:
+  - ref: listen-to-black-country-new-road-s-tende
+    stance: supports
+    excerpt: due to the ongoing illness within the band we are in the unfortunate position of having to
+      postpone our remaining 2021 dates in the UK and Ireland
+- track: album
+  id: proposed-069
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Compared to the debut's breakneck pace, this album favors a colossal slowness that adds greater
+    heaviness and spaciousness.
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: this album mostly revels in a colossal slowness that extracts several tonnes more heaviness
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: The album feels much more spacious, steeped in a more contemplative, pensive romanticism
+- track: 1
+  id: proposed-070
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The Intro is a more succinct version of the klezmer-centred intro from the debut, segueing fluidly
+    into 'Chaos Space Marine'.
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: a klezmer-centred Intro on their debut; a more succinct, and more on the intro here
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: This time it segues fluidly into 'Chaos Space Marine'
+- track: 8
+  id: proposed-071
+  type: interpretation
+  depth: study
+  phase: during
+  body: '''The Place Where He Inserted the Blade'' leans into a bluesy, late-period Dylan influence, inspired
+    by his 2020 album.'
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: a hybrid of late-period Dylan (specifically the bluesy plea of 'The Place Where He Inserted
+      The Blade', inspired by 2020’s 'I’ve Made Up My Mind…')
+- track: 5
+  id: proposed-072
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '''Good Will Hunting'' is described as an electronic-swirling elegy that builds to a gloriously
+    filthy skronk.'
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: as on 'Good Will Hunting's electronic-swirling elegy, culminating in a gloriously filthy
+      skronk
+- track: 4
+  id: proposed-073
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Wood explained that 'Bread Song' has no time signature and was inspired by Steve Reich's technique
+    of letting a musician's breath drive bar length, applied so the band plays without cueing each other.
+  body_long: The band adapted Steve Reich's 'Music For 18 Musicians' approach, where a bar's length is
+    dictated by a musician playing until they run out of breath, to the whole band playing without visual
+    cues or a fixed tempo.
+  author: Wood
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: a tender yarn of epic, sweeping proportions with “no time signature”
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: we don't look at each other, we don't make too many cues, we just try and play without time
+- track: 6
+  id: proposed-074
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Wood said 'Haldern' was the first time the band wrote a whole song out of jamming.
+  author: Wood
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: basically wrote a whole song
+- track: 6
+  id: proposed-075
+  type: interpretation
+  depth: study
+  phase: during
+  body: '''Haldern'' builds from staccato strings, effusive sax and percussive piano into a climax of
+    hurried saxophone stabs and piano capturing an improvisatory energy.'
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: from staccato strings, slowly effusive sax and percussive piano to a malaise of all of these,
+      ratcheted up to a noxiously moving verve
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: A climax of increasingly hurried saxophone stabs and piano evokes this hot, heavy air of
+      improvisatory creation especially well
+- track: album
+  id: proposed-076
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The review calls the album more melodic and anthemic than ever, capturing the band at a critically
+    transformative point.
+  author: James Kilkenny
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: More melodic and anthemic than ever, 'Ants From Up There' captures Black Country, New Road
+      at a critically transformative juncture
+- track: album
+  id: proposed-077
+  type: fact
+  depth: listen
+  phase: after
+  body: In the same week that Ants From Up There was released, frontman Isaac Wood announced he was leaving
+    the band, citing mental health issues.
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: In the week of Ants From Up There's release, frontman Isaac Wood announced his departure
+      from the band, citing mental health issues.
+- track: album
+  id: proposed-078
+  type: interpretation
+  depth: listen
+  phase: after
+  body: A reviewer described the album as a blow-out open to all-comers, calling it Wood's swansong, and
+    said it embraces accessibility compared to the band's debut.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: If a cult grew around the debut, Wood's swansong is a blow-out open to all-comers.
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: But now, embracing accessibility, they bloom into glorious carnival sway-alongs
+- track: 2
+  id: proposed-079
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A critic characterized this track as a glam showtune with a chorus big enough to risk comparison
+    to The Killers.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: glam showtunes with choruses that might prompt cease-and-desist orders from The Killers (“Chaos
+      Space Marine”)
+- track: 3
+  id: proposed-080
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A reviewer described this song as an alt-folk waltz.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: alt-folk waltzes (“Concorde”)
+- track: 8
+  id: proposed-081
+  type: interpretation
+  depth: listen
+  phase: during
+  body: This track is described as a glorious carnival sway-along, part of the album's shift toward more
+    accessible, bloom-like arrangements.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: they bloom into glorious carnival sway-alongs (“The Place Where He Inserted the Blade”)
+- track: 5
+  id: proposed-082
+  type: interpretation
+  depth: listen
+  phase: during
+  body: A critic noted this song pairs grunge rock crescendos with imagery of burning starships.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: With grunge rock crescendos accompanying images of burning starships on “Good Will Hunting”
+- track: 10
+  id: proposed-083
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The closing track is highlighted for its gargantuan, aria-like vocal moments across its roughly
+    12-minute length.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: gargantuan arias on the 12-minute “Basketball Shoes”
+- track: album
+  id: proposed-084
+  type: interpretation
+  depth: study
+  phase: during
+  body: A reviewer compared Isaac Wood's spoken-sung vocal style to a mix of David Byrne, Orlando Weeks
+    and a baritone Jarvis Cocker, noting his lyrics were full of pop culture references.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: Wood's tremulous sprechgesang vocals (part David Byrne, part Orlando Weeks, part baritone
+      Jarvis Cocker) and impressionist lyrics speckled with pop culture references
+- track: album
+  id: proposed-085
+  type: interpretation
+  depth: study
+  phase: during
+  body: The reviewer noted Wood sings lugubriously about death, technological isolation, a girl's 'Billie
+    Eilish style' and the Atkins diet amid shifting time signatures.
+  author: MB
+  reviewed: false
+  sources:
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: Wood trills lugubriously of death, technological isolation, girls with “Billie Eilish style”
+      and the Atkins diet
+  - ref: become-an-independent-member-to-bookmark
+    stance: supports
+    excerpt: Time signatures still shift and turn like inconstant tides, but here they don't just buck
+      off the melody, they chase down the next.
+- track: album
+  id: proposed-086
+  type: fact
+  depth: listen
+  phase: before
+  body: Isaac Wood left Black Country, New Road before or around the album's release, leaving behind what
+    the review calls a profound parting message about the need for human connection.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: He has, in fact, left, but not without a profound parting message — one about the innate
+      human desire for connection
+- track: album
+  id: proposed-087
+  type: fact
+  depth: listen
+  phase: after
+  body: The album is credited as the work of a seven-piece band led by frontman Isaac Wood.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: only this group, as a seven-piece led by Isaac Wood, could create
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: contradicts
+    excerpt: The six-piece paint classical and jazz instrumentation on a deconstructed rock canvas, layering
+      atop nuanced lyricism that conveys sharp narratives and achingly-sincere emotions.
+- track: 10
+  id: proposed-088
+  type: fact
+  depth: listen
+  phase: during
+  body: '"Basketball Shoes" is a three-part epic that makes up the final twelve minutes of the record
+    and had long been a fan favorite before the album''s release.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: come to complete ruin during the album's final 12 minutes, the three-part epic and long-time
+      fan favorite
+- track: 3
+  id: proposed-089
+  type: fact
+  depth: study
+  phase: during
+  body: '"Concorde," described as the record''s centerpiece, builds from a big, billowing sound into a
+    euphoric display that contrasts with the grim news delivered in its lyrics.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: the record’s centerpiece, is big, billowing, and slowly expands into a euphoric display that
+      all but juxtaposes a doomful reality
+- track: 4
+  id: proposed-090
+  type: fact
+  depth: study
+  phase: during
+  body: '"Bread Song" uses everyday domestic details, like a faulty wi-fi connection and half-burned scented
+    candles, set against lush, baroque-pop instrumentation.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: From faulty wi-fi connection to half-burned scented candles, "Bread Song" sprinkles quotidian
+      crumbs of domestic imagery across an elegant bedspread of baroque pop majesty
+- track: 4
+  id: proposed-091
+  type: trivia
+  depth: study
+  phase: during
+  body: '"Bread Song" includes an unexpected reference to Billie Eilish amid its otherwise intimate, ambiguous
+    imagery.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: Now, not every memory or fantasy Wood recounts across this project is punctuated with a profound
+      image or odd insertion of "Billie Eilish."
+- track: 9
+  id: proposed-092
+  type: fact
+  depth: study
+  phase: during
+  body: '"Snow Globes" is marked by a frantic percussive breakdown.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: hear the frantic percussive breakdown of “Snow Globes” or even the mournful instrumental
+      subminity of “Mark’s Theme.”
+- track: 7
+  id: proposed-093
+  type: fact
+  depth: study
+  phase: during
+  body: '"Mark''s Theme" is a mournful, largely instrumental piece.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: hear the frantic percussive breakdown of “Snow Globes” or even the mournful instrumental
+      subminity of “Mark’s Theme.”
+- track: album
+  id: proposed-094
+  type: trivia
+  depth: study
+  phase: after
+  body: The review connects the album's themes to photographer Wolfgang Tillmans' "Concorde Grid" series,
+    which captured the Concorde jet in flight shortly before the aircraft program ended.
+  body_long: The reviewer draws a parallel between Isaac Wood's departure and Tillmans' photo project,
+    which captured a hopeful vision of the future just before it collapsed, similar to themes on the record.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: In a photo series titled "Concorde Grid", Tillmans captured this luxurious, hypersonic jet
+      in flight only a few years before the entire operation finally folded
+- track: album
+  id: proposed-095
+  type: fact
+  depth: listen
+  phase: before
+  body: Frontman Isaac Wood left Black Country, New Road during the lead-up to the album's release, citing
+    mental health reasons.
+  body_long: His departure was described as a significant blow for the young band, even as his health
+    was said to take priority.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the band’s frontman Issac Wood left Black Country, New Road, citing mental health reasons
+- track: album
+  id: proposed-096
+  type: fact
+  depth: study
+  phase: after
+  body: The band has often been compared to 1990s experimental rock group Slint, though the page argues
+    this comparison is largely inaccurate.
+  body_long: The two acts are said to share little beyond a patient compositional approach, with Slint's
+    brooding darkness and dissonant bursts absent from the band's more reflective, emotive style.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: Black Country, New Road have been dogged by comparisons to the 1990’s experimental rock band
+      Slint
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: The two share little in common besides a patient approach to composition
+- track: 6
+  id: proposed-097
+  type: fact
+  depth: listen
+  phase: during
+  body: The song's ending drops the rhythm section, leaving the orchestral instruments alone to build
+    toward a gradually synchronizing crescendo.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the rhythm fades away, leaving just the orchestral instruments to collide in a gradually
+      synchronizing crescendo
+- track: album
+  id: proposed-098
+  type: fact
+  depth: listen
+  phase: before
+  body: The band's musical craft had developed since their previous release, For the First Time, with
+    louder and quieter passages both pushed further.
+  reviewed: false
+  sources:
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: The band’s musical craft has already developed since last year’s For the First Time
+  - ref: ants-from-up-there-sees-black-country-ne
+    stance: supports
+    excerpt: the loud moments are more muscular and ornate, the quiet moments more poised and nuanced
+- track: album
+  id: proposed-099
+  type: fact
+  depth: listen
+  phase: during
+  body: The album moves between very different musical textures, from trilling klezmer to stately piano
+    to cacophonous brass, while still feeling unified.
+  body_long: Despite shifting dramatically in style from track to track, the record is described as maintaining
+    an overall sense of musical cohesion.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: Ants From Up There maintains an impressive musical cohesion
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: the band slot into a groove that can gallop, murmur or shock from one moment to the next,
+      without ever sacrificing a sense of unity
+- track: album
+  id: proposed-100
+  type: fact
+  depth: study
+  phase: during
+  body: Half of the album's ten songs run longer than six minutes.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: With half the album's ten songs over six minutes long, you'd expect a little space to breathe
+- track: 2
+  id: proposed-101
+  type: fact
+  depth: listen
+  phase: during
+  body: Chaos Space Marine is built around string-laden melodrama.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: string-laden melodrama (Chaos Space Marine)
+- track: 6
+  id: proposed-102
+  type: fact
+  depth: listen
+  phase: during
+  body: Haldern features stately piano.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: stately piano (Haldern)
+- track: 8
+  id: proposed-103
+  type: fact
+  depth: listen
+  phase: during
+  body: The Place Where He Inserted the Blade is driven by bluesy guitar.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: bluesy guitar (The Place Where He Inserted the Blade)
+  - ref: ants-from-up-there
+    stance: contradicts
+    excerpt: '"The Place Where He Inserted the Blade" is a flute-led track, evoking reciprocal and gentle
+      feelings'
+- track: 9
+  id: proposed-104
+  type: fact
+  depth: listen
+  phase: during
+  body: Snow Globes is marked by cacophonous brass.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: cacophonous brass (Snow Globes)
+- track: 3
+  id: proposed-105
+  type: fact
+  depth: study
+  phase: during
+  body: Isaac Wood delivers a winding narrative as the lyricist on Concorde.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: gives Isaac Wood a striking canvas to deliver his winding narratives (Concorde, The Place
+      Where...)
+- track: 8
+  id: proposed-106
+  type: fact
+  depth: study
+  phase: during
+  body: Isaac Wood delivers a winding narrative as the lyricist on The Place Where He Inserted the Blade.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: gives Isaac Wood a striking canvas to deliver his winding narratives (Concorde, The Place
+      Where...)
+- track: album
+  id: proposed-107
+  type: trivia
+  depth: study
+  phase: during
+  body: Somewhere on the album a whispered line references 'Billie Eilish style'.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: a whispered line about 'Billie Eilish style' or piercing saxophone run can hit just as effectively
+- track: album
+  id: proposed-108
+  type: fact
+  depth: listen
+  phase: after
+  body: The reviewer singles out Concorde, Chaos Space Marine and Snow Globes as the tracks to listen
+    to.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-3
+    stance: supports
+    excerpt: 'Listen to: Concorde, Chaos Space Marine, Snow Globes'
+- track: album
+  id: proposed-109
+  type: fact
+  depth: listen
+  phase: after
+  body: Frontman Isaac Wood unexpectedly left Black Country, New Road shortly before this review of the
+    album was published.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: Shame that he unexpectedly left the band last week, as he’s often the best thing about it.
+- track: album
+  id: proposed-110
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The reviewer calls the album a baroque pop masterpiece, saying the band excels at creating remarkable
+    baroque pop soundworlds.
+  author: Isaac Wood
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: it can be about creating remarkable soundworlds of baroque pop fantasias, and this band are
+      outstanding at those
+- track: album
+  id: proposed-111
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer argues the band's playfulness and humour, comparable to Arcade Fire's, is often overlooked
+    beneath their intense sound.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: Like Arcade Fire, BC,NR’s playfulness and humour is unfairly overlooked, smothered by an
+      intensity that seems utterly inimical to fun
+- track: album
+  id: proposed-112
+  type: interpretation
+  depth: study
+  phase: after
+  body: Compared to the band's 2021 debut For the First Time, this album has less free-jazz influence
+    but still features abrupt time signature changes and slow-building songs.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: there is less of the “fire in a pet shop” jazz than on their 2021 debut For the First Time,
+      but there are still whiplash changes of time signature and songs that take forever to get going
+- track: album
+  id: proposed-113
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer recommends listening to the album in a single sitting, repeatedly, to get its full
+    effect.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: To get the full effect, listen to the album from start to finish, over and over again.
+- track: 10
+  id: proposed-114
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Basketball Shoes, long awaited by fans, functions as a shifting set closer that reprises earlier
+    parts of the album and builds to a startling, vicious crescendo.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: a slippery, shifting set closer that partly reprises what you’ve just heard, and spurs the
+      band on to a startling, vicious crescendo
+- track: 10
+  id: proposed-115
+  type: trivia
+  depth: study
+  phase: before
+  body: Basketball Shoes had been long-awaited by the band's live audiences before appearing on this album.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: He kills on the long-awaited Basketball Shoes, which performs the same task here as it does
+      at their gigs
+- track: album
+  id: proposed-116
+  type: fact
+  depth: listen
+  phase: after
+  body: On January 31, Black Country, New Road announced through a letter from Isaac Wood that he would
+    no longer be a member of the group.
+  body_long: The announcement came just days before the album's release, with the remaining members stating
+    they would carry on without him.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: the band announced, through Wood’s own emotional letter, that he “won’t be a member of the
+      group anymore,” and that the remaining members will carry on without him
+- track: 3
+  id: proposed-117
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Pitchfork's reviewer calls "Concorde" the thematic centerpiece of the album, built around the
+    Concorde jet as a metaphor for a doomed, sunk-cost romance.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: Isaac Wood returns to it repeatedly throughout Black Country, New Road’s second album, Ants
+      From Up There, most pointedly on the thematic centerpiece that bears its name
+- track: album
+  id: proposed-118
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Before Wood's departure was announced, the album could be heard as a classic breakup record, with
+    the band amplifying his emotional swings.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: Until about a week ago, Ants From Up There could be heard as a classic breakup album
+- track: album
+  id: proposed-119
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Saxophonist Lewis Evans said there would be a clear break between the band's first 18 months and
+    the new material that followed, reflecting a new creative direction.
+  author: Lewis Evans
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: “There will be a clear delineation between these first 18 months…and what follows,” saxophonist
+      Lewis Evans stated nearly four months before their debut LP
+- track: 1
+  id: proposed-120
+  type: fact
+  depth: study
+  phase: during
+  body: The "Intro" lasts only 54 seconds before leading directly into "Chaos Space Marine."
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: this “Intro” lasts 54 seconds before barging right into what the band has called the “best
+      song we’ve ever written.”
+- track: 2
+  id: proposed-121
+  type: trivia
+  depth: listen
+  phase: before
+  body: The band itself has called "Chaos Space Marine" the best song they've ever written.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: barging right into what the band has called the “best song we’ve ever written.”
+- track: 2
+  id: proposed-122
+  type: fact
+  depth: study
+  phase: before
+  body: '"Chaos Space Marine" was released as the album''s lead single in October of the prior year.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: Since the release of the lead single “Chaos Space Marine” in October of last year
+- track: album
+  id: proposed-123
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Bassist Tyler Hyde said that while writing Ants From Up There, the band became obsessed with Arcade
+    Fire.
+  author: Tyler Hyde
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: bassist Tyler Hyde claims that during the writing process of Ants From Up There, Black Country,
+      New Road became obsessed with Arcade Fire
+- track: album
+  id: proposed-124
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Drummer Charlie Wayne implied the band set out to write an album full of hits after running up
+    debts that put them at serious risk.
+  author: Charlie Wayne
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: drummer Charlie Wayne implies that they set out to make an album full of hits, having run
+      up debts that put them in grave legal and/or physical peril
+- track: album
+  id: proposed-125
+  type: fact
+  depth: listen
+  phase: during
+  body: Of the album's ten songs, two are instrumentals and five run at least six minutes long.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: of the 10 songs on Ants From Up There, two are instrumentals and five are at least six minutes
+      long
+- track: 4
+  id: proposed-126
+  type: trivia
+  depth: study
+  phase: before
+  body: The placeholder title "Bread Song" reflects the track's origins as an improvised exploration rather
+    than a finished, deliberately named composition.
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: The placeholder titles of “Bread Song” and “Haldern” reflect their origins as improv exploration
+- track: 6
+  id: proposed-127
+  type: trivia
+  depth: study
+  phase: before
+  body: '"Haldern" grew out of a 12-minute improvised jam during a half-hour festival livestream, played
+    between "Athens, France" and a Weezer cover.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: the latter emerged from a 12-minute jam in the middle of a half-hour festival live stream
+      set, between “Athens, France” and a Weezer cover
+- track: 9
+  id: proposed-128
+  type: fact
+  depth: listen
+  phase: during
+  body: '"Snow Globes" grows from what could have been a one-minute interlude into a full nine-minute
+    piece.'
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: What could’ve been a mesmerizing one-minute interlude expands to a nine-minute devotional
+- track: 10
+  id: proposed-129
+  type: trivia
+  depth: listen
+  phase: after
+  body: The closing track "Basketball Shoes" has been spoken of with hushed reverence by fans since the
+    band's early days and went through numerous versions and rewrites since 2019.
+  body_long: The reviewer likens its legendary status among fans to Radiohead's long-bootlegged "True
+    Love Waits."
+  reviewed: false
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther
+    stance: supports
+    excerpt: a song that’s been spoken of with hushed reverence by fans since the band’s early days and
+      has gone through numerous versions and rewrites since 2019
+- track: album
+  id: proposed-130
+  type: fact
+  depth: study
+  phase: after
+  body: Ants From Up There debuted on the ARIA Top 50 Albums chart at a peak position of number 6 for
+    the week of 14 February 2022.
+  reviewed: false
+  sources:
+  - ref: aria-top-50-albums-for-week-of-14-februa
+    stance: supports
+    excerpt: Ants From Up There Black Country, New Road New! - last week 6 peak 1 weeks in

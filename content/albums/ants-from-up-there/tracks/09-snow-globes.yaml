@@ -1,0 +1,69 @@
+# 97 claims promoted automatically from proposals/20261123-210611 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 9
+title: Snow Globes
+duration: '9:13'
+apple_music_id: '1586070268'
+claims:
+- id: auto-023
+  type: fact
+  depth: study
+  phase: during
+  body: '''Snow Globes'' is a nearly 10-minute post-rock epic beginning with a repetitive guitar pattern
+    that builds tension through harmonising guitar and polyrhythmic drumming, and was inspired by Frank
+    Ocean''s ''White Ferrari''.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: '"Snow Globes" is a nearly 10-minute post-rock epic that begins with a repetitive guitar
+      pattern and slowly builds tension through a harmonising guitar and polyrhythmic drumming'
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song takes inspiration from Frank Ocean's song "White Ferrari"
+- id: auto-024
+  type: trivia
+  depth: study
+  phase: before
+  body: '''Snow Globes'' was performed as early as January 2020 and featured on a 2020 Christmas livestream
+    concert with Black Midi, evolving with new elements at each live performance before its first studio
+    take was used on the album.'
+  reviewed: true
+  sources:
+  - ref: ants-from-up-there
+    stance: supports
+    excerpt: The song was performed as early as January 2020 and was featured on a 2020 Christmas livestream
+      concert with Black Midi, with the band adding new elements to each successive live performance;
+      its first take was used on the album
+- id: auto-071
+  type: fact
+  depth: study
+  phase: during
+  body: '"Snow Globes" is marked by a frantic percussive breakdown.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-push-against-the-
+    stance: supports
+    excerpt: hear the frantic percussive breakdown of “Snow Globes” or even the mournful instrumental
+      subminity of “Mark’s Theme.”
+- id: auto-082
+  type: fact
+  depth: listen
+  phase: during
+  body: Snow Globes is marked by cacophonous brass.
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-2
+    stance: supports
+    excerpt: cacophonous brass (Snow Globes)
+- id: auto-095
+  type: fact
+  depth: listen
+  phase: during
+  body: '"Snow Globes" grows from what could have been a one-minute interlude into a full nine-minute
+    piece.'
+  reviewed: true
+  sources:
+  - ref: black-country-new-road-ants-from-up-ther-4
+    stance: supports
+    excerpt: What could’ve been a mesmerizing one-minute interlude expands to a nine-minute devotional
