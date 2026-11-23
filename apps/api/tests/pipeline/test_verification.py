@@ -123,6 +123,9 @@ def test_research_urls_file(tmp_path):
 def test_classify_by_domain_and_never_primary():
     assert classify(WIKI) == (SourceKind.database, Tier.tertiary)
     assert classify(PRESS) == (SourceKind.press, Tier.secondary)
+    for host in ("pitchfork.com", "www.billboard.com", "rollingstone.com"):
+        named = PRESS.model_copy(update={"url": f"https://{host}/review"})
+        assert classify(named) == (SourceKind.press, Tier.secondary)
     unknown = PRESS.model_copy(update={"url": "https://some-blog.example/post"})
     assert classify(unknown) == (SourceKind.press, Tier.tertiary)
     assert all(classify(p)[1] != Tier.primary for p in (WIKI, PRESS, unknown))
