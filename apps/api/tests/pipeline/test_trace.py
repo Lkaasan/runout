@@ -290,3 +290,34 @@ def test_proposed_primaries_are_flagged_in_the_proposal_file_and_stay_secondary(
     assert len(proposed) == 1 and proposed[0]["tier"] == "secondary"
     assert validate_documents(sources, claims) == []
     assert Stance.supports.value == claims[0]["sources"][-1]["stance"]
+
+
+def test_a_page_already_cited_can_be_the_original_so_no_search_is_needed(tmp_path):
+    claim = intent("a")
+    claim.sources[0].url = INTERVIEW.url
+    claim.sources[0].title = INTERVIEW.title
+    discover = FakeBackend([])  # must not be asked
+    result = trace_claims(
+        discover,
+        FakeBackend([answer()]),
+        [claim],
+        {INTERVIEW.url},
+        fetcher_for(tmp_path, ARTICLE),
+        pages=[INTERVIEW],
+    )
+    assert result.own_pages == 1 and result.proposed == [("a", INTERVIEW.url)]
+    assert discover.prompts == []
+    assert len(claim.sources) == 1 and claim.sources[0].primary_proposed  # marked, not duplicated
+    assert claim.sources[0].tier != Tier.primary
+
+
+def test_if_the_cited_page_is_not_the_original_the_search_still_runs(tmp_path):
+    claim = intent("a")
+    claim.sources[0].url = INTERVIEW.url
+    discover = FakeBackend([{"leads": []}])
+    check = FakeBackend([answer(original_publication=False)])
+    result = trace_claims(
+        discover, check, [claim], {INTERVIEW.url}, fetcher_for(tmp_path, ARTICLE), pages=[INTERVIEW]
+    )
+    assert result.proposed == [] and len(discover.prompts) == 1
+    assert any("not the original" in n for n in result.notes)

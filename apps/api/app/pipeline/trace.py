@@ -117,6 +117,7 @@ CHECK_SCHEMA = {
 class TraceResult:
     examined: int = 0
     proposed: list[tuple[str, str]] = field(default_factory=list)  # (claim id, page url)
+    own_pages: int = 0  # proposed from a page the claim already cited, with no search needed
     leads_fetched: int = 0
     leads_refused: int = 0
     notes: list[str] = field(default_factory=list)
@@ -124,7 +125,8 @@ class TraceResult:
     def summary(self) -> str:
         lines = [
             f"Tracing: {self.examined} artist-intent claim(s) examined, "
-            f"{len(self.proposed)} original source(s) proposed as primary, "
+            f"{len(self.proposed)} original source(s) proposed as primary "
+            f"({self.own_pages} from a page already cited), "
             f"{self.leads_fetched} page(s) read, {self.leads_refused} address(es) refused."
         ]
         lines += [f"  proposed primary for {cid}: {url}" for cid, url in self.proposed]
@@ -213,6 +215,36 @@ def check_page(backend: LLMBackend, c: Candidate, page: Page) -> CandidateSource
     )
 
 
+def _check_own_pages(
+    check: LLMBackend, c: Candidate, by_url: dict[str, Page], result: TraceResult
+) -> bool:
+    """Is one of the pages already cited for this claim the original publication?"""
+    for source in c.sources:
+        page = by_url.get(source.url or "")
+        if (
+            source.stance != Stance.supports
+            or page is None
+            or page.kind != "web"
+            or any(_host(page.url).endswith(h) for h in SECONDARY_HOSTS)
+        ):
+            continue
+        outcome = check_page(check, c, page)
+        if isinstance(outcome, str):
+            result.notes.append(f"{c.id}: {page.url}: {outcome}")
+            continue
+        # The page is already cited: mark that source instead of adding a second copy.
+        source.kind, source.excerpt = outcome.kind, outcome.excerpt
+        source.primary_proposed, source.proposed_why = True, outcome.proposed_why
+        c.notes.append(
+            f"PRIMARY PROPOSED ({outcome.proposed_why}). Open {page.url}, confirm it is the "
+            "original, then set the source tier to primary."
+        )
+        result.proposed.append((c.id, page.url))
+        result.own_pages += 1
+        return True
+    return False
+
+
 def trace_claims(
     discover: LLMBackend,
     check: LLMBackend,
@@ -221,13 +253,22 @@ def trace_claims(
     fetcher: Fetcher,
     *,
     limit: int = 8,
+    pages: list[Page] | None = None,
 ) -> TraceResult:
-    """Look for the original publication of up to `limit` artist-intent claims."""
+    """Look for the original publication of up to `limit` artist-intent claims.
+
+    For a recent album the page that already backs a claim is often the original (the interview
+    itself), so each claim's own pages are checked first; only if none is the original does the
+    search for another publication begin.
+    """
     result = TraceResult()
     web = WebCollector(fetcher)
+    by_url = {p.url: p for p in pages or []}
 
     for c in targets(candidates)[:limit]:
         result.examined += 1
+        if _check_own_pages(check, c, by_url, result):
+            continue
         try:
             leads = discover.run_structured(
                 system=DISCOVER_SYSTEM, prompt=_discovery_prompt(c), schema=DISCOVER_SCHEMA

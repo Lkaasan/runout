@@ -42,6 +42,12 @@ DOMAIN_RULES = {
     "theguardian.com": (SourceKind.press, Tier.secondary),
     "nme.com": (SourceKind.press, Tier.secondary),
     "stereogum.com": (SourceKind.press, Tier.secondary),
+    "rollingstone.co.uk": (SourceKind.press, Tier.secondary),
+    "thelineofbestfit.com": (SourceKind.press, Tier.secondary),
+    "clashmusic.com": (SourceKind.press, Tier.secondary),
+    "diymag.com": (SourceKind.press, Tier.secondary),
+    "musicomh.com": (SourceKind.press, Tier.secondary),
+    "theskinny.co.uk": (SourceKind.press, Tier.secondary),
     "songfacts.com": (SourceKind.database, Tier.tertiary),
 }
 # Any site not listed here is treated as tertiary press: blogs, label pages and Bandcamp are
