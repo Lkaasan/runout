@@ -33,6 +33,7 @@ const album = {
   slug: "x",
   title: "Knock Knock",
   artist: "Smog",
+  artist_slug: "smog",
   release_date: "1999-01-12",
   artwork_url: null,
   apple_music_id: null,
@@ -104,6 +105,11 @@ describe("AlbumSession", () => {
   it("opens on a song named in the address", () => {
     render(<AlbumSession album={album} details={details} initialTrackId="1-2" />);
     expect(screen.getByText("River Guard was written on a drive.")).toBeTruthy();
+  });
+
+  it("links the artist name to the artist page", () => {
+    render(<AlbumSession album={album} details={details} />);
+    expect(screen.getByRole("link", { name: "Smog" }).getAttribute("href")).toBe("/artist/smog");
   });
 
   it("shows how many notes each song has, and nothing about playback", () => {

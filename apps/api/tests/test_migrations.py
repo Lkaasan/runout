@@ -49,3 +49,22 @@ def test_constraint_names_are_unique_per_table_on_postgres():
         names = re.findall(r"CONSTRAINT (\w+)", ddl)
         dupes = [n for n, c in Counter(names).items() if c > 1]
         assert not dupes, f"{table.name}: {dupes}"
+
+
+def test_artist_slugs_are_filled_in_for_existing_artists():
+    """Upgrading a database that already has artists gives each a URL name, clashes suffixed."""
+    import sqlalchemy as sa
+
+    engine = create_engine("sqlite://", poolclass=StaticPool)
+    with engine.begin() as conn:
+        cfg = alembic_config(conn)
+        command.upgrade(cfg, "0001")
+        for name in ("Pink Floyd", "Pink-Floyd", "Sigur Rós"):
+            conn.execute(sa.text("INSERT INTO artist (name) VALUES (:n)"), {"n": name})
+        command.upgrade(cfg, "head")
+        rows = conn.execute(sa.text("SELECT name, slug FROM artist ORDER BY id")).fetchall()
+    assert [tuple(r) for r in rows] == [
+        ("Pink Floyd", "pink-floyd"),
+        ("Pink-Floyd", "pink-floyd-2"),
+        ("Sigur Rós", "sigur-ros"),
+    ]

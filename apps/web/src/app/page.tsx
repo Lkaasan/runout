@@ -1,44 +1,52 @@
-import Link from "next/link";
 import { api } from "@/api/client";
-import { AlbumCover } from "@/components/AlbumCover";
+import { AlbumCard } from "@/components/AlbumCard";
+import { ArtistCard } from "@/components/ArtistCard";
+import { SearchBox } from "@/components/SearchBox";
 
 export const dynamic = "force-dynamic";
 
-export default async function Shelf() {
-  const { data: albums, error } = await api
-    .GET("/albums")
-    .catch(() => ({ data: undefined, error: true }));
+export default async function Home() {
+  const [albums, artists] = await Promise.all([
+    api.GET("/albums").then((r) => r.data),
+    api.GET("/artists").then((r) => r.data),
+  ]).catch(() => [undefined, undefined] as const);
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight">Albums</h1>
-      {error || !albums ? (
-        <p className="mt-8 text-neutral-400">The API is not reachable. Is it running?</p>
+      <h1 className="text-4xl font-semibold tracking-tight">Dive into a record</h1>
+      <p className="mt-2 text-neutral-400">
+        What is known about an album and its songs, with the sources behind it.
+      </p>
+      <div className="mt-8">
+        <SearchBox autoFocus />
+      </div>
+
+      {!albums || !artists ? (
+        <p className="mt-12 text-neutral-400">The API is not reachable. Is it running?</p>
       ) : albums.length === 0 ? (
-        <p className="mt-8 text-neutral-400">
-          Nothing on the shelf yet. Import an album with{" "}
+        <p className="mt-12 text-neutral-400">
+          Nothing here yet. Import an album with{" "}
           <code>uv run python -m app.seed import &lt;slug&gt;</code>.
         </p>
       ) : (
-        <ul className="mt-8 grid gap-6 sm:grid-cols-2">
-          {albums.map((a) => (
-            <li key={a.slug}>
-              <Link
-                href={`/album/${a.slug}`}
-                className="flex gap-4 rounded-lg p-3 hover:bg-neutral-900"
-              >
-                <AlbumCover url={a.artwork_url} title={a.title} className="size-20" />
-                <div>
-                  <div className="text-xl">{a.title}</div>
-                  <div className="text-neutral-400">{a.artist}</div>
-                  {a.release_date && (
-                    <div className="text-sm text-neutral-500">{a.release_date.slice(0, 4)}</div>
-                  )}
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <>
+          <h2 className="mt-12 text-sm uppercase tracking-widest text-neutral-500">Albums</h2>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            {albums.map((a) => (
+              <li key={a.slug}>
+                <AlbumCard album={a} />
+              </li>
+            ))}
+          </ul>
+          <h2 className="mt-12 text-sm uppercase tracking-widest text-neutral-500">Artists</h2>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            {artists.map((a) => (
+              <li key={a.slug}>
+                <ArtistCard artist={a} />
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </main>
   );

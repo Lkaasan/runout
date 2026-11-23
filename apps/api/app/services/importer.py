@@ -27,6 +27,7 @@ from app.models.enums import EntityType, Status
 from app.services import claim_rules
 from app.services.seed_loader import AlbumBundle
 from app.services.seed_schema import ClaimSeed, CreditSeed, LinkSeed
+from app.services.slugs import slugify, unique_slug
 
 
 @dataclass
@@ -61,7 +62,11 @@ def import_album(session: Session, bundle: AlbumBundle) -> ImportReport:
     slug = seed.slug
     report = ImportReport(slug=slug)
 
-    artist = _get_or_create(session, Artist, name=seed.artist.name)
+    artist = session.scalar(select(Artist).filter_by(name=seed.artist.name))
+    if artist is None:
+        taken = set(session.scalars(select(Artist.slug)))
+        artist = Artist(name=seed.artist.name, slug=unique_slug(slugify(seed.artist.name), taken))
+        session.add(artist)
     artist.apple_music_id = seed.artist.apple_music_id
     artist.musicbrainz_id = seed.artist.musicbrainz_id
 

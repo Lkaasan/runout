@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routes import admin, albums, entities, health, musickit
+from app.routes import admin, albums, browse, entities, health, musickit
 
 app = FastAPI(title="Album Deep-Dive API")
 app.add_middleware(
@@ -13,6 +13,7 @@ app.add_middleware(
 )
 app.include_router(health.router)
 app.include_router(albums.router)
+app.include_router(browse.router)
 app.include_router(entities.router)
 app.include_router(admin.router)
 app.include_router(musickit.router)
