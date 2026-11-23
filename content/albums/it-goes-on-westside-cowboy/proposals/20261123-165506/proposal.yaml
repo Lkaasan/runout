@@ -1,0 +1,2293 @@
+# PROPOSED by the information finder. Nothing here is reviewed or approved.
+# Check each claim against its excerpt, then copy what you accept into the album's seed
+# files (claims and sources). Delete this folder when done.
+sources:
+- id: it-goes-on
+  kind: database
+  title: It Goes On
+  url: https://en.wikipedia.org/wiki/It_Goes_On?oldid=1378674537
+  tier: tertiary
+- id: westside-cowboy-want-you-to-feel-like-a-
+  kind: press
+  title: Westside Cowboy Want You to Feel Like a Kid Again. And Ditch Your Phone
+  url: https://www.rollingstone.co.uk/music/features/westside-cowboy-interview-photos-63634/
+  tier: secondary
+- id: album-review-westside-cowboy-it-goes-on-
+  kind: press
+  title: 'ALBUM REVIEW: Westside Cowboy - ‘It Goes On’ | The Soundboard'
+  url: https://thesoundboardreviews.com/2026/08/18/album-review-westside-cowboy-it-goes-on/
+  tier: tertiary
+- id: we-wanted-to-make-an-album-for-our-young
+  kind: press
+  title: '"We wanted to make an album for our younger selves": Westside Cowboy announce debut album, It
+    Goes On | The Line of Best Fit'
+  url: https://www.thelineofbestfit.com/news/we-wanted-to-make-an-album-for-our-younger-selves-westside-cowboy-announce-debut-album-it-goes-on
+  tier: secondary
+- id: westside-cowboy-release-new-so-much-coun
+  kind: press
+  title: Westside Cowboy Release New ‘So Much Country ‘Till We Get There’ EP
+  url: https://www.clashmusic.com/news/westside-cowboy-release-new-so-much-country-till-we-get-there-ep/
+  tier: secondary
+- id: it-goes-on-2
+  kind: interview
+  title: 'It Goes On (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)'
+  url: https://music.apple.com/us/album/it-goes-on/6767652034
+  tier: secondary
+- id: westside-cowboy-it-goes-on-album-reviews
+  kind: press
+  title: Westside Cowboy - It Goes On | Album Reviews | musicOMH
+  url: https://www.musicomh.com/reviews/albums/westside-cowboy-it-goes-on
+  tier: secondary
+- id: it-goes-on-3
+  kind: interview
+  title: 'It Goes On (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)'
+  url: https://music.apple.com/us/album/it-goes-on/6768651964
+  tier: secondary
+- id: westside-cowboy-preview-debut-album-with
+  kind: press
+  title: Westside Cowboy preview debut album with new song, “Pin Up Boys” | The Line of Best Fit
+  url: https://www.thelineofbestfit.com/news/westside-cowboy-preview-debut-album-with-new-song-pin-up
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-diy-ma
+  kind: press
+  title: Westside Cowboy - It Goes On review • DIY Magazine
+  url: https://diymag.com/review/album/westside-cowboy-it-goes-on
+  tier: secondary
+- id: westside-cowboy-share-rousing-single-pin
+  kind: press
+  title: Westside Cowboy share rousing single 'Pin Up Boys' and announce record store live shows
+  url: https://www.nme.com/news/music/westside-cowboy-share-rousing-single-pin-up-boys-and-announce-record-store-live-shows-3954451
+  tier: secondary
+- id: westside-cowboy-unveil-new-song-dobro-th
+  kind: press
+  title: Westside Cowboy unveil new song, "Dobro" | The Line of Best Fit
+  url: https://www.thelineofbestfit.com/news/westside-cowboy-unveil-new-song-dobro
+  tier: secondary
+- id: westside-cowboy-interview-with-the-u-k-r
+  kind: interview
+  title: 'Westside Cowboy: Interview With the U.K. Rock Band (PROPOSED PRIMARY: confirm it is the original,
+    then set tier: primary)'
+  url: https://www.rollingstone.com/music/music-features/westside-cowboy-uk-rock-band-interview-1235607545/
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-a-bril
+  kind: press
+  title: 'Westside Cowboy ''It Goes On'' review: A brilliantly thrilling debut'
+  url: https://www.rollingstone.co.uk/music/album-reviews/westside-cowboy-it-goes-on-review-a-brilliantly-thrilling-debut-63567/
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-manche
+  kind: press
+  title: 'Westside Cowboy – ‘It Goes On’ review: Manchester’s newest guitar heroes put an arm around your
+    shoulder'
+  url: https://www.nme.com/reviews/album/westside-cowboy-it-goes-on-review-3962557
+  tier: secondary
+- id: westside-cowboy-guide-us-through-britani
+  kind: interview
+  title: 'Westside Cowboy guide us through ‘Britanicana’ in playlist for The Cover (PROPOSED PRIMARY:
+    confirm it is the original, then set tier: primary)'
+  url: https://www.nme.com/news/music/westside-cowboy-the-cover-playlist-3929615
+  tier: secondary
+- id: westside-cowboy-it-goes-on
+  kind: press
+  title: Westside Cowboy – It Goes On
+  url: https://www.theskinny.co.uk/music/reviews/albums/westside-cowboy-it-goes-on
+  tier: secondary
+claims:
+- track: album
+  id: proposed-001
+  type: fact
+  depth: listen
+  phase: before
+  body: It Goes On is Westside Cowboy's debut studio album, released 21 August 2026 by Island Records.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: It Goes On is the debut studio album by the English rock band Westside Cowboy.
+  - ref: it-goes-on
+    stance: supports
+    excerpt: It was released on 21 August 2026 by Island Records.
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Their first album, It Goes On, will be released Aug. 21 on Island Records.
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: ‘It Goes On’ by Westside Cowboy is released on 21st August on Island Records.
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: contradicts
+    excerpt: have revealed the details of their upcoming debut EP, It Goes On, and released new single,
+      "Kick Stones (The Boys)"
+- track: album
+  id: proposed-002
+  type: fact
+  depth: study
+  phase: before
+  body: Most of the album was recorded at Greenmount Studios in Leeds with producer Loren Humphrey, while
+    two songs retain pre-production recordings made at Humphrey's home in Upstate New York.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band recorded most of the album at Greenmount Studios in Leeds with the producer Loren
+      Humphrey; two songs use recordings made during pre-production at Humphrey's home in Upstate New
+      York.
+- track: album
+  id: proposed-003
+  type: fact
+  depth: listen
+  phase: before
+  body: The band wanted the album to sound youthful and immediate, keeping the two-guitar, bass-and-drums
+    setup and shared lead vocals of their live shows.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: They intended the record to sound youthful and immediate, retaining the two-guitar, bass-and-drums
+      foundation and shared lead vocals of their concerts.
+- track: album
+  id: proposed-004
+  type: interpretation
+  depth: study
+  phase: after
+  body: Critics classed the album as indie rock with touches of alternative country, folk, post-punk,
+    rockabilly and 1990s alternative rock.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Critics described It Goes On as indie rock, with elements of alternative country, folk, post-punk,
+      rockabilly and 1990s alternative rock.
+- track: album
+  id: proposed-005
+  type: fact
+  depth: listen
+  phase: before
+  body: The lyrics deal with the passage of time, repetition, uncertainty and young adulthood, and recurring
+    images of motion led the band to choose the title after the songs were finished.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The lyrics address the passage of time, repetition, uncertainty and young adulthood; the
+      recurring idea of motion led the band to choose the title after the songs had been completed.
+- track: album
+  id: proposed-006
+  type: fact
+  depth: listen
+  phase: before
+  body: 'The album was preceded by three singles: "Kick Stones (The Boys)", "Pin Up Boys" and "Dobro".'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The album was preceded by the singles "Kick Stones (The Boys)", "Pin Up Boys" and "Dobro".
+- track: album
+  id: proposed-007
+  type: fact
+  depth: listen
+  phase: after
+  body: The album received critical acclaim, earning a weighted Metacritic score reported elsewhere on
+    the page as both 88 and 87 out of 100, and was named Stereogum's Album of the Week.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Metacritic assigned it a weighted score of 88 out of 100, and Stereogum selected it as its
+      Album of the Week.
+  - ref: it-goes-on
+    stance: contradicts
+    excerpt: it has a weighted average of 87 based on 16 reviews, a result the site classifies as "universal
+      acclaim"
+- track: album
+  id: proposed-008
+  type: fact
+  depth: study
+  phase: before
+  body: Westside Cowboy formed in Manchester in 2023 after three members met studying at the Royal Northern
+    College of Music.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy formed in Manchester in 2023. Reuben Haycocks, Aoife Anson-O'Connell and
+      Paddy Murphy met while studying at the Royal Northern College of Music
+- track: album
+  id: proposed-009
+  type: trivia
+  depth: study
+  phase: before
+  body: Paddy Murphy had previously played in a surf-punk group with Jimmy Bradbury, and the four originally
+    just got together to play Lonnie Donegan covers.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Murphy had previously performed with Jimmy Bradbury in a surf-punk group. The four initially
+      gathered to socialise and play Lonnie Donegan covers.
+- track: album
+  id: proposed-010
+  type: trivia
+  depth: study
+  phase: before
+  body: The band coined the term "Britainicana" for its blend of British rock and American folk and alternative
+    music, partly to set itself apart from Manchester's post-punk scene.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band called its mixture of British rock and American folk and alternative music "Britainicana",
+      initially as a way to distinguish itself from Manchester's contemporary post-punk groups.
+- track: album
+  id: proposed-011
+  type: fact
+  depth: study
+  phase: before
+  body: The band's profile rose after winning the 2025 Glastonbury Festival Emerging Talent Competition,
+    opening for Geese in Europe, and appearing on Later... with Jools Holland.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Their profile rose after they won the 2025 Glastonbury Festival Emerging Talent Competition,
+      opened European concerts for Geese, and appeared on Later... with Jools Holland.
+  - ref: westside-cowboy-release-new-so-much-coun
+    stance: contradicts
+    excerpt: Westside Cowboy will also support Geese at their massive UK tour in March.
+- track: album
+  id: proposed-012
+  type: fact
+  depth: study
+  phase: before
+  body: Loren Humphrey had already produced the band's second EP before agreeing to make their debut album.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: He produced their second EP before agreeing to make their debut album.
+- track: album
+  id: proposed-013
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Humphrey said he was drawn to the band's ability to keep accelerating a song toward a climax without
+    losing control, and tried to preserve that in the studio.
+  author: Loren Humphrey
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Humphrey said he had been attracted by their ability to keep accelerating a song towards
+      a climax without losing control, and sought to keep that quality in the studio.
+- track: 1
+  id: proposed-014
+  type: fact
+  depth: study
+  phase: before
+  body: Haycocks had come to dislike "Kick Stones (The Boys)" after many live performances and initially
+    opposed putting it on the album.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks had come to dislike "Kick Stones (The Boys)" after repeated live performances and
+      initially opposed including it.
+- track: 1
+  id: proposed-015
+  type: fact
+  depth: study
+  phase: before
+  body: The band and Humphrey scaled the song's bloated concert arrangement down to a more restrained
+    build, using a Velvet Underground live performance of "What Goes On" as a reference point.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band and Humphrey reduced what had become a large concert arrangement to a more restrained
+      build, using a live performance of the Velvet Underground's "What Goes On" as a reference.
+- track: 1
+  id: proposed-016
+  type: artist_intent
+  depth: listen
+  phase: after
+  body: Haycocks called the reworked version of "Kick Stones (The Boys)" the album's sonic touchstone.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks subsequently called the result the album's sonic touchstone.
+  - ref: it-goes-on-2
+    stance: supports
+    excerpt: I think it changed our view on how we wanted the record to sound—and it ended up being the
+      touchstone of the album.
+- track: 7
+  id: proposed-017
+  type: fact
+  depth: study
+  phase: before
+  body: '"Pin Up Boys" was recorded largely as the band played it live, and was the third attempt at capturing
+    the song.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Pin Up Boys", by contrast, was recorded largely as the group played it live. It was the
+      third attempt to record the song'
+- track: 10
+  id: proposed-018
+  type: fact
+  depth: study
+  phase: before
+  body: '"Take My Leaving As I Love You" kept an early, stripped-down take from pre-production because
+    the other members insisted on it.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Take My Leaving as I Love You" is an early, stripped-down take that the other members insisted
+      on keeping'
+- track: 11
+  id: proposed-019
+  type: fact
+  depth: study
+  phase: before
+  body: '"You Could Have Died There On The Dancefloor" combines an early demo with newly recorded replacement
+    vocals.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"You Could Have Died There on the Dancefloor" combines an early demo with replacement vocals.'
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: contradicts
+    excerpt: Closing track You Could Have Died Right There On The Dancefloor shows off yet another side
+      to the four-piece
+- track: 3
+  id: proposed-020
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Bradbury wrote "Dobro" quickly on a four-track cassette recorder after a tour, and Murphy described
+    its relaxed rhythm as the band's first attempt at a song that strutted.
+  author: Paddy Murphy
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Bradbury wrote "Dobro" quickly on a four-track cassette recorder after a tour, and Murphy
+      described its relaxed rhythm as the band's first attempt at a song that strutted.
+- track: 4
+  id: proposed-021
+  type: fact
+  depth: study
+  phase: before
+  body: Haycocks wrote "Well Done Kid, You Did It" while forcing himself to finish a song every day because
+    he was anxious about writing an album.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks wrote "Well Done Kid, You Did It" while forcing himself to complete a song each
+      day because he felt anxious about composing an album.
+- track: 4
+  id: proposed-022
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Inspired by Modest Mouse, the band shaped the track into what Haycocks termed an "emo dance track".
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Listening to Modest Mouse, the group developed it as what Haycocks termed an "emo dance track".
+- track: 5
+  id: proposed-023
+  type: fact
+  depth: study
+  phase: before
+  body: '"Worried Age" started as a ten-minute piece influenced by LCD Soundsystem and New Order before
+    being shortened, with Future Islands'' In Evening Air becoming a reference as it was finished.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Worried Age" began as a ten-minute piece influenced by LCD Soundsystem and New Order before
+      the group shortened it.'
+  - ref: it-goes-on
+    stance: supports
+    excerpt: As they completed the song, Future Islands' In Evening Air became a reference for it.
+- track: album
+  id: proposed-024
+  type: artist_intent
+  depth: listen
+  phase: after
+  body: Haycocks said It Goes On was not intended as a concept album, even though recurring images of
+    movement and time made the title fit after the fact.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks said it was not intended as a concept album, but those connections made the title
+      It Goes On fit.
+- track: 6
+  id: proposed-025
+  type: artist_intent
+  depth: listen
+  phase: during
+  body: Bradbury described "Big Wheels" as a song about repetition and feeling trapped by limited choices.
+  author: Jimmy Bradbury
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Bradbury described "Big Wheels" as a song about repetition and feeling trapped by limited
+      choices
+- track: 5
+  id: proposed-026
+  type: artist_intent
+  depth: study
+  phase: during
+  body: Haycocks called "Worried Age" an attempt to capture the band's age and circumstances at the time
+    it was written.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks called "Worried Age" an attempt to capture the group's age and circumstances while
+      it was being written
+  - ref: it-goes-on-3
+    stance: supports
+    excerpt: The lyrics try to encompass what it’s like to be the age that we were at when we were writing
+      the song.
+- track: 11
+  id: proposed-027
+  type: artist_intent
+  depth: listen
+  phase: during
+  body: The closing lyric asks to be accepted despite imperfection, and Murphy said its quiet optimism
+    made it a fitting way to end the album.
+  author: Paddy Murphy
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The closing lyric of "You Could Have Died There on the Dancefloor" asks to be accepted despite
+      imperfection; Murphy said its quiet optimism made it an appropriate ending.
+- track: album
+  id: proposed-028
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Victoria Borlando of Pitchfork wrote that the band sheds some of its early country influences
+    for tightly wound indie rock and sharp songwriting.
+  author: Victoria Borlando
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The much-hyped Manchester group sheds some of its early country influences, focusing instead
+      on tightly wound indie rock and sharp, thoughtful songwriting.
+- track: album
+  id: proposed-029
+  type: interpretation
+  depth: study
+  phase: after
+  body: Connor Gilroy of The Alternative said the album feels closer to a louder, more frenetic future
+    for slacker rock than to alt-country.
+  author: Connor Gilroy
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: it "ultimately feels closer to a louder more frenetic future for slacker rock than alt-country"
+- track: album
+  id: proposed-030
+  type: interpretation
+  depth: study
+  phase: after
+  body: Tom Breihan of Stereogum heard 1990s indie rock in the album's monotone vocals, interlocking guitars
+    and shouted harmonies.
+  author: Tom Breihan
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Tom Breihan of Stereogum heard 1990s indie rock in its monotone vocals, interlocking guitars
+      and shouted harmonies
+- track: album
+  id: proposed-031
+  type: interpretation
+  depth: study
+  phase: after
+  body: Luke Nuttall of the Soundboard identified post-punk and American roots influences rather than
+    the Britpop revivalism tied to some Manchester bands.
+  author: Luke Nuttall
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Luke Nuttall of the Soundboard identified post-punk and American roots influences rather
+      than the Britpop revivalism associated with some Manchester bands
+- track: album
+  id: proposed-032
+  type: interpretation
+  depth: study
+  phase: after
+  body: Marissa R. Moss of Rolling Stone UK described the album's arrangements as forceful and noted their
+    frequent climaxes.
+  author: Marissa R. Moss
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Marissa R. Moss of Rolling Stone UK described the arrangements as forceful and noted their
+      frequent climaxes.
+- track: album
+  id: proposed-033
+  type: fact
+  depth: study
+  phase: before
+  body: 'The three guitar- or bass-playing members split lead vocal duties: Haycocks sings lead on seven
+    tracks, Bradbury on three and Anson-O''Connell on one.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks leads seven tracks, Bradbury three and Anson-O'Connell one, with the other members
+      frequently credited with backing vocals.
+- track: 8
+  id: proposed-034
+  type: artist_intent
+  depth: listen
+  phase: during
+  body: Anson-O'Connell described "Coyote" as a sparse, percussion-led and unusually angry song.
+  author: Aoife Anson-O'Connell
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Anson-O'Connell described "Coyote" as a sparse, percussion-led and unusually angry song.
+- track: album
+  id: proposed-035
+  type: interpretation
+  depth: study
+  phase: after
+  body: Rishi Shah of NME read the album's ordinary imagery as a response to young-adult uncertainty.
+  author: Rishi Shah
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Shah read the album's ordinary imagery as a response to young-adult uncertainty.
+- track: 1
+  id: proposed-036
+  type: fact
+  depth: study
+  phase: during
+  body: '"Kick Stones (The Boys)" was the lead single, with a video made in collaboration with the football
+    club F.C. United of Manchester.'
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy announced It Goes On on 20 May 2026 and released "Kick Stones (The Boys)"
+      as its lead single.
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Its video was made with the football club F.C. United of Manchester.
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: alongside a video made in collaboration with FC United of Manchester, offering insight into
+      Westside Cowboy's creative mind
+- track: 7
+  id: proposed-037
+  type: trivia
+  depth: study
+  phase: before
+  body: The band said "Pin Up Boys" was written about eighteen months earlier using an acoustic guitar,
+    a drum-machine sample pad and screwdrivers as drumsticks, becoming heavier through repeated performances.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band said it had been written about eighteen months earlier with an acoustic guitar,
+      a drum-machine sample pad and screwdrivers used as drumsticks; repeated performances made the arrangement
+      heavier before the album version was recorded.
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: ‘Pin Up’ Boys was written a year and a half ago using an acoustic guitar, a drum machine
+      sample pad and some screwdrivers as drumsticks
+- track: 7
+  id: proposed-038
+  type: fact
+  depth: study
+  phase: during
+  body: Jack Shep directed the video for "Pin Up Boys", in which a moving spotlight chases a runner and
+    reveals different versions of the band.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Jack Shep directed a video in which a moving spotlight pursues a runner and successively
+      reveals different versions of the band.
+- track: album
+  id: proposed-039
+  type: fact
+  depth: study
+  phase: during
+  body: The band scheduled a headline tour of the United Kingdom and continental Europe for October to
+    December following the album's release.
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band announced a series of in-store performances around the release date and scheduled
+      a headline tour of the United Kingdom and continental Europe for October to December.
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: contradicts
+    excerpt: 25.11.26 Newcastle University, Newcastle 26.11.26 Crookes Social Club, Sheffield 27.11.26
+      Leeds Irish Centre, Leeds 29.11.26 XOYO, Birmingham
+- track: album
+  id: proposed-040
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Breihan named It Goes On his Album of the Week for Stereogum, praising its controlled builds,
+    overlapping voices and mix of confidence and anxiety despite tracing its ingredients to earlier indie-rock
+    groups.
+  author: Tom Breihan
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: he thought the band's enthusiasm prevented those references from becoming pastiche; he particularly
+      praised its controlled builds, overlapping voices and combination of confidence and anxiety
+- track: album
+  id: proposed-041
+  type: interpretation
+  depth: study
+  phase: after
+  body: Nick Reilly of Rolling Stone UK wrote that the record transcended the band's "Britainicana" label,
+    citing the wall of sound in "Kick Stones", the balladry of "Take My Leaving as I Love You" and the
+    looseness of "Pin Up Boys".
+  author: Nick Reilly
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Nick Reilly of Rolling Stone UK similarly wrote that the record transcended the band's "Britainicana"
+      label, highlighting the wall of sound in "Kick Stones"
+- track: album
+  id: proposed-042
+  type: interpretation
+  depth: study
+  phase: after
+  body: Matt Mitchell graded the album A for Paste, pointing to the musicians' friendship and Murphy's
+    drumming as the source of its intensity.
+  author: Matt Mitchell
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Matt Mitchell graded the album A for Paste, identifying the musicians' friendship and Murphy's
+      drumming as the foundation of its intensity.
+- track: album
+  id: proposed-043
+  type: interpretation
+  depth: study
+  phase: after
+  body: Rishi Shah awarded the album four stars for NME, linking its acceptance of flaws to uncertainty
+    in early adulthood.
+  author: Rishi Shah
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Rishi Shah awarded it four stars for NME, connecting its acceptance of flaws with uncertainty
+      in early adulthood.
+- track: album
+  id: proposed-044
+  type: interpretation
+  depth: study
+  phase: after
+  body: Daisy Carter of DIY gave the album four and a half stars, praising its deliberately rough production,
+    dynamic shifts and harmonies.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Carter praised its deliberately rough production, dynamic shifts and harmonies
+- track: album
+  id: proposed-045
+  type: interpretation
+  depth: study
+  phase: after
+  body: John Murphy of MusicOMH gave the album four and a half stars, saying it successfully transferred
+    the band's live sound to the studio and praising its vocal interplay and drumming.
+  author: John Murphy
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Murphy thought the album successfully transferred the band's live sound to the studio and
+      highlighted its vocal interplay and drumming.
+- track: album
+  id: proposed-046
+  type: interpretation
+  depth: study
+  phase: after
+  body: Liam Martin of AllMusic found the repeated crescendos mostly earned and the quieter songs emotionally
+    direct, though he felt the band took few large formal risks.
+  author: Liam Martin
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Liam Martin of AllMusic considered the repeated crescendos mostly earned and thought the
+      quiet songs retained the emotional directness of the louder material, although he found that the
+      band took few large formal risks.
+- track: 2
+  id: proposed-047
+  type: interpretation
+  depth: study
+  phase: after
+  body: Ralston found parts of "Paper Chains" dreary before its instrumentation opened out.
+  author: Alexander Ralston
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: found parts of "Paper Chains" dreary before its instrumentation opened out
+- track: 6
+  id: proposed-048
+  type: interpretation
+  depth: study
+  phase: after
+  body: Todd Dedman of Beats Per Minute rated the album 83 percent but called "Big Wheels" a misstep whose
+    borrowed phrases interrupted the record's momentum.
+  author: Todd Dedman
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Todd Dedman of Beats Per Minute rated the album 83 per cent, but called "Big Wheels" a misstep
+      whose borrowed phrases interrupted the record's momentum.
+- track: album
+  id: proposed-049
+  type: interpretation
+  depth: study
+  phase: after
+  body: Hopper Ho of The Mancunion claimed the album pioneers a new era of British indie music and said
+    it has listeners' bodies flailing and hearts aching.
+  author: Hopper Ho
+  reviewed: false
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Hopper Ho of The Mancunion claims the album pioneers a new era of British indie music, and
+      that the album "has your body flailing and your heart aching."
+- track: album
+  id: proposed-050
+  type: fact
+  depth: listen
+  phase: before
+  body: It Goes On was recorded at Greenmount Studios in Leeds with producer Loren Humphrey.
+  body_long: The album was recorded at Greenmount Studios in Leeds, produced by Loren Humphrey, who has
+    also worked with Geese, Cameron Winter and Wunderhorse.
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: It Goes On was recorded at Greenmount Studios in Leeds with producer Loren Humphrey
+- track: album
+  id: proposed-051
+  type: fact
+  depth: study
+  phase: before
+  body: Producer Loren Humphrey is credited for previous work with Geese, Cameron Winter, Wunderhorse,
+    and others.
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: who is credited for his work with Geese, Cameron Winter, Wunderhorse, and more
+- track: album
+  id: proposed-052
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: The band said they wanted to make an album for their younger selves, one reminding them of the
+    music that made them fall in love with it.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: we wanted to make an album for our younger selves, one that reminds us of all the bodies
+      of work that made us fall in love with music
+- track: album
+  id: proposed-053
+  type: artist_intent
+  depth: study
+  phase: before
+  body: The band said they wanted the music to feel instant, concise and honest, favoring lean and imperfect
+    songs over a sprawling future project.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: We wanted the music to be instant, concise, and honest to us as people today. There will
+      be plenty of time in the future for the sprawling triple album with horns and string sections but
+      for now, it’s young music made by some young(ish) people. We want to make songs that are lean and
+      imperfect.
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: There will be plenty of time in the future for the sprawling triple album with horns and
+      string sections
+- track: 1
+  id: proposed-054
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Bassist and vocalist Aoife Anson O'Connell said they loved how "Kick Stones" felt to play but
+    worried recording it that way would make people think they wanted to be a stadium rock band.
+  author: Aoife Anson O'Connell
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: We loved the way it felt to play, but we thought we couldn’t record it like that or people
+      would think we wanted to be a stadium rock band
+- track: 1
+  id: proposed-055
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Drummer Paddy Murphy said they used a live recording of The Velvet Underground's "What Goes On"
+    as inspiration, aiming to pull off a '70s rock sound as young players.
+  author: Paddy Murphy
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: We always thought, if we can pull this off it could be really fun. Taking this mad, ‘70s
+      rock thing but then having it played by a bunch of scrawny kids.
+- track: album
+  id: proposed-056
+  type: fact
+  depth: study
+  phase: before
+  body: Westside Cowboy previously released two EPs, This Better Be Something Great and So Much Country
+    'Till We Get There, and supported Geese on tour.
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: 'who have previously released two EPs: This Better Be Something Great last year, and So Much
+      Country ''Till We Get There, which dropped early this year, and are fresh off of a tour supporting
+      Geese'
+- track: album
+  id: proposed-057
+  type: fact
+  depth: study
+  phase: before
+  body: In support of the album, Westside Cowboy will embark on their biggest headline tour yet in autumn
+    and winter, after summer festival performances.
+  reviewed: false
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: Westside Cowboy are set to embark on their biggest headline tour yet across this autumn and
+      winter, following a string of summer festival performances at Down the Rabbit Hole, Green Man, Latitude,
+      Reading and Leeds, and more
+- track: 7
+  id: proposed-058
+  type: fact
+  depth: listen
+  phase: before
+  body: '"Pin Up Boys" is the second single from the album, following lead single "Kick Stones (The Boys)".'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: Westside Cowboy have released “Pin Up Boys”, the newest single from their upcoming debut
+      album, It Goes On.
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: “Pin Up Boys” follows lead single “Kick Stones (The Boys)”, and has become a live fan favourite
+- track: 7
+  id: proposed-059
+  type: artist_intent
+  depth: study
+  phase: during
+  body: Singer Reuben Haycocks said the song became "heavier and more aggro" each time they performed
+    it live, mirroring its lyrical theme of struggling with self-control.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: though singer Reuben Haycocks notes that it became “heavier and more aggro” each time they
+      performed it, echoing the lyrical themes of struggling to maintain self-control
+- track: 7
+  id: proposed-060
+  type: fact
+  depth: study
+  phase: before
+  body: The song's music video was directed by SNL UK's Jack Shep, who described wanting to capture the
+    band's dynamism through a chasing spotlight concept.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: The track also arrives alongside a music video directed by SNL UK’s Jack Shep, who explains
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: In the video we wanted to capture the band’s dynamism, through a spotlight. We follow this
+      fixed, malevolent spotlight chasing our hero
+- track: 7
+  id: proposed-061
+  type: trivia
+  depth: listen
+  phase: before
+  body: The band said "Pin Up Boys" is the longest-serving song on the album and the one they've played
+    live the most.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: It is by far the longest serving song on the album and the one that we have played the most
+      live, which was a blessing and a curse
+- track: 7
+  id: proposed-062
+  type: artist_intent
+  depth: study
+  phase: before
+  body: The band decided the studio recording should be a fairly faithful version of their live performance
+    of the song, since it was already set in its ways.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: After realising this song was set in its ways, we thought the recording should be a somewhat
+      faithful version of the live performance
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: After realising this song was set in its ways, we thought the recording should be a somewhat
+      faithful version of the live performance
+- track: album
+  id: proposed-063
+  type: fact
+  depth: listen
+  phase: before
+  body: The debut album It Goes On is set for release on 21 August via Island Records.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: It Goes On is released on 21 August via Island Records
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: contradicts
+    excerpt: have revealed the details of their upcoming debut EP, It Goes On, and released new single,
+      "Kick Stones (The Boys)"
+- track: 3
+  id: proposed-064
+  type: fact
+  depth: listen
+  phase: before
+  body: '"Dobro" was released as a single ahead of the album, with lead vocals from guitarist Jimmy Bradbury
+    and harmonies from bassist Aoife Anson O''Connell.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-unveil-new-song-dobro-th
+    stance: supports
+    excerpt: '"Dobro" arrives as a slacker rock track with lead vocals from guitatrist Jimmy Bradbury,
+      backed by harmonies from bassist Aoife Anson O''Connell'
+- track: 3
+  id: proposed-065
+  type: fact
+  depth: study
+  phase: before
+  body: '"Dobro" followed earlier singles "Kick Stones (The Boys)" and "Pin Up Boys" as the third preview
+    of the band''s debut album.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-unveil-new-song-dobro-th
+    stance: supports
+    excerpt: It follows previous singles "Kick Stones (The Boys)" and "Pin Up Boys" as the latest preview
+      of the Manchester-born band's first full-length collection of songs
+- track: 3
+  id: proposed-066
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: The band described "Dobro" as their "strut song" and said it could be about a younger self waiting
+    and isolated, hoping for a return, or simply about a weird guitar.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-unveil-new-song-dobro-th
+    stance: supports
+    excerpt: This is our strut song, over 2 minutes in length but just under 3. A song for perhaps a younger
+      self? For that moment of waiting and isolation in the hopes of a return. Or it could just be a song
+      about a weird guitar.
+  - ref: westside-cowboy-unveil-new-song-dobro-th
+    stance: supports
+    excerpt: Or it could just be a song about a weird guitar. Who knows!
+- track: album
+  id: proposed-067
+  type: fact
+  depth: listen
+  phase: before
+  body: The band deliberately recorded with no synths, no fills, and no click tracks, aiming for a raw,
+    human sound.
+  body_long: Westside Cowboy wanted their music to feature a guitar that sounds like a guitar and a drum
+    that sounds like it came from a human actually hitting it, avoiding any use of AI.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: A guitar that sounds like a guitar, a drum that sounds like it came from a human actually
+      hitting it. No synths, no fills, no click tracks.
+  - ref: it-goes-on
+    stance: contradicts
+    excerpt: Loren Humphrey – production, mixing, recording engineering, percussion (except 9, 10), synths
+      (1, 4, 5, 11), piano (2, 3, 6, 11), photos
+- track: album
+  id: proposed-068
+  type: fact
+  depth: study
+  phase: before
+  body: Nearly all the band's songs use just two guitars, bass, and drums, and if they want an extra sound
+    like a shaker, a member has to play it while still playing their main instrument.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Nearly all their songs feature two guitars, a bass, and drums. If they want to add so much
+      as a shaker, then someone’s going to have to figure out how to shake it while they play the instrument
+      they already have
+- track: album
+  id: proposed-069
+  type: fact
+  depth: study
+  phase: before
+  body: Each member of the band writes songs and they rotate who sings lead vocals.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Each member writes songs, and they rotate singing lead.
+- track: album
+  id: proposed-070
+  type: fact
+  depth: study
+  phase: before
+  body: The band briefly tried to label their sound 'Britainicana,' a blend referencing British rock and
+    American pop culture influences, though they now feel sheepish about the term.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: they did initially attempt to label their sound, built both on the British rock traditions
+      and American pop culture they grew up around, as ‘Britainicana,’ a term they seem to ever so slightly
+      cringe at now
+- track: album
+  id: proposed-071
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was produced by Loren Humphrey, who first produced the band's second EP before signing
+    on for the debut album.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: He produced Westside Cowboy’s second EP, and then signed on for the debut album.
+- track: album
+  id: proposed-072
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Producer Loren Humphrey said he was drawn to the band's energetic approach of pushing songs to
+    the edge before pulling them together into a crescendo.
+  author: Loren Humphrey
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Their ability to take a song and push it far beyond the recommended operating level while
+      somehow still finding a way to land on their feet and crescendo a split sec before the wheels come
+      off
+  - ref: westside-cowboy-interview-with-the-u-k-r
+    stance: supports
+    excerpt: What attracted me to band initially was the energy,” Humphrey tells Rolling Stone. “Their
+      ability to take a song and push it far beyond the recommended operating level while somehow still
+      finding a way to land on their feet and crescendo a split sec before the wheels come off
+- track: album
+  id: proposed-073
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Singer Reuben Haycocks said the band's approach was to write songs simply and without pretension,
+    as if they were other people.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: We’ll write the songs as if we’re other people and write the simplest, funnest things that
+      we possibly can.
+  - ref: westside-cowboy-interview-with-the-u-k-r
+    stance: supports
+    excerpt: We’ll write the songs as if we’re other people and write the simplest, funnest things that
+      we possibly can
+- track: 1
+  id: proposed-074
+  type: fact
+  depth: listen
+  phase: during
+  body: The single 'Kick Stones (The Boys)' was inspired by the Velvet Underground's song 'What Goes On,'
+    though its looseness gives it a fresh feel.
+  body_long: On the track, Haycocks sometimes sings as if racing against an hourglass and sometimes draws
+    out syllables slowly, meeting bandmate Aoife Anson O'Connell on harmonies.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: The Velvet Underground’s ‘What Goes On’ was the reference point, but it the looseness keeps
+      it fresh, with Haycock sometimes singing as if he’s racing against an hourglass
+- track: 3
+  id: proposed-075
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The article notes Bradbury's vocal influence from Julian Casablancas comes through on 'Dobro'
+    and 'Big Wheels,' with alternating vocalists giving the songs a shared, family feel.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: A bit of Bradbury’s inner Julian Casablancas comes through on songs like ‘Dobro’ and ‘Big
+      Wheels,’ the alternating vocalists making everything feel like a family joint
+- track: 10
+  id: proposed-076
+  type: trivia
+  depth: listen
+  phase: during
+  body: '''Take My Leaving As I Love You'' is described as a killer ballad that never builds to a big
+    crescendo, and you can hear the ambient buzz of the room on the recording.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: like ‘Take My Leaving As I Love You,’ where you can hear the buzz of the room in the recording
+- track: album
+  id: proposed-077
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy formed in Manchester in 2023 and developed a sound combining scuzzy 90s guitars
+    with a subtle love of skiffle, which they dubbed 'Britainicana'.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: When Westside Cowboy formed in Manchester in 2023, their heady cocktail of scuzzy 90s guitars
+      and a subtle love of skiffle gave birth to a sound they called Britainicana
+- track: album
+  id: proposed-078
+  type: fact
+  depth: study
+  phase: before
+  body: The band described their Britainicana style as a lyrical celebration of the mundane set against
+    90s alt-rock influences like Pavement.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: they described it as offering a lyrical celebration of the mundane paired against 90s alt-rock
+      (think Pavement and you’re halfway there)
+- track: album
+  id: proposed-079
+  type: fact
+  depth: listen
+  phase: after
+  body: It Goes On arrives nearly two years after the band's debut single and is being called one of the
+    most thrilling British albums of 2026.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: Now, nearly two years after their debut single was released, all of these things come to
+      the natural fore on It Goes On
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: marks one of the most thrilling records to have been released by a British band in 2026
+- track: 1
+  id: proposed-080
+  type: fact
+  depth: listen
+  phase: during
+  body: The opening track builds from looping, whirring guitars into a dense wall of noise.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: ‘Kick Stones (The Boys)’ begins with looping and whirring guitars, before slowly developing
+      into an all-enveloping wall of noise
+- track: 5
+  id: proposed-081
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Worried Age'' is described as a thunderous, racket-like track.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: ‘Worried Age’ is a thunderous racket
+- track: 6
+  id: proposed-082
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Big Wheels'' slows the pace with an existential, reflective mood carried by gorgeous, blissful
+    rhythms.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: things take a slower turn on ‘Big Wheels’ – a gorgeous existential ponderer packed with blissful
+      rhythms
+- track: 10
+  id: proposed-083
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Take My Leaving As I Love You'' is a country-flecked ballad showing the band''s softer side.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: It’s the same on the country flecked ‘Take My Leaving As I Love You’, which sees them leaning
+      into balladry with genuinely stunning results
+- track: 7
+  id: proposed-084
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Pin Up Boys'' features knotty, unrestrained guitars alongside the shared vocals of Reuben Haycocks
+    and Aoife Anson O''Connell.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: is the sound of a band completely letting loose and refusing to be constrained, as knotty
+      guitars combine with the vocals of Reuben Haycocks and Aoife Anson O’Connell
+- track: 7
+  id: proposed-085
+  type: trivia
+  depth: listen
+  phase: after
+  body: '''Pin Up Boys'' is the song the band has performed live more than any other.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: It’s no wonder the band have played it more than any other song
+- track: 11
+  id: proposed-086
+  type: artist_intent
+  depth: study
+  phase: during
+  body: Reuben Haycocks spoke about feeling like an outsider in relation to the cyclical rhythms of the
+    closing track.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: “I was outside looking in,” says Haycocks on the cyclical rhythms of closing track ‘You Could
+      Have Died There on the Dancefloor’
+- track: album
+  id: proposed-087
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy rose to prominence after winning Glastonbury's Emerging Talent Competition in
+    April 2025 and playing multiple sets at The Great Escape 2025.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Ever since their triumph at Glastonbury’s Emerging Talent Competition in April 2025, you’ll
+      have struggled to find a buzzier British guitar band than Westside Cowboy
+- track: album
+  id: proposed-088
+  type: fact
+  depth: study
+  phase: before
+  body: The band signed to Island Records and to Wildlife Entertainment for management in 2026, and toured
+    with Black Country, New Road, Blondshell and Geese.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: the Manchester-formed group were soon tied down to Island Records, Wildlife Entertainment
+      (Arctic Monkeys, Fontaines D.C.) for management in 2026 and thrown into tours with Black Country,
+      New Road, Blondshell and Geese
+- track: album
+  id: proposed-089
+  type: fact
+  depth: study
+  phase: before
+  body: The quartet lineup trades lead vocals between Aoife Anson O'Connell (bass), Jimmy Bradbury (guitar)
+    and Reuben Haycocks (guitar), with Paddy Murphy on drums.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Aoife Anson O’Connell (bass), Jimmy Bradbury (guitar) and Reuben Haycocks (guitar) all trade
+      lead vocals; coupled with Paddy Murphy’s impassioned drumming
+- track: album
+  id: proposed-090
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was recorded in Leeds with producer Loren Humphrey.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Recorded in Leeds with producer Loren Humphrey, Westside Cowboy’s debut LP ‘It Goes On’ doesn’t
+      rip up the rulebook of their identity
+- track: album
+  id: proposed-091
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The reviewer describes the record as the most comprehensive statement yet of the alt-country,
+    indie and rockabilly influences that shaped the band.
+  author: NME
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: it’s the album you expected them to make; the most comprehensive statement of the alt-country,
+      indie and rockabilly worlds that shaped them
+- track: 7
+  id: proposed-092
+  type: fact
+  depth: study
+  phase: before
+  body: '''Pin Up Boys'' and ''Kick Stones (The Boys)'' had already been extensively road-tested alongside
+    the band''s first two EPs before the album''s release.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Having extensively road-tested ‘Pin Up Boys’ and ‘Kick Stones (The Boys)’ alongside their
+      first two EPs, those two singles neatly carry the baton forward
+- track: 1
+  id: proposed-093
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The reviewer says 'Kick Stones (The Boys)' has intoxicating momentum that will put a smile on
+    the listener's face.
+  author: NME
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: the latter’s intoxicating momentum will put a smile on your face
+- track: album
+  id: proposed-094
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The album uses friendly, everyday imagery, like blockbuster DVDs and paperchains, to capture the
+    ambiguity and uncertainty of modern young adulthood.
+  author: NME
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: ‘It Goes On’ utilises friendly, straightforward imagery to capture the ambiguity of modern
+      life
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Blockbuster DVDs (‘Big Wheels’), paperchains and rocks who “have grown hands to reach out
+      for each other” (‘Coyote’) are nuggets of the world’s simple pleasures
+- track: album
+  id: proposed-095
+  type: artist_intent
+  depth: study
+  phase: before
+  body: The band told NME that their new lifestyle of touring success still never feels quite certain
+    and real.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: this new lifestyle that still “never feels quite certain and real”, as they told NME
+  - ref: westside-cowboy-guide-us-through-britani
+    stance: supports
+    excerpt: It never quite feels certain and real – it’s like somebody’s going to turn the lights on,
+      then we’re going to have to grab our stuff and leave.
+- track: 11
+  id: proposed-096
+  type: interpretation
+  depth: listen
+  phase: during
+  body: On closing track 'You Could Have Died There On The Dancefloor', the band make peace with anxiety,
+    delivering a mission statement about embracing imperfection rather than chasing flawless polish.
+  body_long: The reviewer frames the song's lyric about being 'everything but perfect, but trying' as
+    mirroring the band's approach of letting their sound breathe in real time instead of pursuing perfection.
+  author: NME
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: the band make their peace with the panic
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: This mission statement for ‘It Goes On’ mirrors a band making sense of their sound, allowing
+      it to breathe in real time, instead of pursuing some flawed perfection
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: contradicts
+    excerpt: Closing track You Could Have Died Right There On The Dancefloor shows off yet another side
+      to the four-piece
+- track: album
+  id: proposed-097
+  type: fact
+  depth: listen
+  phase: before
+  body: The album 'It Goes On' was released on Island Records on August 21, 2026.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: 'Record label: Island Records'
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: 'Release date: August 21, 2026'
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: contradicts
+    excerpt: have revealed the details of their upcoming debut EP, It Goes On, and released new single,
+      "Kick Stones (The Boys)"
+- track: album
+  id: proposed-098
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was produced by Loren Humphrey, known for his work with Geese, Cameron Winter and Wunderhorse,
+    at Greenmount Studios in Leeds.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: '''It Goes On'' has been produced by Loren Humphrey, whose previous credits include Geese,
+      Cameron Winter and Wunderhorse, at Greenmount Studios in Leeds'
+- track: 7
+  id: proposed-099
+  type: artist_intent
+  depth: study
+  phase: before
+  body: The band said 'Pin Up Boys' was written about a year and a half before release using an acoustic
+    guitar, a drum machine sample pad and screwdrivers as drumsticks.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: '''Pin Up Boys'' was written a year and a half ago using an acoustic guitar, a drum machine
+      sample pad and some screwdrivers as drumsticks. It is by far the longest serving song on the album
+      and the one that we have played the most live'
+- track: 7
+  id: proposed-100
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: The band said 'Pin Up Boys' is the longest-serving song on the album and the one they have played
+    live the most, which was both a blessing and a curse when recording.
+  author: Westside Cowboy
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: It is by far the longest serving song on the album and the one that we have played the most
+      live, which was a blessing and a curse when we came to record
+- track: 7
+  id: proposed-101
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Pin Up Boys'' opens with Reuben Haycocks'' vocals over a sparse arrangement before building
+    into a quiet-loud indie anthem.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: Beginning with Reuben Haycocks' vocals over a sparse arrangement, the track builds into a
+      rousing quiet-loud indie anthem
+- track: 7
+  id: proposed-102
+  type: fact
+  depth: study
+  phase: after
+  body: The music video for 'Pin Up Boys' was directed by Jack Shep of Saturday Night Live UK.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: Check out the video, directed by Saturday Night Live UK's Jack Shep, here
+- track: 1
+  id: proposed-103
+  type: fact
+  depth: listen
+  phase: before
+  body: '''Kick Stones (The Boys)'' was the lead single from the album and has been described as ''mad,
+    ''70s rock''.'
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: following the "mad, '70s rock" lead single 'Kick Stones (The Boys)', which arrived last month
+- track: album
+  id: proposed-104
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Vocalist/guitarist Reuben Haycocks said Westside Cowboy was about bringing the fun back into music
+    and taking songwriting less seriously, which made their output feel more authentic.
+  author: Reuben Haycocks
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: For us, Westside was all about bringing the fun back into the music generally
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: As soon as we stopped putting loads of pressure on ourselves to make something great, the
+      stuff that came out was much more authentically us
+- track: album
+  id: proposed-105
+  type: trivia
+  depth: study
+  phase: before
+  body: The reviewer first saw Westside Cowboy in February 2025 opening for mary in the junkyard at a
+    tiny Manchester venue.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: The first time that we at The Soundboard ever caught Westside Cowboy was in February 2025.
+      They were opening for mary in the junkyard in Manchester’s YES, a venue with a capacity of approximately
+      six people.
+- track: album
+  id: proposed-106
+  type: trivia
+  depth: study
+  phase: before
+  body: On a UK tour supporting Geese, Westside Cowboy reportedly held their own against their bigger
+    tourmates.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: on their UK tour last year supporting fellow deafening buzzers Geese, you’d frequently hear
+      tales of Westside Cowboy holding their own and giving their tourmates a run for their money
+- track: album
+  id: proposed-107
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Luke Nuttall says the band's sound avoids Britpop or '90s nostalgia, instead blending contemporary
+    indie-rock and post-punk with transatlantic influences, a mix once dubbed 'Britanicana'.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: There’s barely a note of obvious Britpop or ‘90s graverobbery to be found across It Goes
+      On, immediately a point in Westside Cowboy’s favour.
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: Instead, they bring the sounds of contemporary, antsy indie-rock and post-punk, paired with
+      subtle but keenly woven transatlantic influences.
+- track: album
+  id: proposed-108
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Luke Nuttall sums up Westside Cowboy's core pitch as 'What if Bruce Springsteen got started in
+    the early 2020s in a Manchester student house?'
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: the pitch that Westside Cowboy work on is ‘What if Bruce Springsteen got started in the early
+      2020s in a Manchester student house?’
+- track: 10
+  id: proposed-109
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Take My Leaving As I Love You is cited as an example of the album's country moroseness.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: spanning country moroseness on Patchwork and Take My Leaving As I Love You
+- track: 9
+  id: proposed-110
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Patchwork is highlighted for its country-moroseness and for guitar curves and unfocused piano
+    in its backing.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: spanning country moroseness on Patchwork and Take My Leaving As I Love You
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: Guitar curves and unfocused pianos sound away in the back of Patchwork
+- track: 2
+  id: proposed-111
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Paperchains is described as having a Midwest emo feel, with chipper bass and a drum breakdown
+    at the end likened to 'spidery calamity'.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: to Midwest emo on Paper Chains
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: Get to the spidery calamity at the end of Paper Chains, and it makes sense that the rest
+      of the instrumental seems to fall away
+- track: 1
+  id: proposed-112
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Kick Stones (The Boys) is described as spindly and nervy, in the vein of early Springsteen, with
+    anxious drumming driving it.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: That’s exactly the impression given by Kick Stones (The Boys) or Worried Age—spindly and
+      nervy, but would sound great with an E Street-style makeover.
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: you certainly get that when his default is the anxious roil of Kick Stones (The Boys) and
+      Worried Age
+- track: 5
+  id: proposed-113
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Worried Age shares Kick Stones' spindly, nervy quality and its anxious drumming.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: That’s exactly the impression given by Kick Stones (The Boys) or Worried Age—spindly and
+      nervy, but would sound great with an E Street-style makeover.
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: you certainly get that when his default is the anxious roil of Kick Stones (The Boys) and
+      Worried Age
+- track: 3
+  id: proposed-114
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Dobro has a tiny, Rolling Stones-esque jive to its guitar work.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: like the tiny Rolling Stones-esque jive of Dobro
+- track: 7
+  id: proposed-115
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Pin Up Boys has a longer, southern-rock guitar feel.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: or the longer southern-rock feel of Pin Up Boys
+- track: 10
+  id: proposed-116
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Take My Leaving As I Love You has rangeless, rickety strumming that borders on not musical, giving
+    it a Geese-esque 'post-indie' feel.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: Take My Leaving As I Love You is soundtracked by rangeless, rickety strumming that’s borderline
+      not musical
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: It’s got that Geese-esque, ‘post-indie’ feel to it, though with some of Westside Cowboy’s
+      sharpened sensibilities
+- track: album
+  id: proposed-117
+  type: fact
+  depth: study
+  phase: before
+  body: Paddy Murphy is the band's drummer and is regularly singled out as the group's standout performer.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: It’s Paddy Murphy’s drumming that’s the far-and-away standout, though. Regularly is her cited
+      as Westside Cowboy’s ace in the hole
+- track: album
+  id: proposed-118
+  type: interpretation
+  depth: study
+  phase: during
+  body: Luke Nuttall notes the band follows the British indie trait of no fixed frontperson, with vocal
+    duties shared among members, which he feels isn't always the best choice.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: the British indie hallmark of no one being all that good of a singer remains. As deliberate
+      as it seems to be, it’s not the best choice for a band without a fixed frontperson. Everyone provides
+      vocals to differing capacities
+- track: 8
+  id: proposed-119
+  type: interpretation
+  depth: study
+  phase: during
+  body: Aoife Anson O'Connell, the band's only female voice, takes sole lead vocal on Coyote, though the
+    reviewer feels the track could be better.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: though Aoife Anson O’Connell being the notable standout as the only female voice in there
+      probably says it all. (Even then, Coyote as her sole lead…it could be better.)
+- track: album
+  id: proposed-120
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Luke Nuttall argues the album's nonchalant title masks real instability, as its lyrics grapple
+    with the anxiety of what comes after youthful excitement.
+  body_long: He describes vocal delivery as understated, with lines often downturning into mumbles to
+    emphasize smallness, fitting the album's insular, tense character.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: it makes a lot of sense when It Goes On broaches the anxiety of what’s next, and what the
+      excitement of youth ultimately turns into
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: The nonchalance and matter-of-factness of its title tries to hide some real instability,
+      though never gets very far
+- track: album
+  id: proposed-121
+  type: interpretation
+  depth: study
+  phase: after
+  body: Luke Nuttall calls It Goes On a satisfying debut with nothing quite like it in the current UK
+    scene, praising its freshness and exploration.
+  reviewed: false
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: It Goes On is such a satisfying capstone on this first leg of Westside Cowboy’s journey.
+      In the current UK scene, there’s nothing exactly like it
+- track: album
+  id: proposed-122
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The reviewer says the band seem to channel an imagined American alternative rock sound with a
+    constant mood of sunset-lit, proud melancholy.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy are a Manchester band who seem to be in conversation with an imagined American
+      alternative rock where everything happened at once
+- track: album
+  id: proposed-123
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The review describes the record's sound as taut yet fuzzy guitars layered with chiming, rhythmic
+    synths that occasionally build into frenzy.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: Taut yet fuzzy guitar textures dominate the record, splintered by the addition of chiming
+      yet rhythmic synths that sometimes veer into a thrilling frenzy
+- track: album
+  id: proposed-124
+  type: interpretation
+  depth: study
+  phase: during
+  body: 'The critic notes the album repeats one structural trick throughout: songs build instrument by
+    instrument before the melody lifts into warmth and then abruptly crashes.'
+  body_long: The reviewer compares this recurring movement to Camper Van Beethoven's 'Take the Skinheads
+    Bowling' stretched across a whole record.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: They perform the same movement throughout – songs grow instrument by instrument, before the
+      melody lifts everything into a swarm of warm feelings that fly before abruptly crashing
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: It’s like Camper Van Beethoven’s Take the Skinheads Bowling blown open, expanded into a whole
+      album
+- track: 7
+  id: proposed-125
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer feels 'Pin Up Boys' comes across as a little too self-involved compared to the rest
+    of the record.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: although on Pin Up Boys it comes across a little too invested in itself
+- track: 2
+  id: proposed-126
+  type: interpretation
+  depth: study
+  phase: during
+  body: The critic says 'Paperchains' has moody moments but is lifted into soaring territory by coming-of-age-movie
+    style instrumentals.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: Paper Chains has moments of drear, but is made to soar by its grinning coming-of-age movie
+      instrumentals
+- track: 5
+  id: proposed-127
+  type: interpretation
+  depth: study
+  phase: during
+  body: On 'Worried Age', the band ecstatically vocalises together for the final 20 seconds before a stronger
+    version of the riff cuts the song off.
+  author: The Skinny
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: the band simply vocalise ecstatically together for the last 20 seconds, before a stronger
+      version of the riff cuts them, and the song, off
+- track: album
+  id: proposed-128
+  type: fact
+  depth: study
+  phase: during
+  body: The album closes abruptly, mirroring the band's short, sub-four-minute songs, as singer Reuben
+    Haycocks sighs a brief closing line.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: The album ends as laconically as their sub four-minute songs
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: contradicts
+    excerpt: Closing track You Could Have Died Right There On The Dancefloor shows off yet another side
+      to the four-piece
+- track: album
+  id: proposed-129
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy are a Manchester quartet who had already released two acclaimed EPs, supported
+    Geese, and won Glastonbury's 2025 Emerging Talent Competition before this debut.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: between two acclaimed EPs, a stint supporting Geese, and winning 2025's Glastonbury Emerging
+      Talent Competition, the Manchester quartet
+- track: album
+  id: proposed-130
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Carter says the record expands the band's Americana-tinged slacker sound while avoiding gimmickry,
+    making it far greater than the sum of its parts.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: '''It Goes On'' expands the band''s Americana-tinged slacker palette, sidestepping potentially
+      gimmicky territory to stand as a collection that''s far greater than the sum of its parts'
+- track: album
+  id: proposed-131
+  type: interpretation
+  depth: study
+  phase: after
+  body: Carter writes that across the album the band prove themselves masters of the Pixies' loud-quiet-loud
+    dynamic shifts.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: everywhere, they prove themselves to be masters of Pixies' famed loud-quiet-loud dynamic
+      shifts
+- track: album
+  id: proposed-132
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter describes the production as deliberately scrappy, meant to capture the lightning-in-a-bottle
+    energy of the band's live shows.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: Production-wise, it's deliberately scrappy, going a significant way to evoke the lightning-in-a-bottle
+      energy of their live shows
+- track: 5
+  id: proposed-133
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter hears echoes of The Wedding Present in this song's galloping, fast-paced guitars.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: they channel The Wedding Present with galloping, mile-a-minute guitars (‘Worried Age’)
+- track: 1
+  id: proposed-134
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter notes the song nods to late '60s/early '70s rock in the vein of The Velvet Underground.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: they nod to late '60s / early '70s rock via The Velvet Underground (‘Kick Stones (The Boys)’)
+- track: 3
+  id: proposed-135
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter points to the bluesy guitar underpinning this track as a nod to T.Rex.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: or even T.Rex (see the bluesy guitar underpinning ‘Dobro’)
+- track: 2
+  id: proposed-136
+  type: fact
+  depth: study
+  phase: during
+  body: Drummer Paddy Murphy's performance on this track is singled out as an example of the album's live-feeling
+    production.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: see drummer Paddy Murphy's work on ‘Paper Chains’
+- track: 7
+  id: proposed-137
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Carter calls out the song's outro as goosebump-inducing, and notes it has become a setlist staple.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: the graduated, goosebump-inducing outro of setlist staple ‘Pin Up Boys’
+- track: 5
+  id: proposed-138
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter compares bassist Aoife Anson O'Connell's vocal on this song to Adrianne Lenker's.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: bassist Aoife Anson O'Connell's vocal echoes that of Adrianne Lenker (particularly on ‘Worried
+      Age’ and ‘Coyote’)
+- track: 8
+  id: proposed-139
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter compares bassist Aoife Anson O'Connell's vocal on this song to Adrianne Lenker's.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: bassist Aoife Anson O'Connell's vocal echoes that of Adrianne Lenker (particularly on ‘Worried
+      Age’ and ‘Coyote’)
+- track: 10
+  id: proposed-140
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Carter describes the song's couplets as quietly heartwrenching with a Cohen-esque quality.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: the quietly heartwrenching couplets of ‘Take My Leaving As I Love You’ have a Cohen-esque
+      air about them
+- track: 6
+  id: proposed-141
+  type: trivia
+  depth: study
+  phase: during
+  body: The song borrows its title from 'Proud Mary' but swaps that song's driving funk for contemplative
+    musings on time passing.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: ‘Big Wheels’ borrows its title from ‘Proud Mary’, but trades the driving funk of that song's
+      best-loved version for contemplative musings on the passage of time
+- track: 9
+  id: proposed-142
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter notes this track dials down the band's usual guitar squalls for twinkling piano before
+    bursting into full-bodied catharsis.
+  author: Daisy Carter
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: ‘Patchwork’ dials down the band's signature guitar squalls, making way for touches of twinkling
+      piano before bursting into full-bodied catharsis
+- track: album
+  id: proposed-143
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy are a Manchester quartet who spent years releasing EPs and touring extensively
+    before recording this debut album.
+  body_long: The band built a strong live reputation playing festivals throughout 2025, and the review
+    notes they successfully transferred that jittery, intoxicating live sound into the studio for It Goes
+    On.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: The Manchester quartet have spent the past few years releasing a string of EPs and touring
+      their guts out
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: the band have successfully transferred their jittery, intoxicating live sound into the recording
+      studio
+- track: album
+  id: proposed-144
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The album draws heavily on late '90s alt-indie rock, recalling bands like The Strokes and Parquet
+    Courts but with an English sensibility.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: There's a definite love of late '90s alt-indie rock pulsing through It Goes On
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: you'd swear you were listening to The Strokes or Parquet Courts, but with a very English
+      sensibility added
+- track: album
+  id: proposed-145
+  type: fact
+  depth: study
+  phase: before
+  body: Three of the band's four members swap lead vocal duties across the album, each bringing a deadpan,
+    downbeat quality.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: The latter three swap lead vocal duties but all of them have a deadpan, downbeat quality
+      that contrasts beautifully with the swirling noise of the instruments they play
+- track: 1
+  id: proposed-146
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Opening track Kick Stones (The Boys) is a nervy, intense song that builds up until it almost explodes
+    in cathartic joy.
+  body_long: The reviewer notes it's the sort of song that usually closes an album, so opening with it
+    feels like a deliberate statement of intent.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: a nervy, intense song that builds up and up in an irresistible manner until it almost explodes
+      in a cathartic joy
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: It's the sort of song that usually closes an album, so to open it seems like a proper statement
+      of intent
+- track: 2
+  id: proposed-147
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Paperchains builds an intensity of noise over its three minutes that becomes utterly exhilarating,
+    showcasing the band's tightness as a unit.
+  body_long: The review highlights Paddy Murphy's drumming as laying the base for the other three members
+    to play over.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: which builds up such an intensity of noise that it becomes utterly exhilarating over its
+      three minutes
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: with Paddy Murphy's brilliant drumming laying down a base for Reuben Haycocks, Jimmy Bradbury
+      and Aoife Anson O'Connell to let loose on
+- track: 6
+  id: proposed-148
+  type: trivia
+  depth: study
+  phase: during
+  body: Big Wheel reportedly quotes Bob Dylan and references Creedence Clearwater Revival.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: whether it be the Dylan quoting, Creedence referring Big Wheel
+- track: 3
+  id: proposed-149
+  type: interpretation
+  depth: study
+  phase: during
+  body: Dobro has been described as a fuzzy, modern-day take on T Rex's 'Get It On'.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: the whole feel of Dobro, which could be a fuzzy, modern day take on T Rex's Get It On
+- track: 8
+  id: proposed-150
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Coyote features Aoife Anson O'Connell on lead vocals and transforms from a campfire singalong
+    into a relentless, driving anti-capitalist anthem.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: Coyote sees O'Connell take lead vocals and what begins as a campfire singalong soon develops
+      into a relentless, driving anti-capitalist anthem
+- track: 10
+  id: proposed-151
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The heart-wrenching acoustic Take My Leaving As I Love You reveals a more contemplative side of
+    the band.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: the heart wrenching acoustic Take My Leaving As I Love You shows off another, more contemplative
+      side to the band
+- track: 7
+  id: proposed-152
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Pin Up Boys is singled out as the album's highlight, a long-time staple of the band's live set
+    with surf-rock-like guitars and superb vocal interplay.
+  body_long: Instead of building to a cacophonous climax, the instruments suddenly stop, leaving only
+    the call-and-response vocals between Bradbury and O'Connell.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: a staple in the Westside Cowboy live set, and one of the most thrilling moments on the album
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: instead of racing to a cacophonous climax, the instruments just suddenly stop, with only
+      the call and response vocals remaining
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: It's the highlight of an album filled with impressive moments
+- track: 11
+  id: proposed-153
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Closing track You Could Have Died Right There On The Dancefloor is a slightly off-kilter, disorientating
+    anthem often compared to the band Geese.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: it's probably the closest they come to the much vaunted Geese comparisons – a slightly off-kilter,
+      disorientating anthem
+  - ref: westside-cowboy-it-goes-on
+    stance: contradicts
+    excerpt: Patchwork, Kick Stones (The Boys), You Could Have Died There On the Dancefloor
+- track: album
+  id: proposed-154
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The review calls It Goes On a terrific, wildly confident debut album that promises even better
+    things to come.
+  reviewed: false
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: this is a terrific, wildly confident debut album that promises even better things to come
+      in the future

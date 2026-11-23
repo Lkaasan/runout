@@ -1,0 +1,55 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 5
+title: Worried Age
+duration: '3:58'
+apple_music_id: '6767652042'
+claims:
+- id: auto-012
+  type: fact
+  depth: study
+  phase: before
+  body: '"Worried Age" started as a ten-minute piece influenced by LCD Soundsystem and New Order before
+    being shortened, with Future Islands'' In Evening Air becoming a reference as it was finished.'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Worried Age" began as a ten-minute piece influenced by LCD Soundsystem and New Order before
+      the group shortened it.'
+  - ref: it-goes-on
+    stance: supports
+    excerpt: As they completed the song, Future Islands' In Evening Air became a reference for it.
+- id: auto-049
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Worried Age'' is described as a thunderous, racket-like track.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: ‘Worried Age’ is a thunderous racket
+- id: auto-078
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter hears echoes of The Wedding Present in this song's galloping, fast-paced guitars.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: they channel The Wedding Present with galloping, mile-a-minute guitars (‘Worried Age’)
+- id: auto-083
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter compares bassist Aoife Anson O'Connell's vocal on this song to Adrianne Lenker's.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: bassist Aoife Anson O'Connell's vocal echoes that of Adrianne Lenker (particularly on ‘Worried
+      Age’ and ‘Coyote’)

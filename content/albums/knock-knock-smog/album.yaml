@@ -1,0 +1,345 @@
+# Smog, Knock Knock. Skeleton from https://music.apple.com/us/album/knock-knock/81379263
+# Skeleton only: no claims yet. Run `app.research collect/extract` to propose some.
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+slug: knock-knock-smog
+title: Knock Knock
+artist:
+  name: Smog
+  apple_music_id: '2818983'
+release_date: '1999-01-12'
+apple_music_id: '81379263'
+artwork_url: https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/96/97/8e/96978efb-6f96-af48-0ad5-34a06545c021/036172916122.png/600x600bb.jpg
+claims:
+- id: auto-001
+  type: fact
+  depth: listen
+  phase: before
+  body: Bill Callahan wrote most of the songs in 1998 while driving from South Carolina to Chicago after
+    his relationship with musician Chan Marshall (Cat Power) ended.
+  body_long: He had previously lived with Marshall in an eight-room farmhouse in Prosperity, South Carolina.
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Bill Callahan wrote the majority of the songs on Knock Knock in 1998 while he was driving
+      from South Carolina to Chicago following the dissolution of his relationship with musician Chan
+      Marshall
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: He had been living with Marshall in an eight-room farmhouse in Prosperity, South Carolina.
+- id: auto-002
+  type: fact
+  depth: study
+  phase: before
+  body: The album was produced and recorded by Callahan with Jim O'Rourke, though O'Rourke's involvement
+    was originally uncredited on the album.
+  body_long: Callahan had previously worked with O'Rourke on his earlier album Red Apple Falls.
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Knock Knock was produced and recorded by Callahan with Jim O'Rourke, though this was originally
+      uncredited on the album.
+- id: auto-003
+  type: fact
+  depth: study
+  phase: before
+  body: The recording sessions lasted 10 days and featured a band including two drummers, a Plush guitarist,
+    avant-garde guitarist Loren Mazzacane Connors, a string quartet, and a children's choir.
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The recording sessions for Knock Knock lasted 10 days and included drummer Thymme Jones,
+      who had played on Red Apple Falls, and drummer Tim Mulvenna
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The album also features a string quartet and a small children's choir.
+- id: auto-007
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Heather Phares of AllMusic called Knock Knock Bill Callahan's subtlest collection of songs yet,
+    noting the songs' subjects move toward maturity and acceptance rather than claustrophobic struggle.
+  author: Heather Phares
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Bill Callahan's subtlest collection of songs yet.
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: their subjects move away from difficult, claustrophobic situations toward maturity and acceptance
+- id: auto-008
+  type: interpretation
+  depth: study
+  phase: after
+  body: Michele Romero of Entertainment Weekly said the album's energy makes Callahan's lyrics feel cathartic
+    rather than depressing.
+  author: Michele Romero
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The energy jolt serves him well, making the delicate broken spirit of his lyrics cathartic
+      rather than depressing.
+- id: auto-009
+  type: fact
+  depth: listen
+  phase: after
+  body: Knock Knock was named the 10th best album of 1999 by NME, and Steve Jelbert of The Independent
+    named it the best pop album of 1999.
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: NME listed it as the 10th best album of 1999.
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Steve Jelbert of The Independent named it the best pop album of 1999.
+- id: auto-010
+  type: fact
+  depth: study
+  phase: before
+  body: Bill Callahan came to live with Chan Marshall (Cat Power) in Prosperity, South Carolina in 1997,
+    and he wrote the album's songs while driving from there to Chicago after things went south.
+  body_long: The two shared an eight-room farmhouse; when their cohabitation ended, Callahan drove north
+    to Chicago and wrote an album's worth of material during that drive, which became Knock Knock.
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Callahan had come to Prosperity in 1997 to live with Chan Marshall, better known as Cat Power.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: He’d later say that he wrote an album’s worth of material on the drive from Prosperity to
+      Chicago, sitting behind the wheel of his Dodge van
+- id: auto-011
+  type: fact
+  depth: listen
+  phase: before
+  body: Callahan again recorded with producer Jim O'Rourke, this time spending 10 days in the studio,
+    twice as long as on the previous album Red Apple Falls.
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Again, Callahan recorded with Jim O’Rourke; this time they spent 10 days in the studio, twice
+      what Red Apple Falls had taken them.
+- id: auto-012
+  type: fact
+  depth: study
+  phase: before
+  body: The album's musicians included drummers Thymme Jones and Tim Mulvenna, guitarist Liam Hayes of
+    Plush, and guitarist Loren Mazzacane Connors, though the lyric sheet doesn't specify who played on
+    what.
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Drummer Thymme Jones, a Chicago fixture who had played on the previous album, returned for
+      the new one, joined by Vandermark Five drummer Tim Mulvenna.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Plush’s Liam Hayes, a session player on numerous Will Oldham records, handled guitar on some
+      songs, while the prolific post-rock guitarist Loren Mazzacane Connors took top billing in the credits.
+- id: auto-013
+  type: fact
+  depth: study
+  phase: before
+  body: Producer Jim O'Rourke also contributed guitar, bass, and piano to the album, and was more creatively
+    invested than some of Callahan's previous studio engineers.
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It didn’t hurt that O’Rourke, who also contributed guitar, bass, and piano, actually liked
+      Callahan’s music, and was creatively invested in a way that previous studio engineers
+- id: auto-014
+  type: fact
+  depth: listen
+  phase: during
+  body: The album features a string quartet and a children's choir, the latter appearing on "No Dancing"
+    and "Hit the Ground Running."
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: The one indulgence they permitted themselves, in addition to a string quartet, is a children’s
+      choir that turns up on a couple of songs, lending the grim “No Dancing” and the determined “Hit
+      the Ground Running” an air
+- id: auto-018
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer notes the album's 10 songs form a loose narrative arc, an implicit story with beginning,
+    middle and end, something new for Callahan.
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'Knock Knock’s 10 songs fit into a loose narrative arc. He had experimented with recurring
+      themes on Red Apple Falls, but this was something new: an implicit story, with a beginning, middle,
+      and end.'
+- id: auto-030
+  type: fact
+  depth: listen
+  phase: before
+  body: Knock Knock was released on Drag City and is a full-blown Jim O'Rourke production, even though
+    his name does not appear anywhere in the album's credits.
+  reviewed: true
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Although you won’t see Mr. O’Rourke’s name (or any name save Mr. Callahan’s) on Knock Knock
+      , this is a full-blown O’Rourke production
+- id: auto-031
+  type: fact
+  depth: listen
+  phase: before
+  body: Smog is the recording name of singer-songwriter Bill Callahan.
+  reviewed: true
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Smog is, essentially, the extremely erratic singer-songwriter Bill Callahan
+- id: auto-032
+  type: fact
+  depth: study
+  phase: before
+  body: The album features avant-garde guitarist Loren Mazzacane-Connors as a contributor.
+  reviewed: true
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: There are also a few avant-gardists rocking out for good measure, like guitarist Loren Mazzacane-Connors
+- id: auto-033
+  type: fact
+  depth: study
+  phase: before
+  body: A children's choir appears on a couple of the album's tracks.
+  reviewed: true
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: and on a couple of tracks a post-ironic children’s choir
+- id: auto-034
+  type: fact
+  depth: study
+  phase: before
+  body: Bill Callahan is labelmates with David Berman of Silver Jews, both on Drag City.
+  reviewed: true
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Mr. Callahan lacks the drunken, educated kind-of-madness of his fellow labelmate David Berman,
+      he of Silver Jews
+- id: auto-035
+  type: fact
+  depth: study
+  phase: before
+  body: For Knock Knock, Callahan did not sing with the Chicago Children's Choir in the booth; he stood
+    outside watching through glass while they recorded their parts for two songs.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: he didn't record in the booth with the selected members of the Chicago Children's Choir
+- id: auto-036
+  type: fact
+  depth: study
+  phase: before
+  body: The album's recurring theme of escape reflects Callahan's own childhood, which involved frequent
+    moving due to his parents' jobs with the National Security Agency.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: reflecting a childhood spent in constant flux due to his parents' jobs with the National
+      Security Agency
+- id: auto-039
+  type: trivia
+  depth: study
+  phase: before
+  body: Callahan reportedly said he had not heard Leonard Cohen's music until critics began drawing comparisons
+    between the two songwriters.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: He claimed to have not heard Leonard Cohen until critics started comparing them.
+- id: auto-040
+  type: fact
+  depth: listen
+  phase: before
+  body: Knock Knock was released between Red Apple Falls (1997) and Dongs Of Sevotion (2000), during what
+    the piece calls Callahan's 'collage phase.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Arriving between 1997's breakthrough Red Apple Falls and 2000's sprawling Dongs Of Sevotion,
+      Knock Knock was the heart of Bill Callahan's collage phase.
+- id: auto-043
+  type: fact
+  depth: study
+  phase: after
+  body: 'At release, many listeners read Knock Knock as a concept album that could be divided into three
+    acts: new love and nature, childhood trauma, and a long farewell.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: many listeners characterized Knock Knock as a concept album, and it's easy to see why
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: 'you could even separate the album into three distinct acts: an opening suite about finding
+      new love and solace in the natural world'
+- id: auto-044
+  type: fact
+  depth: study
+  phase: after
+  body: Knock Knock arrived within months of two other landmark Drag City/Domino releases, Silver Jews'
+    American Water and Bonnie 'Prince' Billy's I See A Darkness.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Released within months of similarly definitive statements from his Drag City/Domino labelmates
+      -- Silver Jews' American Water, in October 1998, and Bonnie 'Prince' Billy's I See A Darkness
+- id: auto-048
+  type: fact
+  depth: listen
+  phase: after
+  body: Knock Knock received a 20th anniversary half-speed master vinyl reissue.
+  body_long: Drag City released a half-speed mastered vinyl edition of Knock Knock to mark the album's
+    20th anniversary.
+  reviewed: true
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: it's the 20th anniversary half-speed master vinyl edition of the Smog classic, Knock Knock
+- id: auto-049
+  type: fact
+  depth: study
+  phase: before
+  body: The album was co-produced by Bill Callahan and Jim O'Rourke.
+  reviewed: true
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: the eternally-stunning co-production from Bill and Jim O'Rourke
+- id: auto-050
+  type: fact
+  depth: study
+  phase: after
+  body: The 20th anniversary reissue's half-speed mastering was done at Abbey Road studios.
+  body_long: The page states the half-speed mastering work that brought out more detail in the sound was
+    performed at Abbey Road.
+  reviewed: true
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: the incredible focus brought by the half-speed mastering work done at Abbey Road

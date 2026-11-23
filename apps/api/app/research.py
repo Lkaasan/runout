@@ -47,6 +47,22 @@ def main(argv: list[str] | None = None) -> int:
         "--fresh", action="store_true", help="ask the model again, not reuse saved answers"
     )
 
+    ini = sub.add_parser("init", help="start a new album: build its seed skeleton (no claims)")
+    ini.add_argument("artist")
+    ini.add_argument("album")
+    ini.add_argument("--slug", help="folder name (default: album and artist, lower-cased)")
+    ini.add_argument(
+        "--from", dest="source", help="a page with the track list (Apple Music, Bandcamp)"
+    )
+
+    pr = sub.add_parser(
+        "promote", help="copy the clean part of the latest run into the album's seed files"
+    )
+    pr.add_argument("slug")
+    pr.add_argument(
+        "--dry-run", action="store_true", help="show what would be promoted, change nothing"
+    )
+
     tr = sub.add_parser(
         "trace", help="look for the original publication of artist-intent claims (uses web tools)"
     )
@@ -80,6 +96,10 @@ def main(argv: list[str] | None = None) -> int:
         print(report.summary())
         return 0 if report.pages else 1
 
+    if args.command == "init":
+        return _init(args)
+    if args.command == "promote":
+        return _promote(args)
     if args.command == "extract":
         return _extract(args)
     if args.command == "verify-eval":
@@ -141,6 +161,85 @@ def _extract(args) -> int:
     return 0
 
 
+def _init(args) -> int:
+    from app.pipeline.bootstrap import (
+        parse_music_album,
+        pick_research_urls,
+        slugify,
+        structured_page_candidates,
+        write_skeleton,
+    )
+    from app.pipeline.collectors.wikipedia import WikipediaCollector
+    from app.pipeline.http import FetchError
+
+    fetcher = Fetcher(ResearchCache(settings.research_cache_dir))
+    try:
+        wiki = WikipediaCollector(fetcher).album_page(args.album, args.artist)
+    except FetchError as exc:
+        print(f"Wikipedia unavailable: {exc}", file=sys.stderr)
+        wiki = None
+    extlinks = wiki.meta["extlinks"] if wiki else []
+    print(f"Wikipedia article: {wiki.url if wiki else 'none found'}")
+
+    candidates = ([args.source] if args.source else []) + structured_page_candidates(extlinks)
+    info = None
+    for url in candidates:
+        try:
+            info = parse_music_album(fetcher.get_text(url), url)
+        except FetchError as exc:
+            print(f"  could not read {url}: {exc}")
+            continue
+        if info and slugify(info.title) == slugify(args.album):
+            break
+        info = None
+    if info is None:
+        print("No track list found. Pass an Apple Music or Bandcamp page with --from <URL>.")
+        return 1
+
+    slug = args.slug or slugify(f"{info.title} {info.artist}")
+    urls = pick_research_urls(extlinks)
+    try:
+        folder = write_skeleton(
+            settings.content_dir, slug, info, urls, note=f"Skeleton from {info.source_url}"
+        )
+    except FileExistsError as exc:
+        print(exc, file=sys.stderr)
+        return 1
+    print(f"Wrote {folder}: {len(info.tracks)} tracks, {len(urls)} pages to read.")
+    print(f"Track list from {info.source_url}")
+    print(f"Next: python -m app.research collect {slug}   then   extract {slug}")
+    return 0
+
+
+def _promote(args) -> int:
+    from datetime import date
+
+    from app.pipeline.promote import promote, select
+
+    folder = settings.content_dir / args.slug / "proposals"
+    runs = sorted(folder.glob("*/proposal.json")) if folder.exists() else []
+    if not runs:
+        print("No proposals to promote. Run extract first.")
+        return 1
+    run = runs[-1].parent
+    if args.dry_run:
+        bundle = load_album(settings.content_dir, args.slug)
+        proposal = Proposal.model_validate_json((run / "proposal.json").read_text("utf-8"))
+        existing = [c.body for c in bundle.album.claims] + [
+            c.body for t in bundle.tracks for c in t.claims
+        ]
+        selection = select(proposal.candidates, existing)
+    else:
+        selection = promote(settings.content_dir, args.slug, run, today=date.today().isoformat())
+    verb = "Would promote" if args.dry_run else "Promoted"
+    print(f"{verb} {len(selection.chosen)} claim(s) from {run.name}.")
+    for reason, n in selection.skipped.most_common():
+        print(f"  left as proposals: {n} x {reason}")
+    if not args.dry_run and selection.chosen:
+        print(f"Next: python -m app.seed import {args.slug}")
+    return 0
+
+
 def _trace(args) -> int:
     from app.pipeline.run import RunResult
 
@@ -171,6 +270,7 @@ def _trace(args) -> int:
         {p.url for p in pages},
         fetcher,
         limit=args.limit,
+        pages=pages,
     )
     result = RunResult(proposal=proposal, notes=traced.summary().splitlines())
     out = write_run(result, settings.content_dir)
