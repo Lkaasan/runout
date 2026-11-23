@@ -1,0 +1,21 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 7
+title: Sweet Treat
+duration: '2:59'
+apple_music_id: '81379253'
+claims:
+- id: auto-041
+  type: fact
+  depth: listen
+  phase: during
+  body: The austere arrangements of "Sweet Treat" and "Left Only With Love" convey the loneliness of a
+    dissolved relationship, the former full of pent-up anxiety.
+  body_long: The piece contrasts the two songs, describing "Sweet Treat" as pent-up anxiety and "Left
+    Only With Love" as feeling unburdened, like a sigh of relief.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: The austere arrangements of tracks like "Sweet Treat" and "Left Only With Love" suggest the
+      loneliness of a dissolved relationship

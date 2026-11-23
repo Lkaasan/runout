@@ -1,0 +1,20 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 1
+title: Let's Move to the Country
+duration: '3:05'
+apple_music_id: '81379241'
+claims:
+- id: auto-019
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"Let''s Move to the Country," the opening track, sets up the album''s narrative: a wandering
+    man ready to settle down.'
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'the opening song, sketches the broad outline of the tale: A wandering man is ready to settle
+      down.'

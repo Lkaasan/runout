@@ -1,0 +1,1119 @@
+# PROPOSED by the information finder. Nothing here is reviewed or approved.
+# Check each claim against its excerpt, then copy what you accept into the album's seed
+# files (claims and sources). Delete this folder when done.
+sources:
+- id: knock-knock-smog-album
+  kind: database
+  title: Knock Knock (Smog album)
+  url: https://en.wikipedia.org/wiki/Knock_Knock_(Smog_album)?oldid=1369128985
+  tier: tertiary
+- id: smog-knock-knock-album-review-pitchfork
+  kind: press
+  title: 'Smog: Knock Knock Album Review | Pitchfork'
+  url: https://pitchfork.com/reviews/albums/smog-knock-knock/
+  tier: secondary
+- id: subscribe-to-vice
+  kind: press
+  title: Subscribe to VICE
+  url: https://www.vice.com/en/article/bill-callahan-goes-deep-on-his-classic-track-river-guard/
+  tier: tertiary
+- id: lazy-i-interview-smog
+  kind: interview
+  title: 'Lazy-I Interview: Smog (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)'
+  url: https://www.timmcmahan.com/smog.htm
+  tier: secondary
+- id: subscribe-to-vice-2
+  kind: interview
+  title: 'Subscribe to VICE (PROPOSED PRIMARY: confirm it is the original, then set tier: primary)'
+  url: https://vice.com/en_us/article/vvapam/bill-callahan-goes-deep-on-his-classic-track-river-guard
+  tier: secondary
+- id: knock-knock-turns-20
+  kind: press
+  title: Knock Knock Turns 20
+  url: https://www.stereogum.com/2028117/smog-knock-knock-turns-20/reviews/the-anniversary/
+  tier: secondary
+- id: post-rock-magician-jim-o-rourkedisappear
+  kind: press
+  title: Post-Rock Magician Jim O’RourkeDisappears Behind Smog | Observer
+  url: https://observer.com/1999/03/postrock-magician-jim-orourkedisappears-behind-smog/
+  tier: tertiary
+- id: smog-s-classic-knock-knock-gets-20th-ann
+  kind: press
+  title: Smog's Classic 'Knock Knock' Gets 20th Anniversary Vinyl Reissue
+  url: https://exclaim.ca/music/article/smogs_classic_knock_knock_gets_20th_anniversary_vinyl_reissue
+  tier: tertiary
+claims:
+- track: album
+  id: proposed-001
+  type: fact
+  depth: listen
+  phase: before
+  body: Bill Callahan wrote most of the songs in 1998 while driving from South Carolina to Chicago after
+    his relationship with musician Chan Marshall (Cat Power) ended.
+  body_long: He had previously lived with Marshall in an eight-room farmhouse in Prosperity, South Carolina.
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Bill Callahan wrote the majority of the songs on Knock Knock in 1998 while he was driving
+      from South Carolina to Chicago following the dissolution of his relationship with musician Chan
+      Marshall
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: He had been living with Marshall in an eight-room farmhouse in Prosperity, South Carolina.
+- track: album
+  id: proposed-002
+  type: fact
+  depth: study
+  phase: before
+  body: The album was produced and recorded by Callahan with Jim O'Rourke, though O'Rourke's involvement
+    was originally uncredited on the album.
+  body_long: Callahan had previously worked with O'Rourke on his earlier album Red Apple Falls.
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Knock Knock was produced and recorded by Callahan with Jim O'Rourke, though this was originally
+      uncredited on the album.
+- track: album
+  id: proposed-003
+  type: fact
+  depth: study
+  phase: before
+  body: The recording sessions lasted 10 days and featured a band including two drummers, a Plush guitarist,
+    avant-garde guitarist Loren Mazzacane Connors, a string quartet, and a children's choir.
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The recording sessions for Knock Knock lasted 10 days and included drummer Thymme Jones,
+      who had played on Red Apple Falls, and drummer Tim Mulvenna
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The album also features a string quartet and a small children's choir.
+- track: album
+  id: proposed-004
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Callahan said Knock Knock felt exciting because it was his first time having a full band, which
+    gave the record a different, more expansive energy than his earlier solo-feeling work.
+  body_long: He said having O'Rourke as an engineer who liked his music encouraged him to go in a more
+    expansive direction, contrasting it with the isolation of making The Doctor Came at Dawn.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: It was such an exciting thing just to finally have a band, so different to something like
+      The Doctor Came at Dawn.
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: I finally had an engineer, Jim O'Rourke, who liked my music, so that encouraged me to go
+      in a more expansive direction
+- track: 2
+  id: proposed-005
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Held" was released as the first single from Knock Knock.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: '"Held" was the first single from Knock Knock.'
+- track: 2
+  id: proposed-006
+  type: trivia
+  depth: study
+  phase: after
+  body: Indie rock band Spoon has covered "Held" live and included the cover on their 2022 album Lucifer
+    on the Sofa; the song also featured in a 2008 Cadillac Escalade ad.
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: '"Held" is sometimes covered during concerts by American indie rock band Spoon, and their
+      cover appears on their 2022 album Lucifer on the Sofa.'
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The song also appeared in the 60- and 30-second versions of a commercial advertising the
+      2008 Cadillac Escalade.
+- track: 6
+  id: proposed-007
+  type: fact
+  depth: study
+  phase: after
+  body: '"Cold Blooded Old Times" was released as the second single from the album and appeared as a b-side
+    on the original Drag City release.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The original Drag City-release featured the second single "Cold Blooded Old Times" as a b-side.
+- track: album
+  id: proposed-008
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Heather Phares of AllMusic called Knock Knock Bill Callahan's subtlest collection of songs yet,
+    noting the songs' subjects move toward maturity and acceptance rather than claustrophobic struggle.
+  author: Heather Phares
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Bill Callahan's subtlest collection of songs yet.
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: their subjects move away from difficult, claustrophobic situations toward maturity and acceptance
+- track: album
+  id: proposed-009
+  type: interpretation
+  depth: study
+  phase: after
+  body: Michele Romero of Entertainment Weekly said the album's energy makes Callahan's lyrics feel cathartic
+    rather than depressing.
+  author: Michele Romero
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The energy jolt serves him well, making the delicate broken spirit of his lyrics cathartic
+      rather than depressing.
+- track: album
+  id: proposed-010
+  type: fact
+  depth: listen
+  phase: after
+  body: Knock Knock was named the 10th best album of 1999 by NME, and Steve Jelbert of The Independent
+    named it the best pop album of 1999.
+  reviewed: false
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: NME listed it as the 10th best album of 1999.
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: Steve Jelbert of The Independent named it the best pop album of 1999.
+- track: album
+  id: proposed-011
+  type: fact
+  depth: study
+  phase: before
+  body: Bill Callahan came to live with Chan Marshall (Cat Power) in Prosperity, South Carolina in 1997,
+    and he wrote the album's songs while driving from there to Chicago after things went south.
+  body_long: The two shared an eight-room farmhouse; when their cohabitation ended, Callahan drove north
+    to Chicago and wrote an album's worth of material during that drive, which became Knock Knock.
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Callahan had come to Prosperity in 1997 to live with Chan Marshall, better known as Cat Power.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: He’d later say that he wrote an album’s worth of material on the drive from Prosperity to
+      Chicago, sitting behind the wheel of his Dodge van
+- track: album
+  id: proposed-012
+  type: fact
+  depth: study
+  phase: before
+  body: Knock Knock was Callahan's ninth full-length as Smog and his sixth release for Drag City.
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Those songs would become Knock Knock, his ninth full-length as Smog, and his sixth for Drag
+      City.
+  - ref: knock-knock-smog-album
+    stance: contradicts
+    excerpt: Knock Knock is the seventh studio album by Bill Callahan, released under his Smog alias.
+  - ref: subscribe-to-vice
+    stance: contradicts
+    excerpt: Knock, Knock, Callahan’s seventh album, and the fourth he had collaborated with producer
+      and musician Jim O’Rourke
+- track: album
+  id: proposed-013
+  type: fact
+  depth: listen
+  phase: before
+  body: Callahan again recorded with producer Jim O'Rourke, this time spending 10 days in the studio,
+    twice as long as on the previous album Red Apple Falls.
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Again, Callahan recorded with Jim O’Rourke; this time they spent 10 days in the studio, twice
+      what Red Apple Falls had taken them.
+- track: album
+  id: proposed-014
+  type: fact
+  depth: study
+  phase: before
+  body: The album's musicians included drummers Thymme Jones and Tim Mulvenna, guitarist Liam Hayes of
+    Plush, and guitarist Loren Mazzacane Connors, though the lyric sheet doesn't specify who played on
+    what.
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Drummer Thymme Jones, a Chicago fixture who had played on the previous album, returned for
+      the new one, joined by Vandermark Five drummer Tim Mulvenna.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Plush’s Liam Hayes, a session player on numerous Will Oldham records, handled guitar on some
+      songs, while the prolific post-rock guitarist Loren Mazzacane Connors took top billing in the credits.
+- track: album
+  id: proposed-015
+  type: artist_intent
+  depth: listen
+  phase: before
+  body: Callahan said recording with a full band was energizing and let him share creative responsibility
+    rather than carrying it alone.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It’s a different energy when you have three or four people playing. Knock Knock was intoxicated
+      with that feeling. I was taking some of the responsibility off my back, and having more fun.
+- track: album
+  id: proposed-016
+  type: fact
+  depth: study
+  phase: before
+  body: Producer Jim O'Rourke also contributed guitar, bass, and piano to the album, and was more creatively
+    invested than some of Callahan's previous studio engineers.
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It didn’t hurt that O’Rourke, who also contributed guitar, bass, and piano, actually liked
+      Callahan’s music, and was creatively invested in a way that previous studio engineers
+- track: album
+  id: proposed-017
+  type: fact
+  depth: listen
+  phase: during
+  body: The album features a string quartet and a children's choir, the latter appearing on "No Dancing"
+    and "Hit the Ground Running."
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: The one indulgence they permitted themselves, in addition to a string quartet, is a children’s
+      choir that turns up on a couple of songs, lending the grim “No Dancing” and the determined “Hit
+      the Ground Running” an air
+- track: album
+  id: proposed-018
+  type: artist_intent
+  depth: listen
+  phase: after
+  body: Callahan called Knock Knock his album for teenagers, though it's unclear how seriously he meant
+    it, as he preferred fax interviews that often confused journalists.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Callahan called Knock Knock his album for teenagers, though it’s hard to know how seriously
+      he meant it; this was the era when he still preferred to conduct interviews by fax
+- track: album
+  id: proposed-019
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan told the Chicago Reader that the album cover's lightning bolt and wildcat were meant
+    to represent objects young people like, and that themes of moving and traveling relate to teenage
+    ideas adults usually abandon.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Some of the themes are things I associate with teenage years—having big plans, thinking you
+      can live like a gypsy,
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: There’s a lot about moving and traveling on the record. Most adults let that die.
+- track: 6
+  id: proposed-020
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The Pitchfork reviewer calls "Cold Blooded Old Times" a highlight that sounds peppy and catchy
+    at first but actually tells a story of domestic abuse.
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'But listen past the strumming and the handclaps, and a darker picture emerges: It’s a story
+      of abuse, of a father'
+- track: 6
+  id: proposed-021
+  type: trivia
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times" was featured on the 2000 High Fidelity movie soundtrack alongside songs
+    by the Kinks, the Velvet Underground, Elvis Costello, and Bob Dylan.'
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: That catchiness carried it all the way to 2000’s High Fidelity soundtrack, where it featured
+      alongside songs from the Kinks, the Velvet Underground, Elvis Costello, and Bob Dylan.
+- track: 5
+  id: proposed-022
+  type: fact
+  depth: study
+  phase: before
+  body: '"Teenage Spaceship" was loosely based on Callahan''s adolescent habit of wandering his neighborhood
+    at night, imagining himself as a flying saucer.'
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: a wistful song loosely based on Callahan’s adolescent habit of wandering his neighborhood
+      in the small hours, when everyone was in bed but him.
+- track: 5
+  id: proposed-023
+  type: artist_intent
+  depth: study
+  phase: after
+  body: Callahan later said that the word 'Smog' meant nothing to him, comparing it to meaningless slot-machine
+    symbols, and realized it was the face he was presenting to people.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: The word ‘Smog’ meant nothing to me—just like symbols on a slot machine, like a cherry or
+      a horseshoe,
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: I realized that’s what I was broadcasting, that’s the face I was giving to people.
+- track: album
+  id: proposed-024
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer notes the album's 10 songs form a loose narrative arc, an implicit story with beginning,
+    middle and end, something new for Callahan.
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'Knock Knock’s 10 songs fit into a loose narrative arc. He had experimented with recurring
+      themes on Red Apple Falls, but this was something new: an implicit story, with a beginning, middle,
+      and end.'
+- track: 1
+  id: proposed-025
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"Let''s Move to the Country," the opening track, sets up the album''s narrative: a wandering
+    man ready to settle down.'
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'the opening song, sketches the broad outline of the tale: A wandering man is ready to settle
+      down.'
+- track: 9
+  id: proposed-026
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"I Could Drive Forever" serves as the subdued counterpart to the energetic "Hit the Ground Running,"
+    offering a measured meditation on regret.'
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: '“I Could Drive Forever” is the hushed yin to “Hit the Ground Running”’s ebullient yang:
+      a measured rumination on regret, a fuzzy dream of an infinitely receding horizon.'
+- track: 10
+  id: proposed-027
+  type: interpretation
+  depth: listen
+  phase: during
+  body: '"Left Only With Love" closes the album as a weary, resigned farewell, serving as the mirror opposite
+    of the opening track''s optimism.'
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: Weary and resigned, “Left Only With Love” wraps up the album with a farewell to the person
+      that he has left behind, a soft expression of regret.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It is the mirror opposite of the opening song’s boundless optimism.
+- track: album
+  id: proposed-028
+  type: artist_intent
+  depth: listen
+  phase: after
+  body: Callahan has repeatedly rejected the idea that his songs are autobiographical, telling different
+    outlets he tries to keep himself out of his work.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: “Autobiography is not something I’m interested in,” Callahan told a blogger in 2001.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: I try to keep myself out of it as much as possible.
+  - ref: lazy-i-interview-smog
+    stance: supports
+    excerpt: Autobiography is not something I'm interested in.
+- track: album
+  id: proposed-029
+  type: artist_intent
+  depth: study
+  phase: after
+  body: Callahan told The Quietus in 2010 that the question of autobiography must be all-or-nothing and
+    that he isn't interested in it, eventually describing his songs as 'musicbiographical.'
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It really has to be that either everything is autobiography or nothing is autobiography,
+      with nothing in between
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: They’re songs. Songs are about music. They’re musicbiographical.”
+- track: 3
+  id: proposed-030
+  type: interpretation
+  depth: study
+  phase: during
+  body: The reviewer suggests "River Guard," about a prison guard watching swimming prisoners, may be
+    a metaphor for the act of interpreting songs and deferring final judgment on their meaning.
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: I wonder if it isn’t in some way about the act of interpretation. Perhaps the prisoners are
+      his songs.
+- track: 2
+  id: proposed-031
+  type: interpretation
+  depth: study
+  phase: during
+  body: '"Held" is described as a song about contentment and trust, climaxing in a line about moving away
+    from within the reach of oneself for the first time.'
+  author: the Pitchfork reviewer
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It’s in “Held,” a song about contentment, trust, the security of being held “like a big old
+      baby.”
+- track: album
+  id: proposed-032
+  type: artist_intent
+  depth: study
+  phase: after
+  body: Years later Callahan admitted the Knock Knock era wasn't his best time, describing himself as
+    inchoate and wandering and unable to be healthily honest with himself and others.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: I was kind of a little putz,” he said. “Inchoate. Wandering. I didn’t know how to be honest
+      with myself and others, for the most part.
+  - ref: subscribe-to-vice-2
+    stance: supports
+    excerpt: I was kind of a little putz. Inchoate. Wandering. I didn’t know how to be honest with myself
+      and others, for the most part.
+- track: album
+  id: proposed-033
+  type: fact
+  depth: study
+  phase: before
+  body: Knock Knock was Callahan's seventh album and the fourth he made with producer and musician Jim
+    O'Rourke, featuring a string quartet and a small children's choir.
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: Knock, Knock, Callahan’s seventh album, and the fourth he had collaborated with producer
+      and musician Jim O’Rourke, features a string quartet and a small children’s choir.
+  - ref: knock-knock-smog-album
+    stance: contradicts
+    excerpt: Callahan had previously recorded with O'Rourke on Red Apple Falls.
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: contradicts
+    excerpt: his ninth full-length as Smog, and his sixth for Drag City
+  - ref: knock-knock-turns-20
+    stance: contradicts
+    excerpt: His second and final album made with the aid of Jim O'Rourke and his first featuring a full
+      band, Knock Knock was a leap forward
+- track: 6
+  id: proposed-034
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times," the album''s best known track, appeared on the High Fidelity soundtrack.'
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: The album’s best known track “Cold Blooded Old Times”, appeared on the High Fidelity soundtrack
+- track: 3
+  id: proposed-035
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said he wrote the song in 1998 while in South Carolina or traveling from there to Chicago,
+    when he was 32, and that he wrote most of the album during that drive.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: It was ’98. I was either in South Carolina or in transit between there and Chicago. I was
+      32.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I wrote pretty much all of that album on the drive from South Carolina to Chicago.
+- track: 3
+  id: proposed-036
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said he came up with the title "River Guard" first and then built a story to match it.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember I came up with the title first and that just sat around. Then I made a story to
+      match the title.
+- track: 3
+  id: proposed-037
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan recalled a Belgian interviewer who insisted on calling him "Mr. Callahan" after hearing
+    the song.
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember an interviewer from somewhere in Belgium, said he had to call me Mr. Callahan
+      after hearing that song.
+- track: 3
+  id: proposed-038
+  type: artist_intent
+  depth: study
+  phase: during
+  body: Callahan explained the "tall grass" line is about giving people the freedom to do what they're
+    meant to instead of being locked up.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: It is more just giving yourself and others that freedom of doing what they’re supposed to
+      be doing instead of being locked up.
+- track: 3
+  id: proposed-039
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan mentioned a four-year-old fan who loved the album and would dictate letters to her parents
+    asking him about the "tall grass" line.
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: She would always ask me about the tall grass.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: There was a little girl who used to write me, she must’ve been about four-years-old.
+- track: album
+  id: proposed-040
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said that at the time of writing the album he felt aimless and dishonest with himself,
+    and that his relationship with Chan Marshall (Cat Power) had recently ended.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I didn’t know how to be honest with myself and others, for the most part.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: My relationship with Chan had recently ended.
+- track: 3
+  id: proposed-041
+  type: artist_intent
+  depth: study
+  phase: during
+  body: Callahan said the line "We are constantly on trial, it's a way to be free" refers broadly to the
+    inconclusive nature of being human, not just musicians.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I would say, in the broadest sense, it’s the inconclusive nature of being human.
+- track: 3
+  id: proposed-042
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said he hasn't visited a prison but feels incarceration is close at hand, comparing jails
+    to a collective unconscious holding what people deny.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I haven’t visited. But prison feels inches away here. There’s so many people behind bars.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: The jails are a big unconscious — things we don’t want to deal with but that still have a
+      life, despite being denied.
+- track: 3
+  id: proposed-043
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said Jim O'Rourke likely played piano on the track, with drums entering halfway through,
+    and that he himself played the only acoustic guitar part on the album.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I’m pretty sure Jim [O’Rourke, producer] played piano on it.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I played acoustic guitar — the only track on album that had acoustic — Jim said it would
+      break the album up a bit.
+- track: 3
+  id: proposed-044
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan said both Jim O'Rourke and Liam wanted to play the guitar solo at the end, so they recorded
+    dueling solos based on something he had whistled or sung.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember Jim and Liam both wanted to play guitar at the end, the solo. So they both did
+      it, duelling solos.
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I think it was based on something I whistled or sang.
+- track: 3
+  id: proposed-045
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan noted that actress Milla Jovovich had said in interviews she would watch the ending of
+    the movie Contact with the sound off while listening to "River Guard."
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I remember at the time she was saying in interviews that she would watch the end of that
+      Contact movie with the sound off and “River Guard” on.
+- track: 3
+  id: proposed-046
+  type: trivia
+  depth: study
+  phase: after
+  body: Callahan said he wished someone would create a slow-motion edit pairing "River Guard" with the
+    prison-escape scene from season two of Orange Is the New Black.
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I wanted someone to do an edit of the scene in slo-mo with “River Guard” beneath it. I’m
+      still waiting.
+- track: 3
+  id: proposed-047
+  type: fact
+  depth: study
+  phase: after
+  body: Callahan said he stopped playing the song live for a long time but has recently started performing
+    it again.
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: I didn’t for a long time, but have recently started again.
+- track: 3
+  id: proposed-048
+  type: interpretation
+  depth: study
+  phase: during
+  body: Callahan opens the song with a line about taking prisoners swimming, and sings they "have the
+    time of their lives," setting up a sparse arrangement over which the song explores a prison guard's
+    existential struggle.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: Over a sparse guitar line and gentle piano, Callahan sings of a prison guard wrestling his
+      own existential battle as he watches over prisoners swimming in a river.
+- track: album
+  id: proposed-049
+  type: fact
+  depth: listen
+  phase: before
+  body: Knock Knock was released on Drag City and is a full-blown Jim O'Rourke production, even though
+    his name does not appear anywhere in the album's credits.
+  reviewed: false
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Although you won’t see Mr. O’Rourke’s name (or any name save Mr. Callahan’s) on Knock Knock
+      , this is a full-blown O’Rourke production
+- track: album
+  id: proposed-050
+  type: fact
+  depth: listen
+  phase: before
+  body: Smog is the recording name of singer-songwriter Bill Callahan.
+  reviewed: false
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Smog is, essentially, the extremely erratic singer-songwriter Bill Callahan
+- track: album
+  id: proposed-051
+  type: fact
+  depth: study
+  phase: before
+  body: The album features avant-garde guitarist Loren Mazzacane-Connors as a contributor.
+  reviewed: false
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: There are also a few avant-gardists rocking out for good measure, like guitarist Loren Mazzacane-Connors
+- track: album
+  id: proposed-052
+  type: fact
+  depth: study
+  phase: before
+  body: A children's choir appears on a couple of the album's tracks.
+  reviewed: false
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: and on a couple of tracks a post-ironic children’s choir
+- track: album
+  id: proposed-053
+  type: fact
+  depth: study
+  phase: before
+  body: Bill Callahan is labelmates with David Berman of Silver Jews, both on Drag City.
+  reviewed: false
+  sources:
+  - ref: post-rock-magician-jim-o-rourkedisappear
+    stance: supports
+    excerpt: Mr. Callahan lacks the drunken, educated kind-of-madness of his fellow labelmate David Berman,
+      he of Silver Jews
+- track: album
+  id: proposed-054
+  type: fact
+  depth: study
+  phase: before
+  body: For Knock Knock, Callahan did not sing with the Chicago Children's Choir in the booth; he stood
+    outside watching through glass while they recorded their parts for two songs.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: he didn't record in the booth with the selected members of the Chicago Children's Choir
+- track: album
+  id: proposed-055
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan explained he mouthed along outside the recording booth because the children wanted to
+    watch him sing.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: '"They wanted to see me sing," he explained.'
+- track: album
+  id: proposed-056
+  type: fact
+  depth: listen
+  phase: before
+  body: Knock Knock was the second and final album Callahan made with producer Jim O'Rourke, and the first
+    on which he used a full band.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: His second and final album made with the aid of Jim O'Rourke and his first featuring a full
+      band
+  - ref: subscribe-to-vice
+    stance: contradicts
+    excerpt: and the fourth he had collaborated with producer and musician Jim O’Rourke, features a string
+      quartet and a small children’s choir
+- track: album
+  id: proposed-057
+  type: fact
+  depth: study
+  phase: before
+  body: The album's recurring theme of escape reflects Callahan's own childhood, which involved frequent
+    moving due to his parents' jobs with the National Security Agency.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: reflecting a childhood spent in constant flux due to his parents' jobs with the National
+      Security Agency
+- track: 3
+  id: proposed-058
+  type: fact
+  depth: listen
+  phase: during
+  body: '"River Guard" is narrated by a prison guard who watches inmates swim and reflects on that image
+    as a metaphor for his own life.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: a prison guard who watches his inmates go for a swim and contemplates the metaphor within
+      the context of his own life
+- track: 5
+  id: proposed-059
+  type: fact
+  depth: listen
+  phase: during
+  body: In "Teenage Spaceship," Callahan imagines himself as an enormous presence looming over his sleepy
+    hometown at night.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Callahan is a kid walking through his sleepy hometown at night, imagining himself enormous,
+      soaring over all the quiet houses
+- track: album
+  id: proposed-060
+  type: trivia
+  depth: study
+  phase: before
+  body: Callahan reportedly said he had not heard Leonard Cohen's music until critics began drawing comparisons
+    between the two songwriters.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: He claimed to have not heard Leonard Cohen until critics started comparing them.
+- track: album
+  id: proposed-061
+  type: fact
+  depth: listen
+  phase: before
+  body: Knock Knock was released between Red Apple Falls (1997) and Dongs Of Sevotion (2000), during what
+    the piece calls Callahan's 'collage phase.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Arriving between 1997's breakthrough Red Apple Falls and 2000's sprawling Dongs Of Sevotion,
+      Knock Knock was the heart of Bill Callahan's collage phase.
+- track: 1
+  id: proposed-062
+  type: fact
+  depth: listen
+  phase: during
+  body: '"Let''s Move To The Country" opens with droning Americana cellos before Callahan''s voice enters,
+    mimicking their pulse; the arrangement is full of deliberate blank spaces.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: The record begins with droning Americana cellos in "Let's Move To The Country" before Callahan's
+      own voice enters the mix, mimicking their staccato pulse
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Like a breathing exercise set to music, the song is filled with blank spaces, both in its
+      arrangement and its lyrics
+- track: 7
+  id: proposed-063
+  type: fact
+  depth: listen
+  phase: during
+  body: The austere arrangements of "Sweet Treat" and "Left Only With Love" convey the loneliness of a
+    dissolved relationship, the former full of pent-up anxiety.
+  body_long: The piece contrasts the two songs, describing "Sweet Treat" as pent-up anxiety and "Left
+    Only With Love" as feeling unburdened, like a sigh of relief.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: The austere arrangements of tracks like "Sweet Treat" and "Left Only With Love" suggest the
+      loneliness of a dissolved relationship
+- track: 2
+  id: proposed-064
+  type: trivia
+  depth: listen
+  phase: after
+  body: '"Held," a propulsive celebration of intimacy, later ended up soundtracking a car commercial featuring
+    Bob Dylan.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: '"Held," a celebration of intimacy so propulsive it would one day soundtrack a car commercial
+      starring Bob Dylan'
+- track: album
+  id: proposed-065
+  type: fact
+  depth: study
+  phase: after
+  body: 'At release, many listeners read Knock Knock as a concept album that could be divided into three
+    acts: new love and nature, childhood trauma, and a long farewell.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: many listeners characterized Knock Knock as a concept album, and it's easy to see why
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: 'you could even separate the album into three distinct acts: an opening suite about finding
+      new love and solace in the natural world'
+- track: album
+  id: proposed-066
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan told Pitchfork that his records cohere through subconscious recurring themes rather than
+    deliberate concept-making.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: I think about certain themes in my life and focus on them.
+- track: album
+  id: proposed-067
+  type: fact
+  depth: study
+  phase: after
+  body: Knock Knock arrived within months of two other landmark Drag City/Domino releases, Silver Jews'
+    American Water and Bonnie 'Prince' Billy's I See A Darkness.
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Released within months of similarly definitive statements from his Drag City/Domino labelmates
+      -- Silver Jews' American Water, in October 1998, and Bonnie 'Prince' Billy's I See A Darkness
+- track: 3
+  id: proposed-068
+  type: fact
+  depth: study
+  phase: during
+  body: '"River Guard"''s arrangement of mournful piano and slide guitar moves slowly like light rain
+    but builds toward something life-affirming.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: The arrangement of "River Guard" laps slowly like light rain on a small body of water --
+      all mournful piano and slide guitar -- but it builds toward something life-affirming
+- track: 6
+  id: proposed-069
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times" depicts visions of domestic abuse, yet the song remains notably free
+    of cynicism.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: the visions of domestic abuse in "Cold Blooded Old Times," the constant trials of "River
+      Guard"
+- track: album
+  id: proposed-070
+  type: artist_intent
+  depth: study
+  phase: before
+  body: Callahan told the Chicago Reader that some of the album's themes relate to teenage feelings of
+    having big plans and wanting to live freely, which most adults abandon.
+  author: Bill Callahan
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: '"Some of the themes [on Knock Knock] are things I associate with teenage years -- having
+      big plans, thinking you can live like a gypsy,"'
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: There's a lot about moving and traveling on the record. Most adults let that die.
+- track: 9
+  id: proposed-071
+  type: fact
+  depth: listen
+  phase: during
+  body: '"I Could Drive Forever" serves as the album''s dreary penultimate track before its closing farewell.'
+  reviewed: false
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: in Knock Knock's dreary penultimate track "I Could Drive Forever."
+- track: album
+  id: proposed-072
+  type: fact
+  depth: listen
+  phase: after
+  body: Knock Knock received a 20th anniversary half-speed master vinyl reissue.
+  body_long: Drag City released a half-speed mastered vinyl edition of Knock Knock to mark the album's
+    20th anniversary.
+  reviewed: false
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: it's the 20th anniversary half-speed master vinyl edition of the Smog classic, Knock Knock
+- track: album
+  id: proposed-073
+  type: fact
+  depth: study
+  phase: before
+  body: The album was co-produced by Bill Callahan and Jim O'Rourke.
+  reviewed: false
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: the eternally-stunning co-production from Bill and Jim O'Rourke
+- track: album
+  id: proposed-074
+  type: fact
+  depth: study
+  phase: after
+  body: The 20th anniversary reissue's half-speed mastering was done at Abbey Road studios.
+  body_long: The page states the half-speed mastering work that brought out more detail in the sound was
+    performed at Abbey Road.
+  reviewed: false
+  sources:
+  - ref: smog-s-classic-knock-knock-gets-20th-ann
+    stance: supports
+    excerpt: the incredible focus brought by the half-speed mastering work done at Abbey Road

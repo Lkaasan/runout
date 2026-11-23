@@ -1,0 +1,58 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 2
+title: Held
+duration: '4:02'
+apple_music_id: '81379243'
+claims:
+- id: auto-004
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Held" was released as the first single from Knock Knock.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: '"Held" was the first single from Knock Knock.'
+- id: auto-005
+  type: trivia
+  depth: study
+  phase: after
+  body: Indie rock band Spoon has covered "Held" live and included the cover on their 2022 album Lucifer
+    on the Sofa; the song also featured in a 2008 Cadillac Escalade ad.
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: '"Held" is sometimes covered during concerts by American indie rock band Spoon, and their
+      cover appears on their 2022 album Lucifer on the Sofa.'
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The song also appeared in the 60- and 30-second versions of a commercial advertising the
+      2008 Cadillac Escalade.
+- id: auto-023
+  type: interpretation
+  depth: study
+  phase: during
+  body: '"Held" is described as a song about contentment and trust, climaxing in a line about moving away
+    from within the reach of oneself for the first time.'
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: It’s in “Held,” a song about contentment, trust, the security of being held “like a big old
+      baby.”
+- id: auto-042
+  type: trivia
+  depth: listen
+  phase: after
+  body: '"Held," a propulsive celebration of intimacy, later ended up soundtracking a car commercial featuring
+    Bob Dylan.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: '"Held," a celebration of intimacy so propulsive it would one day soundtrack a car commercial
+      starring Bob Dylan'

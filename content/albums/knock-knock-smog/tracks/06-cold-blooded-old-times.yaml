@@ -1,0 +1,65 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 6
+title: Cold Blooded Old Times
+duration: '4:14'
+apple_music_id: '81379251'
+claims:
+- id: auto-006
+  type: fact
+  depth: study
+  phase: after
+  body: '"Cold Blooded Old Times" was released as the second single from the album and appeared as a b-side
+    on the original Drag City release.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-smog-album
+    stance: supports
+    excerpt: The original Drag City-release featured the second single "Cold Blooded Old Times" as a b-side.
+- id: auto-015
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The Pitchfork reviewer calls "Cold Blooded Old Times" a highlight that sounds peppy and catchy
+    at first but actually tells a story of domestic abuse.
+  author: the Pitchfork reviewer
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: 'But listen past the strumming and the handclaps, and a darker picture emerges: It’s a story
+      of abuse, of a father'
+- id: auto-016
+  type: trivia
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times" was featured on the 2000 High Fidelity movie soundtrack alongside songs
+    by the Kinks, the Velvet Underground, Elvis Costello, and Bob Dylan.'
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: That catchiness carried it all the way to 2000’s High Fidelity soundtrack, where it featured
+      alongside songs from the Kinks, the Velvet Underground, Elvis Costello, and Bob Dylan.
+- id: auto-024
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times," the album''s best known track, appeared on the High Fidelity soundtrack.'
+  reviewed: true
+  sources:
+  - ref: subscribe-to-vice
+    stance: supports
+    excerpt: The album’s best known track “Cold Blooded Old Times”, appeared on the High Fidelity soundtrack
+- id: auto-046
+  type: fact
+  depth: listen
+  phase: after
+  body: '"Cold Blooded Old Times" depicts visions of domestic abuse, yet the song remains notably free
+    of cynicism.'
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: the visions of domestic abuse in "Cold Blooded Old Times," the constant trials of "River
+      Guard"
