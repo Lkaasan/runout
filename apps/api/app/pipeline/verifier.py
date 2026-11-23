@@ -30,7 +30,10 @@ attributes the statement to the named author. For every claim set "type_ok" to f
 claim's type does not fit what it says. artist_intent is a statement or meaning from the artist \
 or anyone directly involved in making the music (a band member, producer or engineer), and the \
 claim must name them. interpretation is a named outside person's reading or opinion (a critic or \
-writer). fact is a plain statement of what happened.
+writer). fact is a plain statement of what happened. trivia is a small, entertaining detail \
+(a quirk, an anecdote, a coincidence); it is a valid type and needs no named speaker, so never \
+mark a claim's type wrong merely because it is trivia, only if it is really an opinion or a \
+named person's statement.
 "issue" is one short sentence saying what is wrong, or an empty string for a supported claim.
 Return a verdict for every claim id you were given. Output only the JSON result."""
 

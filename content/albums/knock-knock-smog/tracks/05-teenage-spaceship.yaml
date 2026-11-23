@@ -1,0 +1,31 @@
+# 50 claims promoted automatically from proposals/20261123-175744 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
+number: 5
+title: Teenage Spaceship
+duration: '3:58'
+apple_music_id: '81379249'
+claims:
+- id: auto-017
+  type: fact
+  depth: study
+  phase: before
+  body: '"Teenage Spaceship" was loosely based on Callahan''s adolescent habit of wandering his neighborhood
+    at night, imagining himself as a flying saucer.'
+  reviewed: true
+  sources:
+  - ref: smog-knock-knock-album-review-pitchfork
+    stance: supports
+    excerpt: a wistful song loosely based on Callahan’s adolescent habit of wandering his neighborhood
+      in the small hours, when everyone was in bed but him.
+- id: auto-038
+  type: fact
+  depth: listen
+  phase: during
+  body: In "Teenage Spaceship," Callahan imagines himself as an enormous presence looming over his sleepy
+    hometown at night.
+  reviewed: true
+  sources:
+  - ref: knock-knock-turns-20
+    stance: supports
+    excerpt: Callahan is a kid walking through his sleepy hometown at night, imagining himself enormous,
+      soaring over all the quiet houses

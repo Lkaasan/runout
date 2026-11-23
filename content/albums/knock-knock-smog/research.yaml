@@ -1,0 +1,13 @@
+# Pages the finder reads. Started from the Wikipedia reference list, then pruned by hand:
+# removed unrelated pages (a Spoon interview, a Bob Dylan post), a duplicate of the Pitchfork review,
+# and links that are dead or behind a paywall. Added three pages found by searching.
+urls:
+- https://www.independent.co.uk/arts-entertainment/pop-album-reviews-5375246.html
+- https://www.independent.co.uk/arts-entertainment/music/reviews/the-best-pop-albums-of-1999-5373296.html
+- https://www.nme.com/bestalbumsandtracksoftheyear/1999-2-1045360
+- https://pitchfork.com/reviews/albums/smog-knock-knock/
+- https://www.vice.com/en/article/bill-callahan-goes-deep-on-his-classic-track-river-guard/
+- https://observer.com/1999/03/postrock-magician-jim-orourkedisappears-behind-smog/
+- https://www.stereogum.com/2028117/smog-knock-knock-turns-20/reviews/the-anniversary/
+- https://exclaim.ca/music/article/smogs_classic_knock_knock_gets_20th_anniversary_vinyl_reissue
+- https://www.sputnikmusic.com/album/36179/Smog-Knock-Knock/
