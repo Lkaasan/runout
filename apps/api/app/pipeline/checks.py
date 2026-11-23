@@ -36,8 +36,16 @@ DOMAIN_RULES = {
     "loudersound.com": (SourceKind.press, Tier.secondary),
     "americansongwriter.com": (SourceKind.press, Tier.secondary),
     "faroutmagazine.co.uk": (SourceKind.press, Tier.secondary),
+    "pitchfork.com": (SourceKind.press, Tier.secondary),
+    "billboard.com": (SourceKind.press, Tier.secondary),
+    "rollingstone.com": (SourceKind.press, Tier.secondary),
+    "theguardian.com": (SourceKind.press, Tier.secondary),
+    "nme.com": (SourceKind.press, Tier.secondary),
+    "stereogum.com": (SourceKind.press, Tier.secondary),
     "songfacts.com": (SourceKind.database, Tier.tertiary),
 }
+# Any site not listed here is treated as tertiary press: blogs, label pages and Bandcamp are
+# useful leads but are never trusted more than a named, edited publication.
 
 
 def classify(page: Page) -> tuple[SourceKind, Tier]:
