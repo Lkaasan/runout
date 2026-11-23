@@ -17,3 +17,6 @@ export type TrackDetail = Schemas["TrackDetail"];
 export type Claim = Schemas["ClaimOut"];
 export type ClaimSource = Schemas["ClaimSourceOut"];
 export type Link = Schemas["LinkOut"];
+export type ArtistSummary = Schemas["ArtistSummary"];
+export type ArtistDetail = Schemas["ArtistDetail"];
+export type SearchResults = Schemas["SearchResults"];

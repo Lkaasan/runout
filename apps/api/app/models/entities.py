@@ -34,6 +34,8 @@ class Artist(Base):
     __tablename__ = "artist"
 
     id: Mapped[int] = mapped_column(primary_key=True)
+    # URL name, made from the name: "Pink Floyd" -> "pink-floyd".
+    slug: Mapped[str] = mapped_column(String(128), unique=True)
     name: Mapped[str] = mapped_column(String(255), unique=True)
     apple_music_id: Mapped[str | None] = mapped_column(String(64))
     musicbrainz_id: Mapped[str | None] = mapped_column(String(64))

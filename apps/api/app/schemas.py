@@ -65,8 +65,32 @@ class AlbumSummary(BaseModel):
     slug: str
     title: str
     artist: str
+    artist_slug: str
     release_date: date | None
     artwork_url: str | None
+
+
+class ArtistSummary(BaseModel):
+    slug: str
+    name: str
+    album_count: int
+    # The cover of their newest album that has one, for a card.
+    artwork_url: str | None
+
+
+class ArtistDetail(BaseModel):
+    slug: str
+    name: str
+    # Newest first.
+    albums: list[AlbumSummary]
+    # Approved claims about the artist as a whole.
+    claims: list[ClaimOut]
+
+
+class SearchResults(BaseModel):
+    query: str
+    artists: list[ArtistSummary]
+    albums: list[AlbumSummary]
 
 
 class TrackSummary(BaseModel):

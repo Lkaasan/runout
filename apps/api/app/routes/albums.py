@@ -14,6 +14,7 @@ from app.schemas import (
     TrackDetail,
     TrackSummary,
 )
+from app.services import browse
 from app.services import serialize as ser
 
 router = APIRouter()
@@ -39,16 +40,7 @@ def _credits(session: Session, **where) -> list[CreditOut]:
 def list_albums(session: SessionDep) -> list[AlbumSummary]:
     """Curated album shelf."""
     albums = session.scalars(select(Album).options(selectinload(Album.artist)).order_by(Album.id))
-    return [
-        AlbumSummary(
-            slug=a.slug,
-            title=a.title,
-            artist=a.artist.name,
-            release_date=a.release_date,
-            artwork_url=a.artwork_url,
-        )
-        for a in albums
-    ]
+    return [browse.album_summary(a) for a in albums]
 
 
 @router.get("/albums/{slug}")
@@ -66,6 +58,7 @@ def get_album(slug: str, session: SessionDep, depth: Depth | None = None) -> Alb
         slug=album.slug,
         title=album.title,
         artist=album.artist.name,
+        artist_slug=album.artist.slug,
         release_date=album.release_date,
         artwork_url=album.artwork_url,
         apple_music_id=album.apple_music_id,

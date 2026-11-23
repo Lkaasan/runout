@@ -130,6 +130,10 @@
             "title": "Artist",
             "type": "string"
           },
+          "artist_slug": {
+            "title": "Artist Slug",
+            "type": "string"
+          },
           "artwork_url": {
             "anyOf": [
               {
@@ -187,6 +191,7 @@
           "slug",
           "title",
           "artist",
+          "artist_slug",
           "release_date",
           "artwork_url",
           "apple_music_id",
@@ -202,6 +207,10 @@
         "properties": {
           "artist": {
             "title": "Artist",
+            "type": "string"
+          },
+          "artist_slug": {
+            "title": "Artist Slug",
             "type": "string"
           },
           "artwork_url": {
@@ -240,6 +249,7 @@
           "slug",
           "title",
           "artist",
+          "artist_slug",
           "release_date",
           "artwork_url"
         ],
@@ -266,6 +276,75 @@
           "claim"
         ],
         "title": "AnnotationOut",
+        "type": "object"
+      },
+      "ArtistDetail": {
+        "properties": {
+          "albums": {
+            "items": {
+              "$ref": "#/components/schemas/AlbumSummary"
+            },
+            "title": "Albums",
+            "type": "array"
+          },
+          "claims": {
+            "items": {
+              "$ref": "#/components/schemas/ClaimOut"
+            },
+            "title": "Claims",
+            "type": "array"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "albums",
+          "claims"
+        ],
+        "title": "ArtistDetail",
+        "type": "object"
+      },
+      "ArtistSummary": {
+        "properties": {
+          "album_count": {
+            "title": "Album Count",
+            "type": "integer"
+          },
+          "artwork_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Artwork Url"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "album_count",
+          "artwork_url"
+        ],
+        "title": "ArtistSummary",
         "type": "object"
       },
       "ClaimOut": {
@@ -741,6 +820,35 @@
         ],
         "title": "Relation",
         "type": "string"
+      },
+      "SearchResults": {
+        "properties": {
+          "albums": {
+            "items": {
+              "$ref": "#/components/schemas/AlbumSummary"
+            },
+            "title": "Albums",
+            "type": "array"
+          },
+          "artists": {
+            "items": {
+              "$ref": "#/components/schemas/ArtistSummary"
+            },
+            "title": "Artists",
+            "type": "array"
+          },
+          "query": {
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query",
+          "artists",
+          "albums"
+        ],
+        "title": "SearchResults",
+        "type": "object"
       },
       "SourceKind": {
         "enum": [
@@ -1370,6 +1478,69 @@
         "summary": "Get Track"
       }
     },
+    "/artists": {
+      "get": {
+        "description": "Every artist with at least one album, A to Z.",
+        "operationId": "list_artists_artists_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/ArtistSummary"
+                  },
+                  "title": "Response List Artists Artists Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "List Artists"
+      }
+    },
+    "/artists/{slug}": {
+      "get": {
+        "description": "An artist with all their albums (newest first) and approved claims about them.",
+        "operationId": "get_artist_artists__slug__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtistDetail"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Artist"
+      }
+    },
     "/entities/{type}/{id}": {
       "get": {
         "description": "Deep-dive card: approved claims plus links in both directions.",
@@ -1476,6 +1647,60 @@
         "tags": [
           "musickit"
         ]
+      }
+    },
+    "/search": {
+      "get": {
+        "description": "Artists and albums in the library matching a name. An empty query returns nothing.",
+        "operationId": "search_search_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "q",
+            "required": false,
+            "schema": {
+              "default": "",
+              "maxLength": 100,
+              "title": "Q",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 8,
+              "maximum": 50,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResults"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Search"
       }
     }
   }

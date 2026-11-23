@@ -43,7 +43,9 @@ export function AlbumSession({
               <AlbumTitle title={album.title} />
             </h1>
             <p className="mt-1 text-lg text-neutral-400">
-              {album.artist}
+              <Link href={`/artist/${album.artist_slug}`} className="hover:text-neutral-100">
+                {album.artist}
+              </Link>
               {album.release_date ? ` · ${album.release_date.slice(0, 4)}` : ""}
             </p>
           </div>
