@@ -105,6 +105,9 @@ def test_musicbrainz_picks_the_exact_group_and_earliest_official_release(tmp_pat
     assert "Credit: design - Storm Thorgerson" in page.text
     assert "Track 1 credit: instrument (guitar) - David Gilmour" in page.text
     assert page.meta["artist_ids"] == ["artist-1"]
+    assert page.meta["cover_art_url"].endswith(
+        "/release-group/20c77fb4-1c9f-33c8-9d7e-c4977f11e847/front-500"
+    )
     assert page.meta["tracks"][0]["length_ms"] == 1019666
 
 

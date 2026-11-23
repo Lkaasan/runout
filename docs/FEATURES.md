@@ -83,7 +83,7 @@ Making the content that exists richer and more trustworthy.
 - [ ] **K2 Primary-source retrieval.** For each artist-intent claim, find the original interview or book and record it as a primary source. This is the hardest and most valuable content step.
 - [ ] **K3 Credits and "Making" data.** Per-track credits (players, engineers, studios, gear) from seed files and MusicBrainz.
 - [ ] **K4 Source-conflict display.** Show disputed claims honestly in Study mode (already styled; needs review).
-- [ ] **K5 Album shelf and artwork.** Real artwork and a better shelf page.
+- [~] **K5 Album shelf and artwork.** Cover art is shown on the album page and the shelf, hot-linked from the Cover Art Archive through each album's `artwork_url` (never copied into the repo; a placeholder shows if it is missing or fails). Still to do: a better shelf page, and Apple Music artwork once credentials exist.
 
 ## Connections (the deep-dive graph)
 

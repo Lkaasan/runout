@@ -74,7 +74,7 @@ runout/
 │       └── src/
 │           ├── app/                 Routes: / (shelf), /album/[slug]
 │           ├── api/                 client.ts (typed client), schema.d.ts (generated)
-│           ├── components/          AlbumSession, ClaimCard, ClaimList, PlayerBar, panel/ (PanelProvider, SidePanel, NowTab, MeaningTab, AlbumTab)
+│           ├── components/          AlbumSession, AlbumCover, ClaimCard, ClaimList, PlayerBar, panel/ (PanelProvider, SidePanel, NowTab, MeaningTab, AlbumTab)
 │           ├── lib/                 format, moment timing (moments.ts) and panel (panel.ts) helpers
 │           ├── player/              PlayerAdapter, FakePlayer, MusicKitPlayer, PlaybackProvider
 │           └── lyrics/              LyricsProvider interface + stub

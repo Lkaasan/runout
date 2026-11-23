@@ -7,6 +7,7 @@ import { playbackId, toPlaybackTracks } from "@/lib/playback";
 import { PlaybackProvider, usePlayback } from "@/player/PlaybackProvider";
 import { PanelProvider, usePanel } from "./panel/PanelProvider";
 import { type PanelTrack, selectPanelTab, SidePanel } from "./panel/SidePanel";
+import { AlbumCover } from "./AlbumCover";
 import { PlayerBar } from "./PlayerBar";
 import { TrackPlayButton } from "./TrackPlayButton";
 
@@ -39,21 +40,24 @@ export function AlbumSession({
             </Link>
           </nav>
 
-          <header className="mt-8">
-            <h1 className="text-4xl font-semibold tracking-tight">
-              <button
-                type="button"
-                onClick={() => selectPanelTab("album")}
-                title="About the album"
-                className="text-left hover:text-neutral-300"
-              >
-                {album.title}
-              </button>
-            </h1>
-            <p className="mt-1 text-lg text-neutral-400">
-              {album.artist}
-              {album.release_date ? ` · ${album.release_date.slice(0, 4)}` : ""}
-            </p>
+          <header className="mt-8 flex items-end gap-5">
+            <AlbumCover url={album.artwork_url} title={album.title} className="size-32" />
+            <div className="min-w-0">
+              <h1 className="text-4xl font-semibold tracking-tight">
+                <button
+                  type="button"
+                  onClick={() => selectPanelTab("album")}
+                  title="About the album"
+                  className="text-left hover:text-neutral-300"
+                >
+                  {album.title}
+                </button>
+              </h1>
+              <p className="mt-1 text-lg text-neutral-400">
+                {album.artist}
+                {album.release_date ? ` · ${album.release_date.slice(0, 4)}` : ""}
+              </p>
+            </div>
           </header>
 
           <div className="mt-8 grid items-start gap-8 lg:grid-cols-[22rem_minmax(0,1fr)]">
