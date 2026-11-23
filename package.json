@@ -6,7 +6,7 @@
     "node": ">=22.12"
   },
   "scripts": {
-    "setup": "pnpm install && cd apps/api && uv sync && uv run alembic upgrade head && uv run python -m app.seed import placeholder-album",
+    "setup": "pnpm install && cd apps/api && uv sync && uv run alembic upgrade head && uv run python -m app.seed import --all",
     "db": "docker compose up -d db",
     "dev:api": "cd apps/api && uv run fastapi dev app/main.py",
     "dev:web": "pnpm --filter web dev",
