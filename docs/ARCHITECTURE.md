@@ -2,7 +2,7 @@
 
 How the app is built today (after Milestone 4). For the product plan and milestones see [PLAN.md](PLAN.md).
 
-**Status:** the app is runnable. You can browse the shelf, play an album and read about the song that is playing in a side panel (tabs: Now, Meaning, Album). An album can be played from its page: through Apple Music (about 30 s previews until full-length playback is switched on, see below) or, with no Apple credentials, through a demo player that has no audio. The listening screen phases, entity pages, the admin UI and the PWA shell are not built yet (Milestones 5 to 8).
+**Status:** the app is runnable. You can browse the shelf, play an album and read about the song that is playing in a side panel (tabs: Meaning, Listen for, Album). An album can be played from its page: through Apple Music (about 30 s previews until full-length playback is switched on, see below) or, with no Apple credentials, through a demo player that has no audio. The listening screen phases, entity pages, the admin UI and the PWA shell are not built yet (Milestones 5 to 8).
 
 ## System overview
 
@@ -215,7 +215,7 @@ sequenceDiagram
 ```
 
 - There is no Listen/Study mode. The page fetches everything at every depth and the UI decides: a claim card shows its short body and a "Go deeper" disclosure for the long text and sources; study-depth claims sit under "Deeper notes". The API's `depth` filter still exists but the web app does not use it.
-- `AlbumSession` (client) wraps the page in `PlaybackProvider` and `PanelProvider`. The page is two columns: the tracklist on the left and the information panel on the right. The **Album** tab (before and after claims, credits) is always available and is all the panel shows until a song is playing or picked; **Now** and **Meaning** appear for a song. Meaning lists every approved claim on the track (`TrackDetail.claims`) grouped by who is speaking. The side panel follows the playing song; clicking another song pins the panel to it ("Back to now playing" releases it, and a new song starting also does). Moment cards come from the player's position only, through `visibleMoments`.
+- `AlbumSession` (client) wraps the page in `PanelProvider`. The page is two columns: the tracklist on the left (each song shows how many notes we have) and the information panel on the right. Nothing is selected at first, so the panel shows the **Album** tab (before and after claims, credits). Picking a song selects it, opens **Meaning** (every approved claim on the track, `TrackDetail.claims`, grouped by who is speaking) and, if the song has timestamped moments, **Listen for**. The selected song is mirrored in the address as `?track=N` so a song can be linked to. Playback is parked: the player code under `src/player/` and `PlayerBar` is unused.
 - The typed client (`api.GET("/albums/{slug}", ...)`) is generated from the API schema, so a mismatch is a TypeScript error.
 - Pages are server-rendered with `cache: "no-store"`, so newly approved claims show up on the next load.
 

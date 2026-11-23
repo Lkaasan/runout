@@ -1,49 +1,48 @@
 "use client";
 
 import { createContext, useCallback, useContext, useMemo, useState } from "react";
-import { isBrowsing, resolveActiveTrack } from "@/lib/panel";
-import { usePlayback } from "@/player/PlaybackProvider";
 
 interface Panel {
-  /** The song the panel is about: the pinned one, else whatever is playing. */
-  activeId: string | null;
-  /** The playing song's id (null before anything has played). */
-  playingId: string | null;
-  /** True while reading about a song other than the one playing. */
-  browsing: boolean;
-  pin(id: string): void;
-  /** Back to now playing. */
-  unpin(): void;
+  /** The song the panel is about, or null for the album as a whole. */
+  selectedId: string | null;
+  /** Select a song (or null for the album). The address is updated so the view can be shared. */
+  select(id: string | null): void;
 }
 
 const PanelContext = createContext<Panel | null>(null);
 
 /**
- * Which song the side panel shows. It follows the playing song; clicking another song pins the
- * panel to it without touching playback, and a new song starting releases the pin again.
+ * Which song the information panel shows. It is chosen by the reader, and mirrored in the page
+ * address as `?track=N`, so a link to a song's page opens straight on it.
  */
-export function PanelProvider({ children }: { children: React.ReactNode }) {
-  const { state } = usePlayback();
-  const playingId = state.trackId;
-  // A pin remembers which song was playing when it was made. When a different song starts the
-  // pin no longer matches and is ignored, so the panel follows the new song again.
-  const [pinState, setPin] = useState<{ id: string; playingAtPin: string | null } | null>(null);
-  const pinnedId = pinState && pinState.playingAtPin === playingId ? pinState.id : null;
+export function PanelProvider({
+  tracks,
+  initialId,
+  children,
+}: {
+  tracks: { id: string; number: number }[];
+  initialId: string | null;
+  children: React.ReactNode;
+}) {
+  const [selectedId, setSelectedId] = useState<string | null>(initialId);
 
-  const pin = useCallback((id: string) => setPin({ id, playingAtPin: playingId }), [playingId]);
-  const unpin = useCallback(() => setPin(null), []);
-
-  const value = useMemo<Panel>(
-    () => ({
-      activeId: resolveActiveTrack(pinnedId, playingId),
-      playingId,
-      browsing: isBrowsing(pinnedId, playingId),
-      pin,
-      unpin,
-    }),
-    [pinnedId, playingId, pin, unpin],
+  const select = useCallback(
+    (id: string | null) => {
+      setSelectedId(id);
+      try {
+        const url = new URL(window.location.href);
+        const number = tracks.find((t) => t.id === id)?.number;
+        if (number !== undefined) url.searchParams.set("track", String(number));
+        else url.searchParams.delete("track");
+        window.history.replaceState(null, "", url);
+      } catch {
+        // The address is a convenience; the panel works without it.
+      }
+    },
+    [tracks],
   );
 
+  const value = useMemo<Panel>(() => ({ selectedId, select }), [selectedId, select]);
   return <PanelContext.Provider value={value}>{children}</PanelContext.Provider>;
 }
 
