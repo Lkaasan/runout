@@ -1,5 +1,7 @@
 # Westside Cowboy, It Goes On. Skeleton from https://music.apple.com/us/album/it-goes-on/6767652034
 # Skeleton only: no claims yet. Run `app.research collect/extract` to propose some.
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 slug: it-goes-on-westside-cowboy
 title: It Goes On
 artist:
@@ -8,3 +10,654 @@ artist:
 release_date: '2026-08-21'
 apple_music_id: '6767652034'
 artwork_url: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/b9/74/a4b974d9-583a-e0d2-4e60-8f4939546ddb/26UMGIM54625.rgb.jpg/600x600bb.jpg
+claims:
+- id: auto-001
+  type: fact
+  depth: study
+  phase: before
+  body: Most of the album was recorded at Greenmount Studios in Leeds with producer Loren Humphrey, while
+    two songs retain pre-production recordings made at Humphrey's home in Upstate New York.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band recorded most of the album at Greenmount Studios in Leeds with the producer Loren
+      Humphrey; two songs use recordings made during pre-production at Humphrey's home in Upstate New
+      York.
+- id: auto-002
+  type: fact
+  depth: listen
+  phase: before
+  body: The band wanted the album to sound youthful and immediate, keeping the two-guitar, bass-and-drums
+    setup and shared lead vocals of their live shows.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: They intended the record to sound youthful and immediate, retaining the two-guitar, bass-and-drums
+      foundation and shared lead vocals of their concerts.
+- id: auto-003
+  type: fact
+  depth: listen
+  phase: before
+  body: The lyrics deal with the passage of time, repetition, uncertainty and young adulthood, and recurring
+    images of motion led the band to choose the title after the songs were finished.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The lyrics address the passage of time, repetition, uncertainty and young adulthood; the
+      recurring idea of motion led the band to choose the title after the songs had been completed.
+- id: auto-004
+  type: fact
+  depth: listen
+  phase: before
+  body: 'The album was preceded by three singles: "Kick Stones (The Boys)", "Pin Up Boys" and "Dobro".'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The album was preceded by the singles "Kick Stones (The Boys)", "Pin Up Boys" and "Dobro".
+- id: auto-005
+  type: fact
+  depth: study
+  phase: before
+  body: Westside Cowboy formed in Manchester in 2023 after three members met studying at the Royal Northern
+    College of Music.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy formed in Manchester in 2023. Reuben Haycocks, Aoife Anson-O'Connell and
+      Paddy Murphy met while studying at the Royal Northern College of Music
+- id: auto-006
+  type: fact
+  depth: study
+  phase: before
+  body: Loren Humphrey had already produced the band's second EP before agreeing to make their debut album.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: He produced their second EP before agreeing to make their debut album.
+- id: auto-013
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Victoria Borlando of Pitchfork wrote that the band sheds some of its early country influences
+    for tightly wound indie rock and sharp songwriting.
+  author: Victoria Borlando
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The much-hyped Manchester group sheds some of its early country influences, focusing instead
+      on tightly wound indie rock and sharp, thoughtful songwriting.
+- id: auto-014
+  type: interpretation
+  depth: study
+  phase: after
+  body: Connor Gilroy of The Alternative said the album feels closer to a louder, more frenetic future
+    for slacker rock than to alt-country.
+  author: Connor Gilroy
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: it "ultimately feels closer to a louder more frenetic future for slacker rock than alt-country"
+- id: auto-015
+  type: interpretation
+  depth: study
+  phase: after
+  body: Tom Breihan of Stereogum heard 1990s indie rock in the album's monotone vocals, interlocking guitars
+    and shouted harmonies.
+  author: Tom Breihan
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Tom Breihan of Stereogum heard 1990s indie rock in its monotone vocals, interlocking guitars
+      and shouted harmonies
+- id: auto-016
+  type: interpretation
+  depth: study
+  phase: after
+  body: Luke Nuttall of the Soundboard identified post-punk and American roots influences rather than
+    the Britpop revivalism tied to some Manchester bands.
+  author: Luke Nuttall
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Luke Nuttall of the Soundboard identified post-punk and American roots influences rather
+      than the Britpop revivalism associated with some Manchester bands
+- id: auto-017
+  type: interpretation
+  depth: study
+  phase: after
+  body: Marissa R. Moss of Rolling Stone UK described the album's arrangements as forceful and noted their
+    frequent climaxes.
+  author: Marissa R. Moss
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Marissa R. Moss of Rolling Stone UK described the arrangements as forceful and noted their
+      frequent climaxes.
+- id: auto-018
+  type: fact
+  depth: study
+  phase: before
+  body: 'The three guitar- or bass-playing members split lead vocal duties: Haycocks sings lead on seven
+    tracks, Bradbury on three and Anson-O''Connell on one.'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks leads seven tracks, Bradbury three and Anson-O'Connell one, with the other members
+      frequently credited with backing vocals.
+- id: auto-019
+  type: interpretation
+  depth: study
+  phase: after
+  body: Rishi Shah of NME read the album's ordinary imagery as a response to young-adult uncertainty.
+  author: Rishi Shah
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Shah read the album's ordinary imagery as a response to young-adult uncertainty.
+- id: auto-022
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Breihan named It Goes On his Album of the Week for Stereogum, praising its controlled builds,
+    overlapping voices and mix of confidence and anxiety despite tracing its ingredients to earlier indie-rock
+    groups.
+  author: Tom Breihan
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: he thought the band's enthusiasm prevented those references from becoming pastiche; he particularly
+      praised its controlled builds, overlapping voices and combination of confidence and anxiety
+- id: auto-023
+  type: interpretation
+  depth: study
+  phase: after
+  body: Nick Reilly of Rolling Stone UK wrote that the record transcended the band's "Britainicana" label,
+    citing the wall of sound in "Kick Stones", the balladry of "Take My Leaving as I Love You" and the
+    looseness of "Pin Up Boys".
+  author: Nick Reilly
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Nick Reilly of Rolling Stone UK similarly wrote that the record transcended the band's "Britainicana"
+      label, highlighting the wall of sound in "Kick Stones"
+- id: auto-024
+  type: interpretation
+  depth: study
+  phase: after
+  body: Matt Mitchell graded the album A for Paste, pointing to the musicians' friendship and Murphy's
+    drumming as the source of its intensity.
+  author: Matt Mitchell
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Matt Mitchell graded the album A for Paste, identifying the musicians' friendship and Murphy's
+      drumming as the foundation of its intensity.
+- id: auto-025
+  type: interpretation
+  depth: study
+  phase: after
+  body: Rishi Shah awarded the album four stars for NME, linking its acceptance of flaws to uncertainty
+    in early adulthood.
+  author: Rishi Shah
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Rishi Shah awarded it four stars for NME, connecting its acceptance of flaws with uncertainty
+      in early adulthood.
+- id: auto-026
+  type: interpretation
+  depth: study
+  phase: after
+  body: Daisy Carter of DIY gave the album four and a half stars, praising its deliberately rough production,
+    dynamic shifts and harmonies.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Carter praised its deliberately rough production, dynamic shifts and harmonies
+- id: auto-027
+  type: interpretation
+  depth: study
+  phase: after
+  body: John Murphy of MusicOMH gave the album four and a half stars, saying it successfully transferred
+    the band's live sound to the studio and praising its vocal interplay and drumming.
+  author: John Murphy
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Murphy thought the album successfully transferred the band's live sound to the studio and
+      highlighted its vocal interplay and drumming.
+- id: auto-028
+  type: interpretation
+  depth: study
+  phase: after
+  body: Liam Martin of AllMusic found the repeated crescendos mostly earned and the quieter songs emotionally
+    direct, though he felt the band took few large formal risks.
+  author: Liam Martin
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Liam Martin of AllMusic considered the repeated crescendos mostly earned and thought the
+      quiet songs retained the emotional directness of the louder material, although he found that the
+      band took few large formal risks.
+- id: auto-031
+  type: interpretation
+  depth: study
+  phase: after
+  body: Hopper Ho of The Mancunion claimed the album pioneers a new era of British indie music and said
+    it has listeners' bodies flailing and hearts aching.
+  author: Hopper Ho
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Hopper Ho of The Mancunion claims the album pioneers a new era of British indie music, and
+      that the album "has your body flailing and your heart aching."
+- id: auto-032
+  type: fact
+  depth: listen
+  phase: before
+  body: It Goes On was recorded at Greenmount Studios in Leeds with producer Loren Humphrey.
+  body_long: The album was recorded at Greenmount Studios in Leeds, produced by Loren Humphrey, who has
+    also worked with Geese, Cameron Winter and Wunderhorse.
+  reviewed: true
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: It Goes On was recorded at Greenmount Studios in Leeds with producer Loren Humphrey
+- id: auto-033
+  type: fact
+  depth: study
+  phase: before
+  body: Producer Loren Humphrey is credited for previous work with Geese, Cameron Winter, Wunderhorse,
+    and others.
+  reviewed: true
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: who is credited for his work with Geese, Cameron Winter, Wunderhorse, and more
+- id: auto-034
+  type: fact
+  depth: study
+  phase: before
+  body: Westside Cowboy previously released two EPs, This Better Be Something Great and So Much Country
+    'Till We Get There, and supported Geese on tour.
+  reviewed: true
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: 'who have previously released two EPs: This Better Be Something Great last year, and So Much
+      Country ''Till We Get There, which dropped early this year, and are fresh off of a tour supporting
+      Geese'
+- id: auto-035
+  type: fact
+  depth: study
+  phase: before
+  body: In support of the album, Westside Cowboy will embark on their biggest headline tour yet in autumn
+    and winter, after summer festival performances.
+  reviewed: true
+  sources:
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: Westside Cowboy are set to embark on their biggest headline tour yet across this autumn and
+      winter, following a string of summer festival performances at Down the Rabbit Hole, Green Man, Latitude,
+      Reading and Leeds, and more
+- id: auto-040
+  type: fact
+  depth: study
+  phase: before
+  body: Nearly all the band's songs use just two guitars, bass, and drums, and if they want an extra sound
+    like a shaker, a member has to play it while still playing their main instrument.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Nearly all their songs feature two guitars, a bass, and drums. If they want to add so much
+      as a shaker, then someone’s going to have to figure out how to shake it while they play the instrument
+      they already have
+- id: auto-041
+  type: fact
+  depth: study
+  phase: before
+  body: Each member of the band writes songs and they rotate who sings lead vocals.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: Each member writes songs, and they rotate singing lead.
+- id: auto-042
+  type: fact
+  depth: study
+  phase: before
+  body: The band briefly tried to label their sound 'Britainicana,' a blend referencing British rock and
+    American pop culture influences, though they now feel sheepish about the term.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: they did initially attempt to label their sound, built both on the British rock traditions
+      and American pop culture they grew up around, as ‘Britainicana,’ a term they seem to ever so slightly
+      cringe at now
+- id: auto-043
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was produced by Loren Humphrey, who first produced the band's second EP before signing
+    on for the debut album.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: He produced Westside Cowboy’s second EP, and then signed on for the debut album.
+- id: auto-045
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy formed in Manchester in 2023 and developed a sound combining scuzzy 90s guitars
+    with a subtle love of skiffle, which they dubbed 'Britainicana'.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: When Westside Cowboy formed in Manchester in 2023, their heady cocktail of scuzzy 90s guitars
+      and a subtle love of skiffle gave birth to a sound they called Britainicana
+- id: auto-046
+  type: fact
+  depth: study
+  phase: before
+  body: The band described their Britainicana style as a lyrical celebration of the mundane set against
+    90s alt-rock influences like Pavement.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: they described it as offering a lyrical celebration of the mundane paired against 90s alt-rock
+      (think Pavement and you’re halfway there)
+- id: auto-047
+  type: fact
+  depth: listen
+  phase: after
+  body: It Goes On arrives nearly two years after the band's debut single and is being called one of the
+    most thrilling British albums of 2026.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: Now, nearly two years after their debut single was released, all of these things come to
+      the natural fore on It Goes On
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: marks one of the most thrilling records to have been released by a British band in 2026
+- id: auto-054
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy rose to prominence after winning Glastonbury's Emerging Talent Competition in
+    April 2025 and playing multiple sets at The Great Escape 2025.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Ever since their triumph at Glastonbury’s Emerging Talent Competition in April 2025, you’ll
+      have struggled to find a buzzier British guitar band than Westside Cowboy
+- id: auto-055
+  type: fact
+  depth: study
+  phase: before
+  body: The band signed to Island Records and to Wildlife Entertainment for management in 2026, and toured
+    with Black Country, New Road, Blondshell and Geese.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: the Manchester-formed group were soon tied down to Island Records, Wildlife Entertainment
+      (Arctic Monkeys, Fontaines D.C.) for management in 2026 and thrown into tours with Black Country,
+      New Road, Blondshell and Geese
+- id: auto-056
+  type: fact
+  depth: study
+  phase: before
+  body: The quartet lineup trades lead vocals between Aoife Anson O'Connell (bass), Jimmy Bradbury (guitar)
+    and Reuben Haycocks (guitar), with Paddy Murphy on drums.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Aoife Anson O’Connell (bass), Jimmy Bradbury (guitar) and Reuben Haycocks (guitar) all trade
+      lead vocals; coupled with Paddy Murphy’s impassioned drumming
+- id: auto-057
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was recorded in Leeds with producer Loren Humphrey.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Recorded in Leeds with producer Loren Humphrey, Westside Cowboy’s debut LP ‘It Goes On’ doesn’t
+      rip up the rulebook of their identity
+- id: auto-058
+  type: interpretation
+  depth: listen
+  phase: after
+  body: The reviewer describes the record as the most comprehensive statement yet of the alt-country,
+    indie and rockabilly influences that shaped the band.
+  author: NME
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: it’s the album you expected them to make; the most comprehensive statement of the alt-country,
+      indie and rockabilly worlds that shaped them
+- id: auto-061
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The album uses friendly, everyday imagery, like blockbuster DVDs and paperchains, to capture the
+    ambiguity and uncertainty of modern young adulthood.
+  author: NME
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: ‘It Goes On’ utilises friendly, straightforward imagery to capture the ambiguity of modern
+      life
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Blockbuster DVDs (‘Big Wheels’), paperchains and rocks who “have grown hands to reach out
+      for each other” (‘Coyote’) are nuggets of the world’s simple pleasures
+- id: auto-062
+  type: fact
+  depth: listen
+  phase: before
+  body: The album was produced by Loren Humphrey, known for his work with Geese, Cameron Winter and Wunderhorse,
+    at Greenmount Studios in Leeds.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: '''It Goes On'' has been produced by Loren Humphrey, whose previous credits include Geese,
+      Cameron Winter and Wunderhorse, at Greenmount Studios in Leeds'
+- id: auto-066
+  type: trivia
+  depth: study
+  phase: before
+  body: The reviewer first saw Westside Cowboy in February 2025 opening for mary in the junkyard at a
+    tiny Manchester venue.
+  reviewed: true
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: The first time that we at The Soundboard ever caught Westside Cowboy was in February 2025.
+      They were opening for mary in the junkyard in Manchester’s YES, a venue with a capacity of approximately
+      six people.
+- id: auto-067
+  type: trivia
+  depth: study
+  phase: before
+  body: On a UK tour supporting Geese, Westside Cowboy reportedly held their own against their bigger
+    tourmates.
+  reviewed: true
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: on their UK tour last year supporting fellow deafening buzzers Geese, you’d frequently hear
+      tales of Westside Cowboy holding their own and giving their tourmates a run for their money
+- id: auto-068
+  type: fact
+  depth: study
+  phase: before
+  body: Paddy Murphy is the band's drummer and is regularly singled out as the group's standout performer.
+  reviewed: true
+  sources:
+  - ref: album-review-westside-cowboy-it-goes-on-
+    stance: supports
+    excerpt: It’s Paddy Murphy’s drumming that’s the far-and-away standout, though. Regularly is her cited
+      as Westside Cowboy’s ace in the hole
+- id: auto-069
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The reviewer says the band seem to channel an imagined American alternative rock sound with a
+    constant mood of sunset-lit, proud melancholy.
+  author: The Skinny
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy are a Manchester band who seem to be in conversation with an imagined American
+      alternative rock where everything happened at once
+- id: auto-070
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The review describes the record's sound as taut yet fuzzy guitars layered with chiming, rhythmic
+    synths that occasionally build into frenzy.
+  author: The Skinny
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: Taut yet fuzzy guitar textures dominate the record, splintered by the addition of chiming
+      yet rhythmic synths that sometimes veer into a thrilling frenzy
+- id: auto-071
+  type: interpretation
+  depth: study
+  phase: during
+  body: 'The critic notes the album repeats one structural trick throughout: songs build instrument by
+    instrument before the melody lifts into warmth and then abruptly crashes.'
+  body_long: The reviewer compares this recurring movement to Camper Van Beethoven's 'Take the Skinheads
+    Bowling' stretched across a whole record.
+  author: The Skinny
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: They perform the same movement throughout – songs grow instrument by instrument, before the
+      melody lifts everything into a swarm of warm feelings that fly before abruptly crashing
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: It’s like Camper Van Beethoven’s Take the Skinheads Bowling blown open, expanded into a whole
+      album
+- id: auto-074
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy are a Manchester quartet who had already released two acclaimed EPs, supported
+    Geese, and won Glastonbury's 2025 Emerging Talent Competition before this debut.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: between two acclaimed EPs, a stint supporting Geese, and winning 2025's Glastonbury Emerging
+      Talent Competition, the Manchester quartet
+- id: auto-075
+  type: interpretation
+  depth: listen
+  phase: after
+  body: Carter says the record expands the band's Americana-tinged slacker sound while avoiding gimmickry,
+    making it far greater than the sum of its parts.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: '''It Goes On'' expands the band''s Americana-tinged slacker palette, sidestepping potentially
+      gimmicky territory to stand as a collection that''s far greater than the sum of its parts'
+- id: auto-076
+  type: interpretation
+  depth: study
+  phase: after
+  body: Carter writes that across the album the band prove themselves masters of the Pixies' loud-quiet-loud
+    dynamic shifts.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: everywhere, they prove themselves to be masters of Pixies' famed loud-quiet-loud dynamic
+      shifts
+- id: auto-077
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter describes the production as deliberately scrappy, meant to capture the lightning-in-a-bottle
+    energy of the band's live shows.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: Production-wise, it's deliberately scrappy, going a significant way to evoke the lightning-in-a-bottle
+      energy of their live shows
+- id: auto-086
+  type: fact
+  depth: listen
+  phase: before
+  body: Westside Cowboy are a Manchester quartet who spent years releasing EPs and touring extensively
+    before recording this debut album.
+  body_long: The band built a strong live reputation playing festivals throughout 2025, and the review
+    notes they successfully transferred that jittery, intoxicating live sound into the studio for It Goes
+    On.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: The Manchester quartet have spent the past few years releasing a string of EPs and touring
+      their guts out
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: the band have successfully transferred their jittery, intoxicating live sound into the recording
+      studio
+- id: auto-087
+  type: fact
+  depth: study
+  phase: before
+  body: Three of the band's four members swap lead vocal duties across the album, each bringing a deadpan,
+    downbeat quality.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-album-reviews
+    stance: supports
+    excerpt: The latter three swap lead vocal duties but all of them have a deadpan, downbeat quality
+      that contrasts beautifully with the swirling noise of the instruments they play

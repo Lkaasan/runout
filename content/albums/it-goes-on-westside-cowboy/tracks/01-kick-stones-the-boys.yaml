@@ -1,4 +1,109 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 number: 1
 title: Kick Stones (The Boys)
 duration: '3:56'
 apple_music_id: '6767652037'
+claims:
+- id: auto-007
+  type: fact
+  depth: study
+  phase: before
+  body: Haycocks had come to dislike "Kick Stones (The Boys)" after many live performances and initially
+    opposed putting it on the album.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks had come to dislike "Kick Stones (The Boys)" after repeated live performances and
+      initially opposed including it.
+- id: auto-008
+  type: fact
+  depth: study
+  phase: before
+  body: The band and Humphrey scaled the song's bloated concert arrangement down to a more restrained
+    build, using a Velvet Underground live performance of "What Goes On" as a reference point.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: The band and Humphrey reduced what had become a large concert arrangement to a more restrained
+      build, using a live performance of the Velvet Underground's "What Goes On" as a reference.
+- id: auto-020
+  type: fact
+  depth: study
+  phase: during
+  body: '"Kick Stones (The Boys)" was the lead single, with a video made in collaboration with the football
+    club F.C. United of Manchester.'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Westside Cowboy announced It Goes On on 20 May 2026 and released "Kick Stones (The Boys)"
+      as its lead single.
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Its video was made with the football club F.C. United of Manchester.
+  - ref: we-wanted-to-make-an-album-for-our-young
+    stance: supports
+    excerpt: alongside a video made in collaboration with FC United of Manchester, offering insight into
+      Westside Cowboy's creative mind
+- id: auto-044
+  type: fact
+  depth: listen
+  phase: during
+  body: The single 'Kick Stones (The Boys)' was inspired by the Velvet Underground's song 'What Goes On,'
+    though its looseness gives it a fresh feel.
+  body_long: On the track, Haycocks sometimes sings as if racing against an hourglass and sometimes draws
+    out syllables slowly, meeting bandmate Aoife Anson O'Connell on harmonies.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-want-you-to-feel-like-a-
+    stance: supports
+    excerpt: The Velvet Underground’s ‘What Goes On’ was the reference point, but it the looseness keeps
+      it fresh, with Haycock sometimes singing as if he’s racing against an hourglass
+- id: auto-048
+  type: fact
+  depth: listen
+  phase: during
+  body: The opening track builds from looping, whirring guitars into a dense wall of noise.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: ‘Kick Stones (The Boys)’ begins with looping and whirring guitars, before slowly developing
+      into an all-enveloping wall of noise
+- id: auto-060
+  type: interpretation
+  depth: listen
+  phase: during
+  body: The reviewer says 'Kick Stones (The Boys)' has intoxicating momentum that will put a smile on
+    the listener's face.
+  author: NME
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: the latter’s intoxicating momentum will put a smile on your face
+- id: auto-065
+  type: fact
+  depth: listen
+  phase: before
+  body: '''Kick Stones (The Boys)'' was the lead single from the album and has been described as ''mad,
+    ''70s rock''.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: following the "mad, '70s rock" lead single 'Kick Stones (The Boys)', which arrived last month
+- id: auto-079
+  type: interpretation
+  depth: study
+  phase: during
+  body: Carter notes the song nods to late '60s/early '70s rock in the vein of The Velvet Underground.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: they nod to late '60s / early '70s rock via The Velvet Underground (‘Kick Stones (The Boys)’)

@@ -1,4 +1,19 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 number: 4
 title: Well Done Kid, You Did It
 duration: '3:27'
 apple_music_id: '6767652041'
+claims:
+- id: auto-011
+  type: fact
+  depth: study
+  phase: before
+  body: Haycocks wrote "Well Done Kid, You Did It" while forcing himself to finish a song every day because
+    he was anxious about writing an album.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Haycocks wrote "Well Done Kid, You Did It" while forcing himself to complete a song each
+      day because he felt anxious about composing an album.

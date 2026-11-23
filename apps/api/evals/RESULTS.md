@@ -78,3 +78,8 @@ whether the finder works on an album it was never tuned on, with no hand-written
 - Weak spots: 154 proposals is a lot to review (62 are critics' opinions, many repeating each other); song-level facts
   exist only where a review or interview covers the song; no gold set means no recall number yet.
 
+`app.research promote` then moved the clean part into the album's seed files: 87 claims (facts and trivia nothing
+doubted, plus critics' views that name the critic), all approved on import. Left as proposals: 25 opinions with no named
+author, 23 artist-intent claims (waiting for a person to confirm their primary sources), 10 contradicted, 8 doubted,
+1 repeat. This is a first pass by rule, not a line-by-line review.
+

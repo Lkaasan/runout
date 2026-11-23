@@ -1,4 +1,139 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 number: 7
 title: Pin Up Boys
 duration: '2:45'
 apple_music_id: '6767652046'
+claims:
+- id: auto-009
+  type: fact
+  depth: study
+  phase: before
+  body: '"Pin Up Boys" was recorded largely as the band played it live, and was the third attempt at capturing
+    the song.'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Pin Up Boys", by contrast, was recorded largely as the group played it live. It was the
+      third attempt to record the song'
+- id: auto-021
+  type: fact
+  depth: study
+  phase: during
+  body: Jack Shep directed the video for "Pin Up Boys", in which a moving spotlight chases a runner and
+    reveals different versions of the band.
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Jack Shep directed a video in which a moving spotlight pursues a runner and successively
+      reveals different versions of the band.
+- id: auto-036
+  type: fact
+  depth: listen
+  phase: before
+  body: '"Pin Up Boys" is the second single from the album, following lead single "Kick Stones (The Boys)".'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: Westside Cowboy have released “Pin Up Boys”, the newest single from their upcoming debut
+      album, It Goes On.
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: “Pin Up Boys” follows lead single “Kick Stones (The Boys)”, and has become a live fan favourite
+- id: auto-037
+  type: fact
+  depth: study
+  phase: before
+  body: The song's music video was directed by SNL UK's Jack Shep, who described wanting to capture the
+    band's dynamism through a chasing spotlight concept.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: The track also arrives alongside a music video directed by SNL UK’s Jack Shep, who explains
+  - ref: westside-cowboy-preview-debut-album-with
+    stance: supports
+    excerpt: In the video we wanted to capture the band’s dynamism, through a spotlight. We follow this
+      fixed, malevolent spotlight chasing our hero
+- id: auto-052
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Pin Up Boys'' features knotty, unrestrained guitars alongside the shared vocals of Reuben Haycocks
+    and Aoife Anson O''Connell.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: is the sound of a band completely letting loose and refusing to be constrained, as knotty
+      guitars combine with the vocals of Reuben Haycocks and Aoife Anson O’Connell
+- id: auto-053
+  type: trivia
+  depth: listen
+  phase: after
+  body: '''Pin Up Boys'' is the song the band has performed live more than any other.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: It’s no wonder the band have played it more than any other song
+- id: auto-059
+  type: fact
+  depth: study
+  phase: before
+  body: '''Pin Up Boys'' and ''Kick Stones (The Boys)'' had already been extensively road-tested alongside
+    the band''s first two EPs before the album''s release.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-manche
+    stance: supports
+    excerpt: Having extensively road-tested ‘Pin Up Boys’ and ‘Kick Stones (The Boys)’ alongside their
+      first two EPs, those two singles neatly carry the baton forward
+- id: auto-063
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Pin Up Boys'' opens with Reuben Haycocks'' vocals over a sparse arrangement before building
+    into a quiet-loud indie anthem.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: Beginning with Reuben Haycocks' vocals over a sparse arrangement, the track builds into a
+      rousing quiet-loud indie anthem
+- id: auto-064
+  type: fact
+  depth: study
+  phase: after
+  body: The music video for 'Pin Up Boys' was directed by Jack Shep of Saturday Night Live UK.
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-share-rousing-single-pin
+    stance: supports
+    excerpt: Check out the video, directed by Saturday Night Live UK's Jack Shep, here
+- id: auto-072
+  type: interpretation
+  depth: study
+  phase: after
+  body: The reviewer feels 'Pin Up Boys' comes across as a little too self-involved compared to the rest
+    of the record.
+  author: The Skinny
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on
+    stance: supports
+    excerpt: although on Pin Up Boys it comes across a little too invested in itself
+- id: auto-082
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Carter calls out the song's outro as goosebump-inducing, and notes it has become a setlist staple.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: the graduated, goosebump-inducing outro of setlist staple ‘Pin Up Boys’

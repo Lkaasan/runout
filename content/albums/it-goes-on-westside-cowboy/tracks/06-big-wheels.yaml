@@ -1,4 +1,32 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 number: 6
 title: Big Wheels
 duration: '3:17'
 apple_music_id: '6767652043'
+claims:
+- id: auto-030
+  type: interpretation
+  depth: study
+  phase: after
+  body: Todd Dedman of Beats Per Minute rated the album 83 percent but called "Big Wheels" a misstep whose
+    borrowed phrases interrupted the record's momentum.
+  author: Todd Dedman
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: Todd Dedman of Beats Per Minute rated the album 83 per cent, but called "Big Wheels" a misstep
+      whose borrowed phrases interrupted the record's momentum.
+- id: auto-050
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Big Wheels'' slows the pace with an existential, reflective mood carried by gorgeous, blissful
+    rhythms.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: things take a slower turn on ‘Big Wheels’ – a gorgeous existential ponderer packed with blissful
+      rhythms

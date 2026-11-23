@@ -1,1 +1,63 @@
-sources: []
+sources:
+- id: it-goes-on
+  kind: database
+  title: It Goes On
+  url: https://en.wikipedia.org/wiki/It_Goes_On?oldid=1378674537
+  tier: tertiary
+- id: we-wanted-to-make-an-album-for-our-young
+  kind: press
+  title: '"We wanted to make an album for our younger selves": Westside Cowboy announce debut album, It
+    Goes On | The Line of Best Fit'
+  url: https://www.thelineofbestfit.com/news/we-wanted-to-make-an-album-for-our-younger-selves-westside-cowboy-announce-debut-album-it-goes-on
+  tier: secondary
+- id: westside-cowboy-preview-debut-album-with
+  kind: press
+  title: Westside Cowboy preview debut album with new song, “Pin Up Boys” | The Line of Best Fit
+  url: https://www.thelineofbestfit.com/news/westside-cowboy-preview-debut-album-with-new-song-pin-up
+  tier: secondary
+- id: westside-cowboy-unveil-new-song-dobro-th
+  kind: press
+  title: Westside Cowboy unveil new song, "Dobro" | The Line of Best Fit
+  url: https://www.thelineofbestfit.com/news/westside-cowboy-unveil-new-song-dobro
+  tier: secondary
+- id: westside-cowboy-want-you-to-feel-like-a-
+  kind: press
+  title: Westside Cowboy Want You to Feel Like a Kid Again. And Ditch Your Phone
+  url: https://www.rollingstone.co.uk/music/features/westside-cowboy-interview-photos-63634/
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-a-bril
+  kind: press
+  title: 'Westside Cowboy ''It Goes On'' review: A brilliantly thrilling debut'
+  url: https://www.rollingstone.co.uk/music/album-reviews/westside-cowboy-it-goes-on-review-a-brilliantly-thrilling-debut-63567/
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-manche
+  kind: press
+  title: 'Westside Cowboy – ‘It Goes On’ review: Manchester’s newest guitar heroes put an arm around your
+    shoulder'
+  url: https://www.nme.com/reviews/album/westside-cowboy-it-goes-on-review-3962557
+  tier: secondary
+- id: westside-cowboy-share-rousing-single-pin
+  kind: press
+  title: Westside Cowboy share rousing single 'Pin Up Boys' and announce record store live shows
+  url: https://www.nme.com/news/music/westside-cowboy-share-rousing-single-pin-up-boys-and-announce-record-store-live-shows-3954451
+  tier: secondary
+- id: album-review-westside-cowboy-it-goes-on-
+  kind: press
+  title: 'ALBUM REVIEW: Westside Cowboy - ‘It Goes On’ | The Soundboard'
+  url: https://thesoundboardreviews.com/2026/08/18/album-review-westside-cowboy-it-goes-on/
+  tier: tertiary
+- id: westside-cowboy-it-goes-on
+  kind: press
+  title: Westside Cowboy – It Goes On
+  url: https://www.theskinny.co.uk/music/reviews/albums/westside-cowboy-it-goes-on
+  tier: secondary
+- id: westside-cowboy-it-goes-on-review-diy-ma
+  kind: press
+  title: Westside Cowboy - It Goes On review • DIY Magazine
+  url: https://diymag.com/review/album/westside-cowboy-it-goes-on
+  tier: secondary
+- id: westside-cowboy-it-goes-on-album-reviews
+  kind: press
+  title: Westside Cowboy - It Goes On | Album Reviews | musicOMH
+  url: https://www.musicomh.com/reviews/albums/westside-cowboy-it-goes-on
+  tier: secondary

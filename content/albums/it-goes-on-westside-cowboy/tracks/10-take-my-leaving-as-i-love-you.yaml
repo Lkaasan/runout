@@ -1,4 +1,42 @@
+# 87 claims promoted automatically from proposals/20261123-165506 on 2026-11-23. A first pass,
+# not read one by one: facts and trivia nothing doubted, and named critics' views.
 number: 10
 title: Take My Leaving As I Love You
 duration: '2:43'
 apple_music_id: '6767652052'
+claims:
+- id: auto-010
+  type: fact
+  depth: study
+  phase: before
+  body: '"Take My Leaving As I Love You" kept an early, stripped-down take from pre-production because
+    the other members insisted on it.'
+  reviewed: true
+  sources:
+  - ref: it-goes-on
+    stance: supports
+    excerpt: '"Take My Leaving as I Love You" is an early, stripped-down take that the other members insisted
+      on keeping'
+- id: auto-051
+  type: fact
+  depth: listen
+  phase: during
+  body: '''Take My Leaving As I Love You'' is a country-flecked ballad showing the band''s softer side.'
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-a-bril
+    stance: supports
+    excerpt: It’s the same on the country flecked ‘Take My Leaving As I Love You’, which sees them leaning
+      into balladry with genuinely stunning results
+- id: auto-084
+  type: interpretation
+  depth: listen
+  phase: during
+  body: Carter describes the song's couplets as quietly heartwrenching with a Cohen-esque quality.
+  author: Daisy Carter
+  reviewed: true
+  sources:
+  - ref: westside-cowboy-it-goes-on-review-diy-ma
+    stance: supports
+    excerpt: the quietly heartwrenching couplets of ‘Take My Leaving As I Love You’ have a Cohen-esque
+      air about them
