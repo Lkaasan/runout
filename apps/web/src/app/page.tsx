@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { api } from "@/api/client";
+import { AlbumCover } from "@/components/AlbumCover";
 
 export const dynamic = "force-dynamic";
 
@@ -26,7 +27,7 @@ export default async function Shelf() {
                 href={`/album/${a.slug}`}
                 className="flex gap-4 rounded-lg p-3 hover:bg-neutral-900"
               >
-                <div className="size-20 shrink-0 rounded bg-neutral-800" aria-hidden />
+                <AlbumCover url={a.artwork_url} title={a.title} className="size-20" />
                 <div>
                   <div className="text-xl">{a.title}</div>
                   <div className="text-neutral-400">{a.artist}</div>

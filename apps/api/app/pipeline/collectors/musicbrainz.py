@@ -52,6 +52,8 @@ class MusicBrainzCollector:
             text=text,
             meta={
                 "release_group_id": group["id"],
+                # The Cover Art Archive serves the cover for any MusicBrainz release group.
+                "cover_art_url": f"https://coverartarchive.org/release-group/{group['id']}/front-500",
                 "release_id": release_id,
                 "artist_ids": sorted(
                     {c["artist"]["id"] for c in release.get("artist-credit", []) if "artist" in c}
