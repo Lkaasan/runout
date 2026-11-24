@@ -31,9 +31,8 @@ jobs:
       - run: uv run pytest
       # Migrations and importer against real Postgres (tests use SQLite).
       - run: uv run alembic upgrade head
-      - run: uv run python -m app.seed import placeholder-album
-      - run: uv run python -m app.seed import placeholder-album
-      - run: uv run python -m app.seed import animals
+      - run: uv run python -m app.seed import --all
+      - run: uv run python -m app.seed import --all
 
   web:
     runs-on: ubuntu-latest

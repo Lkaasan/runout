@@ -8,7 +8,7 @@ Requires Node >= 22.12, pnpm, uv. Docker is optional (SQLite works for local dev
 ```
 cp .env.example .env     # for SQLite, set DATABASE_URL=sqlite:///./dev.db
 pnpm db                  # only if using Postgres
-pnpm setup               # install, migrate, import the placeholder album
+pnpm setup               # install, migrate, import every album in content/albums
 pnpm dev                 # API http://localhost:8000 (docs at /docs), web http://localhost:3000
 ```
 
