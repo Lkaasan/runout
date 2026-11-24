@@ -45,6 +45,27 @@ class WikipediaCollector:
                 return title
         return None
 
+    def album_page(self, album: str, artist: str) -> Page | None:
+        """The album's article. Many albums are filed under their plain title ("It Goes On"),
+        so any search hit whose title is the album's is tried, and the article is accepted only
+        if it is really about this artist (their name is in its opening)."""
+        data = self.fetcher.get_json(
+            API, _base_params(list="search", srsearch=f"{album} {artist} album", srlimit=8)
+        )
+        wanted = album.lower()
+        titles = [
+            hit["title"]
+            for hit in data["query"]["search"]
+            if hit["title"].lower() == wanted or hit["title"].lower().startswith(wanted + " (")
+        ]
+        # Titles that say "album" or the artist first, then the bare title.
+        titles.sort(key=lambda t: 0 if "(" in t else 1)
+        for title in titles:
+            page = self.article(title)
+            if page and artist.lower() in page.text[:2000].lower():
+                return page
+        return None
+
     # ---- one article -----------------------------------------------------------------------
 
     def article(self, title: str) -> Page | None:
@@ -111,8 +132,7 @@ class WikipediaCollector:
         self, album: str, artist: str, track_titles: list[str]
     ) -> tuple[list[Page], list[str]]:
         notes: list[str] = []
-        title = self.find_album_title(album, artist)
-        album_page = self.article(title) if title else None
+        album_page = self.album_page(album, artist)
         if album_page is None:
             return [], [f"No Wikipedia article found for '{album}' by {artist}."]
         pages = [album_page]
